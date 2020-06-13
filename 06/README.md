@@ -6,6 +6,8 @@ value='You are now in a GitHub web page view - Click this button to view this re
 
 # [Theo Armour June 2020 Read Me]( readme.html )
 
+## [2020-06-13 Brian]( #2020-06-13-brian.md )
+
 ## [2020-06-12 Andrew]( #2020-06-12-andrew.md )
 
 <!--
