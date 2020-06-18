@@ -1,7 +1,7 @@
 
 Demo
 
-* [Caifornia Dasymetry]( https://theo-armour.github.io/2020/sandbox/california-dasymetry/ )
+* [California Dasymetry]( https://theo-armour.github.io/2020/sandbox/california-dasymetry/ )
 
 geoJson
 
