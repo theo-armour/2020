@@ -9,6 +9,12 @@ value='You are now in a GitHub web page view - Click this button to view this re
 
 What have I done now
 
+2020-06-18
+
+Demo
+
+* [California Dasymetry]( https://theo-armour.github.io/2020/sandbox/california-dasymetry/ )
+
 ***
 
 <center title="hello!" ><a href=javascript:window.scrollTo(0,0); style=font-size:2ch;text-decoration:none; > ❦ </a></center>
