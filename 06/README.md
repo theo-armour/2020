@@ -4,9 +4,9 @@
 value='You are now in a GitHub web page view - Click this button to view this read me file as source code' ></div>
 
 
-# [Theo Armour June 2020 Read Me]( ./indexhtml )
+# [Theo Armour June 2020 Read Me]( ./index.html )
 
-## [2020-06-19-don]( https://theo-armour.github.io/2020/06/index.html#2020-06-19-don.md )
+## [2020-06-19-don]( ./index.html#2020-06-19-don.md )
 
 * CV update and architecture stuff
 
