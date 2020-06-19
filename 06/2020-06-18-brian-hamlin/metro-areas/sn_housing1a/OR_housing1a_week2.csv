@@ -1,0 +1,53 @@
+Housing Table 1a. Last Month's Payment Status for Owner-Occupied Housing Units, by Select Characteristics: Oregon;;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 1.;;;;;;;;
+Total Population 18 Years and Older in Owner-Occupied Housing Units;;;;;;;;
+Select characteristics;Total;Owned free and clear;Last month’s payment status;Last month’s payment status;Last month’s payment status;Last month’s payment status;Renter occupied;Did not respond to tenure
+;;;Yes;No;Mortgage payment was deferred;Did not respond;;
+;;;;;;;;
+Age ;;;;;;;;
+    18 - 24;72,226;4,391;67,835;-;-;-;102,858;8,303
+    25 - 39;467,247;67,323;361,163;17,282;21,479;-;440,470;94,328
+    40 - 54;545,218;77,284;409,354;44,143;13,588;848;239,538;36,204
+    55 - 64;377,822;110,277;260,640;5,120;1,785;-;89,061;60,080
+    65 and above;606,307;352,351;242,431;1,439;6,353;3,732;101,173;61,892
+Sex ;;;;;;;;
+    Male;1,045,960;278,077;696,989;33,740;37,154;-;480,033;88,153
+    Female;1,022,861;333,550;644,434;34,244;6,052;4,581;493,067;172,654
+Hispanic origin and Race ;;;;;;;;
+    Hispanic or Latino (may be of any race);178,989;44,269;115,604;14,718;4,398;-;163,408;36,524
+    White alone, not Hispanic;1,685,371;526,650;1,071,841;52,289;30,009;4,581;672,974;205,214
+    Black alone, not Hispanic;9,274;-;8,298;977;-;-;35,974;6,968
+    Asian alone, not Hispanic;77,542;13,695;55,048;-;8,799;-;33,036;6,513
+    Two or more races + Other races, not Hispanic;117,644;27,013;90,631;-;-;-;67,706;5,589
+Education ;;;;;;;;
+    Less than high school;49,345;12,438;36,907;-;-;-;36,402;17,256
+    High school or GED;556,271;186,205;326,783;37,489;2,061;3,732;319,861;110,849
+    Some college/associate’s degree;731,299;183,281;495,360;22,648;30,011;-;358,691;77,893
+    Bachelor’s degree or higher;731,906;229,704;482,373;7,847;11,134;848;258,145;54,809
+Marital status ;;;;;;;;
+    Married;1,336,569;377,957;867,016;53,869;37,727;-;318,980;119,281
+    Widowed;126,172;89,379;32,454;606;-;3,732;29,920;9,779
+    Divorced/separated;263,217;57,176;201,608;860;3,573;-;184,150;52,325
+    Never married;335,216;87,115;232,699;12,649;1,905;848;440,050;68,967
+    Did not report;7,647;-;7,647;-;-;-;-;10,455
+Presence of children under 18 years old ;;;;;;;;
+    Children in household;674,430;79,491;534,692;49,494;10,753;-;329,648;93,332
+    No children;1,394,391;532,136;806,731;18,490;32,453;4,581;643,452;167,475
+Respondent or household member experienced loss of employment income ;;;;;;;;
+    Yes;906,092;184,138;622,748;52,268;43,206;3,732;514,705;102,931
+    No;1,161,226;427,489;717,172;15,716;-;848;458,394;147,343
+    Did not report;1,503;-;1,503;-;-;-;-;10,533
+Respondent currently employed ;;;;;;;;
+    Yes;998,070;181,906;760,417;44,145;10,753;848;632,265;124,203
+    No;1,070,007;429,721;580,262;23,839;32,453;3,732;339,361;126,071
+    Did not report;744;-;744;-;-;-;1,473;10,533
+Household income ;;;;;;;;
+    Less than $25,000;164,227;91,029;67,854;4,391;953;-;263,820;-
+    $25,000 - $34,999;143,011;58,551;78,847;669;1,212;3,732;152,861;476
+    $35,000 - $49,999;195,578;63,168;108,106;6,977;17,327;-;120,354;-
+    $50,000 - $74,999;489,988;112,286;331,765;34,356;11,581;-;200,288;-
+    $75,000 - $99,999;401,029;138,536;245,087;10,186;7,220;-;96,602;-
+    $100,000 - $149,999;342,236;78,062;252,905;6,357;4,912;-;82,160;-
+    $150,000 - $199,999;137,906;24,246;113,660;-;-;-;15,938;-
+    $200,000 and above;161,343;26,690;134,653;-;-;-;10,977;-
+    Did not report;33,502;19,059;8,546;5,048;-;848;30,099;260,331

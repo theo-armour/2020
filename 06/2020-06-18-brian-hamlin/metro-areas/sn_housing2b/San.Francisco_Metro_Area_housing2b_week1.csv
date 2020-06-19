@@ -1,2 +1,54 @@
-The origin "file://" has sent too many requests.
-The number of requests is limited to 200 per 60 minutes. Please self-host CORS Anywhere if you need more quota. See https://github.com/Rob--W/cors-anywhere#demo-server
+Housing Table 2b. Confidence in Ability to Make Next Month's Payment for Renter-Occupied Housing Units, by Select Characteristics: Riverside-San Bernardino-Ontario, CA Metro Area;;;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 6.;;;;;;;;;
+Total Population 18 Years and Older in Renter-Occupied Housing Units;;;;;;;;;
+Select characteristics;Total;Occupied without rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Did not report to tenure
+;;;No confidence;Slight confidence;Moderate confidence;High confidence;Payment is/will be deferred;Did not report;
+;;;;;;;;;
+Total;1,485,291;87,362;157,281;320,747;435,316;416,662;2,876;65,048;760,060
+Age ;;;;;;;;;
+    18 - 24;313,492;-;1,502;61,423;149,206;97,194;-;4,167;256,972
+    25 - 39;472,157;6,079;90,951;105,896;192,130;75,508;-;1,593;181,844
+    40 - 54;329,734;15,835;52,954;117,628;39,211;101,627;2,479;-;160,650
+    55 - 64;212,044;24,768;8,469;33,004;45,442;100,360;-;-;54,720
+    65 and above;157,865;40,680;3,405;2,796;9,325;41,973;397;59,289;105,874
+Sex ;;;;;;;;;
+    Male;803,935;39,427;86,844;150,912;335,351;184,756;2,479;4,167;487,603
+    Female;681,356;47,935;70,437;169,835;99,965;231,905;397;60,882;272,457
+Hispanic origin and Race ;;;;;;;;;
+    Hispanic or Latino (may be of any race);676,012;18,007;107,394;196,331;199,350;154,931;-;-;409,584
+    White alone, not Hispanic;558,620;50,408;8,127;40,448;182,676;213,506;-;63,455;189,465
+    Black alone, not Hispanic;118,545;-;35,449;22,452;19,309;36,867;2,876;1,593;32,321
+    Asian alone, not Hispanic;49,466;18,947;1,545;5,804;15,737;7,432;-;-;89,011
+    Two or more races + Other races, not Hispanic;82,648;-;4,766;55,713;18,244;3,925;-;-;39,679
+Education ;;;;;;;;;
+    Less than high school;341,952;23,267;37,862;110,946;83,633;86,243;-;-;178,799
+    High school or GED;714,830;35,932;62,220;149,325;259,788;148,277;-;59,289;293,726
+    Some college/associate’s degree;321,883;14,467;53,546;49,112;73,453;127,139;-;4,167;234,886
+    Bachelor’s degree or higher;106,626;13,696;3,653;11,364;18,442;55,003;2,876;1,593;52,648
+Marital status ;;;;;;;;;
+    Married;552,129;27,968;78,712;89,555;225,463;127,951;2,479;-;247,282
+    Widowed;120,752;1,500;1,472;4,881;26,779;26,831;-;59,289;3,383
+    Divorced/separated;261,404;27,009;7,227;83,302;26,373;117,493;-;-;40,923
+    Never married;548,392;30,884;69,870;141,391;155,704;144,386;397;5,759;450,845
+    Did not report;2,615;-;-;1,618;997;-;-;-;17,627
+Presence of children under 18 years old ;;;;;;;;;
+    Children in household;755,346;17,218;97,915;260,488;222,401;149,086;2,479;5,759;454,960
+    No children;729,946;70,144;59,366;60,259;212,915;267,576;397;59,289;305,100
+Respondent or household member experienced loss of employment income ;;;;;;;;;
+    Yes;1,037,743;16,439;154,304;138,929;367,526;293,018;2,479;65,048;440,459
+    No;446,551;70,923;2,977;181,818;66,792;123,644;397;-;307,897
+    Did not report;997;-;-;-;997;-;-;-;11,705
+Respondent currently employed ;;;;;;;;;
+    Yes;783,039;9,962;29,810;110,052;366,441;260,128;2,479;4,167;264,082
+    No;701,255;77,400;127,472;210,695;67,877;156,534;397;60,882;481,804
+    Did not report;997;-;-;-;997;-;-;-;14,174
+Household income ;;;;;;;;;
+    Less than $25,000;332,534;42,214;51,377;72,001;74,248;92,693;-;-;-
+    $25,000 - $34,999;357,991;16,645;43,863;127,049;32,340;137,698;397;-;-
+    $35,000 - $49,999;226,792;1,636;4,691;63,832;127,598;29,034;-;-;-
+    $50,000 - $74,999;202,684;26,867;35,103;31,230;46,106;63,379;-;-;-
+    $75,000 - $99,999;95,560;-;22,017;1,809;53,489;18,246;-;-;-
+    $100,000 - $149,999;62,214;-;-;3,772;3,859;52,104;2,479;-;757
+    $150,000 - $199,999;6,610;-;-;-;1,250;5,360;-;-;-
+    $200,000 and above;14,899;-;-;-;-;14,899;-;-;-
+    Did not report;186,008;-;230;21,055;96,426;3,249;-;65,048;759,303

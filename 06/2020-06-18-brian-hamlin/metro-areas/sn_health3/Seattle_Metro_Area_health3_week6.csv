@@ -1,2 +1,55 @@
-The origin "file://" has sent too many requests.
-The number of requests is limited to 200 per 60 minutes. Please self-host CORS Anywhere if you need more quota. See https://github.com/Rob--W/cors-anywhere#demo-server
+Health Table 3. Current Health Insurance Status, by Select Characteristics: Seattle-Tacoma-Bellevue, WA Metro Area;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 5.;;;;;
+Total Population 18 Years and Older;;;;;
+Select characteristics;Insured *;Insured *;Insured *;Uninsured;Did not report or don’t know
+;Total;Private;Public;;
+;;;;;
+Total;2,684,035;2,356,423;762,437;242,627;358,186
+Age ;;;;;
+    18 - 24;163,153;146,453;48,977;10,804;134,489
+    25 - 34;781,186;730,225;76,571;70,005;47,289
+    35 - 44;434,644;392,516;103,535;66,906;40,511
+    45 - 64;848,747;775,987;134,297;93,196;97,383
+    65 and over;456,306;311,242;399,057;1,717;38,513
+Sex ;;;;;
+    Male;1,392,475;1,242,046;364,257;175,786;209,188
+    Female;1,291,560;1,114,377;398,181;66,841;148,998
+Hispanic origin and Race ;;;;;
+    Hispanic or Latino (may be of any race);252,302;205,496;97,630;56,109;61,483
+    White alone, not Hispanic;1,750,837;1,566,730;504,002;158,712;199,980
+    Black alone, not Hispanic;121,604;94,639;40,774;10,765;37,781
+    Asian alone, not Hispanic;272,605;237,660;65,017;10,394;16,993
+    Two or more races + Other races, not Hispanic;286,687;251,897;55,014;6,647;41,949
+Education ;;;;;
+    Less than high school;198,590;175,627;42,755;18,725;32,462
+    High school or GED;543,292;450,985;205,411;106,576;140,120
+    Some college/associate’s degree;818,455;679,462;293,489;89,159;76,771
+    Bachelor’s degree or higher;1,123,698;1,050,349;220,782;28,167;108,834
+Marital status ;;;;;
+    Married;1,395,130;1,279,280;374,740;90,904;93,984
+    Widowed;80,286;65,311;52,209;-;15,262
+    Divorced/separated;336,356;247,223;171,034;37,274;42,143
+    Never married;870,158;762,503;163,270;114,279;188,589
+    Did not report;2,105;2,105;1,185;170;18,207
+Presence of children under 18 years old ;;;;;
+    Children in household;831,935;734,623;225,963;57,345;133,260
+    No children;1,852,100;1,621,800;536,474;185,282;224,926
+Respondent or household member experienced loss of employment income ;;;;;
+    Yes;1,250,364;1,087,791;298,960;196,328;122,960
+    No;1,430,994;1,267,751;460,800;46,299;217,988
+    Did not report;2,677;881;2,677;-;17,238
+Respondent currently employed ;;;;;
+    Yes;1,656,009;1,550,792;254,195;132,389;190,883
+    No;1,017,996;795,601;498,212;110,238;150,065
+    Did not report;10,030;10,030;10,030;-;17,238
+Household income ;;;;;
+    Less than $25,000;292,812;201,008;124,550;26,037;-
+    $25,000 - $34,999;210,165;149,996;128,331;21,088;-
+    $35,000 - $49,999;186,105;131,801;99,597;57,257;43,538
+    $50,000 - $74,999;370,304;316,099;132,892;58,035;6,064
+    $75,000 - $99,999;296,935;274,616;93,636;40,406;270
+    $100,000 - $149,999;574,351;548,081;101,954;19,504;-
+    $150,000 - $199,999;344,065;335,730;43,459;12,271;-
+    $200,000 and above;330,592;329,492;11,817;5,766;-
+    Did not report;78,707;69,600;26,201;2,263;308,315
+* Totals may not sum to 100% as the question allowed for multiple categories to be marked.;;;;;

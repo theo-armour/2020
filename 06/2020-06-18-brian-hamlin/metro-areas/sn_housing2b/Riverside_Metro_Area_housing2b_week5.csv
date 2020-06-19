@@ -1,2 +1,54 @@
-The origin "file://" has sent too many requests.
-The number of requests is limited to 200 per 60 minutes. Please self-host CORS Anywhere if you need more quota. See https://github.com/Rob--W/cors-anywhere#demo-server
+Housing Table 2b. Confidence in Ability to Make Next Month's Payment for Renter-Occupied Housing Units, by Select Characteristics: Riverside-San Bernardino-Ontario, CA Metro Area;;;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 4.;;;;;;;;;
+Total Population 18 Years and Older in Renter-Occupied Housing Units;;;;;;;;;
+Select characteristics;Total;Occupied without rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Did not report to tenure
+;;;No confidence;Slight confidence;Moderate confidence;High confidence;Payment is/will be deferred;Did not report;
+;;;;;;;;;
+Total;1,197,883;53,236;183,787;235,789;288,448;409,341;12,539;14,742;1,058,505
+Age ;;;;;;;;;
+    18 - 24;96,857;4,639;1,105;29,694;12,631;42,397;-;6,390;153,119
+    25 - 39;454,990;17,813;58,735;98,157;111,328;160,606;-;8,352;206,043
+    40 - 54;316,471;11,330;31,997;66,006;105,561;89,038;12,539;-;159,500
+    55 - 64;202,195;12,735;72,391;11,618;21,935;83,515;-;-;130,296
+    65 and above;127,369;6,719;19,559;30,314;36,992;33,785;-;-;409,547
+Sex ;;;;;;;;;
+    Male;643,049;15,124;101,430;147,533;122,981;241,391;-;14,591;693,585
+    Female;554,833;38,112;82,358;88,256;165,467;167,950;12,539;151;364,920
+Hispanic origin and Race ;;;;;;;;;
+    Hispanic or Latino (may be of any race);559,420;32,671;58,263;150,983;181,704;127,598;-;8,201;633,243
+    White alone, not Hispanic;339,658;12,634;72,130;25,769;45,151;164,894;12,539;6,542;196,994
+    Black alone, not Hispanic;85,488;6,020;12,426;28,631;17,475;20,936;-;-;79,497
+    Asian alone, not Hispanic;59,200;1,764;15,779;27,630;3,312;10,715;-;-;127,663
+    Two or more races + Other races, not Hispanic;154,117;148;25,190;2,777;40,805;85,198;-;-;21,108
+Education ;;;;;;;;;
+    Less than high school;358,848;28,212;99,384;106,050;71,415;53,786;-;-;469,739
+    High school or GED;282,287;7,827;64,689;44,235;47,130;110,205;-;8,201;189,395
+    Some college/associate’s degree;423,259;12,440;17,712;56,515;116,843;200,819;12,539;6,390;212,095
+    Bachelor’s degree or higher;133,489;4,756;2,002;28,989;53,060;44,530;-;151;187,275
+Marital status ;;;;;;;;;
+    Married;364,790;11,813;43,858;87,205;69,407;152,506;-;-;620,421
+    Widowed;44,122;-;34,619;2,217;3,437;3,849;-;-;34,663
+    Divorced/separated;343,135;16,760;60,729;30,201;143,324;79,431;12,539;151;83,833
+    Never married;445,835;24,662;44,581;116,167;72,280;173,555;-;14,591;313,034
+    Did not report;-;-;-;-;-;-;-;-;6,555
+Presence of children under 18 years old ;;;;;;;;;
+    Children in household;632,892;33,757;88,833;175,279;155,877;164,404;-;14,742;311,838
+    No children;564,990;19,479;94,955;60,510;132,571;244,937;12,539;-;746,667
+Respondent or household member experienced loss of employment income ;;;;;;;;;
+    Yes;772,791;30,209;182,111;216,764;199,796;123,171;12,539;8,201;791,878
+    No;425,092;23,027;1,676;19,025;88,652;286,170;-;6,542;260,785
+    Did not report;-;-;-;-;-;-;-;-;5,842
+Respondent currently employed ;;;;;;;;;
+    Yes;564,994;16,644;53,746;135,973;125,410;218,480;-;14,742;595,026
+    No;632,888;36,592;130,041;99,817;163,038;190,861;12,539;-;448,585
+    Did not report;-;-;-;-;-;-;-;-;14,895
+Household income ;;;;;;;;;
+    Less than $25,000;381,227;23,588;55,339;84,750;108,242;109,306;-;-;-
+    $25,000 - $34,999;260,800;8,380;93,938;50,926;30,528;64,489;12,539;-;-
+    $35,000 - $49,999;97,673;700;3,296;16,507;41,026;36,144;-;-;-
+    $50,000 - $74,999;196,487;3,643;13,682;26,608;84,459;68,096;-;-;-
+    $75,000 - $99,999;174,268;5,650;10,189;52,136;12,655;93,638;-;-;-
+    $100,000 - $149,999;39,293;1,324;7,343;1,147;6,121;23,357;-;-;213
+    $150,000 - $199,999;10,683;-;-;-;-;10,683;-;-;-
+    $200,000 and above;2,097;701;-;-;-;1,396;-;-;-
+    Did not report;35,356;9,250;-;3,715;5,417;2,232;-;14,742;1,058,291

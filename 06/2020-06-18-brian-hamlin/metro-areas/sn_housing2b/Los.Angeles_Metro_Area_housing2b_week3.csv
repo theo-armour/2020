@@ -1,2 +1,54 @@
-The origin "file://" has sent too many requests.
-The number of requests is limited to 200 per 60 minutes. Please self-host CORS Anywhere if you need more quota. See https://github.com/Rob--W/cors-anywhere#demo-server
+Housing Table 2b. Confidence in Ability to Make Next Month's Payment for Renter-Occupied Housing Units, by Select Characteristics: Los Angeles-Long Beach-Anaheim, CA Metro Area;;;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 2.;;;;;;;;;
+Total Population 18 Years and Older in Renter-Occupied Housing Units;;;;;;;;;
+Select characteristics;Total;Occupied without rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Did not report to tenure
+;;;No confidence;Slight confidence;Moderate confidence;High confidence;Payment is/will be deferred;Did not report;
+;;;;;;;;;
+Total;5,191,188;143,146;851,814;1,209,636;1,140,893;1,806,198;39,501;-;1,103,529
+Age ;;;;;;;;;
+    18 - 24;257,351;-;57,798;29,985;76,195;93,373;-;-;42,570
+    25 - 39;2,618,459;108,996;498,886;677,735;657,374;671,789;3,679;-;367,654
+    40 - 54;1,378,334;18,243;252,864;422,420;281,197;376,078;27,533;-;377,949
+    55 - 64;561,552;15,908;38,771;69,590;50,057;387,227;-;-;207,606
+    65 and above;375,491;-;3,496;9,905;76,071;277,731;8,288;-;107,749
+Sex ;;;;;;;;;
+    Male;2,543,071;93,491;472,502;704,191;548,234;710,601;14,051;-;412,042
+    Female;2,648,117;49,655;379,312;505,445;592,659;1,095,598;25,450;-;691,487
+Hispanic origin and Race ;;;;;;;;;
+    Hispanic or Latino (may be of any race);2,313,802;100,537;724,135;474,502;554,070;460,559;-;-;558,660
+    White alone, not Hispanic;1,460,893;23,647;109,417;313,177;354,252;639,016;21,384;-;245,279
+    Black alone, not Hispanic;565,015;7,991;8,057;323,722;72,612;152,634;-;-;18,543
+    Asian alone, not Hispanic;796,507;3,862;10,205;98,235;156,554;509,534;18,117;-;246,505
+    Two or more races + Other races, not Hispanic;54,970;7,109;-;-;3,406;44,455;-;-;34,542
+Education ;;;;;;;;;
+    Less than high school;560,168;7,596;95,043;89,279;103,131;265,120;-;-;289,681
+    High school or GED;1,516,586;86,055;476,801;318,877;213,946;420,908;-;-;171,896
+    Some college/associate’s degree;1,739,889;45,423;127,803;639,441;488,501;423,460;15,261;-;347,241
+    Bachelor’s degree or higher;1,374,545;4,073;152,167;162,039;335,316;696,710;24,240;-;294,710
+Marital status ;;;;;;;;;
+    Married;1,651,422;18,344;340,329;267,125;460,515;532,942;32,166;-;398,380
+    Widowed;117,106;-;60,338;-;5,093;51,675;-;-;17,716
+    Divorced/separated;733,250;27,433;73,196;121,075;155,590;355,955;-;-;213,923
+    Never married;2,675,041;97,370;377,951;821,435;519,695;851,256;7,335;-;448,246
+    Did not report;14,369;-;-;-;-;14,369;-;-;25,264
+Presence of children under 18 years old ;;;;;;;;;
+    Children in household;1,772,812;6,929;267,074;380,028;604,871;498,649;15,261;-;541,122
+    No children;3,418,376;136,218;584,740;829,607;536,022;1,307,549;24,240;-;562,406
+Respondent or household member experienced loss of employment income ;;;;;;;;;
+    Yes;3,677,715;119,499;849,274;1,125,615;936,725;610,610;35,992;-;569,096
+    No;1,513,473;23,647;2,539;84,020;204,168;1,195,589;3,509;-;509,169
+    Did not report;-;-;-;-;-;-;-;-;25,264
+Respondent currently employed ;;;;;;;;;
+    Yes;2,514,875;19,118;73,665;596,651;747,727;1,058,120;19,594;-;569,449
+    No;2,676,313;124,028;778,148;612,985;393,166;748,078;19,907;-;508,816
+    Did not report;-;-;-;-;-;-;-;-;25,264
+Household income ;;;;;;;;;
+    Less than $25,000;1,254,144;116,277;253,014;519,956;206,100;152,288;6,509;-;-
+    $25,000 - $34,999;465,454;8,459;44,117;69,605;123,422;211,562;8,288;-;-
+    $35,000 - $49,999;958,933;211;454,682;83,968;328,920;91,153;-;-;18,064
+    $50,000 - $74,999;910,971;3,718;87,049;191,474;136,271;489,456;3,003;-;-
+    $75,000 - $99,999;805,479;-;7,441;282,081;156,738;359,219;-;-;29,532
+    $100,000 - $149,999;449,349;14,482;293;1,846;157,294;259,349;16,085;-;-
+    $150,000 - $199,999;176,837;-;-;14,568;9,063;149,697;3,509;-;-
+    $200,000 and above;97,674;-;5,217;-;20,119;70,230;2,107;-;-
+    Did not report;72,346;-;-;46,137;2,966;23,244;-;-;1,055,932

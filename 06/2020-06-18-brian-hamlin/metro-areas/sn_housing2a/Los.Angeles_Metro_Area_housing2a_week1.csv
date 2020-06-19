@@ -1,2 +1,54 @@
-The origin "file://" has sent too many requests.
-The number of requests is limited to 200 per 60 minutes. Please self-host CORS Anywhere if you need more quota. See https://github.com/Rob--W/cors-anywhere#demo-server
+Standard Error Housing Table 1b. Last Month's Payment Status for Renter-Occupied Housing Units, by Select Characteristics: Seattle-Tacoma-Bellevue, WA Metro Area;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 6.;;;;;;;
+Total Population 18 Years and Older in Renter-Occupied Housing Units;;;;;;;
+Select characteristics;Total;Occupied without rent;Last month’s payment status;Last month’s payment status;Last month’s payment status;Last month’s payment status;Did not report to tenure
+;;;Yes;No;Rent was deferred;Did not report;
+;;;;;;;
+Total;89,957;8,512;89,600;39,715;8,003;236;47,723
+Age ;;;;;;;
+    18 - 24;81,692;-;81,624;4,265;-;-;32,224
+    25 - 39;65,559;8,119;50,745;37,115;979;-;15,483
+    40 - 54;32,091;1,996;30,870;4,629;7,865;-;21,789
+    55 - 64;27,634;670;23,130;12,524;-;-;4,646
+    65 and above;10,574;1,253;10,590;184;-;236;10,647
+Sex ;;;;;;;
+    Male;83,003;3,340;87,633;28,179;7,861;-;33,860
+    Female;46,123;7,534;38,413;25,974;1,061;236;32,173
+Hispanic origin and Race ;;;;;;;
+    Hispanic or Latino (may be of any race);42,499;7,236;40,667;4,885;-;-;31,258
+    White alone, not Hispanic;71,477;1,059;79,660;26,940;443;236;31,623
+    Black alone, not Hispanic;29,190;4,005;23,398;12,811;7,889;-;8,175
+    Asian alone, not Hispanic;26,693;386;26,809;-;-;-;10,309
+    Two or more races + Other races, not Hispanic;25,955;1,253;13,111;24,793;979;-;3,747
+Education ;;;;;;;
+    Less than high school;10,524;1,896;6,186;4,265;7,889;-;16,403
+    High school or GED;73,223;3,295;78,259;35,120;-;-;34,246
+    Some college/associate’s degree;40,106;7,236;37,584;13,657;-;-;11,430
+    Bachelor’s degree or higher;38,279;1,649;36,253;5,523;1,071;236;14,508
+Marital status ;;;;;;;
+    Married;51,752;1,247;51,135;13,223;-;-;23,048
+    Widowed;21,035;-;21,114;683;-;-;8,508
+    Divorced/separated;21,984;7,491;16,745;2,390;7,889;-;4,232
+    Never married;78,300;3,489;79,989;36,161;1,071;236;35,552
+    Did not report;-;-;-;-;-;-;1,629
+Presence of children under 18 years old ;;;;;;;
+    Children in household;41,593;7,503;41,171;5,578;7,893;-;26,603
+    No children;88,408;3,710;88,635;38,618;992;236;35,722
+Respondent or household member experienced loss of employment income ;;;;;;;
+    Yes;97,350;7,298;99,677;40,045;8,003;-;32,181
+    No;54,046;4,221;53,525;5,897;-;236;26,444
+    Did not report;5,028;-;5,028;-;-;-;1,271
+Respondent currently employed ;;;;;;;
+    Yes;64,975;942;56,757;25,805;7,889;-;22,643
+    No;79,903;8,452;86,276;30,347;1,071;236;36,699
+    Did not report;-;-;-;-;-;-;1,814
+Household income ;;;;;;;
+    Less than $25,000;34,470;3,980;14,711;26,168;236;-;-
+    $25,000 - $34,999;77,074;-;77,102;5,177;979;-;-
+    $35,000 - $49,999;43,186;693;42,922;3,560;381;-;-
+    $50,000 - $74,999;32,332;7,236;27,394;13,414;-;-;-
+    $75,000 - $99,999;41,432;1,372;41,559;1,258;-;236;1,502
+    $100,000 - $149,999;37,808;-;30,350;24,188;-;-;-
+    $150,000 - $199,999;47,359;-;47,359;-;-;-;-
+    $200,000 and above;8,681;-;8,681;-;-;-;-
+    Did not report;8,567;-;3,810;-;7,889;-;47,732

@@ -1,2 +1,54 @@
-The origin "file://" has sent too many requests.
-The number of requests is limited to 200 per 60 minutes. Please self-host CORS Anywhere if you need more quota. See https://github.com/Rob--W/cors-anywhere#demo-server
+Housing Table 2b. Confidence in Ability to Make Next Month's Payment for Renter-Occupied Housing Units, by Select Characteristics: Riverside-San Bernardino-Ontario, CA Metro Area;;;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 2.;;;;;;;;;
+Total Population 18 Years and Older in Renter-Occupied Housing Units;;;;;;;;;
+Select characteristics;Total;Occupied without rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Did not report to tenure
+;;;No confidence;Slight confidence;Moderate confidence;High confidence;Payment is/will be deferred;Did not report;
+;;;;;;;;;
+Total;1,729,828;152,036;201,003;300,161;419,343;653,605;3,679;-;562,305
+Age ;;;;;;;;;
+    18 - 24;98,462;-;-;63,888;34,574;-;-;-;-
+    25 - 39;808,281;30,731;175,535;101,120;192,037;308,858;-;-;277,025
+    40 - 54;532,210;9,955;18,943;78,335;148,496;272,804;3,679;-;225,622
+    55 - 64;215,520;107,380;6,526;56,818;21,367;23,429;-;-;34,771
+    65 and above;75,354;3,970;-;-;22,869;48,514;-;-;24,887
+Sex ;;;;;;;;;
+    Male;824,499;146,077;7,010;155,230;140,319;375,862;-;-;373,587
+    Female;905,329;5,959;193,993;144,931;279,024;277,743;3,679;-;188,718
+Hispanic origin and Race ;;;;;;;;;
+    Hispanic or Latino (may be of any race);971,161;31,690;158,186;175,304;275,441;330,541;-;-;210,149
+    White alone, not Hispanic;436,021;9,171;26,652;91,514;95,762;212,921;-;-;239,813
+    Black alone, not Hispanic;236,466;107,380;1,221;7,980;31,787;86,289;1,808;-;68,329
+    Asian alone, not Hispanic;27,782;2,123;6,490;11,560;-;7,610;-;-;-
+    Two or more races + Other races, not Hispanic;58,397;1,672;8,455;13,802;16,353;16,244;1,871;-;44,014
+Education ;;;;;;;;;
+    Less than high school;275,244;-;69,892;44,927;90,795;69,629;-;-;72,520
+    High school or GED;739,874;107,475;44,886;119,714;142,960;324,838;-;-;255,718
+    Some college/associate’s degree;565,957;34,807;72,425;119,115;153,526;184,213;1,871;-;159,901
+    Bachelor’s degree or higher;148,752;9,754;13,800;16,405;32,062;74,924;1,808;-;74,166
+Marital status ;;;;;;;;;
+    Married;714,478;29,367;137,621;142,253;138,811;262,747;3,679;-;304,759
+    Widowed;24,517;-;808;-;3,539;20,170;-;-;53,385
+    Divorced/separated;210,467;13,072;43,165;14,482;48,373;91,376;-;-;24,906
+    Never married;676,861;6,093;19,410;143,426;228,620;279,312;-;-;176,514
+    Did not report;103,505;103,505;-;-;-;-;-;-;2,741
+Presence of children under 18 years old ;;;;;;;;;
+    Children in household;1,095,401;108,259;97,130;140,408;302,031;445,703;1,871;-;235,458
+    No children;634,426;43,778;103,874;159,753;117,312;207,902;1,808;-;326,847
+Respondent or household member experienced loss of employment income ;;;;;;;;;
+    Yes;1,259,653;145,943;198,727;274,208;349,686;289,218;1,871;-;226,542
+    No;470,174;6,093;2,276;25,953;69,658;364,386;1,808;-;334,776
+    Did not report;-;-;-;-;-;-;-;-;987
+Respondent currently employed ;;;;;;;;;
+    Yes;667,619;8,996;97,948;107,566;135,711;315,590;1,808;-;258,919
+    No;1,062,209;143,041;103,055;192,595;283,633;338,015;1,871;-;300,644
+    Did not report;-;-;-;-;-;-;-;-;2,741
+Household income ;;;;;;;;;
+    Less than $25,000;406,147;134,412;19,543;95,638;65,643;90,911;-;-;-
+    $25,000 - $34,999;404,481;7,871;63,980;37,484;135,909;157,368;1,871;-;1,421
+    $35,000 - $49,999;301,008;2,123;12,791;-;81,281;204,814;-;-;-
+    $50,000 - $74,999;386,001;7,631;85,158;87,732;77,818;127,661;-;-;-
+    $75,000 - $99,999;150,712;-;3,668;73,199;40,143;33,701;-;-;-
+    $100,000 - $149,999;42,758;-;6,490;6,108;8,423;19,928;1,808;-;-
+    $150,000 - $199,999;13,265;-;-;-;1,871;11,394;-;-;-
+    $200,000 and above;9,373;-;9,373;-;-;-;-;-;-
+    Did not report;16,082;-;-;-;8,255;7,827;-;-;560,884

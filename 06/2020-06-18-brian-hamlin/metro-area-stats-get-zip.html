@@ -158,15 +158,15 @@ init();
 
 function init() {
 
-	txt = "<h3>Title</h3><p>lorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>";
+	// txt = "<h3>Title</h3><p>lorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>";
 
-	txtX = Array( 1 ).fill( txt ).join( "<hr>");
+	// txtX = Array( 1 ).fill( txt ).join( "<hr>");
 
-	divContent.innerHTML += `${ svgGitHubMark } ${ ( new Date ) } ${ txtX }`;
+	// divContent.innerHTML += `${ svgGitHubMark } ${ ( new Date ) } ${ txtX }`;
 
-	divNavContent.innerHTML = txtX;
+	// divNavContent.innerHTML = txtX;
 
-    url = "Riverside_Metro_Area_housing2b_week1.csv"
+    // url = "Riverside_Metro_Area_housing2b_week1.csv"
 
     //requestFile( url, onLoad );
     
@@ -190,12 +190,13 @@ function fileSaveZipMetroAreasData( zipName = 'metro-areas' ) {
     const health2a = zip.folder( "sn_health2a" );
     const health2b = zip.folder( "sn_health2b" );
     const health3 = zip.folder( "sn_health3" );
-    const housing1 = zip.folder( "sn_housing1" );
+    const housing1a = zip.folder( "sn_housing1a" );
+    const housing1b = zip.folder( "sn_housing1b" );
     const housing2a = zip.folder( "sn_housing2a" );
     const housing2b = zip.folder( "sn_housing2b" );
-    const housing3 = zip.folder( "sn_housing3" );
 
-    folders = [ employ1, employ2, employ3, health1, health2a, health2b, health3, housing1, housing2a, housing2b, housing3, ];
+    folders = [ employ1, employ2, employ3, health1, health2a, health2b, health3, 
+    housing1a, housing1b, housing2a, housing2b, ];
 
     const areas = [ "Los.Angeles_Metro_Area", "OR", "Riverside_Metro_Area", "San.Francisco_Metro_Area", "Seattle_Metro_Area" ];
 
@@ -230,7 +231,7 @@ function fileSaveZipMetroAreasData( zipName = 'metro-areas' ) {
 
     //console.log( "items", items[ 0 ] );
 
-    count = 180;
+    count = 210;
 
     getData( count );
 

@@ -1,2 +1,55 @@
-The origin "file://" has sent too many requests.
-The number of requests is limited to 200 per 60 minutes. Please self-host CORS Anywhere if you need more quota. See https://github.com/Rob--W/cors-anywhere#demo-server
+Health Table 3. Current Health Insurance Status, by Select Characteristics: San Francisco-Oakland-Berkeley, CA Metro Area;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 5.;;;;;
+Total Population 18 Years and Older;;;;;
+Select characteristics;Insured *;Insured *;Insured *;Uninsured;Did not report or don’t know
+;Total;Private;Public;;
+;;;;;
+Total;2,945,027;2,647,081;918,263;187,023;581,785
+Age ;;;;;
+    18 - 24;206,906;161,021;54,707;40,664;140,415
+    25 - 34;577,661;528,220;114,712;53,711;94,879
+    35 - 44;674,181;634,911;178,523;19,865;49,926
+    45 - 64;992,244;938,903;159,147;69,404;145,772
+    65 and over;494,035;384,025;411,174;3,380;150,793
+Sex ;;;;;
+    Male;1,547,429;1,404,564;463,113;93,992;180,485
+    Female;1,397,598;1,242,517;455,149;93,032;401,300
+Hispanic origin and Race ;;;;;
+    Hispanic or Latino (may be of any race);614,799;529,197;305,240;68,948;152,504
+    White alone, not Hispanic;1,250,996;1,132,591;379,765;49,218;160,254
+    Black alone, not Hispanic;157,076;148,011;69,102;63,187;60,309
+    Asian alone, not Hispanic;615,400;542,247;142,294;5,168;170,741
+    Two or more races + Other races, not Hispanic;306,755;295,034;21,861;502;37,978
+Education ;;;;;
+    Less than high school;312,856;278,918;175,166;53,149;204,564
+    High school or GED;571,944;511,899;211,168;87,020;75,843
+    Some college/associate’s degree;698,668;583,035;244,965;34,956;178,696
+    Bachelor’s degree or higher;1,361,559;1,273,229;286,963;11,898;122,683
+Marital status ;;;;;
+    Married;1,581,353;1,491,965;454,825;35,992;156,044
+    Widowed;62,825;49,050;52,268;-;12,033
+    Divorced/separated;312,448;262,293;153,998;3,652;77,379
+    Never married;978,561;838,336;250,098;147,379;330,091
+    Did not report;9,839;5,436;7,073;-;6,238
+Presence of children under 18 years old ;;;;;
+    Children in household;1,049,884;974,277;246,364;69,168;247,552
+    No children;1,895,143;1,672,803;671,899;117,856;334,233
+Respondent or household member experienced loss of employment income ;;;;;
+    Yes;1,387,095;1,219,884;528,633;106,950;288,612
+    No;1,557,932;1,427,197;389,629;80,073;282,670
+    Did not report;-;-;-;-;10,503
+Respondent currently employed ;;;;;
+    Yes;1,682,970;1,636,468;310,742;41,560;234,934
+    No;1,261,702;1,010,259;607,521;145,463;336,635
+    Did not report;354;354;-;-;10,216
+Household income ;;;;;
+    Less than $25,000;245,200;146,131;207,597;76,956;3,801
+    $25,000 - $34,999;307,685;263,670;178,971;31,282;8,111
+    $35,000 - $49,999;134,950;96,602;65,956;5,232;2,249
+    $50,000 - $74,999;310,905;280,821;103,064;16,295;2,275
+    $75,000 - $99,999;328,716;311,737;41,268;14,598;-
+    $100,000 - $149,999;410,489;376,229;105,850;7,557;6,705
+    $150,000 - $199,999;344,967;328,745;97,374;15,208;7,457
+    $200,000 and above;715,656;705,559;61,058;-;-
+    Did not report;146,459;137,587;57,124;19,896;551,188
+* Totals may not sum to 100% as the question allowed for multiple categories to be marked.;;;;;

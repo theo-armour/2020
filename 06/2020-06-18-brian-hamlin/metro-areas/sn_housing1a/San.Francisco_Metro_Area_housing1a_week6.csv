@@ -1,0 +1,54 @@
+Housing Table 1a. Last Month's Payment Status for Owner-Occupied Housing Units, by Select Characteristics: San Francisco-Oakland-Berkeley, CA Metro Area;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 5.;;;;;;;
+Total Population 18 Years and Older in Owner-Occupied Housing Units;;;;;;;
+Select characteristics;Total;Owned free and clear;Last month’s payment status;Last month’s payment status;Last month’s payment status;Last month’s payment status;Did not report to tenure
+;;;Yes;No;Mortgage payment was deferred;Did not report;
+;;;;;;;
+Total;1,692,466;622,804;974,155;30,553;39,702;25,253;567,784
+Age ;;;;;;;
+    18 - 24;155,238;71,138;62,074;2,523;-;19,503;123,253
+    25 - 39;297,963;63,737;223,417;4,098;6,712;-;111,920
+    40 - 54;540,950;184,185;331,050;15,986;9,728;-;97,288
+    55 - 64;295,357;100,965;167,271;7,682;13,893;5,545;82,986
+    65 and above;402,958;202,779;190,343;263;9,369;205;152,337
+Sex ;;;;;;;
+    Male;917,538;367,729;491,453;16,920;16,884;24,552;183,505
+    Female;774,928;255,075;482,702;13,633;22,818;701;384,279
+Hispanic origin and Race ;;;;;;;
+    Hispanic or Latino (may be of any race);225,059;57,813;137,258;354;5,286;24,348;164,879
+    White alone, not Hispanic;777,985;275,570;466,327;14,021;21,162;905;153,890
+    Black alone, not Hispanic;79,508;17,259;58,316;2,439;1,494;-;47,333
+    Asian alone, not Hispanic;413,792;143,420;253,553;6,736;10,083;-;163,284
+    Two or more races + Other races, not Hispanic;196,122;128,740;58,701;7,003;1,678;-;38,399
+Education ;;;;;;;
+    Less than high school;79,660;28,108;48,176;-;3,376;-;197,003
+    High school or GED;367,221;216,582;140,364;5,839;4,435;-;99,096
+    Some college/associate’s degree;398,411;132,221;217,644;11,029;13,169;24,348;154,433
+    Bachelor’s degree or higher;847,173;245,892;567,970;13,684;18,722;905;117,253
+Marital status ;;;;;;;
+    Married;1,080,073;438,115;593,413;12,876;30,620;5,050;167,335
+    Widowed;53,570;32,250;21,320;-;-;-;17,277
+    Divorced/separated;138,368;32,201;101,380;298;3,788;701;74,281
+    Never married;413,757;119,874;252,656;16,430;5,294;19,503;302,653
+    Did not report;6,698;363;5,386;950;-;-;6,238
+Presence of children under 18 years old ;;;;;;;
+    Children in household;693,734;258,817;417,803;8,467;8,443;205;250,733
+    No children;998,732;363,987;556,352;22,086;31,259;25,048;317,051
+Respondent or household member experienced loss of employment income ;;;;;;;
+    Yes;636,328;150,085;403,952;24,073;33,169;25,048;277,681
+    No;1,056,139;472,718;570,202;6,480;6,533;205;279,599
+    Did not report;-;-;-;-;-;-;10,503
+Respondent currently employed ;;;;;;;
+    Yes;880,403;226,020;600,655;12,150;17,025;24,552;245,186
+    No;811,709;396,783;373,500;18,048;22,677;701;312,382
+    Did not report;354;-;-;354;-;-;10,216
+Household income ;;;;;;;
+    Less than $25,000;47,365;9,903;29,899;7,300;264;-;6,545
+    $25,000 - $34,999;68,143;25,514;35,062;263;7,303;-;-
+    $35,000 - $49,999;52,968;21,379;22,297;595;8,696;-;236
+    $50,000 - $74,999;231,565;167,365;52,686;2,986;8,529;-;-
+    $75,000 - $99,999;140,183;70,357;62,601;354;2,026;4,845;-
+    $100,000 - $149,999;242,077;71,103;152,351;13,486;4,436;701;7,568
+    $150,000 - $199,999;245,051;80,915;162,576;-;1,560;-;-
+    $200,000 and above;530,151;120,845;397,305;5,568;6,228;205;-
+    Did not report;134,964;55,423;59,377;-;661;19,503;553,435

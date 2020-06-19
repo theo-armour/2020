@@ -1,2 +1,54 @@
-The origin "file://" has sent too many requests.
-The number of requests is limited to 200 per 60 minutes. Please self-host CORS Anywhere if you need more quota. See https://github.com/Rob--W/cors-anywhere#demo-server
+Housing Table 2b. Confidence in Ability to Make Next Month's Payment for Renter-Occupied Housing Units, by Select Characteristics: Oregon;;;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 5.;;;;;;;;;
+Total Population 18 Years and Older in Renter-Occupied Housing Units;;;;;;;;;
+Select characteristics;Total;Occupied without rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Did not report to tenure
+;;;No confidence;Slight confidence;Moderate confidence;High confidence;Payment is/will be deferred;Did not report;
+;;;;;;;;;
+Total;1,050,957;32,896;84,971;169,949;242,610;506,799;11,243;2,488;425,069
+Age ;;;;;;;;;
+    18 - 24;77,288;1,476;4,913;16,631;26,453;27,814;-;-;108,714
+    25 - 39;486,186;5,557;36,116;54,545;127,518;261,312;1,137;-;116,887
+    40 - 54;267,854;4,422;33,940;87,246;46,913;93,031;767;1,535;58,566
+    55 - 64;139,266;10,882;9,804;6,864;29,107;72,317;9,339;953;51,974
+    65 and above;80,362;10,558;198;4,663;12,619;52,325;-;-;88,928
+Sex ;;;;;;;;;
+    Male;517,091;22,410;54,491;79,912;91,762;266,123;1,441;953;241,294
+    Female;533,865;10,487;30,480;90,037;150,849;240,676;9,802;1,535;183,775
+Hispanic origin and Race ;;;;;;;;;
+    Hispanic or Latino (may be of any race);161,635;9,081;15,553;59,797;17,928;59,276;-;-;55,834
+    White alone, not Hispanic;745,231;22,042;59,031;93,792;156,616;410,100;2,698;953;304,626
+    Black alone, not Hispanic;37,473;-;2,981;9,834;5,243;17,879;-;1,535;11,192
+    Asian alone, not Hispanic;34,116;466;244;3,062;22,735;7,609;-;-;10,017
+    Two or more races + Other races, not Hispanic;72,502;1,308;7,162;3,464;40,089;11,935;8,544;-;43,400
+Education ;;;;;;;;;
+    Less than high school;78,792;9,403;9,922;23,911;4,953;29,068;-;1,535;57,244
+    High school or GED;299,391;14,086;38,978;63,018;61,848;111,965;8,544;953;153,297
+    Some college/associate’s degree;380,508;8,107;29,842;66,022;81,258;193,839;1,441;-;126,692
+    Bachelor’s degree or higher;292,266;1,301;6,229;16,998;94,552;171,928;1,258;-;87,836
+Marital status ;;;;;;;;;
+    Married;321,270;6,428;14,750;76,841;39,875;174,064;9,311;-;150,342
+    Widowed;32,660;4,365;1,946;464;14,286;11,598;-;-;5,336
+    Divorced/separated;234,092;16,633;38,399;26,142;46,396;104,590;1,932;-;50,312
+    Never married;460,632;5,470;29,876;66,502;139,749;216,547;-;2,488;208,255
+    Did not report;2,303;-;-;-;2,303;-;-;-;10,824
+Presence of children under 18 years old ;;;;;;;;;
+    Children in household;356,371;5,420;26,678;104,614;67,947;147,478;2,698;1,535;238,363
+    No children;694,586;27,476;58,293;65,334;174,664;359,321;8,544;953;186,706
+Respondent or household member experienced loss of employment income ;;;;;;;;;
+    Yes;660,469;7,517;75,948;157,818;170,248;237,417;10,569;953;240,408
+    No;390,128;25,379;9,023;12,131;72,004;269,383;674;1,535;175,312
+    Did not report;359;-;-;-;359;-;-;-;9,350
+Respondent currently employed ;;;;;;;;;
+    Yes;585,709;3,717;27,923;78,093;154,037;319,518;1,469;953;217,024
+    No;463,698;29,179;57,048;90,665;88,214;187,281;9,774;1,535;198,695
+    Did not report;1,550;-;-;1,191;359;-;-;-;9,350
+Household income ;;;;;;;;;
+    Less than $25,000;241,865;19,124;22,582;49,240;23,663;126,793;463;-;-
+    $25,000 - $34,999;196,428;4,519;8,901;39,924;86,697;56,388;-;-;-
+    $35,000 - $49,999;173,519;2,782;22,365;39,659;45,746;53,750;9,218;-;414
+    $50,000 - $74,999;200,356;4,691;9,399;20,201;53,052;112,246;767;-;-
+    $75,000 - $99,999;122,570;240;9,294;16,691;21,938;74,408;-;-;-
+    $100,000 - $149,999;78,774;-;6,738;794;6,675;63,773;795;-;-
+    $150,000 - $199,999;12,240;-;-;-;998;11,242;-;-;-
+    $200,000 and above;3,321;-;-;-;2,250;1,072;-;-;-
+    Did not report;21,884;1,541;5,694;3,441;1,591;7,129;-;2,488;424,655
