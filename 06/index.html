@@ -65,7 +65,7 @@ summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; outline: none; }
 		const xhr = new XMLHttpRequest();
 		xhr.open( "get", url, true );
 		xhr.onload = () => {
-			const txt = xhr.responseText.replace( /\<!--@@@/, "").replace( /\@@@-->/, "");
+			const txt = xhr.responseText.replace( /\<!--@@@/g, "").replace( /\@@@-->/g, "");
 			divContent.innerHTML = new showdown.Converter( options ).makeHtml( txt );
 		}
 		xhr.send( null );

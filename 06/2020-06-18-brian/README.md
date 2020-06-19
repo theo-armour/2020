@@ -7,7 +7,7 @@ value="You are now in a GitHub web page view - Click this button to view this re
 
 <!--@@@
 <iframe src=https://theo-armour.github.io/2020/06/2020-06-18-brian/ height=500px width=100% ></iframe>
-_2020-06-19 Brian_
+_Metro Area Stats - use your fingers or pointing device to zoom, pan and rotate the view _
 @@@-->
 
 ### Full Screen: [2020-06-19 Brian]( https://theo-armour.github.io/2020/06/2020-06-18-brian/)
