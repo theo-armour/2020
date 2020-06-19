@@ -6,21 +6,21 @@ value='You are now in a GitHub web page view - Click this button to view this re
 
 # [Theo Armour June 2020 Read Me]( ./index.html )
 
-## [2020-06-19-don]( ./index.html#2020-06-19-don.md )
+## [2020-06-19-don]( https://theo-armour.github.io/2020/06/index.html#2020-06-19-don.md )
 
 * CV update and architecture stuff
 
-## [2020-06-18 Brian]( ./2020-06-18-brian/readme.html )
+## [2020-06-18 Brian]( https://theo-armour.github.io/2020/06/2020-06-18-brian/readme.html )
 
 * A first pass - and a fail - at visualizing recent census bureau data
 
 
-## [2020-06-13 Brian]( ./index.html#2020-06-13-brian.md )
+## [2020-06-13 Brian]( https://theo-armour.github.io/2020/06/index.html#2020-06-13-brian.md )
 
 * Views of some of my 3D mapping project from 2012 to 2016
 
 
-## [2020-06-12 Andrew]( ./index.html#2020-06-12-andrew.md )
+## [2020-06-12 Andrew]( https://theo-armour.github.io/2020/06/index.html#2020-06-12-andrew.md )
 
 * Views of my recent COVID-19 trackers and 3D globe visualizations
 
