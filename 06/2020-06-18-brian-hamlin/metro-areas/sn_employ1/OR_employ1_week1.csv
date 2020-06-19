@@ -1,0 +1,53 @@
+Standard Error Employment Table 1. Experienced and Expected Loss of Employment Income, by Select Characteristics: Los Angeles-Long Beach-Anaheim, CA Metro Area;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 6.;;;;;;;
+Total Population 18 Years and Older;;;;;;;
+Select characteristics;Total;Experienced loss of employment income since March 13, 2020 (for self or household member);Experienced loss of employment income since March 13, 2020 (for self or household member);Experienced loss of employment income since March 13, 2020 (for self or household member);Expected loss of employment income in next 4-weeks (for self or household member);Expected loss of employment income in next 4-weeks (for self or household member);Expected loss of employment income in next 4-weeks (for self or household member)
+;;Yes;No;Did not report;Yes;No;Did not report
+;;;;;;;
+Total;355,323;324,538;251,046;19,075;294,331;269,633;66,728
+Age ;;;;;;;
+    18 - 24;188,261;157,824;115,769;5,828;125,474;162,516;-
+    25 - 39;198,429;174,474;144,320;4,345;159,584;173,426;4,345
+    40 - 54;174,523;172,880;124,950;11,755;168,898;129,355;8,248
+    55 - 64;189,119;161,829;109,315;11,682;156,358;120,502;-
+    65 and above;190,557;101,776;145,370;8,081;97,705;118,443;66,025
+Sex ;;;;;;;
+    Male;363,973;287,285;238,360;11,682;255,606;247,711;66,042
+    Female;297,469;242,027;148,539;15,332;212,809;210,702;9,924
+Hispanic origin and Race ;;;;;;;
+    Hispanic or Latino (may be of any race);233,572;252,688;160,833;10,625;220,227;198,323;66,112
+    White alone, not Hispanic;151,905;133,878;111,487;16,049;137,255;122,364;9,010
+    Black alone, not Hispanic;118,462;108,800;54,777;-;101,736;70,794;-
+    Asian alone, not Hispanic;179,489;136,644;131,736;4,203;90,394;170,041;4,203
+    Two or more races + Other races, not Hispanic;85,923;50,459;70,164;-;48,391;77,091;-
+Education ;;;;;;;
+    Less than high school;230,282;230,091;144,962;17,112;207,569;164,945;65,793
+    High school or GED;251,604;158,307;178,975;6,851;142,388;210,042;6,903
+    Some college/associate’s degree;199,081;175,476;108,580;4,128;170,153;120,892;4,128
+    Bachelor’s degree or higher;148,188;127,953;109,704;6,637;107,703;131,357;8,936
+Marital status ;;;;;;;
+    Married;249,582;191,624;163,015;15,885;162,505;197,529;66,042
+    Widowed;113,492;109,917;30,910;-;112,775;29,883;437
+    Divorced/separated;212,980;181,165;82,941;7,509;180,648;73,854;7,201
+    Never married;339,646;286,513;204,453;5,828;213,901;230,236;-
+    Did not report;11,111;7,067;3,562;6,855;7,067;3,562;6,855
+Presence of children under 18 years old ;;;;;;;
+    Children in household;277,674;240,694;201,434;12,071;219,030;219,979;8,332
+    No children;334,975;267,420;185,588;14,848;237,349;208,857;66,722
+Health status ;;;;;;;
+    Excellent;205,990;152,903;110,538;11,803;151,370;126,527;1,373
+    Very good;253,051;230,648;136,943;1,816;188,865;164,064;437
+    Good;277,901;207,455;147,151;5,828;191,140;176,548;8,332
+    Fair;190,017;131,031;104,725;10,408;130,318;129,994;-
+    Poor;121,714;116,446;27,035;-;115,798;33,009;-
+    Did not report;199,272;146,456;143,346;9,615;132,485;132,877;66,615
+Household income ;;;;;;;
+    Less than $25,000;167,556;133,327;111,594;10,408;110,631;119,654;8,342
+    $25,000 - $34,999;168,606;154,156;68,853;11,804;141,548;95,567;-
+    $35,000 - $49,999;159,008;145,449;61,225;-;102,929;134,092;-
+    $50,000 - $74,999;185,236;163,979;84,677;-;160,777;87,209;-
+    $75,000 - $99,999;115,763;87,275;90,699;-;96,381;84,919;-
+    $100,000 - $149,999;145,081;102,257;108,919;5,828;102,080;124,375;-
+    $150,000 - $199,999;65,801;41,051;47,635;-;52,540;46,904;-
+    $200,000 and above;83,868;59,210;62,989;1,373;41,686;75,494;1,373
+    Did not report;238,844;162,332;181,051;9,615;134,220;181,760;66,615

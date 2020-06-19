@@ -1,0 +1,2 @@
+The origin "file://" has sent too many requests.
+The number of requests is limited to 200 per 60 minutes. Please self-host CORS Anywhere if you need more quota. See https://github.com/Rob--W/cors-anywhere#demo-server

@@ -1,0 +1,53 @@
+Employment Table 1. Experienced and Expected Loss of Employment Income, by Select Characteristics: San Francisco-Oakland-Berkeley, CA Metro Area;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 5.;;;;;;;
+Total Population 18 Years and Older;;;;;;;
+Select characteristics;Total;Experienced loss of employment income since March 13, 2020 (for self or household member);Experienced loss of employment income since March 13, 2020 (for self or household member);Experienced loss of employment income since March 13, 2020 (for self or household member);Expected loss of employment income in next 4-weeks (for self or household member);Expected loss of employment income in next 4-weeks (for self or household member);Expected loss of employment income in next 4-weeks (for self or household member)
+;;Yes;No;Did not report;Yes;No;Did not report
+;;;;;;;
+Total;3,713,836;1,782,658;1,920,675;10,503;1,481,319;2,209,649;22,868
+Age ;;;;;;;
+    18 - 24;387,985;195,499;192,485;-;133,968;245,550;8,466
+    25 - 39;1,125,739;619,944;502,081;3,714;418,627;701,284;5,827
+    40 - 54;987,653;465,646;521,096;911;520,930;465,595;1,128
+    55 - 64;564,252;315,954;242,707;5,591;241,067;317,316;5,868
+    65 and above;648,208;185,615;462,305;287;166,726;479,903;1,578
+Sex ;;;;;;;
+    Male;1,821,906;900,618;912,173;9,115;843,676;968,898;9,331
+    Female;1,891,930;882,040;1,008,502;1,388;637,643;1,240,750;13,537
+Hispanic origin and Race ;;;;;;;
+    Hispanic or Latino (may be of any race);836,252;596,947;239,305;-;506,353;329,898;-
+    White alone, not Hispanic;1,460,468;582,146;868,389;9,933;364,923;1,073,247;22,298
+    Black alone, not Hispanic;280,572;202,753;77,249;570;201,841;78,161;570
+    Asian alone, not Hispanic;791,308;232,410;558,898;-;242,908;548,401;-
+    Two or more races + Other races, not Hispanic;345,235;168,401;176,834;-;165,294;179,941;-
+Education ;;;;;;;
+    Less than high school;570,568;308,612;256,896;5,060;269,988;295,520;5,060
+    High school or GED;734,807;356,517;378,289;-;457,044;276,185;1,578
+    Some college/associate’s degree;912,320;545,050;363,389;3,881;351,331;548,652;12,338
+    Bachelor’s degree or higher;1,496,141;572,478;922,100;1,562;402,957;1,089,292;3,892
+Marital status ;;;;;;;
+    Married;1,773,390;740,203;1,028,127;5,060;737,679;1,028,538;7,173
+    Widowed;74,859;20,225;54,346;287;17,227;57,632;-
+    Divorced/separated;393,479;277,010;116,469;-;221,089;170,534;1,856
+    Never married;1,456,030;740,615;715,416;-;500,720;946,627;8,683
+    Did not report;16,077;4,604;6,317;5,156;4,604;6,317;5,156
+Presence of children under 18 years old ;;;;;;;
+    Children in household;1,366,605;609,221;756,814;570;644,167;719,754;2,683
+    No children;2,347,231;1,173,437;1,163,861;9,933;837,152;1,489,895;20,185
+Health status ;;;;;;;
+    Excellent;856,150;384,907;471,243;-;239,851;614,442;1,856
+    Very good;1,082,968;541,351;541,616;-;368,577;712,061;2,330
+    Good;831,381;334,149;497,232;-;416,342;415,038;-
+    Fair;375,184;250,599;124,584;-;249,404;125,780;-
+    Poor;50,111;11,669;38,441;-;10,515;39,596;-
+    Did not report;518,043;259,982;247,558;10,503;196,630;302,731;18,682
+Household income ;;;;;;;
+    Less than $25,000;325,957;185,019;140,938;-;164,666;161,291;-
+    $25,000 - $34,999;347,077;296,174;50,904;-;296,943;49,857;277
+    $35,000 - $49,999;142,431;73,189;69,242;-;75,933;64,919;1,578
+    $50,000 - $74,999;329,475;103,231;226,244;-;202,593;126,882;-
+    $75,000 - $99,999;343,313;237,387;105,926;-;141,261;202,053;-
+    $100,000 - $149,999;424,751;215,175;209,576;-;149,700;275,050;-
+    $150,000 - $199,999;367,632;130,860;236,772;-;94,030;273,602;-
+    $200,000 and above;715,656;201,240;514,416;-;121,026;592,300;2,330
+    Did not report;717,543;340,382;366,657;10,503;235,167;463,693;18,682
