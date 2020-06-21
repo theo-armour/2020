@@ -1,0 +1,54 @@
+Housing Table 2b. Confidence in Ability to Make Next Month's Payment for Renter-Occupied Housing Units, by Select Characteristics: San Francisco-Oakland-Berkeley, CA Metro Area;;;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 5.;;;;;;;;;
+Total Population 18 Years and Older in Renter-Occupied Housing Units;;;;;;;;;
+Select characteristics;Total;Occupied without rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Did not report to tenure
+;;;No confidence;Slight confidence;Moderate confidence;High confidence;Payment is/will be deferred;Did not report;
+;;;;;;;;;
+Total;1,453,585;32,114;145,720;164,643;331,858;720,870;49,515;8,866;567,784
+Age ;;;;;;;;;
+    18 - 24;109,494;12,923;18,301;15,753;40,505;22,013;-;-;123,253
+    25 - 39;715,855;4,266;87,568;102,932;74,810;443,985;1,779;515;111,920
+    40 - 54;349,416;5,689;36,168;40,260;130,754;131,665;4,880;-;97,288
+    55 - 64;185,908;3,727;3,684;1,356;47,495;78,440;42,855;8,351;82,986
+    65 and above;92,913;5,508;-;4,343;38,294;44,767;-;-;152,337
+Sex ;;;;;;;;;
+    Male;720,863;25,134;88,083;109,742;173,755;317,167;6,161;820;183,505
+    Female;732,722;6,980;57,637;54,901;158,103;403,703;43,354;8,046;384,279
+Hispanic origin and Race ;;;;;;;;;
+    Hispanic or Latino (may be of any race);446,314;2,704;66,679;90,277;175,735;62,324;40,549;8,046;164,879
+    White alone, not Hispanic;528,593;8,227;20,606;20,940;66,035;404,726;7,239;820;153,890
+    Black alone, not Hispanic;153,731;12,923;28,859;27,718;51,676;30,828;1,727;-;47,333
+    Asian alone, not Hispanic;214,232;6,161;24,271;25,708;32,042;126,050;-;-;163,284
+    Two or more races + Other races, not Hispanic;110,715;2,099;5,304;-;6,371;96,941;-;-;38,399
+Education ;;;;;;;;;
+    Less than high school;293,905;4,266;80,134;30,915;104,138;26,179;40,228;8,046;197,003
+    High school or GED;268,489;12,923;24,606;61,609;101,122;68,230;-;-;99,096
+    Some college/associate’s degree;359,476;3,318;33,232;57,892;74,758;187,185;3,091;-;154,433
+    Bachelor’s degree or higher;531,715;11,607;7,748;14,228;51,840;439,276;6,195;820;117,253
+Marital status ;;;;;;;;;
+    Married;525,982;6,618;32,583;48,460;182,717;249,535;6,068;-;167,335
+    Widowed;4,012;30;774;-;-;3,208;-;-;17,277
+    Divorced/separated;180,830;1,230;47,900;12,900;42,807;67,102;541;8,351;74,281
+    Never married;739,620;24,235;62,108;103,284;106,334;400,238;42,906;515;302,653
+    Did not report;3,141;-;2,355;-;-;786;-;-;6,238
+Presence of children under 18 years old ;;;;;;;;;
+    Children in household;422,137;8,792;70,840;100,303;106,819;135,179;204;-;250,733
+    No children;1,031,448;23,321;74,881;64,340;225,039;585,691;49,311;8,866;317,051
+Respondent or household member experienced loss of employment income ;;;;;;;;;
+    Yes;868,649;10,772;113,166;144,174;289,501;302,070;8,966;-;277,681
+    No;584,937;21,341;32,554;20,470;42,357;418,799;40,549;8,866;279,599
+    Did not report;-;-;-;-;-;-;-;-;10,503
+Respondent currently employed ;;;;;;;;;
+    Yes;833,875;14,026;46,843;41,815;198,944;525,901;5,526;820;245,186
+    No;619,710;18,088;98,877;122,829;132,914;194,968;43,989;8,046;312,382
+    Did not report;-;-;-;-;-;-;-;-;10,216
+Household income ;;;;;;;;;
+    Less than $25,000;272,047;20,088;71,070;19,640;80,062;40,960;40,228;-;6,545
+    $25,000 - $34,999;278,935;954;46,787;65,057;133,592;28,861;3,684;-;-
+    $35,000 - $49,999;89,227;5,442;8,545;21,322;18,697;35,018;204;-;236
+    $50,000 - $74,999;97,910;-;11,544;9,795;19,990;56,581;-;-;-
+    $75,000 - $99,999;203,131;-;1,117;41,402;28,601;132,010;-;-;-
+    $100,000 - $149,999;175,106;287;-;6,516;39,251;128,654;398;-;7,568
+    $150,000 - $199,999;122,581;-;-;-;3,388;115,378;3,815;-;-
+    $200,000 and above;185,505;5,343;-;911;5,335;172,730;1,186;-;-
+    Did not report;29,145;-;6,658;-;2,943;10,678;-;8,866;553,435

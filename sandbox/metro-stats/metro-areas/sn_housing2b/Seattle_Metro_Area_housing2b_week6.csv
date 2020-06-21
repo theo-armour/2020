@@ -1,0 +1,54 @@
+Housing Table 2b. Confidence in Ability to Make Next Month's Payment for Renter-Occupied Housing Units, by Select Characteristics: Seattle-Tacoma-Bellevue, WA Metro Area;;;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 5.;;;;;;;;;
+Total Population 18 Years and Older in Renter-Occupied Housing Units;;;;;;;;;
+Select characteristics;Total;Occupied without rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Did not report to tenure
+;;;No confidence;Slight confidence;Moderate confidence;High confidence;Payment is/will be deferred;Did not report;
+;;;;;;;;;
+Total;1,082,910;15,855;178,563;87,001;143,456;648,620;8,011;1,404;325,569
+Age ;;;;;;;;;
+    18 - 24;141,421;3,080;-;3,394;19,932;115,015;-;-;99,443
+    25 - 39;633,091;7,419;148,463;54,630;78,836;337,070;5,608;1,065;72,772
+    40 - 54;168,789;4,833;26,960;24,150;31,202;80,298;1,347;-;54,858
+    55 - 64;83,159;-;2,608;4,341;10,906;64,034;931;339;53,576
+    65 and above;56,450;524;531;487;2,580;52,203;125;-;44,920
+Sex ;;;;;;;;;
+    Male;683,519;9,457;142,325;50,425;91,948;387,968;1,056;339;174,862
+    Female;399,391;6,398;36,237;36,577;51,508;260,652;6,954;1,065;150,707
+Hispanic origin and Race ;;;;;;;;;
+    Hispanic or Latino (may be of any race);119,027;219;-;30,058;18,833;66,954;2,963;-;61,483
+    White alone, not Hispanic;685,327;12,420;58,810;40,744;87,285;481,614;4,116;339;158,520
+    Black alone, not Hispanic;56,276;-;5,191;8,143;21,281;20,596;-;1,065;37,906
+    Asian alone, not Hispanic;53,262;617;1,650;4,716;13,288;32,058;931;-;25,877
+    Two or more races + Other races, not Hispanic;169,018;2,599;112,911;3,340;2,769;47,398;-;-;41,782
+Education ;;;;;;;;;
+    Less than high school;185,735;-;124,176;25,272;5,213;31,074;-;-;32,462
+    High school or GED;142,286;-;9,651;12,445;23,198;96,992;-;-;137,259
+    Some college/associate’s degree;343,539;12,653;38,414;31,533;69,029;187,881;2,963;1,065;80,538
+    Bachelor’s degree or higher;411,350;3,202;6,322;17,752;46,015;332,673;5,047;339;75,311
+Marital status ;;;;;;;;;
+    Married;324,054;2,405;10,882;38,423;51,687;220,132;186;339;97,258
+    Widowed;11,594;-;-;3,340;4,587;3,667;-;-;14,993
+    Divorced/separated;113,562;3,646;23,233;13,262;14,347;56,857;2,217;-;43,270
+    Never married;633,531;9,804;144,448;31,976;72,835;367,795;5,608;1,065;151,842
+    Did not report;170;-;-;-;-;170;-;-;18,207
+Presence of children under 18 years old ;;;;;;;;;
+    Children in household;232,510;4,333;30,468;39,690;29,138;124,277;4,604;-;132,336
+    No children;850,400;11,522;148,094;47,311;114,318;524,343;3,406;1,404;193,233
+Respondent or household member experienced loss of employment income ;;;;;;;;;
+    Yes;626,969;6,115;178,459;75,412;109,548;254,206;2,164;1,065;125,012
+    No;455,941;9,740;104;11,590;33,908;394,414;5,846;339;183,320
+    Did not report;-;-;-;-;-;-;-;-;17,238
+Respondent currently employed ;;;;;;;;;
+    Yes;706,803;9,162;29,092;59,703;74,586;529,461;4,461;339;159,975
+    No;376,107;6,693;149,470;27,299;68,870;119,160;3,550;1,065;148,357
+    Did not report;-;-;-;-;-;-;-;-;17,238
+Household income ;;;;;;;;;
+    Less than $25,000;232,562;7,146;132,752;18,386;20,148;53,199;931;-;-
+    $25,000 - $34,999;122,964;2,533;19,610;5,664;11,135;83,605;417;-;-
+    $35,000 - $49,999;150,281;1,261;5,375;4,086;45,139;94,421;-;-;-
+    $50,000 - $74,999;149,064;2,909;15,837;21,951;24,180;83,026;1,161;-;230
+    $75,000 - $99,999;99,791;125;1,650;32,476;12,927;46,896;5,377;339;2,813
+    $100,000 - $149,999;157,330;417;655;446;13,561;142,127;125;-;-
+    $150,000 - $199,999;113,296;-;1,898;2,043;7,523;101,831;-;-;-
+    $200,000 and above;45,454;1,465;-;-;3,063;40,926;-;-;-
+    Did not report;12,168;-;785;1,950;5,779;2,589;-;1,065;322,526

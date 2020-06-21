@@ -1,0 +1,54 @@
+Housing Table 2b. Confidence in Ability to Make Next Month's Payment for Renter-Occupied Housing Units, by Select Characteristics: Los Angeles-Long Beach-Anaheim, CA Metro Area;;;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 6.;;;;;;;;;
+Total Population 18 Years and Older in Renter-Occupied Housing Units;;;;;;;;;
+Select characteristics;Total;Occupied without rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Did not report to tenure
+;;;No confidence;Slight confidence;Moderate confidence;High confidence;Payment is/will be deferred;Did not report;
+;;;;;;;;;
+Total;4,059,682;142,592;714,494;485,514;977,384;1,706,732;32,714;253;1,609,349
+Age ;;;;;;;;;
+    18 - 24;270,112;20,567;-;31,852;44,066;173,627;-;-;428,371
+    25 - 39;1,616,724;35,749;276,486;169,087;403,621;720,937;10,844;-;512,978
+    40 - 54;1,183,776;35,962;382,369;174,637;230,704;359,851;-;253;314,954
+    55 - 64;719,343;34,252;13,913;96,241;204,746;348,858;21,333;-;152,512
+    65 and above;269,726;16,062;41,726;13,697;94,248;103,458;536;-;200,532
+Sex ;;;;;;;;;
+    Male;1,899,704;52,494;237,228;224,486;371,647;998,140;15,709;-;946,434
+    Female;2,159,978;90,098;477,266;261,027;605,737;708,593;17,004;253;662,915
+Hispanic origin and Race ;;;;;;;;;
+    Hispanic or Latino (may be of any race);1,801,516;76,733;474,155;216,051;435,162;593,532;5,883;-;853,828
+    White alone, not Hispanic;1,165,632;47,385;66,008;70,993;232,384;735,889;12,721;253;338,139
+    Black alone, not Hispanic;385,945;3,656;51,050;19,994;184,998;121,588;4,660;-;31,843
+    Asian alone, not Hispanic;521,693;14,818;52,234;126,687;114,534;213,419;-;-;245,595
+    Two or more races + Other races, not Hispanic;184,896;-;71,047;51,789;10,305;42,304;9,451;-;139,944
+Education ;;;;;;;;;
+    Less than high school;934,556;26,304;441,413;141,242;184,336;130,710;10,552;-;368,691
+    High school or GED;653,224;42,711;71,323;18,298;189,838;331,055;-;-;433,036
+    Some college/associate’s degree;1,289,023;51,067;154,491;200,553;363,294;497,740;21,626;253;439,588
+    Bachelor’s degree or higher;1,182,878;22,511;47,267;125,420;239,917;747,228;536;-;368,034
+Marital status ;;;;;;;;;
+    Married;1,477,392;34,709;399,373;199,371;238,850;591,545;13,544;-;465,620
+    Widowed;225,423;9,800;26,267;9,219;155,742;24,395;-;-;16,133
+    Divorced/separated;801,778;4,652;219,308;89,551;123,563;352,107;12,345;253;116,641
+    Never married;1,554,226;93,431;69,546;186,510;459,229;738,685;6,825;-;992,164
+    Did not report;863;-;-;863;-;-;-;-;18,791
+Presence of children under 18 years old ;;;;;;;;;
+    Children in household;1,575,193;22,641;563,478;270,042;304,549;405,267;9,215;-;711,481
+    No children;2,484,489;119,951;151,015;215,471;672,835;1,301,465;23,499;253;897,867
+Respondent or household member experienced loss of employment income ;;;;;;;;;
+    Yes;2,720,700;103,659;641,111;350,081;770,846;827,919;26,831;253;813,862
+    No;1,318,299;38,933;63,223;124,910;206,538;878,813;5,883;-;772,125
+    Did not report;20,682;-;10,160;10,522;-;-;-;-;23,361
+Respondent currently employed ;;;;;;;;;
+    Yes;2,304,623;75,773;157,436;232,552;428,535;1,401,743;8,584;-;709,279
+    No;1,744,537;66,819;557,058;242,440;548,849;304,989;24,130;253;804,538
+    Did not report;10,522;-;-;10,522;-;-;-;-;95,532
+Household income ;;;;;;;;;
+    Less than $25,000;794,691;64,098;411,438;96,451;104,645;110,981;6,825;253;7,622
+    $25,000 - $34,999;807,848;13,186;48,601;93,420;365,368;279,987;7,285;-;-
+    $35,000 - $49,999;597,205;22,926;87,913;146,605;116,487;223,274;-;-;-
+    $50,000 - $74,999;483,142;11,435;72,173;75,146;108,327;215,525;536;-;-
+    $75,000 - $99,999;470,079;6,086;41,750;10,189;70,333;329,536;12,185;-;-
+    $100,000 - $149,999;526,176;2,114;21,427;21,058;174,670;306,908;-;-;-
+    $150,000 - $199,999;171,010;2,181;20,198;10,993;29,759;101,997;5,883;-;1,073
+    $200,000 and above;115,329;-;-;-;455;114,874;-;-;-
+    Did not report;94,203;20,567;10,995;31,652;7,340;23,649;-;-;1,600,653

@@ -1,0 +1,53 @@
+Housing Table 1a. Last Month's Payment Status for Owner-Occupied Housing Units, by Select Characteristics: Seattle-Tacoma-Bellevue, WA Metro Area;;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 3.;;;;;;;;
+Total Population 18 Years and Older in Owner-Occupied Housing Units;;;;;;;;
+Select characteristics;Total;Owned free and clear;Last month’s payment status;Last month’s payment status;Last month’s payment status;Last month’s payment status;Renter occupied;Did not respond to tenure
+;;;Yes;No;Mortgage payment was deferred;Did not respond;;
+;;;;;;;;
+Age ;;;;;;;;
+    18 - 24;111,990;61,250;45,774;4,966;-;-;67,483;75,233
+    25 - 39;493,171;78,930;367,019;34,105;7,400;5,717;490,930;58,299
+    40 - 54;464,370;47,337;395,497;8,660;12,876;-;165,156;45,878
+    55 - 64;422,634;109,948;297,804;11,548;3,333;-;91,575;33,727
+    65 and above;445,129;268,058;157,502;12,529;7,040;-;96,754;35,973
+Sex ;;;;;;;;
+    Male;1,043,814;348,409;644,896;37,724;7,796;4,989;459,522;133,705
+    Female;893,481;217,114;618,701;34,084;22,855;727;452,376;115,405
+Hispanic origin and Race ;;;;;;;;
+    Hispanic or Latino (may be of any race);131,700;7,873;115,132;3,191;516;4,989;166,925;45,645
+    White alone, not Hispanic;1,292,313;423,034;820,080;21,666;26,806;727;534,079;146,286
+    Black alone, not Hispanic;100,875;2,434;52,312;44,228;1,901;-;75,431;14,068
+    Asian alone, not Hispanic;306,404;110,997;194,462;145;800;-;53,388;27,047
+    Two or more races + Other races, not Hispanic;106,003;21,185;81,612;2,578;628;-;82,075;16,064
+Education ;;;;;;;;
+    Less than high school;84,983;10,308;73,948;-;-;727;91,497;33,966
+    High school or GED;296,867;124,943;147,089;18,558;1,288;4,989;235,907;81,881
+    Some college/associate’s degree;685,337;212,588;404,041;46,388;22,320;-;244,991;98,887
+    Bachelor’s degree or higher;870,107;217,684;638,519;6,861;7,043;-;339,504;34,376
+Marital status ;;;;;;;;
+    Married;1,314,252;356,387;873,366;56,482;28,018;-;284,060;90,472
+    Widowed;50,732;21,332;29,184;216;-;-;21,290;6,557
+    Divorced/separated;175,292;43,171;121,197;9,514;684;727;187,467;25,299
+    Never married;396,568;144,633;239,400;5,597;1,949;4,989;408,812;116,895
+    Did not report;451;-;451;-;-;-;10,270;9,886
+Presence of children under 18 years old ;;;;;;;;
+    Children in household;591,095;50,616;508,109;25,226;7,144;-;220,706;108,747
+    No children;1,346,200;514,907;755,488;46,582;23,507;5,717;691,192;140,362
+Respondent or household member experienced loss of employment income ;;;;;;;;
+    Yes;755,295;160,778;506,860;65,026;21,903;727;495,786;127,855
+    No;1,181,866;404,611;756,737;6,781;8,748;4,989;416,112;118,950
+    Did not report;133;133;-;-;-;-;-;2,305
+Respondent currently employed ;;;;;;;;
+    Yes;1,106,859;210,408;864,157;16,066;16,228;-;521,767;141,387
+    No;830,435;355,114;399,440;55,741;14,423;5,717;389,858;103,843
+    Did not report;-;-;-;-;-;-;273;3,880
+Household income ;;;;;;;;
+    Less than $25,000;38,303;27,239;8,695;2,171;198;-;134,375;356
+    $25,000 - $34,999;63,435;21,803;21,947;12,949;6,736;-;148,106;548
+    $35,000 - $49,999;141,809;31,187;71,657;37,415;1,549;-;77,812;-
+    $50,000 - $74,999;324,850;194,888;113,504;5,074;10,656;727;182,079;-
+    $75,000 - $99,999;284,985;80,041;198,423;4,645;1,876;-;98,084;1,198
+    $100,000 - $149,999;412,676;84,652;317,920;4,414;5,691;-;155,791;6,073
+    $150,000 - $199,999;180,729;35,758;141,499;2,480;991;-;60,746;-
+    $200,000 and above;447,817;77,919;365,053;2,145;2,700;-;44,452;-
+    Did not report;42,691;12,034;24,898;515;254;4,989;10,453;240,935

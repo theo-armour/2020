@@ -1,0 +1,53 @@
+Housing Table 2b. Confidence in Ability to Make Next Month's Payment for Renter-Occupied Housing Units, by Select Characteristics: Seattle-Tacoma-Bellevue, WA Metro Area;;;;;;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 1.;;;;;;;;;;
+Total Population 18 Years and Older in Renter-Occupied Housing Units;;;;;;;;;;
+Select characteristics;Total;Occupied without rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Confidence to pay next month’s rent;Owner occupied;Did not respond to tenure
+;;;No confidence;Slight confidence;Moderate confidence;High confidence;Payment is/will be deferred;Did not respond;;
+;;;;;;;;;;
+Age ;;;;;;;;;;
+    18 - 24;140,528;-;3,900;5,109;14,317;117,202;-;-;63,979;12,806
+    25 - 39;581,704;47,786;60,984;50,548;131,090;283,124;5,365;2,807;475,353;85,721
+    40 - 54;192,463;5,289;25,344;37,396;49,899;72,930;1,606;-;499,059;56,920
+    55 - 64;79,600;5,933;8,674;4,740;14,150;46,103;-;-;368,333;37,213
+    65 and above;106,314;4,831;4,041;4,782;14,071;76,906;1,683;-;446,247;48,915
+Sex ;;;;;;;;;;
+    Male;598,213;44,747;59,821;25,341;94,593;366,401;7,310;-;974,451;118,578
+    Female;502,397;19,091;43,123;77,235;128,934;229,865;1,343;2,807;878,520;122,997
+Hispanic origin and Race ;;;;;;;;;;
+    Hispanic or Latino (may be of any race);133,170;38,469;5,799;9,694;48,190;31,018;-;-;159,305;18,299
+    White alone, not Hispanic;632,927;17,668;39,098;46,676;118,905;400,802;6,971;2,807;1,274,316;159,269
+    Black alone, not Hispanic;55,248;2,713;6,988;6,336;5,747;33,465;-;-;46,579;21,131
+    Asian alone, not Hispanic;135,351;2,277;27,277;13,239;25,713;65,162;1,683;-;249,712;23,700
+    Two or more races + Other races, not Hispanic;143,914;2,713;23,782;26,630;24,972;65,818;-;-;123,058;19,176
+Education ;;;;;;;;;;
+    Less than high school;67,576;4,990;22,710;4,609;30,072;5,195;-;-;66,507;5,131
+    High school or GED;322,548;31,355;47,625;41,423;64,882;137,264;-;-;426,610;83,899
+    Some college/associate’s degree;377,390;26,022;21,920;36,310;85,074;204,776;3,289;-;526,287;80,450
+    Bachelor’s degree or higher;333,096;1,472;10,688;20,234;43,499;249,031;5,365;2,807;833,566;72,095
+Marital status ;;;;;;;;;;
+    Married;425,501;23,703;24,876;48,254;67,492;252,453;5,915;2,807;1,213,757;117,077
+    Widowed;17,459;-;-;-;6,678;10,781;-;-;54,893;1,528
+    Divorced/separated;201,702;4,596;30,487;20,261;75,243;71,114;-;-;248,512;24,227
+    Never married;454,807;35,539;46,440;34,060;74,113;261,917;2,738;-;322,950;87,463
+    Did not report;1,140;-;1,140;-;-;-;-;-;12,859;11,280
+Presence of children under 18 years old ;;;;;;;;;;
+    Children in household;338,772;6,655;40,157;41,144;75,197;172,334;3,286;-;630,674;64,077
+    No children;761,838;57,183;62,787;61,432;148,329;423,931;5,368;2,807;1,222,296;177,498
+Respondent or household member experienced loss of employment income ;;;;;;;;;;
+    Yes;609,029;23,254;90,529;74,967;154,047;263,206;3,026;-;754,869;136,463
+    No;491,581;40,584;12,415;27,609;69,479;333,059;5,627;2,807;1,085,231;98,305
+    Did not report;-;-;-;-;-;-;-;-;12,870;6,806
+Respondent currently employed ;;;;;;;;;;
+    Yes;628,721;32,918;20,692;47,165;94,625;427,091;3,423;2,807;1,064,502;138,266
+    No;471,889;30,920;82,251;55,411;128,902;169,174;5,231;-;788,469;95,898
+    Did not report;-;-;-;-;-;-;-;-;-;7,411
+Household income ;;;;;;;;;;
+    Less than $25,000;145,291;32,267;27,927;12,045;27,749;43,620;1,683;-;87,901;8,932
+    $25,000 - $34,999;122,094;-;19,705;29,099;26,515;46,117;659;-;65,252;-
+    $35,000 - $49,999;201,339;26,582;8,589;26,952;55,451;81,685;2,080;-;114,440;1,454
+    $50,000 - $74,999;227,857;2,713;26,947;19,831;64,607;110,870;2,889;-;304,927;-
+    $75,000 - $99,999;157,526;-;15,980;8,367;34,097;97,738;1,343;-;199,437;-
+    $100,000 - $149,999;129,426;-;3,795;1,333;10,234;114,064;-;-;442,072;-
+    $150,000 - $199,999;64,650;-;-;3,103;1,045;60,502;-;-;212,947;-
+    $200,000 and above;43,480;-;-;1,846;3,828;37,806;-;-;365,763;-
+    Did not report;8,948;2,277;-;-;-;3,863;-;2,807;60,231;231,189

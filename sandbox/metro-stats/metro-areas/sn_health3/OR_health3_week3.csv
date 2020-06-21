@@ -1,0 +1,55 @@
+Health Table 3. Current Health Insurance Status, by Select Characteristics: Oregon;;;;;
+Source: U.S. Census Bureau Household Pulse Survey, Week 2.;;;;;
+Total Population 18 Years and Older;;;;;
+Select characteristics;Insured *;Insured *;Insured *;Uninsured;Did not report or don’t know
+;Total;Private;Public;;
+;;;;;
+Total;2,798,343;2,241,125;1,312,673;285,638;218,746
+Age ;;;;;
+    18 - 24;139,886;134,794;81,371;8,365;45,753
+    25 - 34;522,890;395,651;211,147;111,762;46,698
+    35 - 44;533,403;458,760;109,796;104,412;13,918
+    45 - 64;885,378;756,344;240,912;57,618;85,095
+    65 and over;716,786;495,576;669,447;3,482;27,283
+Sex ;;;;;
+    Male;1,314,635;1,122,641;541,373;197,061;102,450
+    Female;1,483,708;1,118,485;771,301;88,577;116,296
+Hispanic origin and Race ;;;;;
+    Hispanic or Latino (may be of any race);289,631;245,898;135,915;132,985;7,547
+    White alone, not Hispanic;2,260,344;1,795,025;1,066,573;140,527;162,688
+    Black alone, not Hispanic;17,835;8,365;17,835;-;9,553
+    Asian alone, not Hispanic;92,912;89,181;41,648;3,761;2,787
+    Two or more races + Other races, not Hispanic;137,622;102,656;50,703;8,365;36,171
+Education ;;;;;
+    Less than high school;71,760;50,577;71,760;-;17,074
+    High school or GED;741,859;593,420;424,013;173,326;86,821
+    Some college/associate’s degree;1,003,600;767,212;478,457;81,234;82,786
+    Bachelor’s degree or higher;981,124;829,917;338,443;31,078;32,065
+Marital status ;;;;;
+    Married;1,599,618;1,351,055;673,003;117,151;108,880
+    Widowed;84,883;51,898;64,766;2,314;4,874
+    Divorced/separated;424,806;291,568;243,257;56,685;33,468
+    Never married;679,479;543,645;325,049;109,487;70,723
+    Did not report;9,557;2,959;6,598;-;802
+Presence of children under 18 years old ;;;;;
+    Children in household;872,523;711,959;315,959;84,901;92,374
+    No children;1,925,820;1,529,167;996,715;200,737;126,372
+Respondent or household member experienced loss of employment income ;;;;;
+    Yes;1,382,092;1,056,351;612,725;215,251;110,065
+    No;1,416,251;1,184,775;699,949;70,387;107,879
+    Did not report;-;-;-;-;802
+Respondent currently employed ;;;;;
+    Yes;1,364,736;1,239,241;328,785;186,304;78,011
+    No;1,433,607;1,001,884;983,889;99,334;139,933
+    Did not report;-;-;-;-;802
+Household income ;;;;;
+    Less than $25,000;332,614;163,638;290,700;93,883;14,944
+    $25,000 - $34,999;271,392;206,591;169,956;30,164;-
+    $35,000 - $49,999;362,756;260,367;224,424;41,616;3,682
+    $50,000 - $74,999;485,149;372,369;242,859;68,549;-
+    $75,000 - $99,999;513,602;473,175;176,065;29,191;4,134
+    $100,000 - $149,999;437,313;409,207;103,669;21,545;-
+    $150,000 - $199,999;168,656;150,158;59,235;690;1,812
+    $200,000 and above;186,423;180,554;16,104;-;690
+    Did not report;40,438;25,067;29,662;-;193,485
+* Totals may not sum to 100% as the question allowed for multiple categories to be marked.;;;;;
