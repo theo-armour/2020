@@ -12,6 +12,7 @@
 
 <title></title>
 
+<link href="style-2020-06-19.css" rel="stylesheet" >
 <style>
 
 /* Copyright 2020 Theo Armour. MIT License */
@@ -46,7 +47,8 @@ input[ type=range ]::-webkit-slider-thumb { -webkit-appearance: none; background
 <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r117/examples/js/controls/OrbitControls.js"></script>
 
 
-<script src="gjs-geojson-2020-06-16.js"></script>
+<script src="gjs-geojson/gjs-geojson-2020-06-21.js"></script>
+<script src="thr-three/ray-raycaster-2020-06-21.js"></script>
 
 
 <nav id="navMenu" >
@@ -64,21 +66,30 @@ input[ type=range ]::-webkit-slider-thumb { -webkit-appearance: none; background
 
 	</header>
 
-	<p>
+	<!-- <p>
 		<output id=outSpeed>50</output>
 		<input type="range" id="inpSpeed" onclick="controls.autoRotateSpeed=0.05 * this.value;outSpeed.innerHTML=this.value;" />
+	</p> -->
+
+	<p>
+		<button onclick=groupPlaces.visible=!groupPlaces.visible; style=background-color:red;width:100% >Census Bureau Places</button>
 	</p>
 
-
+	<p>
+		<button onclick=groupTracts.visible=!groupTracts.visible; style=background-color:aqua;width:100% >Census Bureau Tracts</button>
+	</p>
 	<p
 		title="View the number of objects that need rendering and the total number of triangles used to create the objects">
 		<button onclick="setStats()">setStats</button>
 	</p>
 
 
+	<div id=RAYdivMeshData ></div>
 	<div id="divLog"></div>
 
 </nav>
+
+<div id=divPopUp >Touch or click a data point to view its details</div>
 
 <script>
 
@@ -133,9 +144,25 @@ function init() {
 	camera.position.set( -118, 28, 4 );
 	controls.target.set( -118, 37, 0 );
 
-	url= "../../census-bureau-data/2019_gaz_tracts_06.txt"
+	groupTracts = new THREE.Group();
+	groupPlaces = new THREE.Group();
+	
+	items = [];
 
-	requestFile( url, onLoad )
+	scene.add( groupTracts, groupPlaces );
+
+	url = "../../census-bureau-data/2019_gaz_tracts_06.txt"
+
+	requestFile( url, onLoadTracts );
+
+	urlPlaces = "../../census-bureau-data/2019_gaz_place_06.txt"
+
+	requestFile( urlPlaces, onLoadPlaces );
+
+	RAY.addMouseMove();
+
+	RAY.intersectObjects = items;
+
 
 }
 
@@ -152,33 +179,51 @@ function requestFile( url, callback ) {
 }
 
 
-function onLoad( response ) {
-
+function onLoadTracts( response ) {
 	//console.log( "response", response );
 
 	lines = response.split( "\n" ).map( line => line.trim().split( "\t" ) );
+	//console.log( "lines", lines );
 
-	console.log( "lines", lines );
+	const meshes = lines.map( ( line, index ) => {
 
-
-	addBox( lines ) 
-	
-}
-
-function addBox(  ) {
-
-	meshes = lines.map( line => {
-
-		geometry = new THREE.BoxBufferGeometry(0.01, 0.01, 0.2 );
-		material = new THREE.MeshNormalMaterial();
-		mesh = new THREE.Mesh( geometry, material);
-		mesh.position.set( + line[ 7 ], + line[ 6 ], 0.1 );
+		const geometry = new THREE.BoxBufferGeometry(0.01, 0.01, 0.1 );
+		const material = new THREE.MeshNormalMaterial();
+		const mesh = new THREE.Mesh( geometry, material);
+		mesh.position.set( + line[ 7 ], + line[ 6 ], 0.05 );
+		mesh.userData.index = index;
+		mesh.userData.lines = lines;
 		return mesh;
 		
 	} );
 
-	scene.add( ... meshes )
+	groupTracts.add( ... meshes );
 
+	items.push( ... meshes )
+
+}
+
+
+function onLoadPlaces( response ) {
+	//console.log( "response", response );
+
+	const lines = response.split( "\n" ).map( line => line.trim().split( "\t" ) );
+	//console.log( "lines", lines );
+
+	const meshes = lines.map( ( line, index ) => {
+
+		geometry = new THREE.BoxBufferGeometry(0.01, 0.01, 0.2 );
+		material = new THREE.MeshBasicMaterial( { color: "red"});
+		mesh = new THREE.Mesh( geometry, material);
+		mesh.position.set( + line[ 11 ], + line[ 10 ], 0.1 );
+		mesh.userData.index = index;
+		mesh.userData.lines = lines;
+		return mesh;
+		
+	} );
+
+	groupPlaces.add( ... meshes );
+	items.push( ... meshes );
 }
 
 function setStats () {

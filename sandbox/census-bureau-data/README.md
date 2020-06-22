@@ -7,12 +7,12 @@ value='You are now in a GitHub web page view - Click this button to view this re
 # [ZZZZZ Read Me]( #xxxxxx/README.md )
 
 <!--@@@
-<iframe src=https://theo-armour.github.io/2020/xxxxx eight=500px ></iframe>
+<iframe src=https://theo-armour.github.io/2020/xxxxx height=500px width=100% ></iframe>
 _basic-html.html_
+@@@-->
 
 ### Full Screen: [ZZZZZ]( https://theo-armour.github.io/2020/xxxxx .html )
 
-@@@-->
 
 <details open >
 <summary>Concept</summary>
@@ -45,6 +45,8 @@ _basic-html.html_
 <details open >
 <summary>Links of interest</summary>
 
+USA Census Bureau Data
+
 * https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html
 * https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/gaz-record-layouts.html
 
@@ -53,7 +55,7 @@ _basic-html.html_
 <details open >
 <summary>Change log </summary>
 
-### 123
+### 2020-06-21
 
 * First commit
 
