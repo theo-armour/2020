@@ -1,4 +1,4 @@
-<span style=display:none; >[You are now in a GitHub source code view - click this link to view Read Me file as a web page]( https://theo-armour.github.io/2020/sandbox/us-census-bureau-tracts-ca "View file as a web page." ) </span>
+<span style=display:none; >[You are now in a GitHub source code view - click this link to view Read Me file as a web page]( https://theo-armour.github.io/2020/sandbox/us-census-bureau-tracts-ca/readme.html "View file as a web page." ) </span>
 
 <div><input type=button onclick=window.location.href="https://github.com/theo-armour/2020/tree/master/sandbox/us-census-bureau-tracts-ca";
 value='You are now in a GitHub web page view - Click this button to view this read me file as source code' ></div>
