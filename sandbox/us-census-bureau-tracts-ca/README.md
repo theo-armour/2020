@@ -22,7 +22,7 @@ _In the old days there were preliminary sketches on envelopes and you had to ima
 2020-06-21 Features
 
 * Access, parse and display in 3D the data in 2019_gaz_tracts_06.txt - 8,058 records
-* Access, parse and display in 3D the data in 2019_gaz_place_06.txt -1,522 records
+* Access, parse and display in 3D the data in 2019_gaz_place_06.txt - 1,522 records
 * Menu buttons toggle visibility of the two data sets
 * Mouse over a data point to display its raw data in a pop-up
 
