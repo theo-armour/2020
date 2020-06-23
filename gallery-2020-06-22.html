@@ -20,12 +20,12 @@
 
 html { margin: 0; padding: 0; }
 
-body { margin: 0; overflow: hidden; padding: 0; }
+body { margin: 0;  margin: 0; padding: 0; }
 
 a { color: crimson; text-decoration: none; }
 a:hover, a:focus, a:active { background-color: yellow; color: #aaa; text-decoration: underline }
 
-aside { border: 1px solid lightgray; margin-top: 15px; padding: 2px; }
+aside { border: 1px solid rgb(211, 211, 211); margin-top: 15px; padding: 2px; }
 
 blockquote { background-color: #ddd; padding: 1ch; }
 
@@ -33,7 +33,8 @@ button, input[type=button] { background-color: #ddd; border: none; color: #322; 
 button:hover { background: #ccc; color: #fff }
 
 code { background-color: #eee; }
-pre { background-color: #eee; padding: 5px; }
+
+iframe { border: none; }
 
 input[type="range"] { -webkit-appearance: none; -moz-appearance: none; background-color: #ddd; height: 2ch;
 	width: 100%; }
@@ -42,8 +43,10 @@ input[type="range"]::-moz-range-thumb { background-color: #888; border-radius: 0
 
 input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; background-color: #888; height: 3ch; width: 10px; }
 
-main { border: 0 solid red; height: 100vh; left: var( --mnu-width ); margin: 0;
-	overflow: auto; padding: 0 1rem; position: absolute; width: calc( 100% - var( --mnu-width ) );  }
+main { border: 0 solid red; height: 100%; left: var( --mnu-width ); margin: 0;
+	overflow: auto; padding: 0; position: absolute; width: calc( 100% - var( --mnu-width ) );  }
+
+pre { background-color: #eee; padding: 5px; }
 
 summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; }
 
@@ -60,7 +63,8 @@ summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; }
 
 .sumMenuTitle { background-color: #ccc; color: #777; margin: 10px 0; text-align: center; }
 
-#divContent { margin: 0 auto; max-width: 100ch; }
+#bbdivContent { margin: 0 auto; max-width: 100ch; overflow: hidden; }
+
 #navMenu { background-color: #eee;left: 0; margin: 0; max-height: 100vh; overflow: auto; 
 	padding: 0 1rem; position: absolute; resize: both; top: 0; width: var( --mnu-width ); }
 
@@ -97,7 +101,7 @@ summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; }
 	</p>
 
 	<p>
-		View <a href="https://theo-armour.github.io/2020/06/2020-06-21readme.html" >readme</a>
+		View <a href="./readme.html#README.md" >readme</a>
 	</p>
 
 	<div id=divFiles ></div>
@@ -145,21 +149,26 @@ function init() {
 
 	requestFile( urlApi );
 
+	/////
+
 	const url = location.hash ? location.hash.slice( 1 ) : "readme.html";
 
 	ifr.src= url;
 
-	window.addEventListener( "hashchange", () => { ifr.src = location.hash.slice( 1 ); });
+	window.addEventListener( "hashchange", () => { ifr.src = "readme.html" + location.hash; });
+
+	//window.addEventListener( "hashchange", () => { ifr.contentWindow.location.hash = location.hash.slice( 1 ); });
+
 
 }
 
 
 function requestFile( url = "https://example.com" , callback = onLoad ) {
 
-	const urlCORS = "https://cors-anywhere.herokuapp.com/";
+	//const urlCORS = "https://cors-anywhere.herokuapp.com/";
 
 	xhr = new XMLHttpRequest();
-	xhr.open( "GET", urlCORS + url, true );
+	xhr.open( "GET", url, true );
 	xhr.responseType = "json";
 	xhr.onerror = ( xhr ) => console.log( "error:", xhr  );
 	//xhr.onprogress = ( xhr ) => console.log( "bytes loaded:", xhr.loaded );
@@ -178,9 +187,9 @@ function onLoad( json ) {
 	let files = json.tree
 		.filter( file => file.type === "blob" )
 		.map( file => file.path )
-		.filter( file => file.includes( "2020-06-21-ace-it/" ) && ! file.includes( "remix" ) && ! file.includes( "viewer" )  )
+		.filter( file =>  ! file.includes( "metro-area" ) && ! file.includes( "viewer" )  )
 		//.filter( file => ! file.includes( "index" ) && ! file.includes( "readme" ) )
-		.map( file => file.slice( file.indexOf( "/" ) + 1 ) );
+		//.map( file => file.slice( file.indexOf( "/" ) + 1 ) );
 
 	//console.log( 'files', files );
 
@@ -204,11 +213,11 @@ function onLoad( json ) {
 		${ str }
 		<div>${ index }
 
-			<a href="https://github.com/theo-armour/2020/blob/master/06/${ path }" >
+			<a href="https://github.com/theo-armour/2020/blob/master/${ path }" >
 				${ svgGitHubMark }</a>
-			<a href="#../${ path }" >${ strings.pop() }</a>
+			<a href="#${ path }" >${ strings.pop() }</a>
 			<a href="https://theo-armour.github.io/2020/06/${ path }" target="_blank">
-				<img height=12 src=../../assets/icons/icon-external-link.svg></a>
+				<img height=12 src=./assets/icons/icon-external-link.svg></a>
 
 		</div>`
 

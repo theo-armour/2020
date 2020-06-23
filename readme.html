@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=contain" >
 <meta name="description" content="File wrangler. Default index.html file. Opens HTML or Markdown files. Passes location.hash." >
 <meta name="keywords" content="ShowDown,Markdown,AJAX,JavaScript,HTML,CSS,GitHub,FOSS" >
-<meta name="version" content="2020-06-13" >
+<meta name="version" content="2020-06-21" >
 
 <style>
 
@@ -59,19 +59,24 @@ summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; outline: none; }
 	function onHashChange() {
 
 		const url = location.hash.slice( 1 );
+
 		name = document.title = url.split( "/" ).pop();
 
 		if ( [ "html", "md", "txt" ].includes ( name.split( ".").pop().toLowerCase() ) ) {
 			requestFile( url );
+
+			return;
 		}
-
-
 
 		if ( [ "png", "jpg", "svg" ].includes ( name.split( ".").pop().toLowerCase() ) ) {
 
 			divContent.innerHTML = `<img src=${ url } width=100% >`;
+
+			return;
 			
 		}
+
+		divContent.innerHTML = `<div style=height:100vh ><iframe src=${ url } height=100% width=100%/></div>`
 
 	}
 

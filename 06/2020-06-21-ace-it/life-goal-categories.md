@@ -9,22 +9,40 @@ Missing
 * Engagement with larger goals with other peeps and society as a whole
 
 
+## Covey
+
+mostly about time management 
+https://en.wikipedia.org/wiki/The_7_Habits_of_Highly_Effective_People
+
+Habit 1: Be Proactive® ...
+Habit 2: Begin With the End in Mind® ...
+Habit 3: Put First Things First® ...
+Habit 4: Think Win-Win® ...
+Habit 5: Seek First to Understand, Then to Be Understood® ...
+Habit 6: Synergize® ...
+Habit 7: Sharpen the Saw®
+
+## GTD
+
+also time management
+
+
 ## https://liveboldandbloom.com/05/habits/types-of-goals
 
 good list with examples
 
+Short term
+Long term
+
+
 ## https://www.dummies.com/careers/business-skills/goal-setting-categorize-and-prioritize-your-life-goals/
 
 C = Career goals
-
 H = Health goals
-
 F = Family goals
 
 M = Money/financial goals
-
 S = Spiritual goals
-
 P = Personal goals
 
 

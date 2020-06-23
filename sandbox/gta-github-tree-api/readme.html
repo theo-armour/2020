@@ -59,26 +59,9 @@ summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; outline: none; }
 	function onHashChange() {
 
 		const url = location.hash.slice( 1 );
-		name = document.title = url.split( "/" ).pop();
-
-		if ( [ "html", "md", "txt" ].includes ( name.split( ".").pop().toLowerCase() ) ) {
-			requestFile( url );
-		}
-
-
-
-		if ( [ "png", "jpg", "svg" ].includes ( name.split( ".").pop().toLowerCase() ) ) {
-
-			divContent.innerHTML = `<img src=${ url } width=100% >`;
-			
-		}
-
-	}
-
-
-	function requestFile( url ) {
-
+		document.title = url.split( "/" ).pop();
 		const options = { excludeTrailingPunctuationFromURLs: true, ghMention: true, simplifiedAutoLink: true, simpleLineBreaks: true, emoji: true, openLinksInNewWindow: true };
+
 
 		const xhr = new XMLHttpRequest();
 		xhr.open( "get", url, true );
