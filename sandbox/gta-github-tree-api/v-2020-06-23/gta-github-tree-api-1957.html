@@ -66,6 +66,7 @@ summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; }
 	position: absolute; resize: both; top: 0; width: var( --mnu-width ); }
 
 
+
 </style>
 </head>
 <body>
@@ -170,14 +171,8 @@ function init() {
 }
 
 
-function setIt() {
 
-	divContent.innerHTML += `<p>${ ( performance.now() ) } - Howdy! </p>`;
-
-}
-
-
-function requestFile( url = "https://example.com" , callback = onLoad ) {
+function requestFile( url = "https://example.com" , callback = onLoadTree ) {
 
 	//const urlCORS = "https://cors-anywhere.herokuapp.com/";
 
@@ -193,94 +188,101 @@ function requestFile( url = "https://example.com" , callback = onLoad ) {
 
 
 
-function onLoad( json ) {
+function onLoadTree( json ) {
 
 	console.log( "json", json );
 
+    tree = json.tree.slice();
     
-    paths = json.tree.slice();
-    
-    items = paths
-    .filter( path => path.type === "blob" )
-    .map( path => path.path.split( "/") )
+    subtrees = tree
+    .filter( obj => obj.type === "tree" )
+    .map( subtree => subtree.path.split( "/") );
        
-    divContent.innerText = items.join( "\n");
+	//console.log( "subtrees", subtrees );
 
-    
-    obj = { root: { files: [], folders: [] }};
+    files = tree
+    .filter( obj => obj.type === "blob" )
+    .map( subtree => subtree.path );
+       
+	//console.log( "files", files );
 
-    jsonTree = pathsToJson( paths, obj.root );
+    jsonTree = subtreesToHeaders( subtrees );
 
-    console.log( "jsonTree", jsonTree );
-}
+    //console.log( "jsonTree", jsonTree );
 
-
-function pathsToJson( tree, obj ) {
-
-    const first = tree.shift();
-
-    const items = first.path.split( "/");
-
-    const item = items.shift();
-
-    if( first.type === "tree" ) {
-    
-        find = obj.folders.find( it => it.item === item )
-
-        if( !find ) {
-
-            obj.folders.push( { files: [], folders: [ item ] } ) 
-
-        } else {
-
-            console.log( "items", items );
-
-            find.folders.push( item )
-
-            
-        }
-
-        console.log( "obj", obj );
-
-    //    // console.log( "find", obj.folders.find( itemn => itemn === item ) );
-
-
-            //console.log( "obj", obj );
-
-        pathsToJson( tree, obj );
-
-     }
-
-
-    if ( first.type === "blob") {
-
-         console.log( "first", first );
-
-         obj.files.push( first.path ); 
-
-         if ( tree.length > 1 )  {
-        
-            pathsToJson( tree, obj );
-        
-        } 
-         
-    }
-
-    
-    if ( tree.length > 1 )  {
-        
-        //pathsToJson( tree, obj );
-        
-    } else {
-        
-        //console.log( "tree",tree );
-    }
-
-    return obj;
+	divContent.innerHTML = jsonTree.join( "");
 
 }
 
 
+function subtreesToHeaders( subtrees ) {
+
+	count = 0;
+	lengthPrevious = 0;
+	itemPrevious = undefined;
+	previous = [];
+
+	paths = subtrees.map( ( item, index ) => {
+
+		tt = item.slice( -1 );
+
+		//console.log( ++ count,"item", tt );
+
+		// if ( item.length !== lengthPrevious ) {
+
+		// 	lengthPrevious = item.length;	
+
+		// 	filesHtm = getFiles( item );
+
+		// 	clss = item.length === 1 ? "sumMenuTitle" : "";
+
+		// 	return `
+		// 	<details>
+		// 		<summary class=${clss } >${ tt }</summary>
+		// 		${ filesHtm.join( "<br>") }
+		// 	</details>`;
+		// }
+		
+		// if ( item !== subtrees[ index - 1 ] ) {	
+
+		// 	//console.log( "item", item.join );
+
+			filesHtm = getFiles( item );
+
+			return `
+			<details>
+				<summary>${ tt }</summary>
+				${ filesHtm.join( "<br>") }
+			</details>`;
+
+
+		//}
+		
+		//return item.pop();
+
+	});
+
+	//console.log( "paths", paths );
+	
+	return paths;
+	
+}
+
+
+function getFiles( item ) {
+
+	const str = item.join( "/" );
+
+	const filtered = files.filter( file => {
+
+		return file.slice( 0, file.lastIndexOf( "/" )  ) === str;
+		
+	} )
+	.map( item => `<a href="${ item }" >${ item.split( "/" ).pop() }</a>` );
+
+	return filtered;
+
+}
 
 </script>
 </body>

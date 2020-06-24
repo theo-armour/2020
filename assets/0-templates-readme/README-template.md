@@ -11,51 +11,28 @@ value='You are now in a GitHub web page view - Click this button to view this re
 _ZZZZZ_
 @@@-->
 
-### Full Screen: [ZZZZZ]( https://theo-armour.github.io/2020/xxxxx .html )
+### Full Screen: [ZZZZZ]( https://theo-armour.github.io/2020/xxxxx/ )
 
 
-<details open >
-<summary>Concept</summary>
+## Concept
 
 
-</details>
-
-<details open >
-<summary>To do and wish list </summary>
+## To Do / Wish List
 
 
-</details>
-
-<details open >
-<summary>Issues </summary>
+## Issues
 
 
-</details>
-
-<details open >
-<summary> Things you can do using this script</summary>
-
-* Click the GitHub Octocat icon to view or edit the source code on GitHub
-* Click on title to reload te page
-* Press Control-U/Command-Option-U to view the source code
-* Press Control-Shift-J/Command-Option-J to see if the JavaScript console reports any errors
-
-</details>
-
-<details open >
-<summary>Links of interest</summary>
+## Links of Interest
 
 
-</details>
+## Change Log
 
-<details open >
-<summary>Change log </summary>
 
 ### 123
 
 * First commit
 
-</details>
 
 ***
 

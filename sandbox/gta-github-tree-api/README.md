@@ -14,42 +14,28 @@ _GTA GitHub Tree API_
 ### Full Screen: [GTA GitHub Tree API]( https://theo-armour.github.io/2020/sandbox/gta-github-tree-api/ )
 
 
-<details open >
-<summary>Concept</summary>
+## Concept
+
+### Git Trees
+A Git tree object creates the hierarchy between files in a Git repository. You can use the Git tree object to create the relationship between directories and the files they contain. These endpoints allow you to read and write tree objects to your Git database on GitHub. See the Git Database API for more details.
+
+* tree
+* base_tree
+* subtrees
+* blob
 
 
-</details>
-
-<details open >
-<summary>To do and wish list </summary>
+## To Do / Wish List
 
 
-</details>
-
-<details open >
-<summary>Issues </summary>
+## Issues
 
 
-</details>
-
-<details open >
-<summary> Things you can do using this script</summary>
-
-* Click the GitHub Octocat icon to view or edit the source code on GitHub
-* Click on title to reload te page
-* Press Control-U/Command-Option-U to view the source code
-* Press Control-Shift-J/Command-Option-J to see if the JavaScript console reports any errors
-
-</details>
-
-<details open >
-<summary>Links of interest</summary>
+## Links of Interest
 
 
-</details>
+## Change Log
 
-<details open >
-<summary>Change log </summary>
 
 ### 2020-06-23
 
