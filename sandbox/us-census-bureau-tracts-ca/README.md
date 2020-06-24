@@ -64,6 +64,11 @@ USA Census Bureau Data
 * https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html
 * https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/gaz-record-layouts.html
 
+Urban Footprint
+
+* https://urbanfootprint.com/
+* https://techcrunch.com/2020/02/12/taking-a-page-from-simcity-urbanfootprint-pitches-new-tools-for-developers-and-urban-planners/
+* https://medium.com/urbanfootprint
 
 </details>
 

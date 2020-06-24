@@ -7,7 +7,7 @@
 <meta name=description
 	content="Real-time interactive 3D graphics in your browser using the WebGL and the Three.js JavaScript library">
 <meta name=keywords content="Three.js,WebGL,JavaScript,GitHub,FOSS,3D,STEM">
-<meta name=version content="2020-06-21">
+<meta name=version content="2020-06-23">
 
 
 <title></title>
@@ -59,7 +59,7 @@ input[ type=range ]::-webkit-slider-thumb { -webkit-appearance: none; background
 			<a href="https://github.com/theo-armour/2020/tree/master/sandbox/us-census-bureau-tracts-ca/" id=aSource target=_top title="Source code on GitHub" >&xcirc;</a>
 
 			<a href="" title="Click to reload this page" >
-				<span id=sTitle ></span>
+				<span id=sTitle ></span> <span id=sVersion ><</span>
 			</a>
 
 		</h2>
@@ -76,7 +76,7 @@ input[ type=range ]::-webkit-slider-thumb { -webkit-appearance: none; background
 	</p>
 
 	<p>
-		<button onclick=groupTracts.visible=!groupTracts.visible; style=background-color:aqua;width:100% >Census Bureau Tracts</button>
+		<button onclick=groupRemix.visible=!groupRemix.visible; style=background-color:aqua;width:100% >Census Bureau Tracts</button>
 	</p>
 	<p
 		title="View the number of objects that need rendering and the total number of triangles used to create the objects">
@@ -95,6 +95,9 @@ input[ type=range ]::-webkit-slider-thumb { -webkit-appearance: none; background
 
 svgOcticon = `<svg height="18" class="octicon" viewBox="0 0 16 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>`;
 aSource.innerHTML = svgOcticon;
+
+const version = document.head.querySelector( "[ name=version ]" );
+sVersion.innerHTML = version ? version.content : "";
 
 sTitle.innerHTML= document.title ? document.title : location.href.split( '/' ).pop().slice( 0, - 5 ).replace( /-/g, ' ' );
 
@@ -144,20 +147,15 @@ function init() {
 	camera.position.set( -118, 28, 4 );
 	controls.target.set( -118, 37, 0 );
 
-	groupTracts = new THREE.Group();
-	groupPlaces = new THREE.Group();
-	
+	groupRemix = new THREE.Group();
+
 	items = [];
 
-	scene.add( groupTracts, groupPlaces );
+	scene.add( groupRemix );
 
-	url = "../../us-census-bureau-data/2019_gaz_tracts_06.txt"
+	url = "../../us-census-bureau-data-remix/us-census-data-ca-2020-06-24.csv"
 
-	requestFile( url, onLoadTracts );
-
-	urlPlaces = "../../us-census-bureau-data/2019_gaz_place_06.txt"
-
-	requestFile( urlPlaces, onLoadPlaces );
+	requestFile( url, onLoadRemix );
 
 	RAY.addMouseMove();
 
@@ -179,52 +177,38 @@ function requestFile( url, callback ) {
 }
 
 
-function onLoadTracts( response ) {
+function onLoadRemix( response ) {
 	//console.log( "response", response );
 
-	const lines = response.split( "\n" ).map( line => line.trim().split( "\t" ) );
-	//console.log( "lines", lines );
+	const lines = response.split( "\n" ).map( line => line.trim().split( ";" ) );
+	console.log( "lines", lines );
+
+	densities = lines.map( line => + line[ 8 ] )
+
+	
+	max = 30000;  Math.max( ... densities );
+
+	console.log( "max ", max );
+
 
 	const meshes = lines.map( ( line, index ) => {
 
-		const geometry = new THREE.BoxBufferGeometry(0.01, 0.01, 0.1 );
+		const geometry = new THREE.BoxBufferGeometry(0.01, 0.01, 2 * line[ 6 ] / max );
 		const material = new THREE.MeshNormalMaterial();
 		const mesh = new THREE.Mesh( geometry, material);
-		mesh.position.set( + line[ 7 ], + line[ 6 ], 0.05 );
+		mesh.position.set( + line[ 5 ], + line[ 4 ], 1 * line[ 6 ] / max);
 		mesh.userData.index = index;
 		mesh.userData.lines = lines;
 		return mesh;
 		
 	} );
 
-	groupTracts.add( ... meshes );
+	groupRemix.add( ... meshes );
 
 	items.push( ... meshes )
 
 }
 
-
-function onLoadPlaces( response ) {
-	//console.log( "response", response );
-
-	lines = response.split( "\n" ).map( line => line.trim().split( "\t" ) );
-	//console.log( "lines", lines );
-
-	const meshes = lines.map( ( line, index ) => {
-
-		const geometry = new THREE.BoxBufferGeometry(0.01, 0.01, 0.2 );
-		const material = new THREE.MeshBasicMaterial( { color: "red"});
-		const mesh = new THREE.Mesh( geometry, material);
-		mesh.position.set( + line[ 11 ], + line[ 10 ], 0.1 );
-		mesh.userData.index = index;
-		mesh.userData.lines = lines;
-		return mesh;
-		
-	} );
-
-	groupPlaces.add( ... meshes );
-	items.push( ... meshes );
-}
 
 function setStats () {
 
