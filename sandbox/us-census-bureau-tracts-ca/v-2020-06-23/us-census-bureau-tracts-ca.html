@@ -181,15 +181,11 @@ function onLoadRemix( response ) {
 	//console.log( "response", response );
 
 	const lines = response.split( "\n" ).map( line => line.trim().split( ";" ) );
-	console.log( "lines", lines );
+	//console.log( "lines", lines );
 
-	densities = lines.map( line => + line[ 8 ] )
-
-	
-	max = 30000;  Math.max( ... densities );
-
-	console.log( "max ", max );
-
+	// densities = lines.map( line => + line[ 8 ] )
+	max = 30000; // Math.max( ... densities );
+	//console.log( "max ", max );
 
 	const meshes = lines.map( ( line, index ) => {
 
