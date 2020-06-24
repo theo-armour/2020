@@ -79,7 +79,6 @@ THR.onStart = function () {
 	renderer.domElement.removeEventListener("touchmove", THR.onStart);
 	renderer.domElement.removeEventListener("touchend", THR.onStart);
 	renderer.domElement.removeEventListener("wheel", THR.onStart);
-
 };
 
 THR.zzzonLoad = function ( event ) {
