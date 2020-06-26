@@ -7,7 +7,7 @@
 <meta name=description
 	content="Real-time interactive 3D graphics in your browser using the WebGL and the Three.js JavaScript library">
 <meta name=keywords content="Three.js,WebGL,JavaScript,GitHub,FOSS,3D,STEM">
-<meta name=version content="2020-06-23">
+<meta name=version content="2020-06-25">
 
 
 <title></title>
@@ -153,7 +153,7 @@ function init() {
 
 	scene.add( groupRemix );
 
-	url = "../../us-census-bureau-data-remix/us-census-data-ca-2020-06-24.csv"
+	url = "../../us-census-bureau-data-remix/us-census-data-ca-2020-06-25.csv"
 
 	requestFile( url, onLoadRemix );
 
@@ -189,10 +189,17 @@ function onLoadRemix( response ) {
 
 	const meshes = lines.map( ( line, index ) => {
 
-		const geometry = new THREE.BoxBufferGeometry(0.01, 0.01, 2 * line[ 6 ] / max );
+		if ( line[ 0 ] === "059990100" ) {
+
+			console.log( "line", line );
+		}
+
+		height = line[ 6 ] === "0" || line[ 6 ] > max ? 1 : line[ 6 ];
+		//console.log( "height", height );
+		const geometry = new THREE.BoxBufferGeometry(0.01, 0.01, 2 * height/ max );
 		const material = new THREE.MeshNormalMaterial();
 		const mesh = new THREE.Mesh( geometry, material);
-		mesh.position.set( + line[ 5 ], + line[ 4 ], 1 * line[ 6 ] / max);
+		mesh.position.set( + line[ 5 ], + line[ 4 ], 1 * height / max);
 		mesh.userData.index = index;
 		mesh.userData.lines = lines;
 		return mesh;

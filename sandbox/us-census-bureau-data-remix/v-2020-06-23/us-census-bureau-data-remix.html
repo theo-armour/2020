@@ -5,7 +5,7 @@
 <meta name = "viewport" content= "width=device-width, initial-scale=1" >
 <meta name = "description" content = "Basic TooToo HTML template" >
 <meta name = "keywords" content = "JavaScript,GitHub,FOSS" >
-<meta name=version content="2020-06-13">
+<meta name=version content="2020-06-25">
 
 <title></title>
 
@@ -202,7 +202,7 @@ function onLoadTracts( responseTracts ) {
 
     linesTracts = responseTracts.split( "\n").slice( 1 )
         .map( item => item.split( "\t" ) )
-        .map( arr => [ + arr[ 1 ].slice( 5 ), + arr[ 2], + arr[ 6 ], + arr[ 7 ] ] );
+        .map( arr => [ arr[ 1 ].slice(  2 ), + arr[ 2], + arr[ 6 ], + arr[ 7 ] ] );
 
     //console.log( "linesTracts", linsTracts );
 
@@ -219,11 +219,11 @@ function onLoadPopulation( responsePopulation ) {
 
     linesPopulation = responsePopulation.split( "\n").slice( 2, -1 )
         .map( item => item.split( '","' ) )
-        .map( arr => [ + arr[ 0 ].slice( 15 ), arr[ 1], arr[ 2 ].slice( 0, -1 )] );
+        .map( arr => [ arr[ 0 ].slice( 12 ), arr[ 1 ], arr[ 2 ].replace( '"',  "")] );
 
     //console.log( "linesPopulation", linesPopulation );
 
-   // divContent.innerHTML = linesPopulation.join("<br>");
+   divContent.innerHTML = linesPopulation.join("<br>");
 
     
 
@@ -234,15 +234,17 @@ function remix() {
 
     remix = linesTracts.map( tract => {
         
-        find = linesPopulation.find( pop => pop[ 0 ] === tract[ 0 ] ) || [ "xxx", 0 ]
+        find = linesPopulation.find( pop => pop[ 0 ] === tract[ 0 ] ) || [ "xxx", 1 ]
 
         if ( ! find ) { "no find", console.log( "", tract ) }
-        
-        return `${tract[ 0 ]};"${find[ 1 ] }";${ find[ 2 ] };${ tract[ 1 ] };${tract[ 2 ] };${ tract[ 3 ]};${ Math.round( find[ 2 ] / ( 0.000001 * tract[ 1 ] ) ) }`
+
+		if ( !find[ 2 ] || find[ 2 ].length < 3 ) { console.log( "zero", find  ); find[ 2 ] = 1 } 
+        if ( !tract[ 1 ] || tract[ 1 ].length < 3 ) { console.log( "tract", tract  ); tract[ 1 ] = 1 } 
+        return `${tract[ 0 ]};"${find[ 1 ] }";${ find[ 2 ] };${ tract[ 1 ] };${tract[ 2 ] };${ tract[ 3 ]};${ Math.round( ( find[ 2 ] ) / ( 0.000001 * tract[ 1 ] ) ) }`
 
      } );
 
-    console.log( "remix", remix );
+    //console.log( "remix", remix );
 
     divContent.innerText = remix.join("\n");
 

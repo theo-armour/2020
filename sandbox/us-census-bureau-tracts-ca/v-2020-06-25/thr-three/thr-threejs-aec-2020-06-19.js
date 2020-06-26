@@ -16,7 +16,7 @@ THR.center = new THREE.Vector3(0, 0, 0);
 THR.radius = 50;
 
 THR.init = function () {
-	camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1, 1000);
+	camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0001, 400);
 	camera.position.set(-100, -100, 100);
 	camera.up.set(0, 0, 1);
 
@@ -36,7 +36,7 @@ THR.init = function () {
 	document.body.appendChild(renderer.domElement);
 
 	controls = new THREE.OrbitControls(camera, renderer.domElement);
-	controls.minDistance = 1;
+	controls.minDistance = 0.01;
 	controls.maxDistance = 500;
 	controls.autoRotate = true;
 	controls.enableDamping = true;
