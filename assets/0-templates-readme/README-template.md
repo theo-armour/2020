@@ -7,11 +7,11 @@ value='You are now in a GitHub web page view - Click this button to view this re
 # [ZZZZZ Read Me]( https://theo-armour.github.io/2020/xxxxx/readme.html )
 
 <!--@@@
-<iframe src=https://theo-armour.github.io/2020/xxxxx height=500px width=100% ></iframe>
+<div style=height:300px;overflow:hidden;width:100%;resize:both; ><iframe src=https://theo-armour.github.io/2020/ height=100% width=100% ></iframe></div>
 _ZZZZZ_
-@@@-->
 
 ### Full Screen: [ZZZZZ]( https://theo-armour.github.io/2020/xxxxx/ )
+@@@-->
 
 
 ## Concept
