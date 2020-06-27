@@ -20,11 +20,11 @@ GJS.initGeoJson = function () {
 
 	const urlGeoJson = "ne_110m_admin_0_countries_lakes.geojson";
 
-	GJS.requestFile( urlGeoJson, GJS.onLoadGeoJson );
+	GJS.requestFile( pathGeoJson + urlGeoJson, GJS.onLoadGeoJson );
 
 	const urlJsonRegions = "ne_50m_admin_1_states_provinces_lines.geojson";
 
-	GJS.requestFile( urlJsonRegions, GJS.onLoadGeoJson );
+	GJS.requestFile( pathGeoJson + urlJsonRegions, GJS.onLoadGeoJson );
 
 	scene.add( GJS.groupGeoJson );
 

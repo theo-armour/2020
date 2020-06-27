@@ -18,7 +18,7 @@ GJS.initGeoJson = function () {
 
 	const pathGeoJson = "https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@master/geojson/";
 
-	const urlGeoJson = "./gz_2010_us_050_00_20m.json";
+	const urlGeoJson = "../../naturalearth/gz_2010_us_050_00_20m.json";
 
 	//const urlGeoJson = "./json/ca-cbsa.json";
 	
