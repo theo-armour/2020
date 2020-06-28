@@ -3,16 +3,22 @@
 <head>
 <meta charset = "utf-8" >
 <meta name = "viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
-<meta name = "description" content = "Basic TooToo HTML template" >
+<meta name = "description" content = "Basic HTML template" >
 <meta name = "keywords" content = "JavaScript,GitHub,FOSS" >
 <meta name = version content="2020-06-27">
 
-<link rel="stylesheet" href="./style-2020-06-24.css">
+<link rel="stylesheet" href="../../htm/v-2020-06-27/style-2020-06-24.css">
 
-<title></title>
+<title>JTV Template DEV</title>
 
 </head>
 <body>
+
+    <script src="../../htm/v-2020-06-27/fo-file-open/foo-file-open-object-2020-06-16.js"></script>
+	<script src="../../htm/v-2020-06-27/fo-file-open/foz-file-open-zip-2020-06-12.js"></script>
+	<script src="../../htm/v-2020-06-27/fo-file-open/fr-file-reader-2020-06-12.js"></script>
+
+
 
 	<details id=detNavMenu >
 
@@ -24,8 +30,8 @@
 
 				<h2>
 
-					<a id=aGithub href="https://github.com/ladybug-tools/spider-2020/tree/master/spider-template-viewer" target="_top" title="Source code on GitHub">
-						<img src="https://ladybug.tools/spider-2020/assets/icons/mark-github.svg">
+					<a id=aGithub href="https://github.com/theo-armour/2020/" target="_top" title="Source code on GitHub">
+						<img src="../../assets/icons/octicon.svg">
 					</a>
 
 					<a id=aTitle href="" title="Click to reload this page">
@@ -71,6 +77,18 @@
 					<div id=GFFdivGithubFoldersFiles></div>
 					
 					<div id=GFFdivFileInfo></div>
+
+					<div id=GFHdivGetFilesHoneybee ></div>
+
+					<div id=GFDdivGetFilesDragonfly ></div>
+			
+					<div id=GFBdivGetFilesBuilder ></div>
+			
+					<div id=GFRdivGetFilesRepo></div>
+			
+					<div id=GFRdivGetFilesSelected ></div>
+			
+					<div id=GFOdivGetFilesOpen></div>
 					
 					<br>
 
@@ -118,7 +136,9 @@
 
 			<br>
 
-			<center>❦</center>
+			<p title="go to top of menu" style=text-align:center; >
+				<a class=aDingbat href=javascript:navMenu.scrollTo(0,0); >❦</a>
+			</p>
 
 		</nav>
 
@@ -148,6 +168,20 @@
 
 </main>
 
+
+<script src="../v-2020-06-27/browse-files/gfb-github-file-builder-2020-02-03.js"></script>
+<script src="../v-2020-06-27/browse-files/gfo-github-file-open-2020-02-10.js"></script>
+<script src="../v-2020-06-27/browse-files/gfh-github-file-honeybee-2020-02-03.js"></script>
+<script src="../v-2020-06-27/browse-files/gfd-github-file-dragonfly-2020-01-24.js"></script>
+
+<script src="../v-2020-06-27/browse-files/gfr-github-file-repo-2020-01-14.js"></script>
+<script src="../v-2020-06-27/browse-files/gfs-get-files-selected-2020-01-14.js"></script>
+
+
+<script src="../v-2020-06-27/jtv-json-tree-view-2020-06-26.js"></script>
+<script src="../v-2020-06-27/jth-json-tree-helper-2020-06-26.js"></script>
+<script src="../v-2020-06-27/jte-json-tree-edit-2020-01-24.js"></script>
+<script src="../v-2020-06-27/jtf-json-tree-finder-2020-06-10.js"></script>
 
 
 <script>
@@ -183,12 +217,16 @@ function init() {
 
 		//toggleNavMenu();
 
-	} else {
+		} else {
 
-		detNavMenu.open = true
+			detNavMenu.open = true
 
-}
+	}
 
+	GFO.url = "../json-sample-files/tree-view-test.json";
+
+	GFO.getFileJson();
+	
 }
 
 

@@ -91,6 +91,8 @@ main { border: 0 solid red; height: 100vh; left: var( --mnu-width ); margin: 0;
 
 .active { background-color: lightyellow; }
 
+.aDingbat { font-size: 3ch; }
+
 .divNavResize {
 	border-right: 1px solid teal;
 	max-height: 60vh;
