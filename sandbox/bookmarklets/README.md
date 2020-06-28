@@ -20,9 +20,18 @@ _ZZZZZ_
 
 <a href="javascript:void(document.body.style.backgroundColor='#fee')">pink</a>
 
-<a href="javascript:( ()=>{document.body.style.backgroundColor='#fee';document.body.style.color='#0f0';} )()">pink&blue</a>
+<a href="javascript:( () =>{document.body.style.backgroundColor='#fee';document.body.style.color='#0f0';} )()">pink&blue</a>
 
     <a href="javascript:( ()=>{document.body.style.backgroundColor='#fee';document.body.style.color='#0f0';} )()">pink&blue</a>
+
+
+<a href="JavaScript:(() => { 
+    doc=document,gtb=(ds)=>{if(getComputedStyle(ds,null).backgroundColor==='rgb(255, 255, 255)'){return true;} return false;},tmp=[];
+    ['body','table','td','div','html','dl','ul','pre'].map(ta=>tmp.push(...Array.from(doc.getElementsByTagName(ta)).filter(gtb)));
+    tmp.map(s=>s.style.backgroundColor='blue'; 
+    } )()" >blue - not</a>
+
+    
 ### Theme switching
 
 Dropin
