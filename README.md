@@ -9,6 +9,22 @@ value='You are now in a GitHub web page view - Click this button to view this re
 
 What have I done now?
 
+## Links of interest
+
+Mapping
+
+* https://theo-armour.github.io/2020/#sandbox/us-census-bureau-tracts-ca/index.html
+* https://theo-armour.github.io/2020/#sandbox/california-dasymetry/
+* https://theo-armour.github.io/2020/#journal/06/2020-06-18-brian/index.html
+
+Recent efforts
+
+* https://theo-armour.github.io/2020/#journal/06/2020-06-12-andrew.md
+* https://theo-armour.github.io/2020/#journal/06/2020-06-13-brian.md
+* https://theo-armour.github.io/2020/#journal/06/2020-06-19-don.md
+
+
+
 ## Change Log
 
 #### 2020-06-28
