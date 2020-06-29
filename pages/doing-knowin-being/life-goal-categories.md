@@ -1,6 +1,11 @@
-# Life goal categories
+# Life Goal Categories
 
-Missing
+## Concept
+
+A review of a number of web pages that cover the idea of establishing life goals.
+
+
+Aspects most of the sites appear to be missing include
 
 * Aesthetics
 * Civic engagement
@@ -22,7 +27,8 @@ Habit 5: Seek First to Understand, Then to Be Understood® ...
 Habit 6: Synergize® ...
 Habit 7: Sharpen the Saw®
 
-## GTD
+## GTD . David Allen
+
 
 also time management
 

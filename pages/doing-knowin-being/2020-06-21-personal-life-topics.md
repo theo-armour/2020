@@ -7,7 +7,7 @@
 Having a place for things is important to me
 
 As an architect: dining rooms need kitchens, bedrooms need bath rooms
-As a computer dude, there has to be a folder and file sdystem
+As a computer dude, there has to be a folder and file system
 As a parent there have to be rules and guidelines
 
 Over the decades I have spent much time on 
