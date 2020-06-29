@@ -15,13 +15,17 @@ What have I done now?
 
 #### grv-github-repo-tree-view
 
-A ten year issue or dream fixed or achieved
+A ten year - ever since I have been on GitHub or thereabouts - issue and dream fixed and achieved:
 
-Create a pretty tree view of all the files in a GitHub repository
+Create a pretty tree view of all the folders and files in a GitHub repository with a single API call.
 
 #### Lib
 
 Building up a set of core modules
+
+#### Generally
+
+Moving file all about and breaking things. At least I put up a 404 page.
 
 
 ### 2020-06-18
