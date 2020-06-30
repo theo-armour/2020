@@ -19,8 +19,23 @@ _USA Census Bureau Tracts_
 _In the old days there were preliminary sketches on envelopes and you had to imagine what the design would really look like. Now there are designs on screens and you have to imagine how very sketchy and preliminary they are. 
 ;-)_
 
+Mission
+
+* To provide fast, easy and free access to large quantities of regional data
+* Display data at macro and micro levels
+* Link data sets to online, public, authoritative data sources 
+
+
+Vision
+
+* People can see nuanced data rather than reductionist data
+* People sre able to identify locations where resources are needed by type, quantity and timelime
+
+
 
 2020-06-29 Features
+
+This version does not add new data sets but does have a number of user experience updates
 
 Displaying thousands of data points is tricky. The normal method is to bulk numbers of points together. The issue can be that you lose subtlety. In this version, there is slider to scale the size of the data points - allowing for larger points that you can see when you zoom out and space between the points when you zoom in
 
@@ -50,9 +65,14 @@ Displaying thousands of data points is tricky. The normal method is to bulk numb
 
 ## To do and wish list
 
+* 2020-06-30 ~ Locate a higher resolution geoJSON file for California.
+* 2020-06-30 ~ Build up a functioning workflow for gathering and displaying census tract data
+* 2020-06-30 ~ Find a source for COVID-19 census tract data
+    * For an examples, see https://data.sfgov.org/stories/s/adm5-wq8i/
 * Using height, color, opacity and shapes enable each data point to display a number nuanced values
 * Add in the usual bag of tricks to help speed up the display on older devices 
 * Add county name titles
+
 
 ## Issues
 
