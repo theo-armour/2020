@@ -47,10 +47,17 @@
 
 		</header>
 
+		<p>Data for 8,057 US census tracts. Heights indicate density per square kilometer.</p>
 		<p>
-			<output id=outSpeed>50</output>
+			Use fingers or pointing device to to zoom, pan and rotate. 
+			Click on a data point to view its details in a pop-up.
+			Click the link in the pop-up to go to the Census Bureau map for the tract.
+			Use the slider to scale the data points so you can zoom in and see the detail
+		</p>
+		<p>
+			Scale the size of the data points: <output id=outScale>50</output>
 
-			<input type="range" id="inpSpeed" oninput="setScale(this);outSpeed.innerHTML=this.value;" />
+			<input type="range" id="inpSpeed" oninput="setScale(this);outScale.innerHTML=this.value;" />
 		</p> 
 <!--
 		<p>
