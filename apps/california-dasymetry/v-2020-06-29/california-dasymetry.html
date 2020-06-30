@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+<meta name=description
+	content="Real-time interactive 3D graphics in your browser using the WebGL and the Three.js JavaScript library">
+<meta name=keywords content="Three.js,WebGL,JavaScript,GitHub,FOSS,3D,STEM">
+<meta name=version content="2020-06-29">
+
+
+<title></title>
+
+<link rel="stylesheet" href="../../../lib/style/style-2020-06-28.css">
+
+
+
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r118/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r118/examples/js/controls/OrbitControls.js"></script>
+
+<script src="../../../lib/gjs-geojson/gjs-geojson-2020-06-16.js"></script>
+
+<script src="../../../lib/thr-three/thr-threejs-2020-06-16.js"></script>
+<script src="../../../lib/thr-three/ray-raycaster-sam-2020-05-27.js"></script>
+
+<details id=detNavMenu >
+
+	<summary id=sumNavMenu class="sumPrimary gmd-1">show || hide menu</summary>
+
+	<nav id="navMenu" class="gmd-2">
+
+		<header id="hdrTitle" >
+
+			<h2>
+				<a id=aSource target=_top title="Source code on GitHub" >&xcirc;</a>
+
+				<a href="" title="Click to reload this page" >
+					<span id=sTitle ></span>
+					<span id=sVersion ></span>
+				</a>
+
+				<span class="info" >&#x24d8;<span id=divDescription class="infoTooltip" ></span></span>
+
+			</h2>
+
+		</header>
+
+		<p>
+			<button onclick=controls.reset() >reset view</button>
+			<button onclick="controls.autoRotate=!controls.autoRotate;">rotation</button>
+		</p>
+
+		<p>
+			<output id=outSpeed>50</output>
+			<input type="range" id="inpSpeed" onclick="controls.autoRotateSpeed=0.05 * this.value;outSpeed.innerHTML=this.value;" />
+		</p>
+
+
+		<p
+			title="View the number of objects that need rendering and the total number of triangles used to create the objects">
+			<button onclick="setStats()">setStats</button>
+		</p>
+
+
+		<div id="divLog"></div>
+
+		<button id=butDark onclick=toggleDarkMode(); >dark</button>
+
+		<footer>
+
+			<hr>
+	
+			<p title="go to top of menu" style=text-align:center; >
+				<a class=aDingbat href=javascript:navMenu.scrollTo(0,0); >❦</a>
+			</p>
+	
+		</footer>
+
+	</nav>
+
+</details>
+
+<div id="divPopUp" class="gmd-2">When you touch a zip code marker,<br>the rotation will stop<br>and its details will appear in a pop-up </div>
+
+
+<script>
+
+aSource.href = "https://github.com/theo-armour/2020/tree/master/sandbox/california-dasymerty";
+
+svgOcticon = `<svg height="18" class="octicon" viewBox="0 0 16 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>`;
+aSource.innerHTML = svgOcticon;
+
+
+sTitle.innerHTML= document.title ? document.title : location.href.split( '/' ).pop().slice( 0, - 5 ).replace( /-/g, ' ' );
+const version = document.head.querySelector( "[ name=version ]" );
+sVersion.innerHTML = version ? version.content : "";
+divDescription.innerHTML = document.head.querySelector( "[ name=description ]" ).content;
+
+
+//let mesh, group, axesHelper, lightDirectional, cameraHelper;
+//let renderer, camera, controls, scene;
+
+THR.init();
+THR.animate();
+
+init();
+
+function init() {
+
+	// camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1000 );
+	// camera.position.set( -118, 28, 4 );
+	// camera.up.set( 0, 0, 1 );
+
+	// scene = new THREE.Scene();
+	// scene.background = new THREE.Color( 0xcce0ff );
+	// //scene.fog = new THREE.Fog( 0xcce0ff, 550, 800 );
+	// scene.add( camera );
+
+	// renderer = new THREE.WebGLRenderer( { antialias: true } );
+	// renderer.setPixelRatio( window.devicePixelRatio );
+	// renderer.setSize( window.innerWidth, window.innerHeight );
+	// document.body.appendChild( renderer.domElement );
+	
+	// renderer.outputEncoding = THREE.sRGBEncoding;
+	// renderer.shadowMap.enabled = true;
+	// renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+	// controls = new THREE.OrbitControls( camera, renderer.domElement );
+	// //controls.autoRotate = true;
+	// controls.autoRotateSpeed = 2;
+	// controls.enableDamping = true;
+	// controls.enablePan = true;
+	// controls.dampingFactor = 0.08;
+	// controls.minDistance = 1;
+	// controls.maxDistance = 500;
+	// controls.target.set( -118, 37, 0 )
+
+	// window.addEventListener( "resize", onWindowResize, false );
+	// window.addEventListener( "orientationchange", onWindowResize, false );
+
+	// window.addEventListener( "keyup", onStart );
+	// renderer.domElement.addEventListener( "click", onStart );
+	// renderer.domElement.addEventListener( "touchstart", onStart );
+	// renderer.domElement.addEventListener( "touchmove", onStart );
+	// renderer.domElement.addEventListener( "touchend", onStart );
+
+	// addLights();
+
+	// axesHelper = new THREE.AxesHelper( 100 );
+	// scene.add( axesHelper );
+
+
+	THR.addLights();
+	THR.addGround();
+	//THR.ground.position.z = -0.1;
+
+	THR.group = THR.setSceneNew( new THREE.Group() );
+
+
+//THR.addMeshes(100);
+
+	THR.updateScene();
+
+	THR.camera.position.set( -118, 28, 4 );
+	THR.controls.target.set( -118, 37, 0 );
+
+    //url = "https://public.opendatasoft.com/api/records/1.0/search/?dataset=us-zip-code-latitude-and-longitude&q=&rows=3000&facet=state&facet=timezone&facet=dst&refine.state=CA";
+
+    url = "../json/ca-zip-codes.json";
+
+	requestFile( url, onLoadZips );
+	
+	urlAgis = "../json/ca-zip-code-agi.json";
+
+	requestFile( urlAgis, onLoadAgis );
+
+	GJS.initGeoJson();
+
+	
+	if ( window.innerWidth < 640 || window.innerHeight < 640 ) {
+
+	//toggleNavMenu();
+
+	} else {
+
+		detNavMenu.open = true
+
+	}
+
+
+
+}
+
+
+function onLoadAgis( json ) {
+
+	agis = json;
+	//console.log( "agis", agis);
+
+	const records = json.records;
+
+	agis = records.map( record => record.fields ).filter( fields => !["0", "99999"].includes( fields.zipcode ) );
+	
+	agiGroup = agis.filter( fields => fields.agi_stub === "2" )
+	//console.log( "agiGroup", agiGroup);
+
+	max = Math.max( ... agiGroup.map( agi => agi.agi ) )
+	//console.log( "max", max );
+
+	// bigs = agiGroup.filter( record => record.agi > 400000 );
+	// console.log( "bigs", bigs);
+
+	for ( let i = 0; i < agiGroup.length; i++ ) {
+
+		item = agiGroup[ i ];
+		mesh = THR.group.getObjectByName( item.zipcode )
+
+		if ( mesh )  {
+
+			mesh.scale.z = 5 * item.agi / 500000;
+			mesh.material.opacity = 1.0;
+			mesh.material.color = new THREE.Color( "red" );
+			mesh.userData.agi = item;
+
+		}
+
+	} ;
+
+}
+
+function onLoadZips( json ) {
+
+	zips = json;
+	//console.log( "zips", zips );
+
+    const records = zips.records;
+
+
+    for ( let i = 0; i < records.length; i++ ) {
+
+        const mesh = addMesh();
+        const geo = records[ i ].geometry.coordinates;
+		mesh.position.set( geo[ 0 ], geo[ 1 ], 0 );
+		mesh.userData.index = i;
+		mesh.userData.fields = records[ i ].fields;
+		//mesh.scale.z = -1
+		mesh.name = records[ i ].fields.zip;
+
+        THR.group.add( mesh );
+
+	} ;
+	
+	//THR.updateScene();
+
+
+	RAY.intersectObjects = THR.group.children;
+
+	RAY.addMouseMove();
+
+}
+
+function addMesh( size = 20 ) {
+
+	// CylinderGeometry( radiusTop, radiusBottom, height, radiusSegments, heightSegments, openEnded )
+	// SphereGeometry( radius, segmentsWidth, segmentsHeight, phiStart, phiLength, thetaStart, thetaLength )
+	// TorusGeometry( radius, tube, radialSegments, tubularSegments, arc )
+
+	const geometry = new THREE.CylinderGeometry( 0.03, 0.0001, 0.1);
+	geometry.applyMatrix4( new THREE.Matrix4().makeRotationX( 0.5 * Math.PI ) );
+	geometry.applyMatrix4( new THREE.Matrix4().makeTranslation( 0, 0, 0.05 ) );
+
+	
+	//const material = new THREE.MeshNormalMaterial();
+	const material = new THREE.MeshPhongMaterial( { color: 0x88ff88, opacity: 0.9, specular: 0xffffff, transparent: true } );
+
+	mesh = new THREE.Mesh( geometry, material );
+	mesh.receiveShadow = true;
+	mesh.castShadow = true;
+	//scene.add( mesh );
+
+	return mesh;
+
+}
+
+
+function requestFile( url, callback ) {
+
+	const xhr = new XMLHttpRequest();
+	xhr.open( 'GET', url, true );
+	xhr.responseType = "json";
+	xhr.onerror = ( xhr ) => console.log( 'error:', xhr  );
+	//xhr.onprogress = ( xhr ) => console.log( 'bytes loaded:', xhr.loaded );
+	xhr.onload = ( xhr ) => callback( xhr.target.response );
+	xhr.send( null );
+
+}
+
+
+RAY.getHtm = function (intersected) {
+	console.log("intersected", RAY.intersected);
+	const index = RAY.intersected.object.userData.index;
+	const mesh = THR.group.children[index];
+	const fields= mesh.userData.fields;
+	const agi = mesh.userData.agi || { agi_group: "", agi: "" };
+
+	//console.log( "agi", agi );
+	//console.log( "fields", fields );
+
+	const htm = `
+	<div>
+		city: ${ fields.city }<br>
+		zip: ${ fields.zip }<br>
+		group: ${ agi.agi_group }</br>
+		agi: ${ agi.agi.toLocaleString() }<br>
+		id: ${index}<br>
+		uuid: ${mesh.uuid}<br>
+		<button onclick=RAY.getMeshData(${index}); >view mesh data</button>
+
+	</div>`;
+
+	return htm;
+};
+
+
+
+function toggleDarkMode( button ) {
+
+	if ( butDark.innerHTML === "dark" ) {
+
+		//root.style.backgroundColor = "#1e1f23";
+		document.body.style.color = "#aaa";
+		navMenu.style.backgroundColor = "#555";
+
+		THR.scene.background = new THREE.Color(0x222222);
+		//THR.scene.fog.far = 999999; 
+
+		const summaries = document.querySelectorAll(".sumPrimary");
+
+		Array.from( summaries ).forEach( sum => sum.style.backgroundColor = "#888" );
+		divPopUp.style.backgroundColor = "#333";
+
+		butDark.innerHTML = "light";          
+
+		return;
+
+	} 
+
+
+	//root.style.backgroundColor = "#1e1f23";
+	document.body.style.color = "teal";
+	navMenu.style.backgroundColor = "#fafffa";
+
+	THR.scene.background = new THREE.Color(0xcce0ff);
+	//THR.scene.fog.far = THR.radius * 8;
+
+	const summaries = document.querySelectorAll(".sumPrimary");
+	Array.from( summaries ).forEach( sum => sum.style.backgroundColor = "#eee" );
+
+	divPopUp.style.backgroundColor = "#eee";
+
+	butDark.innerHTML = "dark";
+
+};
+</script>
+</body>
+</html>

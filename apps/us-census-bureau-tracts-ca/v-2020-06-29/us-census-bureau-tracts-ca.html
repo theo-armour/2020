@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+<meta name=description
+	content="Real-time interactive 3D graphics in your browser using the WebGL and the Three.js JavaScript library">
+<meta name=keywords content="Three.js,WebGL,JavaScript,GitHub,FOSS,3D,STEM">
+<meta name=version content="2020-06-29">
+
+<title></title>
+
+<link href="../../../lib/style/style-2020-06-28.css" rel="stylesheet" >
+
+
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r118/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r118/examples/js/controls/OrbitControls.js"></script>
+
+
+<script src="../../../lib/thr-three/thr-threejs-2020-06-16.js"></script>
+
+<script src="../../../lib/gjs-geojson/gjs-geojson-2020-06-21.js"></script>
+<script src="../../../lib/thr-three/ray-raycaster-2020-06-21.js"></script>
+
+
+<details id=detNavMenu >
+
+	<summary id=sumNavMenu class="sumPrimary gmd-1">show || hide menu</summary>
+
+	<nav id="navMenu" class="gmd-2">
+
+		<header>
+
+			<h2>
+				<a href="https://github.com/theo-armour/2020/tree/master/apps/us-census-bureau-tracts-ca/" id=aSource target=_top title="Source code on GitHub" >&xcirc;</a>
+
+				<a href="" title="Click to reload this page" >
+					<span id=sTitle ></span> 
+					<span id=sVersion ><</span>
+				</a>
+
+			</h2>
+
+		</header>
+
+		<p>
+			<output id=outSpeed>50</output>
+
+			<input type="range" id="inpSpeed" oninput="setScale(this);outSpeed.innerHTML=this.value;" />
+		</p> 
+<!--
+		<p>
+			<button onclick=groupPlaces.visible=!groupPlaces.visible; style=background-color:red;width:100% >Census Bureau Places</button>
+		</p>
+
+		<p>
+			<button onclick=groupRemix.visible=!groupRemix.visible; style=background-color:aqua;width:100% >Census Bureau Tracts</button>
+		</p>
+
+	-->
+		<p
+			title="View the number of objects that need rendering and the total number of triangles used to create the objects">
+			<button onclick="setStats()">setStats</button>
+		</p>
+
+
+		<div id=RAYdivMeshData ></div>
+		<div id="divLog"></div>
+
+		<footer>
+			<button id=butDark onclick=toggleDarkMode(); >dark</button>
+			<hr>
+	
+			<p title="go to top of menu" style=text-align:center; >
+				<a class=aDingbat href=javascript:navMenu.scrollTo(0,0); >❦</a>
+			</p>
+	
+		</footer>
+
+	</nav>
+
+</details>
+
+<div id=divPopUp >Touch or click a data point to view its details</div>
+
+<script>
+
+svgOcticon = `<svg height="18" class="octicon" viewBox="0 0 16 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>`;
+aSource.innerHTML = svgOcticon;
+
+const version = document.head.querySelector( "[ name=version ]" );
+sVersion.innerHTML = version ? version.content : "";
+
+sTitle.innerHTML= document.title ? document.title : location.href.split( '/' ).pop().slice( 0, - 5 ).replace( /-/g, ' ' );
+
+
+// let mesh, group, axesHelper, lightDirectional, cameraHelper;
+// let renderer, camera, controls, scene;
+
+THR.init();
+THR.animate();
+
+
+init();
+
+function init() {
+
+	THR.addGround();
+
+	GJS.initGeoJson();
+
+	camera.position.set( -118, 28, 4 );
+	controls.target.set( -118, 37, 0 );
+
+	groupRemix = new THREE.Group();
+
+	items = [];
+
+	scene.add( groupRemix );
+
+	url = "../../../assets/csv/us-census-data-ca-remix-2020-06-25.csv"
+
+	requestFile( url, onLoadRemix );
+
+	RAY.addMouseMove();
+
+	RAY.intersectObjects = items;
+
+
+	if ( window.innerWidth < 640 || window.innerHeight < 640 ) {
+
+	//toggleNavMenu();
+
+	} else {
+
+	detNavMenu.open = true
+
+	}
+
+}
+
+function toggleDarkMode( button ) {
+
+	if ( butDark.innerHTML === "dark" ) {
+
+		//root.style.backgroundColor = "#1e1f23";
+		document.body.style.color = "#aaa";
+		navMenu.style.backgroundColor = "#555";
+
+		THR.scene.background = new THREE.Color(0x222222);
+		THR.scene.fog.far = 999999; 
+
+		const summaries = document.querySelectorAll(".sumPrimary");
+
+		Array.from( summaries ).forEach( sum => sum.style.backgroundColor = "#888" );
+		divPopUp.style.backgroundColor = "#333";
+
+		butDark.innerHTML = "light";          
+
+		return;
+
+	} 
+
+
+	//root.style.backgroundColor = "#1e1f23";
+	document.body.style.color = "teal";
+	navMenu.style.backgroundColor = "#fafffa";
+
+	THR.scene.background = new THREE.Color(0xcce0ff);
+	THR.scene.fog.far = THR.radius * 8;
+
+	const summaries = document.querySelectorAll(".sumPrimary");
+	Array.from( summaries ).forEach( sum => sum.style.backgroundColor = "#eee" );
+
+	divPopUp.style.backgroundColor = "#eee";
+
+	butDark.innerHTML = "dark";
+
+};
+
+
+function requestFile( url, callback ) {
+
+	const xhr = new XMLHttpRequest();
+	xhr.open( 'GET', url, true );
+	xhr.onerror = ( xhr ) => console.log( 'error:', xhr  );
+	//xhr.onprogress = ( xhr ) => console.log( 'bytes loaded:', xhr.loaded );
+	xhr.onload = ( xhr ) => callback( xhr.target.response );
+	xhr.send( null );
+
+}
+
+
+function onLoadRemix( response ) {
+	//console.log( "response", response );
+
+	const lines = response.split( "\n" ).map( line => line.trim().split( ";" ) );
+	//console.log( "lines", lines );
+
+	// densities = lines.map( line => + line[ 8 ] )
+	max = 30000; // Math.max( ... densities );
+	//console.log( "max ", max );
+
+	const meshes = lines.map( ( line, index ) => {
+
+		// if ( line[ 0 ] === "059990100" ) {
+
+		// 	console.log( "line", line );
+		// }
+
+		height = line[ 6 ] === "0" || line[ 6 ] > max ? - 1 : line[ 6 ];
+		//console.log( "height", height );
+		const geometry = new THREE.CylinderBufferGeometry(0.01, 0, 2 * height / max, 3 );
+		geometry.applyMatrix4( new THREE.Matrix4().makeRotationX( 0.5 * Math.PI ) );
+		geometry.applyMatrix4( new THREE.Matrix4().makeTranslation( 0, 0, height / max ) );
+		const material = new THREE.MeshNormalMaterial();
+		const mesh = new THREE.Mesh( geometry, material);
+		mesh.position.set( + line[ 5 ], + line[ 4 ], 0);
+		mesh.userData.index = index;
+		mesh.userData.lines = lines;
+		return mesh;
+		
+	} );
+
+	groupRemix.add( ... meshes );
+
+	items.push( ... meshes )
+
+}
+
+function setScale( range ) {
+
+	scale = 0.1+ ( range.value / 100 ) 
+
+	groupRemix.children.forEach( mesh => mesh.scale.set( scale, scale, scale ));
+	
+
+}
+
+
+function setStats () {
+
+	const script = document.head.appendChild( document.createElement( "script" ) );
+	script.onload = () => {
+
+		const stats = new Stats();
+		const sts = document.body.appendChild( stats.dom );
+		sts.style.left = "";
+		sts.style.right = "0px";
+		requestAnimationFrame( function loop () {
+
+			stats.update(); requestAnimationFrame( loop );
+
+		} );
+
+	};
+
+	script.src = "https://raw.githack.com/mrdoob/stats.js/master/build/stats.min.js";
+
+
+	const render = renderer.info.render;
+	if( !window.divRendererInfo ) divRendererInfo = navMenu.appendChild( document.createElement( "div" ) );
+	divRendererInfo.innerHTML = `
+<div>
+	Renderer Info<br>
+	Calls: ${render.calls }<br>
+	Lines: ${ render.lines }<br>
+	Triangles: ${render.triangles.toLocaleString() }<br>
+</div>`;
+
+}
+
+
+function onWindowResize() {
+
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+
+	renderer.setSize( window.innerWidth, window.innerHeight );
+
+	//console.log( 'onWindowResize  window.innerWidth', window.innerWidth );
+
+}
+
+
+
+function animate() {
+
+	requestAnimationFrame( animate );
+	renderer.render( scene, camera );
+	controls.update();
+
+}
+
+</script>
+</body>
+</html>
