@@ -51,6 +51,10 @@ USA Census Bureau Data
 * https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/gaz-record-layouts.html
 * https://data.census.gov/cedsci/table
 
+Maps
+
+* https://data.census.gov/cedsci/map?tid=GOVSTIMESERIES.CG00ORG01&mode=selection&g=1400000US06075010500&vintage=2018&layer=VT_2018_140_00_PY_D1
+* https://data.census.gov/cedsci/map?tid=GOVSTIMESERIES.CG00ORG01&mode=selection&g=1400000US06075010800&vintage=2018&layer=VT_2018_140_00_PY_D1
 
 </details>
 
