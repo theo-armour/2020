@@ -16,10 +16,14 @@ _USA Census Bureau Tracts_
 
 ## Concept
 
-_In the old days there were preliminary sketches on envelopes and you had to imagine what the design would really look like. Now there are designs on screens and you have to imagine how sketchy and preliminary they are._
+_In the old days there were preliminary sketches on envelopes and you had to imagine what the design would really look like. Now there are designs on screens and you have to imagine how very sketchy and preliminary they are. 
+;-)_
 
 
 2020-06-29 Features
+
+Displaying thousands of data points is tricky. The normal method is to bulk numbers of points together. The issue can be that you lose subtlety. In this version, there is slider to scale the size of the data points - allowing for larger points that you can see when you zoom out and space between the points when you zoom in
+
 
 * Data for 8,057 US census tracts. Heights indicate density per square kilometer.
 * Use fingers or pointing device to to zoom, pan and rotate. 
