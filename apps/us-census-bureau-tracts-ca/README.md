@@ -1,23 +1,31 @@
-<span style=display:none; >[You are now in a GitHub source code view - click this link to view Read Me file as a web page]( https://theo-armour.github.io/2020/sandbox/us-census-bureau-tracts-ca/readme.html "View file as a web page." ) </span>
+<span style=display:none; >[You are now in a GitHub source code view - click this link to view Read Me file as a web page]( https://theo-armour.github.io/2020/apps/us-census-bureau-tracts-ca/readme.html "View file as a web page." ) </span>
 
-<div><input type=button onclick=window.location.href="https://github.com/theo-armour/2020/tree/master/sandbox/us-census-bureau-tracts-ca";
+<div><input type=button onclick=window.location.href="https://github.com/theo-armour/2020/tree/master/apps/us-census-bureau-tracts-ca";
 value='You are now in a GitHub web page view - Click this button to view this read me file as source code' ></div>
 
 
-# [USA Census Bureau Tracts Read Me]( https://theo-armour.github.io/2020/sandbox/us-census-bureau-tracts-ca/readme.html )
+# [USA Census Bureau Tracts Read Me]( https://theo-armour.github.io/2020/apps/us-census-bureau-tracts-ca/readme.html )
 
 <!--@@@
-<iframe src=https://theo-armour.github.io/2020/sandbox/us-census-bureau-tracts-ca/ height=500px width=100% ></iframe>
+<iframe src=https://theo-armour.github.io/2020/apps/us-census-bureau-tracts-ca/ height=500px width=100% ></iframe>
 _USA Census Bureau Tracts_
 @@@-->
 
-### Full Screen: [USA Census Bureau Tracts]( https://theo-armour.github.io/2020/sandbox/us-census-bureau-tracts-ca/ )
+### Full Screen: [USA Census Bureau Tracts]( https://theo-armour.github.io/2020/apps/us-census-bureau-tracts-ca/ )
 
 
-<details open >
-<summary>Concept</summary>
+## Concept
 
 _In the old days there were preliminary sketches on envelopes and you had to imagine what the design would really look like. Now there are designs on screens and you have to imagine how sketchy and preliminary they are._
+
+
+2020-06-29 Features
+
+* Data for 8,057 US census tracts. Heights indicate density per square kilometer.
+* Use fingers or pointing device to to zoom, pan and rotate. 
+* Click on a data point to view its details in a pop-up.
+* Click the link in the pop-up to display the canonical US Census Bureau map for the tract.
+* Use the slider to scale the data points so you may zoom in and see the detail.
 
 
 2020-06-23 Features
@@ -36,35 +44,18 @@ _In the old days there were preliminary sketches on envelopes and you had to ima
 
 </details>
 
-<details open >
-<summary>To do and wish list </summary>
+## To do and wish list
 
 * Using height, color, opacity and shapes enable each data point to display a number nuanced values
-
 * Add in the usual bag of tricks to help speed up the display on older devices 
 * Add county name titles
 
-</details>
-
-<details open >
-<summary>Issues </summary>
+## Issues
 
 
-</details>
 
-<details open >
-<summary> Things you can do using this script</summary>
 
-* Click the GitHub Octocat icon to view or edit the source code on GitHub
-* Click on title to reload te page
-* Press Control-U/Command-Option-U to view the source code
-* Press Control-Shift-J/Command-Option-J to see if the JavaScript console reports any errors
-
-</details>
-
-<details open >
-<summary>Links of interest</summary>
-
+##  Links of interest
 
 USA Census Bureau Data
 
@@ -78,10 +69,16 @@ Urban Footprint
 * https://techcrunch.com/2020/02/12/taking-a-page-from-simcity-urbanfootprint-pitches-new-tools-for-developers-and-urban-planners/
 * https://medium.com/urbanfootprint
 
-</details>
 
-<details open >
-<summary>Change log </summary>
+
+## Change log
+
+### 2020-06-29
+
+* Move to apps
+* Start move to lib
+* Many new features
+
 
 ### 2020-06-23
 
@@ -92,6 +89,8 @@ Urban Footprint
 Started
 
 * Need links to useful sources Census tract data
+
+
 
 ### 2020-06-21
 
