@@ -27,7 +27,13 @@ Recent efforts
 
 ## Change Log
 
-#### 2020-06-28
+
+### 2020-07-04
+
+Menu items are now highlighted
+
+
+### 2020-06-28
 
 #### grv-github-repo-tree-view
 
