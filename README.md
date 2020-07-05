@@ -1,6 +1,6 @@
 <span style=display:none; >[You are now in a GitHub source code view - click this link to view Read Me file as a web page]( https://theo-armour.github.io/2020/  "View file as a web page." ) </span>
 
-<div><input type=button onclick=window.location.href="https://github.com/theo-armour/2020/";
+<div><input type=button onclick=window.top.location.href="https://github.com/theo-armour/2020/";
 value='You are now in a GitHub web page view - Click this button to view this read me file as source code' ></div>
 
 

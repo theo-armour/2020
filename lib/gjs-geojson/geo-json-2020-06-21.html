@@ -64,7 +64,7 @@ input[ type=range ]::-webkit-slider-thumb { -webkit-appearance: none; background
 
 	</header>
 
-	<p>
+	<!-- <p>
 		<output id=outSpeed>50</output>
 		<input type="range" id="inpSpeed" onclick="controls.autoRotateSpeed=0.05 * this.value;outSpeed.innerHTML=this.value;" />
 	</p>
@@ -73,7 +73,7 @@ input[ type=range ]::-webkit-slider-thumb { -webkit-appearance: none; background
 	<p
 		title="View the number of objects that need rendering and the total number of triangles used to create the objects">
 		<button onclick="setStats()">setStats</button>
-	</p>
+	</p> -->
 
 
 	<div id="divLog"></div>
@@ -103,7 +103,7 @@ function init() {
 	camera.up.set( 0, 0, 1 );
 
 	scene = new THREE.Scene();
-	scene.background = new THREE.Color( 0xeeeeee );
+	scene.background = new THREE.Color( 0xcce0ff );
 	//scene.fog = new THREE.Fog( 0xcce0ff, 550, 800 );
 	scene.add( camera );
 
