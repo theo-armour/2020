@@ -13,8 +13,8 @@ What have I done now?
 
 Mapping
 
-* https://theo-armour.github.io/2020/#sandbox/us-census-bureau-tracts-ca/index.html
-* https://theo-armour.github.io/2020/#sandbox/california-dasymetry/
+* https://theo-armour.github.io/2020/#apps/us-census-bureau-tracts-ca/index.html
+* https://theo-armour.github.io/2020/#apps/california-dasymetry/
 * https://theo-armour.github.io/2020/#journal/06/2020-06-18-brian/index.html
 
 Recent efforts
