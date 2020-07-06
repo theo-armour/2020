@@ -16,9 +16,7 @@ It's good to kick off with the joy of using metal to cut wood - which comes alon
 
 Theo's comments 2020-07-05 
 
-A very nice choice to start off with. Perhaps one of the most famous statements in physics is from Archimedes: "Give me a place to stand and with a lever I will move the whole world." The lever is perhaps the most the most powerful tool imaginable.
-
-The chisel is wedge is a lever. There has yet to be a chisel big enough to move the Earth but they are nonetheless very powerful
+A very nice choice to start off with. Perhaps one of the most famous statements in physics is from Archimedes: "Give me a place to stand and with a lever I will move the whole world." The lever is perhaps the most the most powerful tool imaginable. The chisel is wedge is a lever. There has yet to be a chisel big enough to move the Earth but they are nonetheless very powerful tools that can help you create something new with every stroke.
 
 
 ### Pull Saw / Silky Woodboy 240, pliante
@@ -30,7 +28,7 @@ The chisel is wedge is a lever. There has yet to be a chisel big enough to move 
 
 Theo's comments 2020-07-05 
 
-Many more very tiny levers. Another counterplay between factory-manufactured incredibly-precise machine-tooled steel and the free-form hand-cutting of wood.
+Many more very tiny levers. Another counter play between factory-manufactured incredibly-precise machine-tooled steel and the free-form hand-cutting of wood.
 
 
 
