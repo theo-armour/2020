@@ -3,16 +3,23 @@
 
 ## PA's Top Three Tools 2020-05-04
 
+Theo's comments 2020-07-05 
+
+It's good to kick off with the joy of using metal to cut wood - which comes along with the schizophrenia of making hand-made things using factory made things. 
+
+
 ### Chisels
 
 * https://www.gaignard-millon.com/mobile/produits.asp?categorie=Ciseaux%20à%20bois&souscategorie=Pfeil%20Swiss%20made&soussouscategorie=&num=55322865
 * https://www.gaignard-millon.com/produits.asp?num=55322865
+* [Chisel sounds on SoundSnap]( https://www.soundsnap.com/tags/chisel )
 
 Theo's comments 2020-07-05 
 
-A very nice choice to start off with. Perhaps one of the most fanmous statements in physics is from Archimedes: "Give me a place to stand and with a lever I will move the whole world." The lever is parhaps the most the most powerful tool imaginable.
+A very nice choice to start off with. Perhaps one of the most famous statements in physics is from Archimedes: "Give me a place to stand and with a lever I will move the whole world." The lever is perhaps the most the most powerful tool imaginable.
 
-The chisel is wedge is a lever. there has yet to be a chisel big enough to move the Earth but they are nonetheless very powerful
+The chisel is wedge is a lever. There has yet to be a chisel big enough to move the Earth but they are nonetheless very powerful
+
 
 ### Pull Saw / Silky Woodboy 240, pliante
 
