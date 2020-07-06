@@ -66,6 +66,7 @@ Vision
 * Remix demography, economics and epidemiology so as to provide useful results down to census tract level
 * People are able to identify individual locales where statewide resources should be supplied by type, quantity and timeline
 
+
 ## Proposed Methodologies
 
 Standards to be obeyed
@@ -96,7 +97,7 @@ Sought for Outcomes
 * "Flatten the curve"
 
 
-### Who: Risk group
+## Who: Risk group
 
 The average media story addresses "you" as the average American or the average Armenian or whatever. But you are not the average.
 
@@ -114,7 +115,7 @@ The goal of this section is to provide a number of categories where membership i
  There should be no limit to the categories or even to the number of questions. But for most people most of the time, a limit of five questions might be a good thing.
 
 
-### Where: Risk location
+## Where: Risk location
 
  * Pandemic status in state, county, census tract level
  * Establish smallest available location for current subject
@@ -123,25 +124,25 @@ The goal of this section is to provide a number of categories where membership i
  * Indoors/outdoors
  * Ventilation
 
-### When: Risk duration
+## When: Risk duration
  * Days, hours, minutes
  * Every day, once a week etc
  * morning noon or night
 
-### What: Risk purpose
+## What: Risk purpose
 
  * See Maslow's hierachy of needs
 
 
-### How:
+## How:
  * How many people
  * How many sick or immune
  * How essential
 
-### Why?
+## Why?
 
 
-### Links of Interest
+## Links of Interest
 
 * Organizations
 * Govs
