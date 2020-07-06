@@ -5,7 +5,7 @@
 <meta name = "viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
 <meta name = "description" content = "Theo Armour 2020 Home page providing access to all the current Spider file viewers hosted using GitHub Pages." >
 <meta name = "keywords" content = "JavaScript,GitHub,FOSS" >
-<meta name = "version" content="2020-07-04">
+<meta name = "version" content="2020-07-06">
 
 <link rel="stylesheet" href="./lib/style/style-2020-07-05.css">
 
@@ -23,11 +23,11 @@
 </head>
 <body>
 
-    <script src="./lib/grv-github-repo-tree-view/grv-github-repo-tree-view-2020-07-04.js"></script>
+    <script src="./lib/grv-github-repo-tree-view/grv-github-repo-tree-view-2020-07-06.js"></script>
 
-	<script src="./lib/fo-file-open/foo-file-open-object-2020-06-16.js"></script>
+	<script src="./lib/fo-file-open/foo-file-open-object-2020-07-03.js"></script>
 	<script src="./lib/fo-file-open/foz-file-open-zip-2020-06-12.js"></script>
-	<script src="./lib/fo-file-open/fr-file-reader-2020-06-12.js"></script>
+	<script src="./lib/fo-file-open/fr-file-reader-2020-07-06.js"></script>
 
 	<details id=detNavMenu >
 
@@ -137,7 +137,8 @@
 	
 				<div title="go to top of menu" style=text-align:center; >
 					<a class=aDingbat href=javascript:navMenu.scrollTo(0,0); >
-					❦</a>
+					❦
+					</a>
 				</div>
 				
 			</footer>
@@ -149,9 +150,9 @@
 
 <main>
 
-	<div id="divContentMain">
+	<div id="divContentMain" >
 
-		<iframe id=ifr style="border: 0 red solid;height:100%;width:100%;" ></iframe>
+		<iframe id=ifr style="border-width: 0 1px 1px 0;height:100%;width:100%;" ></iframe>
 
 	</div>
 
@@ -177,7 +178,6 @@ function init() {
 
 	if ( window.innerWidth < 640 || window.innerHeight < 640 ) {
 
-		document.documentElement.style.setProperty("--mnu-width", "18rem");
 
 	} else {
 
@@ -205,11 +205,11 @@ function onHashChange() {
 
 	}
 
-	let path = "./";
+	let path = "./"; //path needs review in every new instance
+	
+	if ( location.hash.endsWith( ".md" ) ) { // use readme.html to convert markdown to HTML
 
-	if ( location.hash.endsWith( ".md" ) ) {
-
-		path = "./readme.html#"; // convert markdown to HTML
+		path += "readme.html#";  
 
 	}
 
@@ -232,6 +232,15 @@ function requestFile( url = "https://example.com" , callback = onLoad ) {
 	xhr.send( null );
 
 }
+
+
+
+function onLoad( response ) {
+
+	console.log( "response", response );
+
+}
+
 
 
 </script>

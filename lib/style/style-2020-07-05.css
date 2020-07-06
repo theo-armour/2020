@@ -259,10 +259,13 @@ main {
 }
 
 #divContentMain {
-	border: 0 solid blue;
-	height: 100vh;
+	/* border: 0 solid blue;
 	margin: 0 auto;
-	max-width: 50rem;
+	max-width: 50rem; */
+	
+	height: 100vh;
+	width:100%;
+	
 }
 
 #divPopUp {
