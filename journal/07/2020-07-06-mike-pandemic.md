@@ -1,4 +1,4 @@
-# 2020-07-06 Mike Pandemic
+# 2020-07-06 Mike | Pandemic
 
 
 ## Mission and Vision
