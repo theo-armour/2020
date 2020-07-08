@@ -31,7 +31,7 @@
 
 	<details id=detNavMenu >
 
-		<summary id=sumNavMenu class="summary-primary gmd-1">show || hide menu</summary>
+		<summary id=sumNavMenu class="summary-secondary gmd-1">show || hide menu</summary>
 
 		<nav id="navMenu" class="gmd-2">
 
@@ -40,7 +40,7 @@
 				<h2>
 
 					<a id=aGithub href="https://github.com/theo-armour/2020/" target="_top" title="Source code on GitHub">
-						<img src="./assets/icons/octicon.svg">
+						<img src="./lib/assets/icons/octicon.svg">
 					</a>
 
 					<a id=aTitle href="" title="Click to reload this page">
@@ -48,7 +48,7 @@
 					</a>
 					
 					<span class="info">
-						<img class=infoImg  src="./assets/icons/noun_Information_585560.svg"> 
+						<img class=infoImg  src="./lib/assets/icons/noun_Information_585560.svg"> 
 						<span id="divDescription" class="infoTooltip gmd-5">
 
 					</span></span>
@@ -173,7 +173,7 @@ init();
 function init() {
 
 	divPopUp.hidden = true;
-	
+
 	const urlApi = "https://api.github.com/repos/theo-armour/2020/git/trees/master?recursive=1";
 	
 	requestFile( urlApi, GRV.onLoadTree );
