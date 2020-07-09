@@ -12,7 +12,7 @@ _Journal_
 
 ### Full Screen: [Journal]( https://theo-armour.github.io/2020/journal/ )
 @@@-->
-fixes
+
 
 ## Concept
 
