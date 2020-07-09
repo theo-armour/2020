@@ -78,6 +78,8 @@ COACH: conscientiousness, openness, affiliations, curiosity, and healthy lifesty
 * No. 1: “I’d like to change the narrative about what aging entails,”
 * No. 2: “I’d like to start a societal conversation about how we treat older adults and change the narrative for what oldsters are expected to do,”
 
+More
+
 1. Work at being more conscientious. “Do things when you say you’ll do them. See your doctor regularly. If the doctor tells you to do something, do it,” he said. “Conscientiousness is associated with much better life outcomes.”
 2. Fight the complacency that can set in from having lived a long time, knowing what you enjoy and not wanting to try new things.
 3. Just follow healthy practices.
@@ -86,6 +88,8 @@ COACH: conscientiousness, openness, affiliations, curiosity, and healthy lifesty
 ### Appendix: Rejuvenating Your Brain
 
 * https://www.agingkingcounty.org/2020/01/07/kick-off-the-new-year-with-successful-aging/
+
+Tips
 
 * Role models for successful aging
 * The Myth of Failing Memory
@@ -139,15 +143,15 @@ Personality measured by traits
 
 p24 Big Five personality traits
 
-1 Extroversion
-2 Agreeableness
-3 Conscientiousness
-4 Emotional Stability versus Neuroticism
-5 Openness to Experience + Intellect ( Imagination )
+1. Extroversion
+2. Agreeableness
+3. Conscientiousness
+4. Emotional Stability versus Neuroticism
+5. Openness to Experience + Intellect ( Imagination )
 
 https://en.wikipedia.org/wiki/Big_Five_personality_traits
 
-P 32: 5 trait with oldsters
+P 32: 5 traits with oldsters
 
 Role of role models
 
@@ -175,9 +179,11 @@ Too conscientious: Obsessive compulsive disorder
 ##### openness
 
 p39
+
 * Fortunately, our traits and personalities are malleable, like the brain itself. we can change.
 * Power past behaviordoes not necessarily determine our future behavior
 * A cheerful, positive, optimistic outlook - even if it starts out fake - can end up becoming real
+
 
 ##### compassion
 
@@ -212,7 +218,7 @@ p39
 * Life with people
 * Loneliness
 * Social Development
-* Wht you can do about social isolation
+* What you can do about social isolation
 * Changes in sociability among adults
 * Self-efficacy
 	* agency
