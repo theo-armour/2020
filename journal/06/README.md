@@ -1,26 +1,26 @@
-﻿<span style=display:none; >[You are now in a GitHub source code view - click this link to view Read Me file as a web page]( https://theo-armour.github.io/2020/06  "View file as a web page." ) </span>
+﻿<span style=display:none; >[You are now in a GitHub source code view - click this link to view Read Me file as a web page]( https://theo-armour.github.io/2020/journal/06/  "View file as a web page." ) </span>
 
-<div><input type=button onclick=window.location.href="https://github.com/theo-armour/2020/tree/master/06/";
+<div><input type=button onclick=window.location.href="https://github.com/theo-armour/2020/tree/master/journal/06/";
 value='You are now in a GitHub web page view - Click this button to view this read me file as source code' ></div>
 
 
 # [Theo Armour June 2020 Read Me]( ./index.html )
 
-## [2020-06-19-don]( https://theo-armour.github.io/2020/06/index.html#2020-06-19-don.md )
+## [2020-06-19-don]( https://theo-armour.github.io/2020/journal/06/index.html#2020-06-19-don.md )
 
 * CV update and architecture stuff
 
-## [2020-06-18 Brian]( https://theo-armour.github.io/2020/06/2020-06-18-brian/readme.html )
+## [2020-06-18 Brian]( https://theo-armour.github.io/2020/journal/06/2020-06-18-brian/readme.html )
 
 * A first pass - and a fail - at visualizing recent census bureau data
 
 
-## [2020-06-13 Brian]( https://theo-armour.github.io/2020/06/index.html#2020-06-13-brian.md )
+## [2020-06-13 Brian]( https://theo-armour.github.io/2020/journal/06/index.html#2020-06-13-brian.md )
 
 * Views of some of my 3D mapping project from 2012 to 2016
 
 
-## [2020-06-12 Andrew]( https://theo-armour.github.io/2020/06/index.html#2020-06-12-andrew.md )
+## [2020-06-12 Andrew]( https://theo-armour.github.io/2020/journal/06/index.html#2020-06-12-andrew.md )
 
 * Views of my recent COVID-19 trackers and 3D globe visualizations
 
