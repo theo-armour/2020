@@ -55,8 +55,10 @@
 		</p>
 
 		<p>
-			<output id=outSpeed>50</output>
-			<input type="range" id="inpSpeed" onclick="controls.autoRotateSpeed=0.05 * this.value;outSpeed.innerHTML=this.value;" />
+			<label title="speed of rotation" >
+				Speed of rotation <output id=outSpeed>50</output>
+				<input type="range" id="inpSpeed" onclick="controls.autoRotateSpeed=0.05 * this.value;outSpeed.innerHTML=this.value;" />
+			</label>
 		</p>
 
 
