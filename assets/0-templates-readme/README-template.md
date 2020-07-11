@@ -1,6 +1,6 @@
 <span style=display:none; >[You are now in a GitHub source code view - click this link to view Read Me file as a web page]( https://theo-armour.github.io/2020/xxxxx/readme.html  "View file as a web page." ) </span>
 
-<div><input type=button onclick=window.location.href="https://github.com/theo-armour/2020/tree/master/xxxxx/";
+<div><input type=button onclick=window.top.location.href="https://github.com/theo-armour/2020/tree/master/xxxxx/";
 value='You are now in a GitHub web page view - Click this button to view this read me file as source code' ></div>
 
 
@@ -36,4 +36,4 @@ _ZZZZZ_
 
 ***
 
-<center title="hello!" ><a href=javascript:window.scrollTo(0,0); style=font-size:2ch;text-decoration:none; > ❦ </a></center>
+<center title="hello! Click me to go up to the top" ><a href=javascript:window.scrollTo(0,0); style=font-size:2ch;text-decoration:none; > ❦ </a></center>
