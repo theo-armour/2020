@@ -189,6 +189,14 @@ function init() {
 
 	}
 
+	// if running on server, keeps address bar pointed to latest dev
+
+	if ( !location.hash && location.protocol === "https:" ) {
+
+		window.history.pushState( "", "", "./" );
+
+	}
+
 }
 
 function onHashChange() {
@@ -201,13 +209,18 @@ function onHashChange() {
 
 	}
 
-	path = "./";
+	if ( location.hash.toLowerCase().endsWith( ".md") ) {
 
-	ifr.src = path + location.hash.slice( 1 );
+		ifr.src = "./readme.html" + location.hash;
+
+		return;
+
+	}
+
+	ifr.src = "./" + location.hash.slice( 1 );
+
 
 }
-
-
 
 </script>
 </body>
