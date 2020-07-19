@@ -67,14 +67,22 @@ input[ type=range ]::-webkit-slider-thumb { -webkit-appearance: none; background
 
 	</header>
 
-	<p><select id=selUrl onclick=urlImage="images/"+this.value;image.name='';setImageHeight3D(); size=10 ></select></p>
+	<details open>
 
-	<p>
-		<input type="range" id="inpHeight" oninput="setImageHeight3D(this.value);" />
-	</p>
 
-	<p><button onclick=controls.autoRotate=!controls.autoRotate >rotation</button></p>
+		<summary>show||hide menu</summary>
 
+		<p>Click slider at bottom. One finger to rotate. two to zoom.</p>
+		
+		<p><select id=selUrl onclick=urlImage="images/"+this.value;image.name='';setImageHeight3D(); size=10 ></select></p>
+		
+		<p>
+			<input type="range" id="inpHeight" oninput="setImageHeight3D(this.value);" />
+		</p>
+		
+		<p><button onclick=controls.autoRotate=!controls.autoRotate >rotation</button></p>
+		
+	</details>
 
 	<!-- <p
 		title="View the number of objects that need rendering and the total number of triangles used to create the objects">
