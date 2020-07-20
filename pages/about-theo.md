@@ -17,18 +17,24 @@ Theo has helped a number of artists and designers with their web sites helping i
 
 He has a web presence on <a href="http://twitter.com/ta" target="_blank">Twitter</a>, <a href="http://facebook.com/tarmour" target="_blank">Facebook</a>, Google+ and <a href="http://tarmour.github.com/" target="_blank">GitHub</a>. Theo is an angel investor and technical adviser helping small start-ups. These include <a href="http://hommage.com/" target="_blank">Hommage</a>, <a href="http://point65.com/" target="_blank">Point 65</a>, <a href="http://orbitec.com/" target="_blank">Orbitec</a>, <a href="http://www.norroc.com/" target="_blank">Norroc </a>and <a href="http://www.philquo.com/" target="_blank">PhilQuo Ventures</a>. He serves on the board of directors of <a href="https://www.websightdesign.com/">WebSight Design</a>.<br />
 
-His recent endeavors include investigating and developing collaborative and error-checking tools for Computer Aided Design systems and methods for displaying quantitative day using animation and 3D, in particular with using <a href="http://en.wikipedia.org/wiki/WebGL" target="_blank">WebGL</a>&nbsp;and the <a href="https://github.com/mrdoob/three.js/" target="_blank">Three.js</a>&nbsp;JavaScript 3D libary as discussed on&nbsp;<a href="http://jaanga.com/" target="_blank">jaanga.com</a>&nbsp;and&nbsp;<a href="http://mangojango.com/">mangojango.com</a>.<br />
+His recent endeavors include investigating and developing collaborative and error-checking tools for Computer Aided Design systems and methods for displaying quantitative day using animation and 3D, in particular with using <a href="http://en.wikipedia.org/wiki/WebGL" target="_blank">WebGL</a>&nbsp;and the <a href="https://github.com/mrdoob/three.js/" target="_blank">Three.js</a>&nbsp;JavaScript 3D libary as discussed on&nbsp;<a href="http://jaanga.com/" target="_blank">jaanga.com</a>&nbsp;and&nbsp;<a href="http://mangojango.com/" target="_blank" >mangojango.com</a>.<br />
 
-His current work is all free and open source software (<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a>). The intention is to create scripts that encourage you to fork ( geek for 'copy'), edit and share the knowledge. Motivation is encouraged by scripts that are small, fast and easy. It's all available via <a href="http://theo-armour.github.io/">theo-armour.github.io</a> and <a href="http://jaanga.github.io/">jaanga.github.io</a>. Current projects include:<br />
+His efforts are all free and open source software (<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" target="_blank" >FOSS</a>) projects. The intention is to create scripts that encourage you to fork ( geek for 'copy'), edit and share the knowledge. Motivation is encouraged by scripts that are small, fast and easy. It's all available via <a href="https://theo-armour.github.io/2020/" target="_blank">theo-armour.github.io</a> and <a href="https://jaanga.github.io/">jaanga.github.io</a>. Recent projects include:<br />
 <ul>
-<li><a href="http://jaanga.github.io/gestification-r2/">Gestification</a> - tools for the <a href="http://leapmotion.com/">Leap Motion</a> device</li>
-<li><a href="http://jaanga.github.io/algesurf/">algeSurf</a> - math 3D visualization</li>
-<li><a href="http://jaanga.github.io/outer-space/">Jaanga Outer Space</a> - extra-terrestrial 3D cartography</li>
-<li><a href="http://jaanga.github.io/terrain-r2/terrain.html">Jaanga Terrain</a> - earth 3D cartography</li>
-<li><a href="http://jaanga.github.io/sp500/index.html">Jaanga SP500</a> - real-time market 3D data visualization</li>
-<li><a href="http://www.ladybug.tools/spider/index.html">Ladybug Tools / Spider</a> - 3D AEC visualization</li>
+<li><a href="https://jaanga.github.io/gestification-r2/">Gestification</a> - tools for the <a href="http://leapmotion.com/">Leap Motion</a> device</li>
+<li><a href="https://jaanga.github.io/algesurf/">algeSurf</a> - math 3D visualization</li>
+<li><a href="https://jaanga.github.io/outer-space/">Jaanga Outer Space</a> - extra-terrestrial 3D cartography</li>
+<li><a href="https://jaanga.github.io/terrain-r2/terrain.html">Jaanga Terrain</a> - earth 3D cartography</li>
+<li><a href="https://jaanga.github.io/sp500/index.html">Jaanga SP500</a> - real-time market 3D data visualization</li>
+<li>Hacking efforts with other GitHub organizations include: <a href="https://www.ladybug.tools" target="_blank">Ladybog Tools</a>, <a href="https://wikihouse.github.io/viewer-experiments/" target="_blank">WikiHouse</a>, <a href="https://opendesk.github.io/design-playground/"  target="_blank">OpenDesk</a>, <a href="https://va3c.github.io/" target="_blank">vA3C</a>, <a href="https://aechack.github.io/" target="_blank">aeChack</a>, <a href="https://fgx.github.io/" target="_blank">FGx</a>,&nbsp;<a href="https://soundviz.github.io/" target="_blank">soundViz</a>, <a href="https://abantech.net/home/r2/index.html">Abantech</a> and more.</li>
 </ul>
-Hacking efforts with other GitHub organizations include: <a href="http://ladybug.tools">Ladybog Tools</a>, <a href="http://wikihouse.github.io/viewer-experiments/">WikiHouse</a>, <a href="http://opendesk.github.io/design-playground/">OpenDesk</a>, <a href="http://va3c.github.io/">vA3C</a>, <a href="http://aechack.github.io/">aeChack</a>, <a href="http://fgx.github.io/">FGx</a>,&nbsp;<a href="http://soundviz.github.io/">soundViz</a>, <a href="http://abantech.net/home/r2/index.html">Abantech</a> and more.<br />
 
+<p>
+	His current efforts are primarily concentrated on projects with 
+	<a href="https://www.ladybug.tools/spider-2020/" target="_blank" >Ladybug Tools / Spider</a> - 3D AEC visualizations
+</p>
 <br>
 
+***
+
+<center title="hello!" ><a href=javascript:window.scrollTo(0,0); style=font-size:2ch;text-decoration:none; target="_blank"> ❦ </a></center>
