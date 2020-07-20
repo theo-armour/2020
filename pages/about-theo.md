@@ -26,15 +26,17 @@ His efforts are all free and open source software (<a href="https://en.wikipedia
 <li><a href="https://jaanga.github.io/outer-space/">Jaanga Outer Space</a> - extra-terrestrial 3D cartography</li>
 <li><a href="https://jaanga.github.io/terrain-r2/terrain.html">Jaanga Terrain</a> - earth 3D cartography</li>
 <li><a href="https://jaanga.github.io/sp500/index.html">Jaanga SP500</a> - real-time market 3D data visualization</li>
-<li>Hacking efforts with other GitHub organizations include: <a href="https://www.ladybug.tools" target="_blank">Ladybog Tools</a>, <a href="https://wikihouse.github.io/viewer-experiments/" target="_blank">WikiHouse</a>, <a href="https://opendesk.github.io/design-playground/"  target="_blank">OpenDesk</a>, <a href="https://va3c.github.io/" target="_blank">vA3C</a>, <a href="https://aechack.github.io/" target="_blank">aeChack</a>, <a href="https://fgx.github.io/" target="_blank">FGx</a>,&nbsp;<a href="https://soundviz.github.io/" target="_blank">soundViz</a>, <a href="https://abantech.net/home/r2/index.html">Abantech</a> and more.</li>
+<li>Hacking efforts with other GitHub organizations include: <a href="https://wikihouse.github.io/viewer-experiments/" target="_blank">WikiHouse</a>, <a href="https://opendesk.github.io/design-playground/"  target="_blank">OpenDesk</a>, <a href="https://va3c.github.io/" target="_blank">vA3C</a>, <a href="https://aechack.github.io/" target="_blank">aeChack</a>, <a href="https://fgx.github.io/" target="_blank">FGx</a>,&nbsp;<a href="https://soundviz.github.io/" target="_blank">soundViz</a>, <a href="https://abantech.net/home/r2/index.html">Abantech</a> and more.</li>
 </ul>
 
 <p>
 	His current efforts are primarily concentrated on projects with 
-	<a href="https://www.ladybug.tools/spider-2020/" target="_blank" >Ladybug Tools / Spider</a> - 3D AEC visualizations
+	<a href="https://www.ladybug.tools/spider-2020/" target="_blank" >Ladybug Tools / Spider</a> - 3D AEC visualizations.
 </p>
 
-<p>Current side projects include <a href="https://www.ladybug.tools/spider-covid-19-viz-3d/" target="_blank">C19 Viz3D</a> and <a href="https://spraylatino.github.io" target="_blank">spraylatino.github.io</a></p>
+<p>
+Current side projects include <a href="https://www.ladybug.tools/spider-covid-19-viz-3d/" target="_blank">C19 Viz3D</a> and <a href="https://spraylatino.github.io" target="_blank">spraylatino.github.io</a>.
+</p>
 <br>
 
 ***
