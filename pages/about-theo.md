@@ -15,7 +15,7 @@ From 2001 to 2008 he was a member of the Board of Advisers of the <a href="http:
 
 Theo has helped a number of artists and designers with their web sites helping including <a href="http://lynnhershman.com/" target="_blank" title="http://lynnhershman.com">Lynn Hirshman Leeson</a> and Professor <a href="http://lessig.org/" target="_blank" title="Lessig.org">Lawrence Lessig</a> with their web sites. Theo is a collector of <a href="http://artofthenet.com/" target="_blank">web sites that are works of art.</a> He firmly believes that the great art of the future will be the art of the Internet and would be pleased to hear from artists, curators and galleries with similar intentions.
 
-He has a web presence on <a href="http://twitter.com/ta" target="_blank">Twitter</a>, <a href="http://facebook.com/tarmour" target="_blank">Facebook</a>, Google+ and <a href="http://tarmour.github.com/" target="_blank">GitHub</a>. Theo is an angel investor and technical adviser helping small start-ups. These include <a href="http://hommage.com/" target="_blank">Hommage</a>, <a href="http://point65.com/" target="_blank">Point 65</a>, <a href="http://orbitec.com/" target="_blank">Orbitec</a>, <a href="http://www.norroc.com/" target="_blank">Norroc </a>and <a href="http://www.philquo.com/" target="_blank">PhilQuo Ventures</a>. He serves on the board of directors of <a href="https://www.websightdesign.com/">WebSight Design</a>.<br />
+He has a web presence on <a href="http://twitter.com/ta" target="_blank">Twitter</a>, <a href="http://facebook.com/tarmour" target="_blank">Facebook</a>, Google+ and <a href="http://tarmour.github.com/" target="_blank">GitHub</a>. Theo is an angel investor and technical adviser helping small start-ups. These include <a href="http://hommage.com/" target="_blank">Hommage</a>, <a href="http://point65.com/" target="_blank">Point 65</a>, <a href="http://orbitec.com/" target="_blank">Orbitec</a>, <a href="http://www.norroc.com/" target="_blank">Norroc </a>and <a href="http://www.philquo.com/" target="_blank">PhilQuo Ventures</a>. He serves on the board of directors of <a href="https://www.websightdesign.com/" target="_blank">WebSight Design</a>.<br />
 
 His recent endeavors include investigating and developing collaborative and error-checking tools for Computer Aided Design systems and methods for displaying quantitative day using animation and 3D, in particular with using <a href="http://en.wikipedia.org/wiki/WebGL" target="_blank">WebGL</a>&nbsp;and the <a href="https://github.com/mrdoob/three.js/" target="_blank">Three.js</a>&nbsp;JavaScript 3D libary as discussed on&nbsp;<a href="http://jaanga.com/" target="_blank">jaanga.com</a>&nbsp;and&nbsp;<a href="http://mangojango.com/" target="_blank" >mangojango.com</a>.<br />
 
@@ -33,6 +33,8 @@ His efforts are all free and open source software (<a href="https://en.wikipedia
 	His current efforts are primarily concentrated on projects with 
 	<a href="https://www.ladybug.tools/spider-2020/" target="_blank" >Ladybug Tools / Spider</a> - 3D AEC visualizations
 </p>
+
+<p>Current side projects include <a href="https://www.ladybug.tools/spider-covid-19-viz-3d/" target="_blank">C19 Viz3D</a> and <a href="https://spraylatino.github.io" target="_blank">spraylatino.github.io</a></p>
 <br>
 
 ***
