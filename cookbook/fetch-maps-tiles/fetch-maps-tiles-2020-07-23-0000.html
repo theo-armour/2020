@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name=description content="Real-time 3D in your browser using the Three.js JavaScript library">
+	<meta name=keywords content="Three.js,WebGL,JavaScript,GitHub,FOSS,3D,STEM">
+	<meta name="date" content="2020-07-23">
+	<title></title>
+	<style>
+		body {
+			font: 11pt monospace;
+			margin: 0;
+			overflow: hidden;
+		}
+
+		a {
+			color: crimson;
+			text-decoration: none;
+		}
+
+		a:hover,
+		a:focus {
+			background-color: yellow;
+			color: #aaa;
+			text-decoration: underline
+		}
+
+		button {
+			background-color: #ddd;
+			border: none;
+			color: #322;
+			cursor: pointer;
+			padding: 3px 5px;
+		}
+
+		button:hover {
+			background: #ccc;
+			color: #fff
+		}
+
+		#divMenu {
+			margin: 0 20px;
+			max-width: 640px;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+	<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r118/build/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r118/examples/js/controls/OrbitControls.js"></script>
+
+	<div id="divMenu">
+
+		<div id="divTitle"></div>
+
+		<p>
+			<button onclick="sceneRotation = sceneRotation === 1 ? 0 : 1;">rotation</button>
+		</p>
+
+		<div id="divLog"></div>
+
+	</div>
+
+	<script>
+
+		/* globals THREE, divTitle, divMenu, hamburger  */
+		// jshint esversion: 6
+
+
+		let sydney = "latitude=-33.8675&longitude=151.207&zoom=16&offsetUTC=-600";
+		let sfHyatt = "latitude=37.796&longitude=-122.398&zoom=16&offsetUTC=-420";
+		let alcatraz = "latitude=37.8270&longitude=-122.423&zoom=16&offsetUTC=-420";
+		let coit = "latitude=37.8024&longitude=-122.4058&zoom=16&offsetUTC=-420";
+		let santaBarbara = "latitude=34.4208305&longitude=-119.69819&zoom=16&offsetUTC=-420";
+
+
+		const MAP = {};
+
+		const rows = 8
+		const cols = 16;
+
+		const pixelsPerTile = 256
+		let canvas;
+		MAP.tilesLoaded = 0;
+
+		let sceneRotation = 1;
+
+		let renderer, camera, controls, scene;
+
+
+
+		function init() {
+
+			const title = location.href.split( "/" ).pop().slice( 0, -5 ).replace( /-/g, " " );
+			//const title = document.title;
+
+			divTitle.innerHTML = `
+			<h1>
+				<a href="" >${title }</a>
+			</h1>`;
+
+			renderer = new THREE.WebGLRenderer( { alpha: 1, antialias: true } );
+			renderer.setPixelRatio( window.devicePixelRatio );
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+
+			camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 10000 );
+			camera.position.set( -500, -500, 500 );
+			camera.up.set( 0, 0, 1 );
+
+			controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+			scene = new THREE.Scene();
+
+			window.addEventListener( "resize", onWindowResize, false );
+			window.addEventListener( "orientationchange", onWindowResize, false );
+			window.addEventListener( "keyup", () => sceneRotation = 0, false );
+			renderer.domElement.addEventListener( "click", () => sceneRotation = 0, false );
+
+			const axesHelper = new THREE.AxesHelper( 100 );
+			scene.add( axesHelper );
+
+			MAP.getMapTiles();
+
+		}
+
+
+
+
+
+		MAP.getMapTiles = function () {
+
+			MAP.canvas = document.createElement( "canvas" );
+			MAP.canvas.width = cols * pixelsPerTile;
+			MAP.canvas.height = rows * pixelsPerTile;
+			MAP.context = MAP.canvas.getContext( "2d" );
+
+			//document.body.appendChild( canvas );
+			//canvas.style.cssText = "border: 1px solid gray; margin: 10px auto; position: absolute; right: 0; z-index:10;";
+
+			for ( let i = 0; i < cols; i++ ) {
+
+				for ( let j = 0; j < rows; j++ ) {
+
+					const url = "https://mt1.google.com/vt/x=" + ( 10486 + i ) + "&y=" + ( 25326 + j ) + "&z=16";
+
+					MAP.fetchMapTile( url, i, j );
+
+				}
+
+			}
+
+		};
+
+
+
+		MAP.fetchMapTile = function ( url, col, row ) {
+
+			fetch( new Request( url ) )
+				.then( response => response.blob() )
+				.then( blob => MAP.setMap( URL.createObjectURL( blob ), col, row ) );
+
+		};
+
+
+
+		MAP.setMap = function ( src, col, row ) {
+
+			const img = new Image(); //document.createElement( "img" );
+
+			img.onload = function () {
+
+				MAP.context.drawImage( img, 0, 0, pixelsPerTile, pixelsPerTile, col * pixelsPerTile, row * pixelsPerTile, pixelsPerTile, pixelsPerTile );
+
+				MAP.tilesLoaded++
+
+				if ( MAP.tilesLoaded >= rows * cols ) {
+
+					const geometry = new THREE.PlaneBufferGeometry( cols * 50, rows * 50 );
+
+					const texture = new THREE.Texture( MAP.canvas );
+					//texture.minFilter = texture.magFilter = THREE.NearestFilter;
+					texture.needsUpdate = true;
+
+					const material = new THREE.MeshBasicMaterial( { map: texture, side: 2 } );
+					const mesh = new THREE.Mesh( geometry, material );
+					scene.add( mesh );
+
+				}
+
+			}
+
+			img.src = src;
+
+		};
+
+
+
+		function onWindowResize() {
+
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+
+			renderer.setSize( window.innerWidth, window.innerHeight );
+
+			//console.log( "onWindowResize  window.innerWidth", window.innerWidth );
+
+		}
+
+
+
+		function animate() {
+
+			requestAnimationFrame( animate );
+			renderer.render( scene, camera );
+			controls.update();
+			//scene.rotation.z += sceneRotation / 1000;
+
+		}
+
+
+		init();
+		animate();
+
+	</script>
+</body>
+
+</html>

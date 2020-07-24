@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Basic HTML template">
+	<meta name="keywords" content="JavaScript,GitHub,FOSS">
+	<meta name=version content="2020-07-17">
+	<!-- Copyright 2020 Theo Armour. MIT License -->
+
+	<title></title>
+
+	<style>
+		:root {
+			font: 100% monospace;
+		}
+
+		body {
+			margin: 0;
+			overflow: hidden;
+		}
+
+		nav {
+			background-color: aliceblue;
+			padding: 1rem;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+
+	<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r118/build/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r118/examples/js/controls/OrbitControls.js"></script>
+
+	<script src="../../lib/thr-three/thr-threejs-2020-07-17.js"></script>
+
+	<script src="map-2020-07-23-1236.js"></script>
+
+	<nav>
+
+		<h1><a href="">map 2020-07-23</a></h1>
+
+		<details>
+			<summary>bitmaps</summary>
+			<div id=divBitmaps></div>
+		</details>
+
+		<details>
+			<summary>heighttmaps</summary>
+			<div id=divHeighmaps></div>
+		</details>
+	</nav>
+
+	<script>
+
+		init()
+
+		function init() {
+
+			THR.init();
+
+			THR.animate();
+
+			//THR.addGround();
+
+			THR.group = THR.setSceneNew();
+
+			THR.axesHelper.visible = false;
+
+			//THR.addGround();
+
+			THR.addLights();
+
+			const geometry = new THREE.BoxGeometry( 10, 10, 10 );
+			const material = new THREE.MeshNormalMaterial();
+			const mesh = new THREE.Mesh( geometry, material );
+			mesh.castShadow = true;
+
+			THR.group.add( mesh );
+
+			onHashChange();
+
+		}
+
+		function onHashChange() {
+
+			//Me
+			MAP.latitude = 37.796;
+			MAP.longitude = -122.398;
+
+			MAP.rows = 4;
+			MAP.cols = 8;
+			MAP.zoom = 20;
+
+			MAP.getMapTiles( onLoadBitmaps );
+
+		}
+
+
+		function onLoadBitmaps( canvas ) {
+
+			const geometry = new THREE.PlaneBufferGeometry( MAP.cols * MAP.sizePerTile, MAP.rows * MAP.sizePerTile );
+
+			const texture = new THREE.Texture( canvas );
+			//texture.minFilter = texture.magFilter = THREE.NearestFilter;
+			texture.needsUpdate = true;
+
+			const material = new THREE.MeshBasicMaterial( { map: texture, side: 2 } );
+			const mesh = new THREE.Mesh( geometry, material );
+			THR.group.add( mesh );
+
+			THR.updateScene();
+
+			MAP.canvas.style.cssText = "width:256px;"
+			divBitmaps.appendChild( MAP.canvas );
+		}
+
+	</script>
+
+
+</body>
+
+</html>

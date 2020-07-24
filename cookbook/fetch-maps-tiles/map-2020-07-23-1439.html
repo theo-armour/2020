@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Basic HTML template">
+	<meta name="keywords" content="JavaScript,GitHub,FOSS">
+	<meta name=version content="2020-07-17">
+	<!-- Copyright 2020 Theo Armour. MIT License -->
+
+	<title></title>
+
+	<style>
+		:root {
+			font: 100% monospace;
+		}
+
+		body {
+			margin: 0;
+			overflow: hidden;
+		}
+
+		nav {
+			background-color: aliceblue;
+			padding: 1rem;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+
+	<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r118/build/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r118/examples/js/controls/OrbitControls.js"></script>
+
+	<script src="../../lib/thr-three/thr-threejs-2020-07-17.js"></script>
+
+	<script src="map-2020-07-23-1439.js"></script>
+
+	<nav>
+
+		<h1><a href="">map 2020-07-23 1439</a></h1>
+
+		<details>
+			<summary>bitmaps</summary>
+			<div id=divBitmaps></div>
+		</details>
+
+		<details>
+			<summary>heighttmaps</summary>
+			<div id=divHeightMaps></div>
+		</details>
+	</nav>
+
+	<script>
+
+		let mesh, geometry, material;
+
+		init()
+
+		function init() {
+
+			THR.init();
+
+			THR.animate();
+
+			//THR.addGround();
+
+			THR.group = THR.setSceneNew();
+
+			THR.axesHelper.visible = false;
+
+			//THR.addGround();
+
+			THR.addLights();
+
+			const geometry = new THREE.BoxGeometry( 10, 10, 10 );
+			const material = new THREE.MeshNormalMaterial();
+			const mesh = new THREE.Mesh( geometry, material );
+			mesh.castShadow = true;
+
+			THR.group.add( mesh );
+
+			onHashChange();
+
+		}
+
+		function onHashChange() {
+
+			//Me
+			// MAP.latitude = 37.796;
+			// MAP.longitude = -122.398;
+
+			// //alcatraz;
+			// MAP.latitude = 37.8270;
+			// MAP.longitude = -122.423;
+
+			// MAP.rows = 2;
+			// MAP.cols = 2;
+			// MAP.zoom = 9;
+
+
+			MAP.init();
+
+			MAP.getTilesBitmaps( onLoadBitmaps );
+
+			MAP.getTilesHeightMaps( onLoadHeightMaps );
+	
+		}
+
+
+		function onLoadBitmaps( canvas ) {
+
+			//geometry = new THREE.PlaneBufferGeometry( MAP.cols * MAP.sizePerTile, MAP.rows * MAP.sizePerTile );
+						
+
+
+			const texture = new THREE.Texture( canvas );
+			//texture.minFilter = texture.magFilter = THREE.NearestFilter;
+			texture.needsUpdate = true;
+
+			material = new THREE.MeshBasicMaterial( { map: texture, side: 2 } );
+
+			material = new THREE.MeshPhongMaterial( { color: 0xffffff, map: texture, side: 2, transparent: true } );
+
+
+			//material = new THREE.MeshNormalMaterial( { side: 2 } );
+
+			getMesh();
+
+			MAP.canvasBitmap.style.cssText = "width:256px;"
+			divBitmaps.appendChild( MAP.canvasBitmap );
+		}
+
+
+		function onLoadHeightMaps( context ) {
+
+
+			const data = context.getImageData( 0, 0,  MAP.cols * MAP.pixelsPerTile,  MAP.rows * MAP.pixelsPerTile ).data;
+
+			console.log( "data", data );
+			
+
+			//geometry = new THREE.PlaneBufferGeometry( MAP.cols * MAP.sizePerTile, MAP.rows * MAP.sizePerTile );
+
+
+			//scaleTerrain = 0.01;
+
+			MAP.metersPerPixel = MAP.metersPerPixelPerZoom[ MAP.zoom ];
+
+			const scaleTerrain = MAP.heightScale * 100 / ( 256 * MAP.metersPerPixel );
+
+			geometry = new THREE.PlaneBufferGeometry( 100, 100,  MAP.cols * MAP.pixelsPerTile - 1, MAP.rows * MAP.pixelsPerTile - 1 );
+			//geometry.applyMatrix4(new THREE.Matrix4().makeRotationX(-0.5 * Math.PI));
+			//geometry.applyMatrix4(new THREE.Matrix4().makeTranslation(0.5 * MAP.groundSize, 0.5 * MAP.groundSize, 0) );
+			const vertices = geometry.attributes.position.array;
+
+			console.log( "vertices", vertices );
+
+			for ( let i = 2, j = 0; i < vertices.length; i += 3 ) {
+
+				const r = data[ j++ ];
+				const g = data[ j++ ];
+				const b = data[ j++ ];
+				j++;
+
+				vertices[ i ] = scaleTerrain * ( 0.1 * ( r * 65536 + g * 256 + b ) - 10000 );
+
+			}
+
+			geometry.computeFaceNormals();
+			geometry.computeVertexNormals();
+
+			getMesh();
+
+		};
+
+		function getMesh() {
+
+			if ( geometry && material ) {
+
+				mesh = new THREE.Mesh( geometry, material );
+				mesh.castShadow = true;
+				mesh.receiveShadow = true;
+				THR.group.add( mesh );
+
+				//THR.updateScene();
+
+			}
+
+		};
+
+	</script>
+
+
+</body>
+
+</html>
