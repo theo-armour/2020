@@ -20,8 +20,8 @@ MAP.longitude = -122.398;
 // MAP.latitude = 51.4769;
 // MAP.longitude = 0.0005;
 
-MAP.rows = 6;
-MAP.cols = 6;
+MAP.rows = 4;
+MAP.cols = 4;
 MAP.zoom = 11;
 
 MAP.pixelsPerTile = 256;
@@ -36,6 +36,38 @@ MAP.mbptoken = 'pk.eyJ1IjoidGhlb2EiLCJhIjoiY2o1YXFra3V2MGIzbzJxb2lneDUzaWhtZyJ9.
 
 MAP.init = function() {
 
+	THR.scene.traverse( child => {
+
+		if ( child.isMesh || child.isLine || child.isSprite ) {
+
+			child.geometry.dispose();
+			child.material.dispose();
+
+		}
+
+	} );
+
+	if ( MAP.geometry ) {
+
+		//console.log( "MAP.geometry", MAP.geometry );
+		MAP.geometry.dispose();
+		MAP.geometry = undefined;
+
+		MAP.material.dispose();
+		MAP.material = undefined;
+	}
+
+
+	THR.scene.remove( THR.group );
+
+	THR.group = new THREE.Group();
+
+	THR.scene.add( THR.group );
+
+
+	MAP.tileBitmapsLoaded = 0;
+	MAP.tileHeightMapsLoaded = 0;
+
 	MAP.tileCenterX = MAP.lonToTile( MAP.longitude, MAP.zoom);
 	MAP.tileCenterY = MAP.latToTile( MAP.latitude, MAP.zoom);
 
@@ -49,12 +81,16 @@ MAP.init = function() {
 } 
 
 
-MAP.getTilesBitmaps = function ( callback ) {
+MAP.getTilesBitmaps = function () {
 
-	MAP.canvasBitmap = document.createElement( 'canvas' );
-	MAP.canvasBitmap.width = MAP.pixelsPerTile * MAP.cols;
-	MAP.canvasBitmap.height = MAP.pixelsPerTile * MAP.rows;
-	MAP.contextBitmap = MAP.canvasBitmap.getContext( "2d" );
+	if ( !MAP.canvasBitmap ) {
+
+		MAP.canvasBitmap = document.createElement( 'canvas' );
+		MAP.canvasBitmap.width = MAP.pixelsPerTile * MAP.cols;
+		MAP.canvasBitmap.height = MAP.pixelsPerTile * MAP.rows;
+		MAP.contextBitmap = MAP.canvasBitmap.getContext( "2d" );
+	}
+
 
 	//document.body.appendChild( canvas );
 	//canvas.style.cssText = "border: 1px solid gray; margin: 10px auto; position: absolute; right: 0; z-index:10;";
@@ -118,8 +154,6 @@ MAP.onLoadBitmaps = function ( canvas ) {
 	//texture.minFilter = texture.magFilter = THREE.NearestFilter;
 	texture.needsUpdate = true;
 
-	//material = new THREE.MeshBasicMaterial( { map: texture, side: 2 } );
-	//material = new THREE.MeshNormalMaterial( { side: 2 } );
 	MAP.material = new THREE.MeshPhongMaterial( { color: 0xffffff, map: texture, side: 2, transparent: true } );
 
 	MAP.getMesh();
@@ -136,10 +170,15 @@ MAP.onLoadBitmaps = function ( canvas ) {
 
 MAP.getTilesHeightMaps = function() {
 
-	MAP.canvasHeightMaps = document.createElement( "canvas" );
-	MAP.canvasHeightMaps.width = MAP.cols * MAP.pixelsPerTile;
-	MAP.canvasHeightMaps.height = MAP.rows * MAP.pixelsPerTile;
-	MAP.contextHeightMaps = MAP.canvasHeightMaps.getContext( "2d" );
+	if ( !MAP.canvasHeightMaps ) {
+
+		MAP.canvasHeightMaps = document.createElement( "canvas" );
+		MAP.canvasHeightMaps.width = MAP.cols * MAP.pixelsPerTile;
+		MAP.canvasHeightMaps.height = MAP.rows * MAP.pixelsPerTile;
+		MAP.contextHeightMaps = MAP.canvasHeightMaps.getContext( "2d" );
+
+	}
+
 
 	//document.body.appendChild( canvas );
 	//canvas.style.cssText = "border: 1px solid gray; margin: 10px auto; position: absolute; right: 0; z-index:10;";
@@ -196,9 +235,6 @@ MAP.onLoadTileHeightMap = function ( src, col = 0, row = 0 ) {
 
 
 
-
-
-
 MAP.onLoadHeightMaps = function( context ) {
 
 	const data = context.getImageData( 0, 0, MAP.cols * MAP.pixelsPerTile, MAP.rows * MAP.pixelsPerTile ).data;
@@ -239,19 +275,27 @@ MAP.onLoadHeightMaps = function( context ) {
 MAP.getMesh = function () {
 
 	//MAP.geometry = new THREE.PlaneBufferGeometry( MAP.cols * MAP.sizePerTile, MAP.rows * MAP.sizePerTile );
-
+	//material = new THREE.MeshBasicMaterial( { map: texture, side: 2 } );
+	//material = new THREE.MeshNormalMaterial( { side: 2 } );
 
 	if ( MAP.geometry && MAP.material ) {
+
+		//THR.group = THR.setSceneNew();
 
 		const mesh = new THREE.Mesh( MAP.geometry, MAP.material );
 		mesh.castShadow = true;
 		mesh.receiveShadow = true;
 		THR.group.add( mesh );
+		console.log( "vv", 23 );
 
 		THR.updateScene();
 
 		THR.lightDirectional.position.copy(
 			THR.center.clone().add( new THREE.Vector3( -1.5 * THR.radius, -1.5 * THR.radius, 1.5 * THR.radius ) )
+		);
+
+		THR.camera.position.copy(
+			THR.center.clone().add( new THREE.Vector3( 0 * THR.radius, -0.5 * THR.radius, 0.5 * THR.radius ) )
 		);
 
 	}

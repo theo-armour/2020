@@ -23,6 +23,9 @@
 
 		nav {
 			background-color: aliceblue;
+			border-radius: 1rem;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+			margin: 1rem;
 			padding: 1rem;
 			position: absolute;
 		}
@@ -40,7 +43,7 @@
 
 	<nav>
 
-		<h1><a href="">map 2020-07-23 2037</a></h1>
+		<h1><a href="">map 2020-07-23 2156</a></h1>
 
 		<details>
 
@@ -57,6 +60,19 @@
 			<div id=divHeightMaps></div>
 
 		</details>
+
+		<div> 
+
+			<p>
+				<a href='#"latitude":51.4769,"longitude":0.0005,"zoom":15' >Greanwich Observatory</a>
+			</p>
+
+			<p><a href='#"latitude":40.786944,"longitude":-119.204444,"zoom":12'>Burning Man</a></p>
+
+			<p><a href='#"latitude":27.6874,"longitude":86.7322,"zoom":12'>Tenzing Hillary Airport</a></p>
+
+			<p><a href='#"latitude":-17.5388,"longitude":-149.8295,"zoom":13'>Moorea</a></p>
+		</div>
 	</nav>
 
 	<script>
@@ -70,23 +86,26 @@
 			THR.init();
 			THR.renderer.outputEncoding = THREE.LinearEncoding;
 
+
 			THR.animate();
 
-			THR.group = THR.setSceneNew();
+			// THR.group = THR.setSceneNew();
 
-			THR.axesHelper.visible = false;
+			// THR.axesHelper.visible = false;
 
 			THR.addGround();
 
 			THR.addLights();
 
 
-			const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-			const material = new THREE.MeshNormalMaterial();
-			const mesh = new THREE.Mesh( geometry, material );
-			mesh.castShadow = true;
+			// const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+			// const material = new THREE.MeshNormalMaterial();
+			// const mesh = new THREE.Mesh( geometry, material );
+			// mesh.castShadow = true;
 
-			THR.group.add( mesh );
+			// THR.group.add( mesh );
+
+			window.addEventListener( "hashchange", onHashChange )
 
 			onHashChange();
 
@@ -96,14 +115,20 @@
 
 		function onHashChange() {
 
+			const str = decodeURI( location.hash.slice( 1 ) );
+
+			const json = JSON.parse( `{ ${ str } }` )
+			//console.log( "json", json );
+
+			MAP.latitude = json.latitude ? json.latitude : MAP.latitude;
+			MAP.longitude = json.longitude ? json.longitude : MAP.longitude;
+			MAP.zoom = json.zoom ? json.zoom : MAP.zoom;
+
 			MAP.init();
 
 		}
 
-
-
 	</script>
-
 
 </body>
 
