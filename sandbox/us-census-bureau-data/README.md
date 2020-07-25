@@ -45,6 +45,10 @@ _basic-html.html_
 <details open >
 <summary>Links of interest</summary>
 
+Surveys
+
+* https://www2.census.gov/programs-surveys/demo/tables/hhp/
+
 USA Census Bureau Data
 
 * https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html
