@@ -25,12 +25,18 @@ _Assets_
 
 ## Links of Interest
 
-Clipping
+##v Clipping
 
 * https://dev.to/mustapha/7-amazing-css-properties-you-may-not-know-yet-eej
 
+## Dark mode extensions
 
-Dark mode
+* Midnight lizard looks good
+	* Learning curve
+	* Can set things too dark for zenbook
+
+
+## Dark mode
 
 * https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 	* looks good
@@ -40,6 +46,7 @@ Dark mode
 	* https://mohammad-farmaan.github.io/Dark-Mode-For-Web/
 * https://dev.to/albertomontalesi/add-dark-mode-to-your-website-with-just-a-few-lines-of-code-5baf
 	* >>>> document.addEventListener('DOMContentLoaded', () => { !!!
+
 
 OS Dark Mode
 
