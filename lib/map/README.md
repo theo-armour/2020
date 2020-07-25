@@ -17,18 +17,22 @@ _MAP in a resizable window. One finger to rotate. Two to zoom._
 ## Concept
 
 
-Problems to be solved
+### Problems to be solved
 
 * A better outcome for any construction project must consider access to the site and the terrain of the site
-* A better outcome for COVID-19 prevention must consider the ability to view the statistics at all levels of detail raging from global perspective down to the "nitti-gritti" of a neighborhood
+* A better outcome for COVID-19 prevention must consider the ability to view the statistics at all levels of detail raging from global perspective down to the "nitty-gritty" of a neighborhood
 * A better outcome for virtual Burning Man events must consider the visualization of temples and other installations at multiple venues around the world - and in your backyard
 
-Features
+### Features
 
 * Create a hackable 3D map - easy-peasy code - single dependency: three.js
+* Light weight code hosted on static server scraping needed data at run-time
 * Any latitude, longitude and zoom level
 * Bitmaps from any global bitmap tile server
 * Fully asynchronous - let it all happen whenever it wants to happen
+* Access to Google Geocoder provides fast and easy access to latitude and longitude
+* Any location may be re-accesses by permalinks created on-the-fly
+
 
 
 ## To Do / Wish List
@@ -40,6 +44,7 @@ Features
 * Add buildings wherever the data is available
 * Add Sun range and analemma diagrams
 * Add a Burning Man "street map" to any location and have it "decal" the terrain
+* Add interaction, titling, GeoJSON mapping overlays
 * And people dancing in the street
 
 
