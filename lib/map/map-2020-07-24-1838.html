@@ -69,6 +69,21 @@
 
 			<div id="GCDdivGeocoder"></div>
 
+			<p>
+				<select id=selZoom oninput=MAP.zoom=this.value;MAP.init(); >
+					<option>9</option>
+					<option>10</option>
+					<option selected>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+
+				</select>
+			</p>
+
 			<div> 
 
 				<p><a href='#"title":"","latitude":37.796,"longitude":-122.398,"zoom":11'>San Francisco Bay</a></p>
@@ -177,6 +192,8 @@
 			MAP.cols = json.columns ? json.columns : MAP.defaultCols;
 			MAP.rows = json.rows? json.rows : MAP.defaultRows;
 			MAP.heightScale = json.height ? json.height : MAP.defaultHeightScale;
+
+			selZoom.selectedIndex = MAP.zoom - 9;
 
 			MAP.init();
 
