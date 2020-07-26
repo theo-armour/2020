@@ -25,18 +25,18 @@ _Assets_
 
 ## Links of Interest
 
-##v Clipping
+### Clipping
 
 * https://dev.to/mustapha/7-amazing-css-properties-you-may-not-know-yet-eej
 
-## Dark mode extensions
+### Dark mode extensions
 
 * Midnight lizard looks good
 	* Learning curve
 	* Can set things too dark for zenbook
 
 
-## Dark mode
+### Dark mode
 
 * https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 	* looks good
@@ -53,11 +53,33 @@ OS Dark Mode
 * https://dev.to/blacksonic/add-dark-mode-to-your-site-with-this-short-css-trick-1g7b
 
 
-Color
+### Color
 
+Text should be either black on white or white on black. It's the rule.
+
+Rules?
+
+``` css
+	--color-active-text: gree;
+	--color-active-background: yellow;
+
+	--color-0-text: #000;
+	--color-0-background: #fff;
+
+	--color-1-text: crimson;
+	--color-1-background: #eee;
+
+	--color-2-text: pink;
+	--color-2-background: purple;
+```
+
+### Generate colors
+
+* https://www.w3schools.com/w3css/w3css_color_generator.asp
 * https://javisperez.github.io/tailwindcolorshades/#/?Yellow=ffff00&tv=1
 
-Slider switch
+
+### Slider switch
 
 * https://medium.com/front-end-weekly/creating-a-toggle-switch-in-css-2d23e496d035
 	* https://codepen.io/JAGATHISH1123/pen/PvayMB
@@ -67,7 +89,7 @@ Slider switch
 * https://stackoverflow.com/questions/39846282/how-to-add-the-text-on-and-off-to-toggle-button
 	* https://stackoverflow.com/questions/39846282/how-to-add-the-text-on-and-off-to-toggle-button
 
-CSS Frameworks
+### CSS Frameworks
 
 * https://tailwindcss.com/
 
