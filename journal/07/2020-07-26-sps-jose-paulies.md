@@ -8,7 +8,12 @@ Subscribe: spspaulies-subscribe@yahoogroups.com
 
 Reposted from: https://www.bipocatsps.org/
 
-***
+I believe the names stands for "Black, indigenous & people of color at SPS"
+
+Please read the text posted at bipocatsps first in order to make the following messages meaningful.
+
+
+## Initial message ~ José Leos ~ joseleos@gmail.com ~ '91
 
 
 Hello fellow Paulies!
@@ -23,7 +28,7 @@ https://www.bipocatsps.org/
 
 I would appreciate your support by reading & signing the petition and then sharing it with others within the SPS community.
 
-If you have any questions, please feel free to reach out to me. Thanks!.  
+If you have any questions, please feel free to reach out to me. Thanks!
 
 José Leos
 
@@ -110,7 +115,7 @@ Brent Scudder '56
 
 ## DRAFT OF Theo's reply
 
-Jose and Diane, Alexis, Rory & Brent
+José and Diane, Alexis, Rory & Brent
 
 Thank you all for engaging, considered and intentional messages.
 
@@ -127,20 +132,20 @@ Rory, Brent and Alexis: I hear you - and yet you are not as forward looking as 
 
 Nonetheless there are still vast swaths of people in this world that have been and are denied the joy, friendship and happiness for which we have all prayed. And many are denied only because of their race.
 
-The thrust in Jose's text is - like the prayer - forward looking. The text asks the future School to evolve so as to be eager to bear the burdens of others. The text asks that we the members of the School's community create plans for how to be thoughtful of those less happy than ourselves.
+The thrust in José's text is - like the prayer - forward looking. The text asks the future School to evolve so as to be eager to bear the burdens of others. The text asks that we the members of the School's community create plans for how to be thoughtful of those less happy than ourselves.
 
-The call to action for Saint Paul's School:  
+I do agree with Rory that there is currently a "frenzy" with much media hype regarding the relations between races. But the the call to action for Saint Paul's School is timeless:  
 
 1. Be a leader in racial equity in education - and not to cease until there are million or more schools as good as Saint Paul's
-2. Establish metrics and guidelines that help us measure our failures and improvements
+2. Establish metrics, guidelines and practices that help us to measure our failures and improvements
 3. Celebrate all our differences and all our similarities
 
 
-The representation of a pelican piercing its breast to feed its young with its own blood is called a “Pelican in her Piety.”. We all know this symbol well:
+The representation of a pelican piercing its breast to feed its young with its own blood is called a [“Pelican in her Piety”]( http://www.thewestologist.com/symbols/the-symbol-of-self-sacrifice ). We all know this symbol well:
 
 ![SPS-logo-2019-fullColor]( https://theo-armour.github.io/2020/journal/07/SPS-logo-2019-fullColor.png )
  
-Now,  I'm not sure Jose wants us all to pierce our breasts, but I feel he is asking us to remember, to be unselfish and to bear the burdens of others. It's a bloody good idea.
+Now,  I'm not sure José wants us all to pierce our breasts, but I feel he is asking us to remember, to be unselfish and to bear the burdens of others. José, it's a bloody good plan.
 
 Theo
 
