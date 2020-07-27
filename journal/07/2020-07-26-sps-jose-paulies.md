@@ -138,7 +138,7 @@ The call to action for Saint Paul's School:
 
 The representation of a pelican piercing its breast to feed its young with its own blood is called a “Pelican in her Piety.”. We all know this symbol well:
 
-![SPS-logo-2019-fullColor]( SPS-logo-2019-fullColor.png )
+![SPS-logo-2019-fullColor]( https://theo-armour.github.io/2020/journal/07/SPS-logo-2019-fullColor.png )
  
 Now,  I'm not sure Jose wants us all to pierce our breasts, but I feel he is asking us to remember, to be unselfish and to bear the burdens of others. It's a bloody good idea.
 
