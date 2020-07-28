@@ -113,7 +113,7 @@ Brent Scudder '56
 
 ***
 
-## DRAFT OF Theo's reply
+## DRAFT of Theo's reply
 
 José and Diane, Alexis, Rory & Brent
 
