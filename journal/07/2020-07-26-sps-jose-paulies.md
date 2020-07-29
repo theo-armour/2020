@@ -111,9 +111,8 @@ The school has tried to be on the front lines when it came to loosening up its s
  
 Brent Scudder '56 
 
-***
 
-## DRAFT of Theo's reply
+## Reply #5 Theo Armour ~ t.armour@gmail.com ~ '65
 
 José and Diane, Alexis, Rory & Brent
 
@@ -134,7 +133,7 @@ Nonetheless there are still vast swaths of people in this world that have been a
 
 The thrust in José's text is - like the prayer - forward looking. The text asks the future School to evolve so as to be eager to bear the burdens of others. The text asks that we the members of the School's community create plans for how to be thoughtful of those less happy than ourselves.
 
-I do agree with Rory that there is currently a "frenzy" with much media hype regarding the relations between races. But the the call to action for Saint Paul's School is timeless:  
+I do agree with Rory that there is currently a "frenzy" with much media hype regarding the relations between races. But the call to action for Saint Paul's School is timeless:  
 
 1. Be a leader in racial equity in education - and not to cease until there are million or more schools as good as Saint Paul's
 2. Establish metrics, guidelines and practices that help us to measure our failures and improvements
@@ -146,6 +145,172 @@ The representation of a pelican piercing its breast to feed its young with its o
 ![SPS-logo-2019-fullColor]( https://theo-armour.github.io/2020/journal/07/SPS-logo-2019-fullColor.png )
  
 Now,  I'm not sure José wants us all to pierce our breasts, but I feel he is asking us to remember, to be unselfish and to bear the burdens of others. José, it's a bloody good plan.
+
+Theo
+
+***
+
+AKA Norman Armour III '65
+
+
+## Reply #6 ~ James G.R. Hart ~ jgrhart@gmail.com ~ '60
+
+All,
+
+To my mind, this talk of racism (not just at the school but throughout society) has missed the mark. Very simply put, to my mind, “racism” is one example of social justice. Especially the way it’s being bandied about, people accusing other people of “racism” often without clear proof and generally just to put the other party on the defensive.
+
+To me the larger issue is “prejudice”, which basically is making decisions about people based on surface and often inaccurate information. In other words, not based on the truth. Prejudice is often…usually…based one one person’s ignoring or denying one of the basic tenets of our great nation, that all people are, because all were created by a loving God, created equal. Everyone deserves to be honored and respected. God created us all. This goes no matter what sex, or age, or form, or economic status. Etc. This is justice founded on the life and word of Christ. Expressed in the Gospels and in many of the letters of Paul (eg. Ephesians).
+
+“Speaking [and acting] the truth in love.” And truth is not always nice. Truth requires courage. Courage based on Biblical, not political or any other kind of biased teachings.
+
+Blessings,
+
+Jim Hart ‘60
+
+
+## Reply #7 ~ Theo Armour
+
+Hi Jim
+
+There are many truths in your message. It is hard to imagine a superior being acting on any universal principle other than random chance and the luck of the draw. We would not want fickle or temperamental gods (in the modern era anyway).  Therefore, yes, "Everyone deserves to be honored and respected". And, fingers crossed, the desire for theocracies based on groups of "chosen" people are fading.  
+
+## Humans are capricious
+
+Wait, there's more. Down here we human creatures seem to play a different game. We do play favorites, pick sides and place bets. As a result the outcomes here on earth are not so random. Some peeps get more than others.
+
+I am not Black. I cannot speak for Black people. I cannot even begin to say that I control my biases.
+
+But I can observe situations
+
+* When the ship is sinking, the outcry is "women and children first"
+* As you walk into a public building you may observe the ramp for access by wheelchair
+* After the Holocaust, the state of Israel came to be in much part because of the Holocaust 
+* The Geneva convention demands humane treatment of your deadly enemy
+* The Marshall plan produced and sent goods and services from the Unites States to the enemies recently defeated
+
+The world really does have a history of following the call in our School Prayer about being "eager to bear the burdens of others" and also being selective about whose burdens are worth bearing.
+
+We humans are capricious. We identify underdogs. We try to help. 
+
+## Racism is everywhere
+
+Here is another observation. After the Second World War, Aneurin Bevin, https://en.wikipedia.org/wiki/Aneurin_Bevan Minister of Health in England led the strategy that enable the the British National Health Service in 1946 - leading to a system of medical that serves all-comers in the UK. At the same time Walter Reuther  https://en.wikipedia.org/wiki/Walter_Reuther - as President of the United Automobile Workers Union - was part of the effort that made health care in the United States the responsibility of private employers - such as GM, Ford and Chrysler and unlike the rest of the world not a government obligation. Why? Because a national plan would have to include Black people. An employer-based plan could be tailored to fit the white union-members and exclude Black people. I do not have a good link to the Reuther involvement - and later he gets involved with Civil Rights and does favor a national plan so it get complicated. But here are links to articles on racism in US medicine of that era: 
+
+* https://www.nytimes.com/interactive/2019/08/14/magazine/universal-health-care-racism.html
+* https://ssa.uchicago.edu/sites/default/files/uploads/JHSB04ExtraQuadagno.pdf
+* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1447696/
+
+There is health injustice in the United States with respect to Black people, indigenous people and people of color. The injustice in endemic, pervasive and total. The injustice is exacerbated by the current pandemic.
+
+Health injustice is but one of the injustices that Black people live with.
+
+## Uncle Edmund pays with his life
+
+But let us come back to our School. Just look at life - and healthcare - from another perspective. In 1912, my great uncle Edmund as a first former at the School became ill and died of polio. My great-grandfather said that this should never happen again and donated the funds to build what was then called the Armour Infirmary. In my era we called it "The Cooler". I nearly died there myself in my first firm year of pneumonia. The thing is that for a number of years the Infirmary was the best hospital in New Hampshire. I don't think this was unusual. Everything about the school oozes being the best. Whatever happens, there are and have always been people that lift their fingers and write checks.
+
+## Give light to all in the house
+
+Is this merely the best school money could buy? Is that it? I want to think that there is more. I want to say to Saint Paul's School of Concord NH:
+
+"You are the light of the world. A city set on a hill cannot be hid. Nor do men light a lamp and put it under a bushel, but on a stand, and it gives light to all in the house. Let your light so shine before men, that they may see your good works and give glory to your Father who is in heaven."—Jesus, from the Sermon on the Mount, Matthew 5:14-16.
+
+A light is needed. We don't always see clearly. My guess is that most German people in Germany in WWII were not really cognizant that the Holocaust was happening. I think that there are a good number of people in a America who are not aware of the racial injustice that occurs in our country here and now .
+
+The call to action by José Leos is to let the light shine. Not just in the Chapel and not just in the hockey rink. But to schools everywhere. Put the light "on a stand", and keep it dright until "it gives light to all in the house".For example: let a light shine on good practices that teachers feel are pedagogically informative in manifesting our racial biases. Let a light shine on usable metrics that heads of schools and school boards can use to identify bad and good racism-revealing practices. And provide head-lamps to students in learning pods that help enlighten their "spidey-sense" about a situation being valid.
+
+I don't know how. I don't know where. But I hope that the "Letter to SPS rector and board regarding diversity, equity, and inclusion" shines a light to all in the house - and more. 
+
+## Your candles shine as bright as my candle
+
+Thinking about the process of enlightenment, reminds me of another useful quote.
+
+“He who receives an idea from me, receives instruction himself without lessening mine; as he who lights his taper at mine, receives light without darkening me.” —Thomas Jeferson https://en.wikiquote.org/wiki/Thomas_Jefferson
+
+Our tapers may be the finest, most expensive tapers there are. Not to worry. Your tapers - no matter how humble - once lit may shine a light as just bright as ours. And more to the point, our collaboration did not cost me a penny.
+
+For sure, Saint Paul's School is a "city on the hill". Now step back a bit. Note that there are other hills out there. Would it mot be totally cool to see lights on all those hills?
+
+Now I don't care how many billionaire parents there are out there, bu there are not enough to put tapers on all the hills. And asking you to be "eager to bear the burden of others" should not send you to the poor house.
+
+There is a simpler, faster, cheaper way: Just share the skills, techniques, lessons-learned and insights on how to make the tapers. 
+
+In the context of this email thread, that means taking the workflow that José Leos proposes and actively sharing the processes with the other side of Pleasant Street in Concord (which includes Concord High ) and with all comers - via people, papers and programs - on all the hills everywhere.
+
+
+And in doing so, let the bearing the burden of others become a piece of cake.
+
+
+****
+
+
+Hi Jim
+This is a very long and convoluted reply - and could use editing and clarification - sorry for this. But I hope it begins to address the notion that what José Leos proposes is more than bearing the burden of others. It may also be able add a new-found joy.
+There are many truths in your message. It is hard to imagine a superior being acting on any universal principle other than random chance and the luck of the draw. We would not want fickle or temperamental gods (in the modern era anyway).   And, fingers crossed, the desires for theocracies based on groups of "chosen" people are fading.  Therefore, yes, "Everyone deserves to be honored and respected".
+
+Humans are capricious
+
+Wait, there's more. Down here on the terrestrial plain, we human creatures seem to play a different game. We do play favorites, pick sides and place bets. As a result the outcomes here on earth are not so random. Some peeps get more than others.
+
+I am not Black. I cannot speak for Black people. I cannot even begin to say that I control my biases.
+
+But I can observe situations:
+
+* When the ship is sinking, the outcry is "women and children first"
+* As you walk into a public building you may observe the ramp for access by wheelchair
+* After the Holocaust, the state of Israel came to be in much part because of the Holocaust 
+* The Geneva convention demands humane treatment of your deadly enemy
+* The Marshall plan produced and sent goods and services from the United States to the enemies recently defeated
+
+The world really does have a history of following the call in our School Prayer about being "eager to bear the burdens of others" and also being selective about whose burdens are worth bearing.
+
+We humans are capricious. We identify underdogs. We try to help. 
+
+Racism is everywhere
+
+Here is another observation. After the Second World War, Aneurin Bevin, Minister of Health in England led the strategy that enabled the the British National Health Service in 1946 - leading to a system of medical practice that serves all-comers in the UK. At the same time Walter Reuther - as President of the United Automobile Workers Union - was part of the effort that made health care in the United States the responsibility of private employers - such as GM, Ford and Chrysler and unlike the rest of the world not a government obligation. Why? Because a national plan would have to include Black people. An employer-based plan could be tailored to fit the white union-members and exclude Black people. I do not have a good link to the Reuther involvement - and later he gets involved with Civil Rights and does favor a national plan so it does get complicated. But here are links to articles on racism in US medicine of that era: 
+
+* https://www.nytimes.com/interactive/2019/08/14/magazine/universal-health-care-racism.html
+* https://ssa.uchicago.edu/sites/default/files/uploads/JHSB04ExtraQuadagno.pdf
+* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1447696/
+
+There is health injustice in the United States with respect to Black people, indigenous people and people of color. The injustice is endemic, pervasive and total. The injustice is exacerbated by the current pandemic.
+
+Health injustice is but one of the injustices that Black people live with.
+
+Uncle Edmund pays with his life
+
+But let us come back to our School. Just look at life - and healthcare - from another perspective. In 1912, my great uncle Edmund as a first former at the School became ill and died of polio. My great-grandfather said that this should never happen again and donated the funds to build what was then called the Armour Infirmary. In my era we called it "The Cooler". I nearly died there myself in my first firm year of pneumonia. The thing is that for a number of years the Infirmary was the best hospital in New Hampshire. I don't think this was unusual. Everything about the School oozes being the best. Whatever happens, there are and have always been people that lift their fingers and write checks.
+
+Give light to all in the house
+
+Is this merely the best school money could buy? Is that it? I want to think that there is more. I want to say to Saint Paul's School of Concord NH:
+
+"You are the light of the world. A city set on a hill cannot be hid. Nor do men light a lamp and put it under a bushel, but on a stand, and it gives light to all in the house. Let your light so shine before men, that they may see your good works and give glory to your Father who is in heaven."—Jesus, from the Sermon on the Mount, Matthew 5:14-16.
+
+A light is needed. We don't always see clearly. My guess is that most German people in Germany in WWII were not really cognizant that the Holocaust was happening. I think that there are a good number of people in America who are not aware of the racial injustice that occurs in our country here and now .
+
+The call to action by José Leos is to let the light shine on racism. Not just in the Chapel and not just in the hockey rink. But to schools everywhere. Put the light "on a stand", and keep it bright until "it gives light to all in the house". For example: let a light shine on good practices that teachers feel are pedagogically informative in manifesting our racial biases. Let a light shine on usable metrics that heads of schools and school boards can use to identify bad and good racism-revealing practices. And provide head-lamps to students in learning pods that help enlighten their "spidey-sense" about a situation being valid.
+
+I don't know how. I don't know where. But I hope that the "Letter to SPS rector and board regarding diversity, equity, and inclusion" shines a light to all in the house - and more. 
+
+Your candles shine as bright as my candle
+
+Thinking about the process of enlightenment, reminds me of another useful quote.
+
+“He who receives an idea from me, receives instruction himself without lessening mine; as he who lights his taper at mine, receives light without darkening me.” —Thomas Jeferson 
+
+Our tapers may be the finest, most expensive tapers there are. Not to worry. Your tapers - no matter how humble - once lit may shine a light as just bright as ours. And more to the point, our collaboration did not cost us a penny.
+
+For sure, Saint Paul's School is a "city on the hill". Now step back a bit. Note that there are other hills out there. Would it not be totally cool to see lights on all those hills?
+
+Now I don't care how many billionaire parents there are out there, but there are not enough to put tapers on all the hills. And asking you to be "eager to bear the burden of others" should not send you to the poor house.
+
+There is a simpler, faster, cheaper way: Just share the skills, techniques, lessons-learned and insights on how to make the tapers. 
+
+In the context of this email thread, that means taking the workflow that José Leos proposes and actively sharing the processes with the other side of Pleasant Street in Concord (which includes Concord High ) and with all comers - via people, papers and programs - on all the hills everywhere.
+
+And in doing so, let the bearing the burden of others become a piece of cake.
+
 
 Theo
 
