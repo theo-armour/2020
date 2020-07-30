@@ -281,8 +281,7 @@ MAP.getMesh = function () {
 		mesh.castShadow = true;
 		mesh.receiveShadow = true;
 		THR.group.add( mesh );
-		console.log( "vv", 23 );
-
+		
 		THR.updateScene();
 
 		THR.lightDirectional.position.copy(
