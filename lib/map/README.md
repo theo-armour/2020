@@ -38,9 +38,8 @@ _MAP in a resizable window. One finger to rotate. Two to zoom._
 ## To Do / Wish List
 
 * Enable selecting from the various sources bitmap tile servers 
-* Enable the bitmaps and heigh maps to use different zoom levels - in rder to have te bitmaps represent greater detail and to allow for lower resolution height maps on slower devices
+* Enable the bitmaps and height maps to use different zoom levels - in order to have te bitmaps represent greater detail and to allow for lower resolution height maps on slower devices
 * Enable selecting the number of roes and columns to tiles to display
-* Update the height scale in real time with a slider
 * Add buildings wherever the data is available
 * Add Sun range and analemma diagrams
 * Add a Burning Man "street map" to any location and have it "decal" the terrain
@@ -55,6 +54,11 @@ _MAP in a resizable window. One finger to rotate. Two to zoom._
 
 
 ## Change Log
+
+### 2020-08-01
+
+* Add: direction arrows and code to update location
+* Add: Update the height scale in real time with a slider
 
 
 ### 2020-07-24
