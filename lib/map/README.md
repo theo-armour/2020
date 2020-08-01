@@ -9,9 +9,9 @@ value='You are now in a GitHub web page view - Click this button to view this re
 <!--@@@
 <div style=height:500px;overflow:hidden;width:100%;resize:both; ><iframe src=https://theo-armour.github.io/2020/lib/map height=100% width=100% ></iframe></div>
 _MAP in a resizable window. One finger to rotate. Two to zoom._
+@@@-->
 
 ### Full Screen: [MAP]( https://theo-armour.github.io/2020/lib/map/ )
-@@@-->
 
 
 ## Concept
@@ -37,9 +37,9 @@ _MAP in a resizable window. One finger to rotate. Two to zoom._
 
 ## To Do / Wish List
 
-* Enable selecting from the various sources bitmap tile servers 
+
 * Enable the bitmaps and height maps to use different zoom levels - in order to have te bitmaps represent greater detail and to allow for lower resolution height maps on slower devices
-* Enable selecting the number of roes and columns to tiles to display
+* Enable selecting the number of rows and columns to tiles to display
 * Add buildings wherever the data is available
 * Add Sun range and analemma diagrams
 * Add a Burning Man "street map" to any location and have it "decal" the terrain
@@ -55,8 +55,9 @@ _MAP in a resizable window. One finger to rotate. Two to zoom._
 
 ## Change Log
 
-### 2020-08-01
+### 2020-07-31
 
+* Add: * Enable selecting from the various sources bitmap tile servers 
 * Add: direction arrows and code to update location
 * Add: Update the height scale in real time with a slider
 
