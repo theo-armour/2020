@@ -48,6 +48,7 @@ _MAP in a resizable window. One finger to rotate. Two to zoom._
 * Add a Burning Man "street map" to any location and have it "decal" the terrain
 * Add interaction, titling, GeoJSON mapping overlays
 * And people dancing in the street
+* Nearby places labels
 
 
 ## Issues
@@ -55,6 +56,11 @@ _MAP in a resizable window. One finger to rotate. Two to zoom._
 
 ## Links of Interest
 
+Jaanga
+
+* https://jaanga.github.io/terrain3/elevations-core3/elevations-core3-r1.html
+
+OSM 
 * https://wiki.openstreetmap.org/wiki/Zoom_levels
 * https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Resolution_and_Scale
 
