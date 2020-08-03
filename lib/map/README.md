@@ -37,8 +37,12 @@ _MAP in a resizable window. One finger to rotate. Two to zoom._
 
 ## To Do / Wish List
 
-
-* Enable the bitmaps and height maps to use different zoom levels - in order to have te bitmaps represent greater detail and to allow for lower resolution height maps on slower devices
+* Right-click menu
+	* Display latitude and longitude and elevation
+	* Button to go to next zoom level at that location
+* Rows, columns and height scale to location hash
+* Overlay type to location hash
+* Directly enter latitude and longitude
 * Add buildings wherever the data is available
 * Add Sun range and analemma diagrams
 * Add a Burning Man "street map" to any location and have it "decal" the terrain
@@ -51,8 +55,20 @@ _MAP in a resizable window. One finger to rotate. Two to zoom._
 
 ## Links of Interest
 
+* https://wiki.openstreetmap.org/wiki/Zoom_levels
+* https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Resolution_and_Scale
 
 ## Change Log
+
+### 2020-08-02 ~ Theo
+
+Eureka! The heightmaps and bitmaps at different zoom levels seems to be working OK
+
+
+Mostly working as expected
+
+* Enable the bitmaps and height maps to use different zoom levels - in order to have te bitmaps represent greater detail and to allow for lower resolution height maps on slower devices
+
 
 ### 2020-08-01
 
