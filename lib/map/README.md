@@ -66,6 +66,10 @@ OSM
 
 ## Change Log
 
+### 2020-08-03 ~ Theo
+
+* Add canonical link for https
+
 ### 2020-08-02 ~ Theo
 
 Eureka! The heightmaps and bitmaps at different zoom levels seems to be working OK
