@@ -16,20 +16,33 @@ _MAP in a resizable window. One finger to rotate. Two to zoom._
 
 ## Concept
 
+This section follws the concept described in [A Pattern Language]( https://en.wikipedia.org/wiki/A_Pattern_Language ) in which a problem is described and then a solution is offered.
+
+
 
 ### Problems to be solved
 
-* A better outcome for any construction project must consider access to the site and the terrain of the site
-* A better outcome for COVID-19 prevention must consider the ability to view the statistics at all levels of detail raging from global perspective down to the "nitty-gritty" of a neighborhood
-* A better outcome for virtual Burning Man events must consider the visualization of temples and other installations at multiple venues around the world - and in your backyard
+* Outcomes for construction projects are downgraded in terms of time, cost, quality and sustainability because access to the site and the terrain of the site were not fully taken into account
+* Outcome for COVID-19 prevention are downgraded must consider the ability to view the statistics at all levels of detail raging from global perspective down to the "nitty-gritty" of a neighborhood
+* Outcomes for virtual Burning Man events are downgraded because the visualization of temples and other installations at multiple venues around the world not synchronized with the shading and shadow of the actual location
+
+### Propose solution
+
+* Interactive maps that display terrain in 3D overlaid by 2D bitmaps 
+* Provide an address, place name or latitude & longitude and the map is displayed nearly instantly
+* Works on phone, tablet or workstation
+
 
 ### Features
 
-* Create a hackable 3D map - easy-peasy code - single dependency: three.js
+* A hackable 3D map - easy-peasy code - single dependency: three.js
 * Light weight code hosted on static server scraping needed data at run-time
+	* Uses public APIs
 * Any latitude, longitude and zoom level
+	* 7 types of overlay available in current version
 * Bitmaps from any global bitmap tile server
-* Fully asynchronous - let it all happen whenever it wants to happen
+	* Current version sources height maps from https://mapbox.cpm
+* Fully asynchronous operation - let it all happen whenever it wants to happen
 * Access to Google Geocoder provides fast and easy access to latitude and longitude
 * Any location may be re-accesses by permalinks created on-the-fly
 
@@ -69,10 +82,11 @@ OSM
 ### 2020-08-03 ~ Theo
 
 * Add canonical link for https
+* Add more locations
 
 ### 2020-08-02 ~ Theo
 
-Eureka! The heightmaps and bitmaps at different zoom levels seems to be working OK
+Eureka! The height maps and bitmaps at different zoom levels seems to be working OK
 
 
 Mostly working as expected
