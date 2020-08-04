@@ -18,7 +18,7 @@ _MAP in a resizable window. One finger to rotate. Two to zoom._
 
 This section follws the concept described in [A Pattern Language]( https://en.wikipedia.org/wiki/A_Pattern_Language ) in which a problem is described and then a solution is offered.
 
-
+_The folowing sections are all all still at an early stage._
 
 ### Problems to be solved
 
@@ -31,7 +31,7 @@ This section follws the concept described in [A Pattern Language]( https://en.wi
 * Interactive maps that display terrain in 3D overlaid by 2D bitmaps 
 * Provide an address, place name or latitude & longitude and the map is displayed nearly instantly
 * Works on phone, tablet or workstation
-
+* Etc
 
 ### Features
 
@@ -50,18 +50,27 @@ This section follws the concept described in [A Pattern Language]( https://en.wi
 
 ## To Do / Wish List
 
+
+### Very soon
+
+* Retain settings such as number of rows and columns when other attributes are updated
+* Directly enter latitude and longitude in the menu
+* Enable saving overlay type to location hash
+* Enable saving rows, columns and height scale to location hash
+
+### In due course
+
 * Right-click menu
 	* Display latitude and longitude and elevation
 	* Button to go to next zoom level at that location
-* Rows, columns and height scale to location hash
-* Overlay type to location hash
-* Directly enter latitude and longitude
+* Set given latitude and longitude to be exactly at the origin
 * Add buildings wherever the data is available
 * Add Sun range and analemma diagrams
 * Add a Burning Man "street map" to any location and have it "decal" the terrain
 * Add interaction, titling, GeoJSON mapping overlays
-* And people dancing in the street
-* Nearby places labels
+* Add people dancing in the street
+* Add nearby places labels
+* Link to see same view in Google Earth, Google Street View and other services
 
 
 ## Issues
@@ -77,12 +86,22 @@ OSM
 * https://wiki.openstreetmap.org/wiki/Zoom_levels
 * https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Resolution_and_Scale
 
+Reddits to post to
+
+* https://www.reddit.com/r/InternetIsBeautiful/
+* https://www.reddit.com/r/MapPorn/
+
+
 ## Change Log
 
 ### 2020-08-03 ~ Theo
 
 * Add canonical link for https
 * Add more locations
+* More fixes to heightmap and bitmap issues
+* many read me updates
+
+The project is really beginning to look good. After all these years it's really nice to see something like this really working as expected.
 
 ### 2020-08-02 ~ Theo
 
