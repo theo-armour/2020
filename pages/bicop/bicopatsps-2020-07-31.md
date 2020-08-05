@@ -186,6 +186,8 @@ Let us change what needs to be changed, and not join the frenzy that seeks to sm
 
 Rory Johnston ’62
 
+
+
 ## Reply #4 ~ Brent Scudder ~ scudnut@aol.com ~ '56
 
 
@@ -384,6 +386,8 @@ My experience at SPS was generally positive.  However, because I see  that (1) n
 
 Moreover, I do acknowledge that SPS is a microcosm of society in general, so racism, sexism, prejudice, etc. will occur at SPS.  That is not what I want to discuss or debate.  What I want to address are the systematic failures by the school to deliver equity.  To me, simply admitting students of color to SPS is not sufficient.  I hear too often that SPS does not provide the metaphorical “wheelchair ramp” to help students of color succeed.  I just want every student to have an equal opportunity to succeed.  
 
+![equality vs equity]( equality-vs-equity.png )
+
 
 Over the last 2-3 years, I have been working closely with the school on a different but related initiative.  During that time, I have spoken to dozens & dozens, maybe hundreds, of alums and students of color; I hear the same stories over and over.  To me, this points to a clear pattern of systemic failures.  For me, the school needs to do the prioritize reaching out to alums & students to learn more about the problem.  Only then can the problem be addressed.  
 
@@ -422,4 +426,4 @@ José Leos
 
 ***
 
-<center><img src=penguin.png ></center>
+<center ><a href=javascript:window.scrollTo(0,0);  style=font-size:2ch;text-decoration:none; ><img src=penguin.png title="hello Pauli! Click my breast to go back up to the top"  ></a></center>
