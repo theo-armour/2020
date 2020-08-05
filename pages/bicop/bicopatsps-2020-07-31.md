@@ -1,4 +1,4 @@
-# BICOP at SPS ~ 2020-07-31
+# BICOP at SPS
 
 
 ## paulies@groupsyahoo.com
