@@ -1,6 +1,9 @@
 # BICOP at SPS ~ 2020-07-31
 
 
+## paulies@groupsyahoo.com
+
+paulies@groupsyahoo.com 
 
 ## Initial message on Yahoo Groups from José Leos
 
@@ -15,7 +18,7 @@ I believe the names stands for "Black, indigenous & people of color at SPS"
 Please read the text posted at bipocatsps first in order to make the following messages meaningful.
 
 
-## Initial message ~ José Leos ~ joseleos@gmail.com ~ '91
+## Text of initial message ~ José Leos ~ joseleos@gmail.com ~ '91
 
 
 Hello fellow Paulies!
@@ -36,6 +39,89 @@ José Leos
 
 415-377-3150
 
+***
+
+<i>Text from https://www.bipocatsps.org/</i>
+
+<aside>
+
+<h1>Letter to SPS rector and board regarding diversity, equity, and inclusion</h1>
+
+<p>As we reckon with our legacy of systemic racism as a nation, St. Paul’s School must also look deeply at our systems and culture to take steps to heal the past and build a just future for all students and alumni, specifically for people of color. We know the St. Paul’s School community continues to suffer from overt acts of racism, well-intentioned failures to deliver equity, and unconscious biases that harm us all. We have an opportunity at this moment to show leadership and vision in recognizing that past efforts have been too small and to make addressing racial justice a central priority of the school.</p>
+
+
+<p>Beyond the initiatives outlined in the school’s June 25th letter, we ask the current leaders of the school to take these steps:</p>
+
+
+<p>1. 𝗔𝘀𝘀𝗶𝗴𝗻 𝘁𝗵𝗲 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝗮𝗹𝘂𝗺𝗻𝗶 𝗿𝗲𝗹𝗮𝘁𝗶𝗼𝗻𝘀 𝘀𝘁𝗮𝗳𝗳 𝘁𝗼 𝗺𝗮𝗸𝗲 𝗮𝗻 𝘂𝗻𝗽𝗿𝗲𝗰𝗲𝗱𝗲𝗻𝘁𝗲𝗱 𝗼𝘂𝘁𝗿𝗲𝗮𝗰𝗵 𝘁𝗼 𝗮𝗹𝗹 𝗮𝗹𝘂𝗺𝗻𝗶 𝗼𝗳 𝗰𝗼𝗹𝗼𝗿 𝘁𝗼 𝗿𝗲𝗾𝘂𝗲𝘀𝘁 𝘁𝗵𝗲𝗶𝗿 𝗽𝗮𝗿𝘁𝗶𝗰𝗶𝗽𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗶𝗻𝘀𝗶𝗴𝗵𝘁 𝗶𝗻𝘁𝗼 𝗮𝗹𝗹 𝗼𝗳 𝘁𝗵𝗲 𝗳𝗼𝗹𝗹𝗼𝘄𝗶𝗻𝗴.<br>We are confident that participation from a broad, engaged group of alumni of color will make all of the following initiatives stronger and more successful.</p>
+
+<p>
+	2. 𝗙𝗼𝗹𝗹𝗼𝘄 𝘁𝗵𝗲 𝘀𝗰𝗵𝗼𝗼𝗹’𝘀 𝗳𝗼𝘂𝗻𝗱𝗶𝗻𝗴 𝗽𝗿𝗶𝗻𝗰𝗶𝗽𝗹𝗲𝘀 𝗮𝗻𝗱 𝘃𝗮𝗹𝘂𝗲𝘀 𝗯𝘆 𝗰𝗼𝗺𝗺𝗶𝘁𝘁𝗶𝗻𝗴 𝗿𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀 𝘁𝗼 𝗮𝗻𝘁𝗶-𝗿𝗮𝗰𝗶𝘀𝗺 𝗮𝗻𝗱 𝗶𝗻𝗰𝗹𝘂𝘀𝗶𝗼𝗻.
+	<br>No efforts can be fully realized if we do not evaluate our core principles and align our actions and resources accordingly.
+	<br>a. 𝗖𝘂𝗿𝗿𝗶𝗰𝘂𝗹𝘂𝗺. Direct the current alumni relations staff and school faculty to seek out alumni of color and other content experts to:
+	<br> &nbsp; i) Deliver curriculum for the education of the whole community (faculty, staff, and students) on antiracism and ally training;
+	<br> &nbsp; ii) Expand academic and enrichment programs for students and alumni of color;
+	<br> &nbsp; iii) Provide other initiatives to ensure that students of color are fully served by the school in and out of the classroom;
+	<br> &nbsp; iv) Provide tutoring for incoming students who may require extra educational support; and
+	<br> &nbsp; v) Incorporate professional development opportunities for faculty, staff, and board of trustees that promotes social justice and anti-racism across all disciplines.
+	<br>b. 𝗙𝗮𝗶𝘁𝗵. Together with the school chaplains, school leadership, and support from the Episcopal Diocese of New Hampshire commit resources and time to incorporate the Presiding Bishop’s Sacred Ground curriculum into the process of healing for the school. As an “academic community founded in the Episcopal tradition and rooted in enduring humanistic values,” it’s time to practice what we preach and live up to our foundational values.
+</p>
+
+<p>
+	3. 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗲 𝘁𝗼 𝘀𝘂𝗽𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝗺𝗲𝗲𝘁 𝘁𝗵𝗲 𝗻𝗲𝗲𝗱𝘀 𝗼𝗳 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝘀𝘁𝘂𝗱𝗲𝗻𝘁𝘀 𝗼𝗳 𝗰𝗼𝗹𝗼𝗿 𝗮𝗻𝗱 𝗶𝗻𝗰𝗿𝗲𝗮𝘀𝗲 𝗳𝗮𝗰𝗶𝗹𝗶𝘁𝗮𝘁𝗶𝗼𝗻 𝗳𝗼𝗿 𝗮𝗹𝘂𝗺𝗻𝗶 𝗼𝗳 𝗰𝗼𝗹𝗼𝗿 𝘁𝗼 𝗯𝗲 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝘁𝗼 𝘀𝘂𝗽𝗽𝗼𝗿𝘁 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝘀𝘁𝘂𝗱𝗲𝗻𝘁𝘀.<br>
+	Alumni of color who do not currently engage with the school or donate to the annual fund may be inspired to support current students directly. Consider expanding support in the following areas:
+	<br>a. Funds to support college test prep
+	<br>b. Funds to support parent visits especially at parents weekend
+	<br>c. Connect the parents of students with alumni in their area who can offer advice and support before students arrive on campus
+	<br>d. Funded summer abroad opportunities
+	<br>e. Funded summer internships in various fields of interest
+	<br>f. Student stipends
+	<br>g. Connections to alumni for job shadowing opportunities
+	<br>h. Opportunities to stay on campus during the summer
+	<br>i. Alliance with other schools with distinct programming, retreats, and support
+	<br>j. Emergency Aid
+</p>
+
+<p>
+	4. 𝗖𝗵𝗮𝗻𝗴𝗲 𝘁𝗵𝗲 𝘀𝗰𝗵𝗼𝗼𝗹 𝗰𝘂𝗹𝘁𝘂𝗿𝗲 𝗮𝗻𝗱 𝗶𝗺𝗽𝗹𝗲𝗺𝗲𝗻𝘁 𝗮𝗰𝗰𝗼𝘂𝗻𝘁𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗳𝗼𝗿 𝗿𝗮𝗰𝗶𝗮𝗹 𝗷𝘂𝘀𝘁𝗶𝗰𝗲, 𝗱𝗶𝘃𝗲𝗿𝘀𝗶𝘁𝘆, 𝗮𝗻𝗱 𝗶𝗻𝗰𝗹𝘂𝘀𝗶𝗼𝗻, rather than merely supporting students of color and asking that they navigate, adjust, and adapt to St. Paul’s.<br>
+	<br>a. Expand LINC curriculum in the area of antiracism and ally training
+	<br>b. Review all academic curriculum with a perspective of equity and inclusion.
+	<br>c. Keep transparent metrics on faculty recruiting and retention, student demographics, leadership roles, and alumni participation.
+</p>
+<p>
+	
+	5. 𝗥𝗲𝗰𝗿𝘂𝗶𝘁 𝗮 𝗻𝗲𝘄 𝗰𝗼𝗼𝗿𝗱𝗶𝗻𝗮𝘁𝗼𝗿 𝗼𝗳 𝗮𝗹𝘂𝗺𝗻𝗶 𝗿𝗲𝗹𝗮𝘁𝗶𝗼𝗻𝘀 𝗳𝗼𝗿 𝗱𝗶𝘃𝗲𝗿𝘀𝗶𝘁𝘆 𝗮𝗻𝗱 𝗲𝗾𝘂𝗶𝘁𝘆.
+	<br>There is no excuse for failure in filling this position. The school must demonstrate its commitment in this area by funding this position at a level that values this work. This goal of this position is to foster a sense of belonging for current students of color by significantly increasing participation by alumni of color in school events, alumni events, and recruitment events. We believe that increasing the visibility of alumni of color will strengthen the entire SPS alumni network by reflecting the genuine diversity of our alumni base. The person in this position should be recruited from the SPS alumni of color community. They would do the following:
+	<br>a. Build an outreach database of diverse alumni
+	<br>b. Organize events for this community, do outreach to this community for all alumni events, work with the rest of the alumni office to make sure that alumni of color are actively welcomed to all alumni events.
+	<br>c. Increase opportunities for alumni of color to visit SPS and be seen by students.
+	<br>d. Facilitate informal gatherings for this community organized by alumni volunteers on and off-campus.
+	<br>e. Consult alumni of color in planning events such as the MLK weekend and work with alumni volunteers to expand and strengthen that experience
+	<br>f. Build relationships with other similar boarding school coordinators in order to create a support network for students and faculty of color.
+</p>
+
+<p>
+	6. 𝗣𝗿𝗶𝗼𝗿𝗶𝘁𝗶𝘇𝗲 𝗿𝗲𝗰𝗿𝘂𝗶𝘁𝗶𝗻𝗴 𝗮𝗻𝗱 𝗿𝗲𝘁𝗮𝗶𝗻𝗶𝗻𝗴 𝗲𝘅𝗰𝗲𝗹𝗹𝗲𝗻𝘁, 𝗱𝗶𝘃𝗲𝗿𝘀𝗲 𝗳𝗮𝗰𝘂𝗹𝘁𝘆, 𝗺𝗲𝗻𝘁𝗮𝗹 𝗵𝗲𝗮𝗹𝘁𝗵 𝗰𝗼𝘂𝗻𝘀𝗲𝗹𝗼𝗿𝘀, 𝗮𝗻𝗱 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝘁𝗼𝗿𝘀. <br>Invest whatever it takes. There will be no success in this area if every year there are only one or two faculty members.
+
+</p>	
+<p>
+	7. 𝗙𝘂𝗻𝗱 𝗵𝗼𝘂𝘀𝗲 𝗮𝗱𝘃𝗶𝘀𝗼𝗿𝘀 whose other duties are designed to make it possible for them to prioritize creating a support structure for students and advocating for them with the administration.<br>
+	a. The school must develop a process to hold students and faculty accountable when they receive reports of racism or bias. This could happen within the existing disciplinary process or a community counseling model.
+</p>
+
+<p>
+	8. 𝗔𝗰𝘁𝗶𝘃𝗲𝗹𝘆 𝗲𝗻𝗴𝗮𝗴𝗲 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗖𝗼𝗻𝗰𝗼𝗿𝗱 𝗰𝗼𝗺𝗺𝘂𝗻𝗶𝘁𝘆 to address the ongoing racism experienced by students of color to protect students and improve relations with the community.
+	<br>a. Actively engage with the Concord community of businesses and law enforcement to prevent and confront racist aggressions experienced in town by SPS Students.
+	<br>b. Build protective systems for students to have affirmative, immediate help, and support in town.
+	<br>c. Facilitate connection to the Concord community including Concord High School students.
+</p>
+
+
+<p>We know that until we listen carefully to the experiences and the needs of alumni and students of color, we will not be able to acknowledge and change as needed. The eight steps listed above are essential for building a structure to commit to hearing what is needed and making the changes to transform the school into a leader for equity and inclusion.</p>
+
+</aside>
+
+***
 
 ## Reply #1 from Diane Moss ~ diane_moss@post.harvard.edu ~ '85
 
