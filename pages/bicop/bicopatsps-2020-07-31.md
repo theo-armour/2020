@@ -104,11 +104,11 @@ José Leos
 </p>
 
 <p>
-	6. 𝗣𝗿𝗶𝗼𝗿𝗶𝘁𝗶𝘇𝗲 𝗿𝗲𝗰𝗿𝘂𝗶𝘁𝗶𝗻𝗴 𝗮𝗻𝗱 𝗿𝗲𝘁𝗮𝗶𝗻𝗶𝗻𝗴 𝗲𝘅𝗰𝗲𝗹𝗹𝗲𝗻𝘁, 𝗱𝗶𝘃𝗲𝗿𝘀𝗲 𝗳𝗮𝗰𝘂𝗹𝘁𝘆, 𝗺𝗲𝗻𝘁𝗮𝗹 𝗵𝗲𝗮𝗹𝘁𝗵 𝗰𝗼𝘂𝗻𝘀𝗲𝗹𝗼𝗿𝘀, 𝗮𝗻𝗱 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝘁𝗼𝗿𝘀. <br>Invest whatever it takes. There will be no success in this area if every year there are only one or two faculty members.
+6. 𝗣𝗿𝗶𝗼𝗿𝗶𝘁𝗶𝘇𝗲 𝗿𝗲𝗰𝗿𝘂𝗶𝘁𝗶𝗻𝗴 𝗮𝗻𝗱 𝗿𝗲𝘁𝗮𝗶𝗻𝗶𝗻𝗴 𝗲𝘅𝗰𝗲𝗹𝗹𝗲𝗻𝘁, 𝗱𝗶𝘃𝗲𝗿𝘀𝗲 𝗳𝗮𝗰𝘂𝗹𝘁𝘆, 𝗺𝗲𝗻𝘁𝗮𝗹 𝗵𝗲𝗮𝗹𝘁𝗵 𝗰𝗼𝘂𝗻𝘀𝗲𝗹𝗼𝗿𝘀, 𝗮𝗻𝗱 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝘁𝗼𝗿𝘀. <br>Invest whatever it takes. There will be no success in this area if every year there are only one or two faculty members.
 
 </p>	
 <p>
-	7. 𝗙𝘂𝗻𝗱 𝗵𝗼𝘂𝘀𝗲 𝗮𝗱𝘃𝗶𝘀𝗼𝗿𝘀 whose other duties are designed to make it possible for them to prioritize creating a support structure for students and advocating for them with the administration.<br>
+7. 𝗙𝘂𝗻𝗱 𝗵𝗼𝘂𝘀𝗲 𝗮𝗱𝘃𝗶𝘀𝗼𝗿𝘀 whose other duties are designed to make it possible for them to prioritize creating a support structure for students and advocating for them with the administration.<br>
 	a. The school must develop a process to hold students and faculty accountable when they receive reports of racism or bias. This could happen within the existing disciplinary process or a community counseling model.
 </p>
 
