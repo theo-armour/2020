@@ -5,7 +5,7 @@
 
 paulies@groupsyahoo.com is a Yahoo groups mailing list set up many years ago - maybe even as far back as the nineties. The group is made up of alumni, parents, faculty and even maybe some students st. Paul's School Concord New Hampshire. The  list may have had seven or eight hundred members, but one must assume that now many of the email addresses on the list are no longer valid.
 
-After the rise of Facebook, Instagram, Twitter and other social networks, this mailing list mostly fell into disuse. Out of the blue, in July of 2020, there occured the following discussion:
+After the rise of Facebook, Instagram, Twitter and other social networks, this mailing list mostly fell into disuse. Out of the blue, in July of 2020, there occurred the following discussion:
 
 
 ## Initial message on Yahoo Groups from José Leos
