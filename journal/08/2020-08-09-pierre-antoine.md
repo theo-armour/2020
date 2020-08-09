@@ -35,6 +35,6 @@ We use scissors so frequently we often forget to think of scissors as tools
 
 <img src=journal/08/winelover-hammer.jpg width=100% >
 
-A pry bar to open the new wooded case of wine and a small hammer to close it back up. 
+A pry bar to open the new wooden case of wine and a small hammer to close it back up. 
 
 
