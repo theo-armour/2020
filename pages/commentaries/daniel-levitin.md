@@ -19,6 +19,7 @@ Levitin looks at the science behind what we all can learn from those who age joy
 
 _Successful Aging_ inspires a powerful new approach to how readers think about our final decades, and it will revolutionize the way we plan for old age as individuals, family members, and citizens within a society where the average life expectancy continues to rise.
 
+
 ### Theo's thoughts
 
 
@@ -53,11 +54,10 @@ Wikipedia
 
 * https://en.wikipedia.org/wiki/Transgenerational_design
 * https://en.wikipedia.org/wiki/Financial_gerontology
-* Alerts, https://en.wikipedia.org/wiki/Silver_Alert
+* https://en.wikipedia.org/wiki/Silver_Alert
 * https://en.wikipedia.org/wiki/Elderly_care
 
 ### Reviews of interest
-
 
 
 ### What Neuroscience Can Teach Us About Aging Better
@@ -68,7 +68,6 @@ https://greatergood.berkeley.edu/article/item/what_neuroscience_can_teach_us_abo
 * the two most important personality correlates that predict successful aging are conscientiousness and openness to experience.
 	* Conscientiousness is a cluster of traits that has to do with dependability, reliability, doing what you’ll say you’ll do, being proactive. A conscientious person calls the doctor when they’re sick and, when the doctor prescribes medication, actually takes it.
 	* Openness is being willing to try new things and being open to new ideas and new ways of doing things.
-
 
 COACH: conscientiousness, openness, affiliations, curiosity, and healthy lifestyle.
 
@@ -98,7 +97,7 @@ Tips
 Tips
 
 1. Don’t retire, or if you do, take up volunteering or hobbies. Don’t stop being engaged in meaningful work.
-2. Look forward, don’t look back—reminiscing doesn’t promote health.
+2. Look forward, don’t look back — reminiscing doesn’t promote health.
 3. Exercise. Get your heart rate going, preferably in nature.
 4. Embrace a moderated lifestyle with healthy practices.
 5. Keep your social circle exciting and new.
@@ -159,7 +158,24 @@ starts p32
 
 P412: COACH: curiosity, openness, affiliations, conscientiousness, and healthy lifestyle.
 
-##### conscientiousness
+##### Curiouisity
+
+cientious: Obsessive compulsive disorder
+
+##### openness
+
+p39
+
+* Fortunately, our traits and personalities are malleable, like the brain itself. we can change.
+* Past behavior does not necessarily determine our future behavior
+* A cheerful, positive, optimistic outlook - even if it starts out fake - can end up becoming real
+
+
+##### Associations
+
+
+
+##### Conscientiousness
 
 p17
 
@@ -174,18 +190,10 @@ p38
 * Self-regulation - controlling impulsive behaviors
 * Self-monitoring - noticing which circumstances lead to better self regulation and which sabotage sef-regulation
 
-Too conscientious: Obsessive compulsive disorder
-
-##### openness
-
-p39
-
-* Fortunately, our traits and personalities are malleable, like the brain itself. we can change.
-* Power past behaviordoes not necessarily determine our future behavior
-* A cheerful, positive, optimistic outlook - even if it starts out fake - can end up becoming real
+Too conscientious = OCD
 
 
-##### compassion
+##### Healthy practices
 
 
 
@@ -377,7 +385,7 @@ Seems to borrow much from David Allen and GTD and also  Peter Drucker
 
 ### Organization Principle #5: Spend only as much time on decisions, tasks, and actions as they are worth.
 
-* satisficing—a decision-making approach that aims for acceptable or “good enough” results, rather than the optimal solutions
+* satisficing — a decision-making approach that aims for acceptable or “good enough” results, rather than the optimal solutions
 * Don't Obsess Over Organization
 
 

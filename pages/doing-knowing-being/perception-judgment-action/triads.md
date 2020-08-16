@@ -1,6 +1,13 @@
 
 # Perception /  Action / Judgment /
 
+## money ~ fame/power ~ love
+
+"Rather than love, than money, than fame, give me truth." -:Henry David Thoreau
+
+* money = doing
+* love = being
+* fame/money = knowing
 
 ## Ryan Holiday
 
@@ -16,7 +23,9 @@
 
 ## Jordan B Peterson
 
-* what is?		how should we act	what should be?
+* what is?
+* how should we act?
+* what should be?
 
 
 ## [C S Pierce]( https://en.wikipedia.org/wiki/Charles_Sanders_Peirce )**        | | |
