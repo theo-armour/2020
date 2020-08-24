@@ -24,11 +24,11 @@ Physiological needs include:
 
 Safety and Security needs include:
 
-Personal security
-Emotional security
-Financial security
-Health and well-being
-Against accidents/illness
+* Personal security
+* Emotional security
+* Financial security
+* Health and well-being
+* Against accidents/illness
 
 ### Social belonging
 
@@ -74,3 +74,11 @@ Social Belonging needs include:
 
 * https://en.wikipedia.org/wiki/Functional_prerequisites
 * https://en.wikipedia.org/wiki/Basic_needs
+* https://en.wikipedia.org/wiki/Quality_of_life
+* https://en.wikipedia.org/wiki/Category:Happiness_indices
+* https://en.wikipedia.org/wiki/Category:Quality_of_life
+* https://en.wikipedia.org/wiki/World_Happiness_Report
+* https://en.wikipedia.org/wiki/Happy_Planet_Index
+* https://en.wikipedia.org/wiki/Life_satisfaction
+* https://en.wikipedia.org/wiki/Human_Development_Index
+* https://en.wikipedia.org/wiki/Subjective_well-being

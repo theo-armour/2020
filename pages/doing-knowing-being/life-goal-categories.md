@@ -16,7 +16,7 @@ Aspects most of the sites appear to be missing include
 
 ## Covey
 
-mostly about time management 
+mostly about time management
 https://en.wikipedia.org/wiki/The_7_Habits_of_Highly_Effective_People
 
 Habit 1: Be Proactive® ...
@@ -55,7 +55,7 @@ P = Personal goals
 ## https://www.stellanadene.com/7-goal-types-everyone/
 
 ### 1.HEALTH GOALS:
- 
+
 
 I start with this one because you can’t take care of others if you’re not taken care of first, right? Ask any mother who’s sick with the husband or partner nowhere in sight. This is actually the BASIS of the Stella Nadene Health + Wellness site. Your health should be a priority so that you’re in optimal mental, emotional, and physical condition to live the life you deserve, and that your family deserves! So whether this is losing weight, getting your cholesterol to a certain number, or getting in exercise every week, I promise you that you will feel a thousand times better once you implement a plan based on goals for your health.
 
@@ -76,38 +76,38 @@ Basic recommendations for every day:
 
 
 ### 2. CAREER GOALS:
- 
+
 
 According to Forbes, 87% of workers are either not engaged or actively disengaged in their jobs. The list of reasons is far and many. But bottom line is that you’re very likely to be in that 87%. Even if you happen to be in the 13% of happy employees, are you really satisfied to do what you’re doing for the rest of your career?
 
 Are you interested in a different field? Do you need more training or a higher education? Or even just a different degree of study? Maybe you want to climb the ladder where you’re at. Or own your own business doing what you’re already doing. Whatever you would rather be doing is where you need to start with setting these types of life goals.
 
 
- 
+
 You’re the only person that can answer these questions to get to the root of where you want to head.
 
 So ask yourself: If I had so much money I could never spend it all, what would I want to do every day? Your answer should give you an inkling of what kind of career will make it a pleasure to go to work every day.
 
- 
+
 
 ### 3. ROMANCE OR RELATIONSHIP GOALS:
- 
+
 
 Your relationship with your significant other can grow warily stale over the years, especially after having kids. It’s always in your best interest (as long as there’s no abuse or infidelity going on) to nurture the relationship. This person has vowed to spend the rest of their life with you, and you with them. Why wouldn’t you want it to be epic??!
 
 Not only that—but this person should be your rock, your support. If you expect them to be your rock and nurture like you need, you also have to nurture as well. It’s a two-way street, marriage.
 
- 
+
 
 ### 4. FAMILY + FRIENDS GOALS:
- 
+
 
 Now I realize that you normally don’t control who you meet and where, but you can decide who you actually keep in your life as a friend or acquaintance. This plays into the goal factor in that, you will find a time when you become so incredibly busy that you don’t have the capacity to deal with one-sided friendships and/or constant drama from that one extended family member that always seems to have a crisis going on.
 
 It’s emotionally draining if you’re the go-to support for cousin Tammy. I realize that sounds a little selfish, but sometimes you have to pare people out of your life for your own sanity. But also so that you have the capacity to spend time with your kids and husband. Those people, and yourself, will always be your first priority.
 
 
- 
+
 Whether this includes time spent with your kids, or time spent with your parents/grandparents that are getting up there in age, or even more time spent with your sister who used to be your very best friend, your family deserves attention and time spent with them, too.
 
 The relationships that you’ve valued over the years should be evident by your actions toward that person/those people, including your friends. Female friendships have been shown to lower stress levels crazy amounts because of the support women lend to each other.
@@ -119,10 +119,10 @@ And the second part of this goal should including parenting. As a parent for 19 
 We’re responsible for teaching them nearly everything, and how to be a great parent is one of those responsibilities. Take time with them. Praise them. Give them boundaries. Make connections. You don’t have a long time to do this, so take advantage while the time is here!
 
 
- 
+
 
 ### 5. FINANCIAL TYPES OF GOALS EVERYONE SHOULD HAVE:
- 
+
 
 Seriously, you need to have a financial plan in place, and you need to clean up your messes before you’re in a Code Black (Red?) situation. Find any one of the financial gurus online that you can, create a plan, and work through it.
 
@@ -135,10 +135,10 @@ Having finances in order can open the door to a clarity of your mind that is tru
 Check out these related posts...  10 Ways to Stay Motivated to Work Out Every Day
 Go here to read: How to Create a Working Household Budget and get a free printable Home Budgeting Planner.
 
- 
+
 
 ### 6. PHYSICAL ENVIRONMENT GOALS:
- 
+
 
 Physical environment goals deal with the place you spend most of your time, whether that includes your lovely abode, your office/desk space at work, or even the gym.
 
@@ -150,10 +150,10 @@ If you don’t have a lot of control over your office environment at work, do th
 
 On the home front, figure out what would make you and your family happy. Write these home goals into your big master plan. Even if it’s something as simple as organizing the pantries.
 
- 
 
-### 7. SPIRITUAL GOALS:
- 
+
+### 7. SPIRITUAL GOALS
+
 
 I grew up in the South—meaning: Southern Baptist church. Lots of things being frowned upon that are fun. Like cussing, or dancing, or having a drink. All things I very much like to do. Once I started studying religion, and had a very enlightening conversation with a friend that studied this at the college level, I realized that one set religion does not a spiritual being make.
 
@@ -165,16 +165,16 @@ My point is that you grow, and learn about yourself, and the universe, and the w
 
 Everyone’s spiritual journey will be different. But your innermost soul is nourished when you take the time for it.
 
- 
 
-### 8. LEISURE GOALS:
- 
+
+### 8. LEISURE GOALS
+
 
 What do you like to do in your free time? You know…assuming you have tiny amounts as a busy mom. (Yes, I realize that sounds like a giant oxymoron. But go with me here…) Do you like taking family vacations? Girls-only trips? Or is it learning a new skill like painting or doing a fun outing to learn rock climbing?
 
 Gather your and your family goals to help each other. Time off is a HUGE stress management tool. But it also helps build relationships with those people you share these experiences with.
 
- 
+
 
 This list can sound like a huge undertaking, no doubt. But working with your life in segments, and seeking improvement by first creating goals will set you up for some serious success and fulfillment.
 
@@ -187,6 +187,7 @@ Spiritual
 This is that inner part of yourself. That’s that deep need that we all have to be a part of something greater than ourselves, to make a difference in the world, or to make an impact. This is going to be different for everybody. If you’re a Christian, let your Christian faith drive how you set goals in this area. For others, who may not be religious or practice a religion, that’s okay. Maybe for you it’s you want to get out and take more nature hikes or you want to get out and meditate more or just have some more down time. Whatever feeds that soul part of you, put down some goals.
 
 ### Personal Development
+
 This is your mind. Ask yourself this: how are you going to be better at who you are? How are you going to be a better husband, wife, father or mother? What is it that you’re going to do to grow yourself? What do you need to learn? What do you need to read? What events do you need to attend? What classes do you need to take? Set some goals for yourself and focus on “how am I going to be a better person? What am I going to do to grow myself?”
 
 ### Health
@@ -218,7 +219,7 @@ To grow and change, first we must learn. You may think of education as just scho
 
 It’s no surprise, then, that educational goals are likely to change as you move through formal education, come out into a career, and then negotiate your way through promotions and changes of direction.
 
-The key is to remember that the time for education is never past. Lifelong learning is an opportunity to expand your mind in so many ways, so don’t think of education as something which is only relevant to the young.  
+The key is to remember that the time for education is never past. Lifelong learning is an opportunity to expand your mind in so many ways, so don’t think of education as something which is only relevant to the young.
 
 The goals you may identify in relation to education will differ according to your chosen career path. Maybe, though, they’ll extend as far as preparing for a career change in the future which will require re-training in a whole new area.
 
