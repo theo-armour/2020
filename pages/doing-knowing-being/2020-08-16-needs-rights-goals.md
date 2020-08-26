@@ -65,9 +65,36 @@ Social Belonging needs include:
 * https://en.wikipedia.org/wiki/Manfred_Max-Neef%27s_Fundamental_human_needs
 * Seems the most organized
 
+
+##### Axiology
+
+* Subsistence
+* Protection
+* Affection
+* Understanding
+* Participation
+* Idleness
+* Creation
+* Identity
+* Freedom
+
+
 ### Murray
 
 * https://en.wikipedia.org/wiki/Murray%27s_system_of_needs
+
+Primary/viscerogenic needs
+
+Secondary/psychogenic needs
+
+ * ambition
+ * materialism
+ * status
+ * power
+ * sadomasochism
+ * social-conformance
+ * affection
+ * information.
 
 
 ### Needs
