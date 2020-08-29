@@ -87,7 +87,7 @@ Primary/viscerogenic needs
 
 Secondary/psychogenic needs
 
- * ambition
+* ambition
  * materialism
  * status
  * power
