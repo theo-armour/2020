@@ -52,6 +52,23 @@ Social Belonging needs include:
 * Pursuing goals
 
 
+## Maslow's list of Metaneeds:
+
+* Wholeness (unity)
+* Perfection (balance and harmony)
+* Completion (ending)
+* Justice (fairness)
+* Richness (complexity)
+* Simplicity (essence)
+* Liveliness (spontaneity)
+* Beauty (rightness of form)
+* Goodness (benevolence)
+* Uniqueness (individuality)
+* Playfulness (ease)
+* Truth (reality)
+* Autonomy (self-sufficiency)
+* Meaningfulness (values)
+
 ## Links of Interest
 
 ### Maslow links

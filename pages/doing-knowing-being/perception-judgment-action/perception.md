@@ -11,6 +11,7 @@
 
 
 ## Ryan Holiday
+
 * Holiday: you can control your perceptions
 * Holiday: So control them well
 * Holiday: See things as they really are, without ornament
@@ -37,6 +38,7 @@ Generally speaking, an authoritative source is a highly trusted and reliable pla
 * Peer-reviewed Sources – peer-review publications and journals (like Harvard Business Review)
 
 ## Authoritative References
+
 * http://www.montana.edu/rmaher/ee417/Authoritative%20References.pdf
 * http://owll.massey.ac.nz/academic-writing/identifying-academic-sources.php
 * http://owll.massey.ac.nz/academic-writing/what-is-academic-writing.php
@@ -48,6 +50,7 @@ Generally speaking, an authoritative source is a highly trusted and reliable pla
 
 
 ## Wikipedia:Core content policies
+
 * https://en.wikipedia.org/wiki/Wikipedia:Core_content_policies
 	* [Neutral point of view]( https://en.wikipedia.org/wiki/Wikipedia:Neutral_point_of_view ) – All Wikipedia articles and other encyclopedic content must be written from a neutral point of view, representing significant views fairly, proportionately and without bias.
 	* [Verifiability]( https://en.wikipedia.org/wiki/Wikipedia:Neutral_point_of_view ) – Material challenged or likely to be challenged, and all quotations, must be attributed to a reliable, published source. In Wikipedia, verifiability means that people reading and editing the encyclopedia can check that information comes from a reliable source.
@@ -61,6 +64,7 @@ Generally speaking, an authoritative source is a highly trusted and reliable pla
 * https://en.wikipedia.org/wiki/Wikipedia:Academic_use
 
 ### Verifiability
+
 * https://en.wikipedia.org/wiki/Wikipedia:Verifiability
 	* **In Wikipedia, verifiability means that other people using the encyclopedia can check that the information comes from a reliable source.** Wikipedia does not publish original research. Its content is determined by previously published information rather than the beliefs or experiences of its editors. Even if you're sure something is true, it must be verifiable before you can add it.[1] If reliable sources disagree, then maintain a neutral point of view and present what the various sources say, giving each side its due weight.
 * https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_is_not_a_reliable_source
