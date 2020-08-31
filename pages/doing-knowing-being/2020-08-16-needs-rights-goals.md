@@ -54,6 +54,8 @@ Social Belonging needs include:
 
 ## Maslow's list of Metaneeds:
 
+https://en.wikipedia.org/wiki/Metamotivation
+
 * Wholeness (unity)
 * Perfection (balance and harmony)
 * Completion (ending)
@@ -76,6 +78,7 @@ Social Belonging needs include:
 * https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs
 * http://webspace.ship.edu/cgboer/maslow.html
 * https://www.simplypsychology.org/maslow.html
+*
 
 ### Manfred Max-Neef
 
@@ -116,13 +119,17 @@ Secondary/psychogenic needs
 
 ### Needs
 
-* https://en.wikipedia.org/wiki/Functional_prerequisites
-* https://en.wikipedia.org/wiki/Basic_needs
-* https://en.wikipedia.org/wiki/Quality_of_life
 * https://en.wikipedia.org/wiki/Category:Happiness_indices
 * https://en.wikipedia.org/wiki/Category:Quality_of_life
-* https://en.wikipedia.org/wiki/World_Happiness_Report
+
+Atricles
+
+* https://en.wikipedia.org/wiki/Functional_prerequisites
+* https://en.wikipedia.org/wiki/Basic_needs
 * https://en.wikipedia.org/wiki/Happy_Planet_Index
-* https://en.wikipedia.org/wiki/Life_satisfaction
 * https://en.wikipedia.org/wiki/Human_Development_Index
+* https://en.wikipedia.org/wiki/Life_satisfaction
+* https://en.wikipedia.org/wiki/Metamotivation
+* https://en.wikipedia.org/wiki/Quality_of_life
 * https://en.wikipedia.org/wiki/Subjective_well-being
+* https://en.wikipedia.org/wiki/World_Happiness_Report
