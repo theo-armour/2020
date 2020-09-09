@@ -9,9 +9,7 @@ value="You are now in a GitHub web page view - Click this button to view this re
 
 What have I done now?
 
-.dc0-09-08
-
-tra la la
+edit from chromebook
 
 
 
