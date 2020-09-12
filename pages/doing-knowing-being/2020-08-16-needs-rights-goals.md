@@ -108,13 +108,13 @@ Primary/viscerogenic needs
 Secondary/psychogenic needs
 
 * ambition
- * materialism
- * status
- * power
- * sadomasochism
- * social-conformance
- * affection
- * information.
+* materialism
+* status
+* power
+* sadomasochism
+* social-conformance
+* affection
+* information.
 
 
 ### Needs
@@ -122,7 +122,7 @@ Secondary/psychogenic needs
 * https://en.wikipedia.org/wiki/Category:Happiness_indices
 * https://en.wikipedia.org/wiki/Category:Quality_of_life
 
-Atricles
+Articles
 
 * https://en.wikipedia.org/wiki/Functional_prerequisites
 * https://en.wikipedia.org/wiki/Basic_needs
@@ -133,3 +133,5 @@ Atricles
 * https://en.wikipedia.org/wiki/Quality_of_life
 * https://en.wikipedia.org/wiki/Subjective_well-being
 * https://en.wikipedia.org/wiki/World_Happiness_Report
+* https://sdgs.un.org/goals
+* https://www.equalityhumanrights.com/en/human-rights/human-rights-act
