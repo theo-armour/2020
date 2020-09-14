@@ -94,7 +94,7 @@ P = Personal goals
 
 ## https://www.stellanadene.com/7-goal-types-everyone/
 
-### 1.HEALTH GOALS:
+### 1.HEALTH GOALS
 
 I start with this one because you can’t take care of others if you’re not taken care of first, right? Ask any mother who’s sick with the husband or partner nowhere in sight. This is actually the BASIS of the Stella Nadene Health + Wellness site. Your health should be a priority so that you’re in optimal mental, emotional, and physical condition to live the life you deserve, and that your family deserves! So whether this is losing weight, getting your cholesterol to a certain number, or getting in exercise every week, I promise you that you will feel a thousand times better once you implement a plan based on goals for your health.
 
@@ -114,7 +114,7 @@ Basic recommendations for every day:
 
 
 
-### 2. CAREER GOALS:
+### 2. CAREER GOALS
 
 According to Forbes, 87% of workers are either not engaged or actively disengaged in their jobs. The list of reasons is far and many. But bottom line is that you’re very likely to be in that 87%. Even if you happen to be in the 13% of happy employees, are you really satisfied to do what you’re doing for the rest of your career?
 
@@ -128,7 +128,7 @@ So ask yourself: If I had so much money I could never spend it all, what would I
 
 
 
-### 3. ROMANCE OR RELATIONSHIP GOALS:
+### 3. ROMANCE OR RELATIONSHIP GOALS
 
 Your relationship with your significant other can grow warily stale over the years, especially after having kids. It’s always in your best interest (as long as there’s no abuse or infidelity going on) to nurture the relationship. This person has vowed to spend the rest of their life with you, and you with them. Why wouldn’t you want it to be epic??!
 
@@ -136,7 +136,7 @@ Not only that—but this person should be your rock, your support. If you expect
 
 
 
-### 4. FAMILY + FRIENDS GOALS:
+### 4. FAMILY + FRIENDS GOALS
 
 Now I realize that you normally don’t control who you meet and where, but you can decide who you actually keep in your life as a friend or acquaintance. This plays into the goal factor in that, you will find a time when you become so incredibly busy that you don’t have the capacity to deal with one-sided friendships and/or constant drama from that one extended family member that always seems to have a crisis going on.
 
@@ -156,7 +156,7 @@ We’re responsible for teaching them nearly everything, and how to be a great p
 
 
 
-### 5. FINANCIAL TYPES OF GOALS EVERYONE SHOULD HAVE:
+### 5. FINANCIAL TYPES OF GOALS EVERYONE SHOULD HAVE
 
 Seriously, you need to have a financial plan in place, and you need to clean up your messes before you’re in a Code Black (Red?) situation. Find any one of the financial gurus online that you can, create a plan, and work through it.
 
@@ -171,7 +171,7 @@ Go here to read: How to Create a Working Household Budget and get a free printab
 
 
 
-### 6. PHYSICAL ENVIRONMENT GOALS:
+### 6. PHYSICAL ENVIRONMENT GOALS
 
 Physical environment goals deal with the place you spend most of your time, whether that includes your lovely abode, your office/desk space at work, or even the gym.
 

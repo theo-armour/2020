@@ -69,21 +69,26 @@ Doing: ::Fireworks:: Level 3, Production
 
 Knowing ~ Being ~ **Doing**
 
+**Mission** ~ Vision ~ Values
+
 Primary senses: touch smell taste *hear* *see* things at a distance
 
-### What
+### What Acting Goals
+
+Career, Money, Business, Finance, Education, Personal Development
 
 * Career - yours ?
 * Business - theirs ?
-* Planning Design Preparing Projects
-* Money/financial
+* Finances
+* Money
 	* Expenses, advisors, debt
 * Education
+* Occupation
+* Planning Design Preparing Projects
 * Citizenship Civics
 * Mission
 * Events awareness
 * Consuming media
-* Occupation
 * Aging Legacy Retirement
 * Intellectual Learning Research
 * Admin? Managing
@@ -102,11 +107,15 @@ Doing: level 1 - activity
 
 money ~ fame/power ~ **love**
 
+Mission ~ **Vision** ~ Values
+
 **Knowing** Being Doing
 
 Primary senses: *touch* *smell* *taste* things at hand hear see
 
-### What
+### What Perceiving Goals
+
+Health, Physical environment, Leisure, Fun & Recreation
 
 * Health Fitness
 * Diet Weight
@@ -139,15 +148,19 @@ BrainLevel:: 2-Deliberate-based doing
 
 Knowing **Being** Doing
 
+Mission ~ Vision ~ **Values**
+
 money ~ **fame/power** ~ love
 
-touch smell taste hear see - none but listen to your heart, feelings, intuition
+senses: touch smell taste hear see - none but listen to your heart, feelings, intuition
 
 ### What "Being" Goals
 
+Spiritual, Family & Friends, Romance, Social
+
 * Esteem
 * Family
- * time, money, dining, travel, activities
+	* time, money, dining, travel, activities
 * Friends neighborhood
 * Engagement Supportive
 * Stress management?
@@ -159,9 +172,9 @@ touch smell taste hear see - none but listen to your heart, feelings, intuition
 * External
 * Vision
 * Meditation
-* Justice Rights Issues Gender Race
+* Justice, Rights, Issues Gender Race
 * Empathy Pity Compassion
-* Mindfulness Self examination
+* Mindfulness, Self examination
 * Character - what to stand for
 
 

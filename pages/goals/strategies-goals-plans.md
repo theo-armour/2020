@@ -6,14 +6,14 @@ Goals & Objectives
 * How we gauge our degrees of success
 * Actions, Owners, Time-frames, Resources, Outcomes
 
-
 Means          Ends
 
 * Mission        Vision
 * Strategies     Goals
 * Tactics        Objectives
 
-## smart goals
+## SMART goals
+
 https://en.wikipedia.org/wiki/SMART_criteria
 
 * Specific – target a specific area for improvement.
