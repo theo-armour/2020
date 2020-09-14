@@ -24,7 +24,7 @@ Aspects most of the sites appear to be missing include
 * Business
 * Career goals
 * Money
-* financial goals
+* Financial goals
 
 
 * Emotional
@@ -34,18 +34,18 @@ Aspects most of the sites appear to be missing include
 * Family
 * Friends
 * Social life
-*
+
 * Spiritual
 * Spiritual goals
 * Personal goals
 * Psychological
 * Personal Development
-*
+
 * Leisure
 * Fun & Recreation
 * Educational
 * External
-*
+
 * Experiential
 * Intellectual
 * Quality of life

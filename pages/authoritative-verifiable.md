@@ -1,26 +1,4 @@
-
-# Perception
-
-## How do we know that we know?
-
-* https://en.wikipedia.org/wiki/Metaphysics
-* https://en.wikipedia.org/wiki/Epistemology
-* https://en.wikipedia.org/wiki/History_of_scientific_method
-* https://plato.stanford.edu/entries/scientific-method/
-* https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-biology-and-the-scientific-method/a/the-science-of-biology
-
-
-## Ryan Holiday
-
-* Holiday: you can control your perceptions
-* Holiday: So control them well
-* Holiday: See things as they really are, without ornament
-* Holiday: Focus on what you can control
-* Holiday: Live in the moment. There no obstacles in the present
-* Holiday: See the good
-* Know which biases you are in
-* Know how you are being manipulated
-
+# Authoritative Verifiable
 
 ## Parallel Constitution
 

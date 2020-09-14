@@ -1,4 +1,4 @@
-# 06-21
+# 2020-06-21
 
 "Time Defeated by Love, Beauty and Hope"
 
@@ -10,7 +10,7 @@ As an architect: dining rooms need kitchens, bedrooms need bath rooms
 As a computer dude, there has to be a folder and file system
 As a parent there have to be rules and guidelines
 
-Over the decades I have spent much time on 
+Over the decades I have spent much time on
 
 Carnagie, Covey, GTD and such. All good
 
@@ -39,7 +39,7 @@ The other day I wanted to create an "annual report" to present to my daughters a
 
     —Suarez Miranda,Viajes devarones prudentes, Libro IV,Cap. XLV, Lerida, 1658
 
-Frankly, my personal goal is to build maps that are bigger than the territory they cover, but we can cover that topic another day. 
+Frankly, my personal goal is to build maps that are bigger than the territory they cover, but we can cover that topic another day.
 
 Anyway, As  I was adding topics, I decoded I needed a way of cataloging or categorizing the topics. I tried to apply my "Perceive Act Judge" ideas and this was a fail. There seemed to be no reason as to why one of these categories was better or more focussed on an activity than the others. Maslow's Hierarchy also was of little help. So then I started rummaging through my bookmarks and hit a gold mine - that hit the goal line.
 
@@ -57,7 +57,7 @@ I googled "Life Goal Categories" and dozens of results arrived.  After looking a
 * Spiritual goals
 * Personal goals
 
-Then me being a crafty one, I moved them about into this 
+Then me being a crafty one, I moved them about into this
 
 * Career goals
 * Money/financial goals
@@ -88,16 +88,63 @@ this is about goals. this is not about
 
 
 
-## Terms
+## Terms ~ time spans
+
+How do these fit in?
 
 * Primary goals
-* long term goals
-* short term goals
+* Long term goals
+* Short term goals
 * Recurring goals
 * Immediate goals
 
 
-## Acting Goals ~ Christian trinity: God ~ there at the start and finish
+
+## Big Five personality traits
+
+https://en.wikipedia.org/wiki/Big_Five_personality_traits
+
+How do these fit in?
+
+1. Extroversion
+2. Agreeableness
+3. Conscientiousness
+4. Emotional Stability versus Neuroticism
+5. Openness to Experience + Intellect ( Imagination )
+
+## Myers Briggs
+
+### Extraversion/Introversion
+* The extraverted types learn best by talking and interacting with others. By interacting with the physical world, extraverts can process and make sense of new information.
+* The introverted types prefer quiet reflection and privacy. Information processing occurs for introverts as they explore ideas and concepts internally.
+
+### Sensing/Intuition
+
+* Sensing types are good at concrete and tangible things.
+* Intuitive types are good at abstract things and ideas.
+* Sensing types might enjoy a learning environment in which the material is presented in a detailed and sequential manner.
+* Sensing types often attend to what is occurring in the present and can move to the abstract after they have established a concrete experience.
+* Intuitive types might prefer a learning atmosphere in which an emphasis is placed on meaning and associations.
+* Insight is valued higher than careful observation, and pattern recognition occurs naturally for intuitive types.
+
+## Thinking/Feeling
+The third continuum reflects a person's decision preferences.
+
+* Thinking types desire objective truth and logical principles and are natural at deductive reasoning.
+* Feeling types place an emphasis on issues and causes that can be personalized while they consider other people's motives.
+
+## Judging/Perceiving
+The fourth continuum reflects how a person regards complexity.
+* Judging types tend to have a structured way or theory to approach the world.
+* Perceiving types tend to be unstructured and keep options open.
+* Judging types will always try to make accommodation between new information and their structured world, which might only be changed with discretion.
+* Perceiving types will be more willing to change without having a prior structured world.
+
+
+
+## Do ~ Acting Goals
+
+Christian trinity: God ~ there at the start and finish
 
 * Who: team - collaborative ~ with others - outward looking
 * When: timelines ~ start & finish ~ deadlines
@@ -115,8 +162,8 @@ touch smell taste *hear* *see*
 * Career - yours ?
 * Business - theirs ?
 * Planning Design Preparing Projects
-* Money/financials
-    * Expenses, advisors, debt
+* Money/financial
+	* Expenses, advisors, debt
 * Education
 * Citizenship
 * Mission
@@ -128,10 +175,12 @@ touch smell taste *hear* *see*
 * Admin? Managing
 
 
-## Perceiving Goals ~ Christian trinity: Jesus ~ here for a short time
+## Know ~ Perceiving Goals
+
+Christian trinity: Jesus ~ here for a short time
 
 * who: personal - individual - inward looking
-* when: timed 
+* when: timed
 * Where: house / a room / inward looking
 * Why: pinnacle: Beauty / Aesthetics
 
@@ -160,14 +209,16 @@ Doing: level 1 - activity
 * Art Listening to music
 * Simplify Minimalism
 
-## Judging Goals ~ Christian trinity: Holy ghost
+## Be ~ Judging Goals
+
+Christian trinity: Holy ghost
 
 * who: the world, everybody, family - feeling more than sensing
-* When: timeless 
+* When: timeless
 * Why: Pinnacle: Love
-* Where in nature
+* Where: in nature
 
-BrainLevel:: 2-Deliberate-based "doing
+BrainLevel:: 2-Deliberate-based doing
 
 Knowing **Being** Doing
 
@@ -194,7 +245,7 @@ touch smell taste hear see - none but listen to your heart, feelings, intuition
 * Character - what to stand for
 
 
-## Parsing
+## Parsing ~ 10 Commandments
 
 ### Thou shalt have no other gods before me
 
@@ -204,7 +255,7 @@ touch smell taste hear see - none but listen to your heart, feelings, intuition
 
 ### Honour thy father and thy mother
 
-* Perceiving ~ some people are more special than others 
+* Perceiving ~ some people are more special than others
 * Judging/Being ~ express love
 * Act ~ do something nice
 
@@ -225,13 +276,13 @@ touch smell taste hear see - none but listen to your heart, feelings, intuition
 
 ### Thou shalt not kill
 
-* Perceiving ~ there is a person that could or should be killed 
+* Perceiving ~ there is a person that could or should be killed
 * Judging ~ deciding not to do so
 * Act ~ sit by the fire
 
 ### Thou shalt not commit adultery
 
-* Perceive ~ Identify a person of interest you are not married to 
+* Perceive ~ Identify a person of interest you are not married to
 * Judging, Knowing - decide not to do
 * Act ~ sit quietly by the fire
 

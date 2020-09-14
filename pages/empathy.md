@@ -1,5 +1,5 @@
 
-# Action
+# Empathy
 
 ## A Close Readings of '[What to Say When You Meet the Angel of Death at a Party]( https://www.nytimes.com/2018/01/26/opinion/sunday/cancer-what-to-say.html )'
 
@@ -70,6 +70,24 @@ Touch the person. Open the door for them. Offer to carry a bag. Do something for
 Of course you can share your opinions about their issues, but you might learn a lot more if you ask them for their thoughts on their condition.
 
 
+
+
+## 2018-04-08
+
+
+https://www.reddit.com/r/LifeProTips/comments/8abuup/lpt_if_you_genuinely_want_to_know_more_about/
+
+LPT: If you genuinely want to know more about another person, ask them what they are passionate about . . . instead, of what they do. Often times you'll get a genuine answer and you get the added bonus of seeing them light up with energy as they describe something they actually care about.
+
+
+
+http://recomendo.com/issues/pocket-magic-trick-minimalism-notebooks-how-to-apologize-104995
+
+(1) Acknowledge how your action affected the person;
+(2) Say you’re sorry;
+(3) Describe what you’re going to do to make it right or make sure it doesn’t happen again.
+
+Don’t excuse or explain
 
 
 

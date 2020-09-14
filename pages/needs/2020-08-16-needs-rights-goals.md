@@ -7,6 +7,7 @@
 
 ## Maslow
 
+* https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs
 
 ### Physiological needs
 
@@ -32,24 +33,34 @@ Safety and Security needs include:
 
 ### Social belonging
 
-
-### Self-esteem
-
 Social Belonging needs include:
 
 * Friendships
 * Intimacy
 * Family
 
+### Self-esteem
+
+* Prestige
+* Feeling of accomplishment
+* Status
+* recognition
+* importance
+* respect from others
+
 ### Self-actualization
-
-
-### Transcendence
 
 * Partner Acquisition
 * Parenting
 * Utilizing & Developing Talents & Abilities
 * Pursuing goals
+
+### Transcendence
+
+* altruism
+* spirituality
+* desire to reach the infinite.
+
 
 
 ## Maslow's list of Metaneeds:
@@ -114,7 +125,7 @@ Secondary/psychogenic needs
 * sadomasochism
 * social-conformance
 * affection
-* information.
+* information
 
 
 ### Needs

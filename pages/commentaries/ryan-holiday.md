@@ -375,7 +375,7 @@ Determination. Staying power. Steer the course.
 Lend a hand. We're in this together. Help thrive and survive.
 
 ## Meditate on Your Morality p167
-_Memento mori_. Serenity. Death as an obstoacle
+_Memento mori_. Serenity. Death as an obstacle
 
 ## Prepare to Start Again p169
 Anticipate next round, Passing one obstacle means you are worthy of more.

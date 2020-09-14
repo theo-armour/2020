@@ -11,8 +11,11 @@ Perception, Judgment and Action
 ### Perception
 
 How do we know that we know?
-https://en.wikipedia.org/wiki/Metaphysics
-https://en.wikipedia.org/wiki/Epistemology
+
+* https://en.wikipedia.org/wiki/Metaphysics
+* https://en.wikipedia.org/wiki/Epistemology
+
+Holiday
 
 * Holiday: you can control your perceptions
 * Holiday: So control them well
@@ -22,16 +25,15 @@ https://en.wikipedia.org/wiki/Epistemology
 * Holiday: See the good
 
 * Know which biases you are in
-* Know how you are being manipulated 
+* Know how you are being manipulated
 
 
 ### Judgment
 
-value theory 
-https://en.wikipedia.org/wiki/Axiology
-What are goals and objectives? mostly judgments
-
-Problem solving
+* https://en.wikipedia.org/wiki/Axiology
+* value theory
+* What are goals and objectives? mostly judgments
+* Problem solving
 
 
 
@@ -42,11 +44,12 @@ Time mostly belongs to action. Perception and Judgment are timeless
 Actions are about time
 
 Holiday:
-* Bold 
+
+* Bold
 * Deliberate
 * Persistent
 
-SMART goals - turn judments into effective actions
+SMART goals - turn judgments into effective actions
 Allen's GTD
 
 
@@ -56,8 +59,9 @@ Allen's GTD
 A building is a judgment about the way thing should be
 
 Cooking is a series of PJAs
+
 1. We preceive that we are hungry
-2. We decide to cook somthing
+2. We decide to cook something
 3. We search for a good recipe
 
 Then
@@ -67,7 +71,7 @@ Then
 
 and so on until we percive that we are no longer hungry
 
-What is misic?
+What is music?
 
 Goals are a way of judging whether something is actionable
 
@@ -118,10 +122,12 @@ https://en.wikipedia.org/wiki/Problem_solving
 
 
 http://lithgow-schmidt.dk/sherry-arnstein/ladder-of-citizen-participation.html#d0e70
+
 A Ladder of Citizen Participation - Sherry R Arnstein
+
 * A catalog of perceptions
 * With suggested remedies as judgments
- 
+
 
 
 ### Add 'Quality without a name' QWAN?
@@ -143,13 +149,13 @@ LPT: If you genuinely want to know more about another person, ask them what they
 
 http://recomendo.com/issues/pocket-magic-trick-minimalism-notebooks-how-to-apologize-104995
 
-(1) Acknowledge how your action affected the person; 
-(2) Say you’re sorry; 
-(3) Describe what you’re going to do to make it right or make sure it doesn’t happen again. 
+(1) Acknowledge how your action affected the person;
+(2) Say you’re sorry;
+(3) Describe what you’re going to do to make it right or make sure it doesn’t happen again.
 
 Don’t excuse or explain
- 
-## 2017-12-17 
+
+## 2017-12-17
 
 Perception Action Will
 Perception, Action, and Judgment
@@ -164,14 +170,13 @@ https://www.contemplationsblog.com/blog/on-the-big-three-perception-action-will
 
 ## 2017-12-16
 
-There are many philsophies but few agree. 
+There are many philosophies but few agree.
 
 It would be nice to have some tools that would help compare and contrast various philosophies.
 
 Comparative Philosophy
+
 http://www.iep.utm.edu/comparat/
-
-
 https://en.wikipedia.org/wiki/Outline_of_thought
 	* https://en.wikipedia.org/wiki/Bloom%27s_taxonomy
 	* https://en.wikipedia.org/wiki/Abraham_Maslow
