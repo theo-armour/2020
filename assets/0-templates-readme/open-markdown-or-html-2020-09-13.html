@@ -35,7 +35,6 @@ summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; outline: none; }
 <script>
 
 // https://github.com/showdownjs/showdown
-// Canonical version: https://github.com/pushme-pullyou/templates-01/tree/master/open-markdown-or-html
 
 	defaultFile = "README.md";
 
@@ -61,7 +60,6 @@ summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; outline: none; }
 		const url = location.hash.slice( 1 );
 		document.title = url.split( "/" ).pop();
 		const options = { excludeTrailingPunctuationFromURLs: true, ghMention: true, simplifiedAutoLink: true, simpleLineBreaks: true, emoji: true, openLinksInNewWindow: true };
-
 
 		const xhr = new XMLHttpRequest();
 		xhr.open( "get", url, true );
