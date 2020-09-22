@@ -25,11 +25,29 @@ Physiological needs include:
 
 Safety and Security needs include:
 
+* https://en.wikipedia.org/wiki/Human_security
+
+* Economic ~ financial security
+	* the condition of having stable income or other resources to support a standard of living now and in the foreseeable future.
+	* probable continued solvency
+	* predictability of the future cash flow
+* Food security
+	* measure of the availability of food and individuals' ability to access it.
+* Health Security
+	* aims to guarantee a minimum protection from diseases and unhealthy lifestyles.
+* Environmental security
+	* aims to protect people from the short- and long-term ravages of nature, man-made threats in nature and deterioration of the natural environment.
 * Personal security
+	* aims to protect people from physical violence, whether from the state or external states, from violent individuals and sub-state actors, from domestic abuse, or from predatory adults.
+* Community security
+	* aims to protect people from the loss of traditional relationships and values and from sectarian and ethnic violence
+* Political security
+	* is concerned with whether people live in a society that honors their basic human rights.
 * Emotional security
-* Financial security
-* Health and well-being
-* Against accidents/illness
+	* https://en.wikipedia.org/wiki/Loneliness
+	* https://en.wikipedia.org/wiki/Social_isolation
+	* https://en.wikipedia.org/wiki/Happiness
+
 
 ### Social belonging
 
