@@ -22,14 +22,26 @@ The August Complex is a massive wildfire burning in the Coast Range of Northern 
 * https://wifire.ucsd.edu/
 * https://www.wsj.com/articles/california-firefighters-tap-ai-for-an-edge-in-battling-wildfires-11601544600?mod=djemalertNEWS
 
+
+
 ## inciweb
 
 * https://inciweb.nwcg.gov/
 
 ## National Intraagency Fire Center
 
-* https://maps.nwcg.gov/
+* https://www.nifc.gov/
+* https://www.nifc.gov/fireInfo/fireInfo_maps.html
+* https://www.nifc.gov/fireInfo/nfn.htm
 
+### Geographic Area Coordinating Group (GACG)
+
+* https://gacc.nifc.gov/
+
+## National Wildfire Coordinating Group
+
+* https://www.nwcg.gov/
+* https://maps.nwcg.gov/
 
 ## California
 
