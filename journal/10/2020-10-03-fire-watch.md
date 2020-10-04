@@ -1,4 +1,4 @@
-# Fire Watch
+# Fire Watch ~ 2020-10-04
 
 When you research a topic, as with other aspects of life in the United States, there may be numerous organizations - federal, state, county, municipal and private - involved. Here is the benining of an investigation on being an informed fire incident watcher via perusing a curated list of fire incident report web pages. Disclosure: The author's daughter is a firefighter in the "August Complex".
 
