@@ -9,22 +9,24 @@ When you research a topic, as with many aspects of life in the United States, th
 
 The August Complex is a massive wildfire burning in the Coast Range of Northern California, in Glenn, Lake, Mendocino, Tehama, and Trinity Counties. The complex originated as 38 separate fires started by lightning strikes on August 16–17, 2020. Four of the largest fires, the Doe, Tatham, Glade, and Hull fires, had burned together by August 30. On September 9, the Doe Fire, the main fire of the August Complex, surpassed the 2018 Mendocino Complex to become both the single-largest wildfire and the largest fire complex in recorded California history.
 
-* https://inciweb.nwcg.gov/incident/article/6983/57416/
+* https://maps.nwcg.gov/sa/#/%3F/%3F/40.3144/-123.2619/11 << map with lastest incidents
+* https://inciweb.nwcg.gov/incident/6983/ << primary information pagee 
 * https://inciweb.nwcg.gov/photos/CAMNF/2020-08-16-1732-Doe-Fire/related_files/ << PDFs
 * https://www.fire.ca.gov/incidents/2020/8/16/august-complex-includes-doe-fire/
 * https://www.fire.ca.gov/media/11416/top20_acres.pdf
 * https://twitter.com/hashtag/AugustComplex
-* https://twitter.com/hashtag/AugustComplexWestZone
+* https://twitter.com/hashtag/AugustComplexNorthZone
 * https://storymaps.arcgis.com/stories/3cd14786309545cfb0dcdd4aa1fbcf7c
 
 ***
 
 ## Wifire
 
-An effort by UC San Diego to bring artificial intelligence into fire management. A work--in-progress. Their firemap allows you to create overviews of incidents, smoke, population density and more. Settings are save between sessions, but you cannot send a link to another person with the location and settings. 
+An effort by UC San Diego and San Diego State College to bring artificial intelligence into fire management. A work--in-progress. Their firemap allows you to create overviews of incidents, smoke, population density and more. Settings are save between sessions, but you cannot send a link to another person with the location and settings. 
 
 * https://firemap.sdsc.edu/
 * https://wifire.ucsd.edu/
+* https://twitter.com/hashtag/WIFIRE
 * https://www.wsj.com/articles/california-firefighters-tap-ai-for-an-edge-in-battling-wildfires-11601544600?mod=djemalertNEWS
 
 
@@ -58,6 +60,7 @@ https://sonomacounty.maps.arcgis.com/apps/webappviewer/index.html?id=2cb4401e1fc
 
 ## Private
 
+* http://www.alertwildfire.org/sierra/index.html?camera=Axis-BaldJesse2&v=81e004f
 * https://www.sfchronicle.com/projects/california-fire-map/
 * https://www.latimes.com/wildfires-map/?fire=august-complex
 * https://www.nytimes.com/topic/subject/wildfires
