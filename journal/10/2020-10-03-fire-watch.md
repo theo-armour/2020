@@ -1,5 +1,8 @@
 # Fire Watch
 
+When you research a topic, as with other aspects of life in the United States, there may be numerous organizations - federal, state, county, municipal and private - involved. Here is the benining of an investigation on being an informed fire incident watcher via perusing a curated list of fire incident report web pages. Disclosure: The author's daughter is a firefighter in the "August Complex".
+
+
 ## August Complex
 
 * https://en.wikipedia.org/wiki/August_Complex_fire
@@ -18,15 +21,13 @@ The August Complex is a massive wildfire burning in the Coast Range of Northern 
 
 ## Wifire
 
+An effort by UC San Diego to bring artificial intelligence into fire management. A work--in-progress. Their firemap allows you to create overviews of incidents, smoke, population density and more. Settings are save between sessions, but you cannot send a link to another person with the location and settings. 
+
 * https://firemap.sdsc.edu/
 * https://wifire.ucsd.edu/
 * https://www.wsj.com/articles/california-firefighters-tap-ai-for-an-edge-in-battling-wildfires-11601544600?mod=djemalertNEWS
 
 
-
-## inciweb
-
-* https://inciweb.nwcg.gov/
 
 ## National Intraagency Fire Center
 
@@ -42,6 +43,10 @@ The August Complex is a massive wildfire burning in the Coast Range of Northern 
 
 * https://www.nwcg.gov/
 * https://maps.nwcg.gov/
+
+### inciweb
+
+* https://inciweb.nwcg.gov/
 
 ## California
 
