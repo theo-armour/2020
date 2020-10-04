@@ -17,7 +17,7 @@ The August Complex is a massive wildfire burning in the Coast Range of Northern 
 * https://twitter.com/hashtag/AugustComplexWestZone
 * https://storymaps.arcgis.com/stories/3cd14786309545cfb0dcdd4aa1fbcf7c
 
-
+***
 
 ## Wifire
 
