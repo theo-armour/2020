@@ -1,6 +1,6 @@
 # Fire Watch ~ 2020-10-04
 
-When you research a topic, as with other aspects of life in the United States, there may be numerous organizations - federal, state, county, municipal and private - involved. Here is the benining of an investigation on being an informed fire incident watcher via perusing a curated list of fire incident report web pages. Disclosure: The author's daughter is a firefighter in the "August Complex".
+When you research a topic, as with many aspects of life in the United States, there may be numerous organizations - federal, state, county, municipal and private - involved. Here is the benining of an investigation on being an informed fire incident watcher via perusing a curated list of fire incident report web pages. Disclosure: The author's daughter is a firefighter in the "August Complex".
 
 
 ## August Complex
@@ -26,7 +26,6 @@ An effort by UC San Diego to bring artificial intelligence into fire management.
 * https://firemap.sdsc.edu/
 * https://wifire.ucsd.edu/
 * https://www.wsj.com/articles/california-firefighters-tap-ai-for-an-edge-in-battling-wildfires-11601544600?mod=djemalertNEWS
-
 
 
 ## National Intraagency Fire Center
@@ -57,7 +56,7 @@ An effort by UC San Diego to bring artificial intelligence into fire management.
 
 https://sonomacounty.maps.arcgis.com/apps/webappviewer/index.html?id=2cb4401e1fc0494dbf9d9e22aa794617
 
-## More
+## Private
 
 * https://www.sfchronicle.com/projects/california-fire-map/
 * https://www.latimes.com/wildfires-map/?fire=august-complex
@@ -70,10 +69,11 @@ https://sonomacounty.maps.arcgis.com/apps/webappviewer/index.html?id=2cb4401e1fc
 * https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#11/37.8033/-122.431
 
 
-
 ## Weather & wind speeds
 
 * https://www.spc.noaa.gov/products/fire_wx/
 * https://www.spc.noaa.gov/products/fire_wx/fwdy1.html
 * https://graphical.weather.gov/sectors/northcalifornia.php#tabs
 * http://www.usairnet.com/weather/maps/current/california/wind-speed/
+
+
