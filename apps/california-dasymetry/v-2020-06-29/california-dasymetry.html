@@ -25,7 +25,7 @@
 <script src="../../../lib/gjs-geojson/gjs-geojson-2020-06-16.js"></script>
 
 <script src="../../../lib/thr-three/thr-threejs-2020-06-16.js"></script>
-<script src="../../../lib/thr-three/ray-raycaster-sam-2020-05-27.js"></script>
+<script src="../../../lib/thr-three/ray-raycaster-2020-06-21.js"></script>
 
 <details id=detNavMenu >
 
@@ -75,11 +75,11 @@
 		<footer>
 
 			<hr>
-	
+
 			<p title="go to top of menu" style=text-align:center; >
 				<a class=aDingbat href=javascript:navMenu.scrollTo(0,0); >❦</a>
 			</p>
-	
+
 		</footer>
 
 	</nav>
@@ -126,7 +126,7 @@ function init() {
 	// renderer.setPixelRatio( window.devicePixelRatio );
 	// renderer.setSize( window.innerWidth, window.innerHeight );
 	// document.body.appendChild( renderer.domElement );
-	
+
 	// renderer.outputEncoding = THREE.sRGBEncoding;
 	// renderer.shadowMap.enabled = true;
 	// renderer.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -175,14 +175,14 @@ function init() {
     url = "../json/ca-zip-codes.json";
 
 	requestFile( url, onLoadZips );
-	
+
 	urlAgis = "../json/ca-zip-code-agi.json";
 
 	requestFile( urlAgis, onLoadAgis );
 
 	GJS.initGeoJson();
 
-	
+
 	if ( window.innerWidth < 640 || window.innerHeight < 640 ) {
 
 	//toggleNavMenu();
@@ -206,7 +206,7 @@ function onLoadAgis( json ) {
 	const records = json.records;
 
 	agis = records.map( record => record.fields ).filter( fields => !["0", "99999"].includes( fields.zipcode ) );
-	
+
 	agiGroup = agis.filter( fields => fields.agi_stub === "2" )
 	//console.log( "agiGroup", agiGroup);
 
@@ -255,7 +255,7 @@ function onLoadZips( json ) {
         THR.group.add( mesh );
 
 	} ;
-	
+
 	//THR.updateScene();
 
 
@@ -275,7 +275,7 @@ function addMesh( size = 20 ) {
 	geometry.applyMatrix4( new THREE.Matrix4().makeRotationX( 0.5 * Math.PI ) );
 	geometry.applyMatrix4( new THREE.Matrix4().makeTranslation( 0, 0, 0.05 ) );
 
-	
+
 	//const material = new THREE.MeshNormalMaterial();
 	const material = new THREE.MeshPhongMaterial( { color: 0x88ff88, opacity: 0.9, specular: 0xffffff, transparent: true } );
 
@@ -338,18 +338,18 @@ function toggleDarkMode( button ) {
 		navMenu.style.backgroundColor = "#555";
 
 		THR.scene.background = new THREE.Color(0x222222);
-		//THR.scene.fog.far = 999999; 
+		//THR.scene.fog.far = 999999;
 
 		const summaries = document.querySelectorAll(".sumPrimary");
 
 		Array.from( summaries ).forEach( sum => sum.style.backgroundColor = "#888" );
 		divPopUp.style.backgroundColor = "#333";
 
-		butDark.innerHTML = "light";          
+		butDark.innerHTML = "light";
 
 		return;
 
-	} 
+	}
 
 
 	//root.style.backgroundColor = "#1e1f23";
