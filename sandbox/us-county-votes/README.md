@@ -18,16 +18,20 @@ _US County Votes in a resizable window. One finger to rotate. Two to zoom. Three
 
 Mission
 
-To display the changes in voting margins over a series of election for every county in the USA
+To display the changes in voting margins by party over a series of elections for every county in the USA
 
+Vision
+
+Where do we want this to go? and why?
 
 ## To Do / Wish List
 
-* 2020-11-06 ~ Add buttons or sliders to select data from al the election years in the data set
-* 2020-11-06 ~ Add a range of colors to indicate the magnitude of the margin for the winning party
+* 2020-11-06 ~ Add buttons or sliders to select data from all the election years in the available data set
+* 2020-11-06 ~ Add a range of colors to indicate the magnitude of the margin for the winning party in each county
 
 ## Issues
 
+* 2020-11-06 ~ Currently only shows party voting data for 2018 with no indication of margin magnitude
 * 2020-11-06 ~ The borders of some counties along the oceans are missing
 * 2020-11-06 ~ The map projection is set for a spherical projection - causing the map to not look like a more normal mercator projection
 * 2020-11-06 ~ The software is un-optimized amd may run quite slowly on a non-gaming computer
