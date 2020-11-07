@@ -16,6 +16,21 @@ _Lib_
 
 ## Concept
 
+If a file type is used in two or more places, it should be available in lib
+
+Canonical lib is at https://github.com/theo-armour/2020/tree/master/lib/
+
+Not every repo needs all the lib files
+
+Always make it easy to do a file compare and sync
+
+Why not a single lib for all users and repos?
+
+* Tried and failed
+* Makes it difficult for new users
+* Discourages simplicity, individuality and customization
+
+
 
 ## To Do / Wish List
 
@@ -29,11 +44,11 @@ _Lib_
 ## Change Log
 
 
-### 123
+### 2020-11-07
 
-* First commit
+* First update
 
 
 ***
 
-<center title="hello! Click me to go up to the top" ><a href=javascript:window.scrollTo(0,0); style=font-size:2ch;text-decoration:none; > ❦ </a></center>
+<center title="hello! Click me to go up to the top" ><a href=javascript:window.scrollTo(0,0); > ❦ </a></center>

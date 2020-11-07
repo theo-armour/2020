@@ -39,11 +39,10 @@ summary { cursor: pointer; font-size: 2.5rem; font-weight: bold; outline: none; 
 <script>
 
 
-	defaultFile = "README.md";
+	defaultFile = "README-template-ta.md";
 
-	//location.hash = "./lib/assets/markdown-help.md"; // test
+	//location.hash = "../assets/markdown-help.md"; // test
 	//location.hash = "../assets/style.css"
-	//location.hash = "./lib/style/style-sample-tags.html"
 
 	init();
 
@@ -53,7 +52,7 @@ summary { cursor: pointer; font-size: 2.5rem; font-weight: bold; outline: none; 
 
 		if ( ! location.hash ) { location.hash = defaultFile; }
 
-		location.hash.endsWith( ".md" ) ? onHashChange() : window.location.href = location.hash.slice( 1 );
+		location.hash.endsWith( ".md" ) ? onHashChange() : window.location.href = location.hash;
 
 		window.addEventListener( "hashchange", onHashChange, false );
 

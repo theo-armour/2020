@@ -7,13 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=contain" >
 <meta name="description" content="File wrangler. Default index.html file. Opens HTML or Markdown files. Passes location.hash." >
 <meta name="keywords" content="ShowDown,Markdown,AJAX,JavaScript,HTML,CSS,GitHub,FOSS" >
-<meta name="version" content="2020-06-13" >
+<meta name="version" content="2020-09-13" >
 
 <style>
 
 :root { font: 100% monospace; }
 * { box-sizing: border-box; }
-body { margin: 0 auto; max-width: 100ch; }
+body { margin: 0 auto; max-width: 80ch; }
 a { color: crimson; text-decoration: none; }
 a:hover, a:focus, a:active { text-decoration: underline; }
 aside { border: 1px solid lightgray; margin-top: 15px; padding: 2px; }
@@ -23,8 +23,6 @@ center { text-decoration:none; font-size: 2ch;}
 code { background-color: #eee; }
 pre { background-color: #eee; padding: 5px; }
 summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; outline: none; }
-
-#dingbat { font-size: 200%; }
 
 </style>
 
@@ -38,8 +36,8 @@ summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; outline: none; }
 
 // https://github.com/showdownjs/showdown
 
-	defaultFile = "README-dev.md";
-	
+	defaultFile = "README.md";
+
 	//location.hash = "../assets/markdown-help.md"; // test
 	//location.hash = "../assets/style.css"
 
@@ -63,12 +61,12 @@ summary { cursor: pointer; font-size: 2.5ch; font-weight: bold; outline: none; }
 		document.title = url.split( "/" ).pop();
 		const options = { excludeTrailingPunctuationFromURLs: true, ghMention: true, simplifiedAutoLink: true, simpleLineBreaks: true, emoji: true, openLinksInNewWindow: true };
 
-
 		const xhr = new XMLHttpRequest();
 		xhr.open( "get", url, true );
 		xhr.onload = () => {
 			const txt = xhr.responseText.replace( /\<!--@@@/, "").replace( /\@@@-->/, "");
 			divContent.innerHTML = new showdown.Converter( options ).makeHtml( txt );
+			window.scrollTo( 0, 0 );
 		}
 		xhr.send( null );
 
