@@ -27,7 +27,7 @@ Where do we want this to go? and why?
 ## To Do / Wish List
 
 * 2020-11-06 ~ Add buttons or sliders to select data from all the election years in the available data set
-* 2020-11-06 ~ Add a range of colors to indicate the magnitude of the margin for the winning party in each county
+* 2020-11-06 ~ Add a range of colors to indicate the magnitude of the margins for the winning party in each county
 
 ## Issues
 
