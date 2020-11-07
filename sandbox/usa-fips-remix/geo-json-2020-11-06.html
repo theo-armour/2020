@@ -137,18 +137,18 @@ function init() {
 
 	GJS.initGeoJson();
 
-	camera.position.set( -118, 28, 4 );
-	controls.target.set( -118, 37, 0 );
+	camera.position.set( -115, 20, 40 );
+	controls.target.set( -100, 40, 0 );
 
 	UFR.init();
 
 }
 
 
-title= [	"UID", "iso2", "iso3", "code3", "FIPS", "Admin2", "Province_State", "Country_Region", "Lat", "Long_", "Combined_Key", "Population" ];
+// title= [	"UID", "iso2", "iso3", "code3", "FIPS", "Admin2", "Province_State", "Country_Region", "Lat", "Long_", "Combined_Key", "Population" ];
 
 RAY.getHtm = function ( intersected ) {
-	console.log( "intersected", RAY.intersected.object.userData );
+	//console.log( "intersected", RAY.intersected.object.userData );
 	const data = RAY.intersected.object.userData;
 
 	const htm = `

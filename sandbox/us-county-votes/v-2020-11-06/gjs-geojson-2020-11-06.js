@@ -10,25 +10,15 @@ const GJS = {
 
 GJS.initGeoJson = function () {
 
-	timeStart = performance.now();
+	//const timeStart = performance.now();
 
 	scene.remove( GJS.groupGeoJson );
 	GJS.groupGeoJson = new THREE.Group();
 	GJS.groupGeoJson.name = "geoJson";
 
-	const pathGeoJson = "https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@master/geojson/";
-
-	const urlGeoJson = "../../assets/naturalearth/gz_2010_us_050_00_20m.json";
-
-	//const urlGeoJson = "../../opendata/us-county-boundaries-ca.geojson";
-	//const urlGeoJson = "./json/ca-cbsa.json";
-
+	const urlGeoJson = "../../../assets/naturalearth/gz_2010_us_050_00_20m.json";
 
 	GJS.requestFile( urlGeoJson, GJS.onLoadGeoJson );
-
-	//const urlJsonRegions = "ne_50m_admin_1_states_provinces_lines.geojson";
-
-	//GJS.requestFile( urlJsonRegions, GJS.onLoadGeoJson );
 
 	scene.add( GJS.groupGeoJson );
 
@@ -63,7 +53,6 @@ GJS.onLoadGeoJson = function ( string ) {
 	//const vertices = points.map( pairs => pairs.map( pair => GJS.latLonToXYZ( 50, pair[ 1 ], pair[ 0 ] ) ) );
 	//console.log( "vertices", vertices );
 
-
 	const vertices = points.map( pairs => pairs.map( pair => new THREE.Vector3( pair[ 0 ], pair[ 1 ], 0 )  ) );
 
 	const line = GJS.addLineSegments( vertices );
@@ -79,7 +68,6 @@ GJS.onLoadGeoJsonCbsa = function ( string ) {
 	geoJson = string;
 
 	console.log( "geoJson", geoJson.records );
-
 
 
 	//let geometries = json.features.map( feature => feature.geometry );
@@ -100,6 +88,7 @@ GJS.onLoadGeoJsonCbsa = function ( string ) {
 		}
 
 	} );
+
 	console.log( "points", points );
 
 	//const vertices = points.map( pairs => pairs.map( pair => GJS.latLonToXYZ( 50, pair[ 1 ], pair[ 0 ] ) ) );
@@ -113,6 +102,8 @@ GJS.onLoadGeoJsonCbsa = function ( string ) {
 	GJS.groupGeoJson.add( line );
 
 };
+
+
 
 GJS.addLineSegments = function ( segments ) {
 
