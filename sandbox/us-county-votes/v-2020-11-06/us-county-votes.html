@@ -115,7 +115,7 @@
 
 			<h2>
 				<a href="https://github.com/theo-armour/2020/tree/master/sandbox/us-county-votes" id=aSource target=_top
-					title="Source code on GitHub">&xcirc;</a>
+					title="Read Me and source code on GitHub">&xcirc;</a>
 
 				<a href="" title="Click to reload this page">
 					<span id=sTitle></span>
@@ -140,7 +140,8 @@
 
 	</nav>
 
-	<div id="divPopUp" class="gmd-2">When you touch a zip code marker,<br>the rotation will stop<br>and its details will
+	<div id="divPopUp" class="gmd-2">When you touch a county marker,<br>
+		its details will
 		appear in a pop-up </div>
 
 
@@ -201,11 +202,11 @@
 
 			requestFile( "us-county-votes.tsv", getVotes );
 
-			// if ( !location.hash && location.protocol === "https:" ) {
+			if ( !location.hash && location.protocol === "https:" ) {
 
-			// 	window.history.pushState( "", "", "./" );
+				window.history.pushState( "", "", "./" );
 
-			// }
+			}
 
 		}
 
@@ -214,22 +215,24 @@
 
 		RAY.getHtm = function ( intersected ) {
 			//console.log( "intersected", RAY.intersected.object.userData );
+
 			const data = RAY.intersected.object.userData;
 
 			countyVote = votes.find( vote => vote[ 1 ] === data[ 4 ] )
-
 			//console.log( "countyVote", countyVote );
 
 			let voteData;
+
 			if ( countyVote ) {
 
-				voteData =
-					`
-FIPS: ${ countyVote[ 1 ] } <br>
-County: ${ countyVote[ 2 ] }</br>
-Dem vote: ${ countyVote[ 10 ] } ${ countyVote[ 24 ] } ${ countyVote[ 38 ] } ${ countyVote[ 52 ] } ${ countyVote[ 66 ] }<br>
-Rep vote: ${ countyVote[ 12 ] } ${ countyVote[ 26 ] } ${ countyVote[ 40 ] } ${ countyVote[ 54 ] }  ${ countyVote[ 68 ] }<br>
-`
+				voteData = `
+<div>
+	FIPS: ${ countyVote[ 1 ] } <br>
+	County: ${ countyVote[ 2 ] }</br>
+	Dem vote: ${ countyVote[ 10 ] } ${ countyVote[ 24 ] } ${ countyVote[ 38 ] } ${ countyVote[ 52 ] } ${ countyVote[ 66 ] }<br>
+	Rep vote: ${ countyVote[ 12 ] } ${ countyVote[ 26 ] } ${ countyVote[ 40 ] } ${ countyVote[ 54 ] }  ${ countyVote[ 68 ] }<br>
+</div>`;
+
 			} else {
 
 				voteDate = "not found"
