@@ -7,7 +7,7 @@ value='You are now in a GitHub web page view - Click this button to view this re
 # [US County Votes Read Me]( https://theo-armour.github.io/2020/sandbox/us-county-votes/readme.html )
 
 <!--@@@
-<div style=height:500px;overflow:hidden;width:100%;resize:both; ><iframe src=https://theo-armour.github.io/2020/ sandbox/us-county-votes/ height=100% width=100% ></iframe></div>
+<div style=height:500px;overflow:hidden;width:100%;resize:both; ><iframe src="https://theo-armour.github.io/2020/sandbox/us-county-votes/ sandbox/us-county-votes/" height=100% width=100% ></iframe></div>
 _US County Votes in a resizable window. One finger to rotate. Two to zoom. Three to pan._
 
 ### Full Screen: [US County Votes]( https://theo-armour.github.io/2020/sandbox/us-county-votes/ )
