@@ -114,7 +114,7 @@
 		<header id="hdrTitle">
 
 			<h2>
-				<a href="https://github.com/theo-armour/2020/sandbox" id=aSource target=_top
+				<a href="https://github.com/theo-armour/2020/tree/master/sandbox/us-county-votes" id=aSource target=_top
 					title="Source code on GitHub">&xcirc;</a>
 
 				<a href="" title="Click to reload this page">
@@ -200,6 +200,12 @@
 			UFR.init();
 
 			requestFile( "us-county-votes.tsv", getVotes );
+
+			// if ( !location.hash && location.protocol === "https:" ) {
+
+			// 	window.history.pushState( "", "", "./" );
+
+			// }
 
 		}
 
