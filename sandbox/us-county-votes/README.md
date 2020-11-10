@@ -38,6 +38,10 @@ Where do we want this to go? and why?
 
 ## Links of Interest
 
+* https://www.fastcompany.com/90572489/u-s-election-maps-are-wildly-misleading-so-this-designer-fixed-them
+* https://www.foxnews.com/politics/forget-traditional-election-maps-this-is-what-the-us-vote-really-looks-like
+* https://www.reddit.com/r/Maps/comments/jplarw/counties_that_flipped_in_the_2020_us_presidential/
+* https://www.latimes.com/projects/trump-biden-election-results-california
 
 ## Change Log
 
