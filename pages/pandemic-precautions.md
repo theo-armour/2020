@@ -24,6 +24,13 @@ if somebody comes into the house or into a room not wearing a mask: be more care
 
 If somebody comes into a room or house with a mask on and then takes it off: feel safer because their C19 antennae are working.
 
+Even better, masks are not taken off until both parties have assessed the risk.
+
+## Identify travelers
+
+If somebody has been in a train, bus, airplane for several hours, they should be considered risky and treated as you would tra\eat strangers.
+
+
 ## Identify ventilation
 
 If you cannot see an open window or door that is open, then you are not sitting or standing in a safe place. Don't stay more than 15 minutes
