@@ -5,22 +5,22 @@
 
 ## Overview
 
-Theo Armour was born in Boston, Massachusetts and grew up in Paris and the United States. Theo lives in San Francisco and has three daughters: <a href="http://www.alixarmour.com/" target="_blank">Alix</a>&nbsp;living in Amsterdam, <a href="http://www.cynthiaarmour.com/" target="_blank">Cynthia</a> in Oakland and <a href="https://www.linkedin.com/in/eloise-armour-b84bb1ab/" target="_blank">Eloise</a>&nbsp;in Missoula MT. 
+Theo Armour was born in Boston, Massachusetts and grew up in Paris and the United States. Theo lives in San Francisco and has three daughters: <a href="http://www.alixarmour.com/" target="_blank">Alix</a>&nbsp;living in Amsterdam, <a href="http://www.cynthiaarmour.com/" target="_blank">Cynthia</a> in Oakland and <a href="https://www.linkedin.com/in/eloise-armour-b84bb1ab/" target="_blank">Eloise</a>&nbsp;in Missoula MT.
 
 He attended a number of schools including <a href="https://www.marymount.fr/" target="_blank">Marymount</a> in Paris, <a href="https://www.potomacschool.org/" target="_blank">Potomac</a> in Washington DC, <a href="https://en.wikipedia.org/wiki/Princeton_Day_School#History" target="_blank">Miss Fine's School</a> and <a href="http://www.pds.org/" target="_blank">Princeton Day School</a> both in Princeton NJ, <a href="http://sps.edu/" target="_blank">St Paul's School</a> in Concord NH, <a href="http://www.bbns.org/" target="_blank">Buckingham Browne &amp; Nichols</a> in Cambridge MA and <a href="http://www.syr.edu/" target="_blank">Syracuse University</a> in Syracuse NY.<br />
 
-He is an architect educated at the <a href="http://www.aaschool.ac.uk/" target="_blank" title="http://www.aaschool.ac.uk/">Architectural Association School of Architecture</a> in London. He practiced architecture in London and Hong Kong. He has been a member of <a href="http://www.arb.org.uk/" target="_blank">ARCUK (now the ARB)</a>, <a href="http://www.architecture.com/" target="_blank">RIBA </a>and <a href="http://www.hkia.net/en/Home/Index.htm" target="_blank">HKIA</a>. 
+He is an architect educated at the <a href="http://www.aaschool.ac.uk/" target="_blank" title="http://www.aaschool.ac.uk/">Architectural Association School of Architecture</a> in London. He practiced architecture in London and Hong Kong. He has been a member of <a href="http://www.arb.org.uk/" target="_blank">ARCUK (now the ARB)</a>, <a href="http://www.architecture.com/" target="_blank">RIBA </a>and <a href="http://www.hkia.net/en/Home/Index.htm" target="_blank">HKIA</a>.
 
-Currently Theo is a software developer working with Ladybug Tools. He is the maintainer and primary developer of their Spider projects. These are primarily tools for engineers, architects and designers to design more energy efficient buildings. All his efforts are free and open source 
+Currently Theo is a software developer working with Ladybug Tools. He is the maintainer and primary developer of their Spider projects. These are primarily tools for engineers, architects and designers to design more energy efficient buildings. All his efforts are free and open source
 
 
 ## 1971 - 1981 London
 
 Theo lived in London from 1971 to 1981. He went there to spend his junior year at the AA. At the end of the year instead of returning to Syracuse, he stayed for ten years.
 
-In London he worked with RJ Latimore and Associates and Solon Housing Association. With Latimore, he help design pubs for Truman Breweries, officers messes in Cyprus for the UK Ministry of Defense and a house for  Pete Townsend of The Who. With Solon he renovated a number of houses including 74 houses on Atherfold road one of which had been a residence of Sir Arthur Conan Doyle and listed building at 168 Brixton Road. He also served on the board of directors of the organization - a tenant worker cooperative.
+In London he worked with RJ Lattimore and Associates and Solon Housing Association. With Lattimore, he help design pubs for Truman Breweries, officers messes in Cyprus for the UK Ministry of Defense and a house for  Pete Townsend of The Who. With Solon he renovated a number of houses including 74 houses on Atherfold road one of which had been a residence of Sir Arthur Conan Doyle and listed building at 168 Brixton Road. He also served on the board of directors of the organization - a tenant worker cooperative.
 
-Theo was awarded the <a href="http://www.channelswimmingassociation.com/Trophy%20Recipients/The%20Van%20Audernaerde%20Tankard.html" target="_blank">English Channel Swimming Association</a>&#8217;s Van Audernaerde Prize for Best Disabled Swim in 1980. 
+Theo was awarded the <a href="http://www.channelswimmingassociation.com/Trophy%20Recipients/The%20Van%20Audernaerde%20Tankard.html" target="_blank">English Channel Swimming Association</a>&#8217;s Van Audernaerde Prize for Best Disabled Swim in 1980.
 
 
 ## 1981-1991 Kong Kong
