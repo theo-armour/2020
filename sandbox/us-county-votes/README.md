@@ -48,7 +48,9 @@ Where do we want this to go? and why?
 
 ### 2020-11-17
 
-* Add years;
+* Add color varies RGB( %rep, 0, %dem)
+* Add years 2010 to 2018;
+
 
 ### 2020-11-06
 
