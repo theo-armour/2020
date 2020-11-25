@@ -55,6 +55,7 @@ The over-arching goal always: you understand the map without having to look at t
 * Add lights
 * Switch from basic to phong material
 * Set focus to select year - enable easy use of cursor keys
+
 ### 2020-11-17
 
 * Add color varies RGB( %rep, 0, %dem)
