@@ -45,7 +45,16 @@ Where do we want this to go? and why?
 
 ## Change Log
 
+### 2020-11-24
 
+Differentiating the vote using color is problematic. Using geometry is preferred.
+The over-arching goal always: you understand the map without having to look at the legend.
+
+* height of bars is dem or rep vote - scaled exponentially
+* top width of bar total number of votes in county - scaled exponentially
+* Add lights
+* Switch from basic to phong material
+* Set focus to select year - enable easy use of cursor keys
 ### 2020-11-17
 
 * Add color varies RGB( %rep, 0, %dem)
