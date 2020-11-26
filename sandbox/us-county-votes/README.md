@@ -45,6 +45,11 @@ Where do we want this to go? and why?
 
 ## Change Log
 
+### 2020-11-25
+
+* Shift to spherical coordinates
+* Slow down rotate speed
+
 ### 2020-11-24
 
 Differentiating the vote using color is problematic. Using geometry is preferred.
