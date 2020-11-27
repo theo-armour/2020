@@ -253,7 +253,6 @@
 
 			scene.add( new THREE.CameraHelper( lightDirectional.shadow.camera ) );
 
-
 		}
 
 
@@ -318,7 +317,7 @@
 
 
 
-						let geometry = new THREE.CylinderBufferGeometry( 0, 0.1 * tot, dem, 12, 1, false );
+						let geometry = new THREE.CylinderBufferGeometry( 0, 0.1 * tot, dem, 6, 1, false );
 						geometry.applyMatrix4( new THREE.Matrix4().makeRotationX( 0.5 * Math.PI ) );
 
 						let material = new THREE.MeshPhongMaterial( { color: demCol } );
@@ -326,7 +325,7 @@
 						mesh.userData = line;
 						mesh.scale.y = 0.3;
 
-						vert = GJS.latLonToXYZ( 50 + 0.5 * dem, + line[ 8 ], + line[ 9 ]);
+						const vert = GJS.latLonToXYZ( 50 + 0.5 * dem, + line[ 8 ], + line[ 9 ]);
 						mesh.position.copy( vert ); //set( + line[ 9 ], + line[ 8 ], 0.5 * dem );
 						mesh.lookAt( 0, 0, 0 )
 						//console.log( "", mesh.position );
@@ -334,14 +333,14 @@
 						UFR.counties.add( mesh );
 
 
-						geometry2 = new THREE.CylinderBufferGeometry( 0, 0.1 * tot, rep, 12, 1, false );
+						const geometry2 = new THREE.CylinderBufferGeometry( 0, 0.1 * tot, rep, 6, 1, false );
 						geometry2.applyMatrix4( new THREE.Matrix4().makeRotationX( 0.5 * Math.PI ) );
 
-						material2 = new THREE.MeshPhongMaterial( { color: repCol } );
-						mesh2 = new THREE.Mesh( geometry2, material2 );
+						const material2 = new THREE.MeshPhongMaterial( { color: repCol } );
+						const mesh2 = new THREE.Mesh( geometry2, material2 );
 						mesh2.userData = line;
 						mesh2.scale.x = 0.3;
-						vert2 = GJS.latLonToXYZ( 50 + 0.5 * rep, + line[ 8 ], + line[ 9 ] );
+						const vert2 = GJS.latLonToXYZ( 50 + 0.5 * rep, + line[ 8 ], + line[ 9 ] );
 
 						mesh2.position.copy( vert2 ); //set( + line[ 9 ], + line[ 8 ], 0.5 * dem );
 						mesh2.lookAt( 0, 0, 0 )
