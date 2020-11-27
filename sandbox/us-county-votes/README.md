@@ -26,15 +26,15 @@ Where do we want this to go? and why?
 
 ## To Do / Wish List
 
-* 2020-11-06 ~ Add buttons or sliders to select data from all the election years in the available data set
-* 2020-11-06 ~ Add a range of colors to indicate the magnitude of the margins for the winning party in each county
+* Add indicators that show which counties have flipped since previous vote
+
 
 ## Issues
 
-* 2020-11-06 ~ Currently only shows party voting data for 2018 with no indication of margin magnitude
+
 * 2020-11-06 ~ The borders of some counties along the oceans are missing
-* 2020-11-06 ~ The map projection is set for a spherical projection - causing the map to not look like a more normal mercator projection
 * 2020-11-06 ~ The software is un-optimized amd may run quite slowly on a non-gaming computer
+
 
 ## Links of Interest
 
@@ -42,8 +42,28 @@ Where do we want this to go? and why?
 * https://www.foxnews.com/politics/forget-traditional-election-maps-this-is-what-the-us-vote-really-looks-like
 * https://www.reddit.com/r/Maps/comments/jplarw/counties_that_flipped_in_the_2020_us_presidential/
 * https://www.latimes.com/projects/trump-biden-election-results-california
+* https://www.reddit.com/r/dataisbeautiful/comments/jrkoze/3d_map_of_covid_cases_by_population_march_through/
+* https://www.reddit.com/r/bigdata/comments/jvdl6u/in_this_video_you_can_see_which_political_party/
+* https://www.reddit.com/r/Maps/comments/jyb33n/as_a_nonamerican_this_was_pretty_eye_opening/
+
+
 
 ## Change Log
+
+### 2020-11-26
+
+* Losers are dimmed
+* Add links to links of interest
+* Dems horizontal. Reps vertical
+* Vertical scale set to logarithmic
+* Colors are official party colors
+
+Dealt with
+
+* 2020-11-06 ~ Add buttons or sliders to select data from all the election years in the available data set
+* 2020-11-06 ~ Add a range of colors to indicate the magnitude of the margins for the winning party in each county
+* 2020-11-06 ~ Currently only shows party voting data for 2018 with no indication of margin magnitude
+* 2020-11-06 ~ The map projection is set for a spherical projection - causing the map to not look like a more normal mercator projection
 
 ### 2020-11-25
 
