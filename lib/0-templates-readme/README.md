@@ -5,11 +5,13 @@
 value="You are now in a GitHub web page view - Click this button to view this read me file as source code" ></div>
 
 
-# [open-markdown-or-html Read Me]( ./readme.html )
+# [Templates Read Me]( ./readme.html )
 
-<div style="height:50ch;overflow:hidden;resize:both;width:100%;" title="Resize me">
-<iframe src=https://pushme-pullyou.github.io/templates-01/open-markdown-or-html/readme.html width=100% height=100% >Iframes are not viewable in GitHub source code views</iframe></div>
+<!--@@@
+<div class=iframe-resize title="Resize me">
+<iframe src=https://pushme-pullyou.github.io/templates-01/open-markdown-or-html/readme.html width=100% height=100% ></iframe></div>
 _<small>open-markdown-or-html</small>_
+@@@-->
 
 ## Full Screen: [open-markdown-or-html]( https://pushme-pullyou.github.io/templates-01/open-markdown-or-html/readme.html )
 
@@ -33,6 +35,21 @@ Uses [showdown.js]( https://github.com/showdownjs/showdown ) to convert markdown
 
 
 ## Links of Interest
+
+* https://github.com/pushme-pullyou/templates-01/tree/master/html-hamburger-plus << latest
+* https://www.ladybug.tools/spider-gbxml-tools/spider-gbxml-viewer/
+
+Web
+
+* https://github.com/dohliam/dropin-minimal-css
+* https://www.w3schools.com/w3css/
+    * https://www.w3schools.com/w3css/w3css_colors.asp
+    * https://www.w3schools.com/lib/w3-theme-red.css
+* https://bootswatch.com/
+
+Switching themes
+
+* https://github.com/Mohammad-Farmaan/Dark-Mode-For-Web
 
 
 ## Change Log
@@ -59,5 +76,5 @@ omoh v 0.01.01
 
 ***
 
-# <center title="hello! go tpo top" ><a href=javascript:window.scrollTo(0,0); > ❦ </a></center>
+# <center title="hello! go to top" ><a href=javascript:window.scrollTo(0,0); > ❦ </a></center>
 
