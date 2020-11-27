@@ -48,76 +48,7 @@ function init () {
 
 
 
-FOO.onLoadFile = function () {
 
-	//console.log( "FOO.string", FOO.string.slice( 0, 50 ) );
-
-	const jsonArr = FOO.string;
-
-	let x = 0;
-	const half = jsonArr.length / 24;
-
-	const dataPoints = jsonArr.map( ( item, index ) => {
-
-		//console.log( "item", item );
-
-		x = ( index % 12 === 0 ) ? ++x : x;
-
-		const geometry = new THREE.BoxBufferGeometry( 1, 1, 1 );
-		const material = new THREE.MeshNormalMaterial();
-		const mesh = new THREE.Mesh( geometry, material );
-		mesh.position.set( ( x - half ) * 3, item.month * 5, item.surface_inside_face_temperature );
-		mesh.scale.z = ( item.surface_outside_face_temperature - item.surface_inside_face_temperature );
-
-		return mesh;
-
-	} );
-
-	THR.group.add( ...dataPoints );
-
-	//console.log( "", dataPoints );
-
-	THR.updateScene();
-
-	THRR.updateScene();
-
-	THR.camera.position.set( -100, -100, 100 );
-
-	if ( window.divPopUp ) {
-
-		divPopUp.hidden = false;
-		//divPopUp.innerText = "FOO.string\n" + FOO.string.slice( 0, 50 );
-
-	}
-
-};
-
-
-
-THRR.vvvgetHtm = function () {
-
-	//console.log( "xxxx intersected", THRR.intersected );
-	const mesh = THRR.intersected.object;
-
-	const index = THR.group.children.indexOf( mesh );
-
-	const item = FOO.string[ index ];
-
-	//console.log( "item", item );
-
-	const htm = `
-	<div>
-		index: ${ index }<br>
-		identifier: ${ item.identifier }<br>
-		year: ${ item.year } month: ${ item.month } day: ${ item.day }</br>
-		hour: ${ item.hour } minute: ${ item.minute }</br>
-		inside temperature: ${ item.surface_inside_face_temperature.toLocaleString() }</br>
-		outside temperature: ${ item.surface_outside_face_temperature.toLocaleString() }</br>
-
-	</div>`;
-
-	return htm;
-};
 
 
 
