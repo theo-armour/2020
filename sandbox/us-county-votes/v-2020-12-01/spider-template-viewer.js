@@ -1,7 +1,7 @@
 
 const source = "https://github.com/theo-armour/2020/tree/master/lib-template-viewer/";
 
-const version = "v-2020-11-26 slim";
+const version = "v-2020-11-26-slim";
 
 const description = document.head.querySelector( "[ name=description ]" ).content;
 
@@ -30,6 +30,18 @@ function init () {
 
 	THRR.updateScene();
 
+	// FOO.init();
+
+	// FOO.extension = "json";
+	// FOO.responseType = "json";
+	// //FOO.onLoadFile = PP.onLoadJson;
+
+	// path = "../../assets/json/";
+
+	// FOO.requestFile( path + "lab_building_result.json" );
+
+	// JTV.init();
+
 	HRT.init();
 
 };
@@ -37,30 +49,6 @@ function init () {
 
 
 
-THRR.vvvgetHtm = function () {
-
-	//console.log( "xxxx intersected", THRR.intersected );
-	const mesh = THRR.intersected.object;
-
-	const index = THR.group.children.indexOf( mesh );
-
-	const item = FOO.string[ index ];
-
-	//console.log( "item", item );
-
-	const htm = `
-	<div>
-		index: ${ index }<br>
-		identifier: ${ item.identifier }<br>
-		year: ${ item.year } month: ${ item.month } day: ${ item.day }</br>
-		hour: ${ item.hour } minute: ${ item.minute }</br>
-		inside temperature: ${ item.surface_inside_face_temperature.toLocaleString() }</br>
-		outside temperature: ${ item.surface_outside_face_temperature.toLocaleString() }</br>
-
-	</div>`;
-
-	return htm;
-};
 
 
 

@@ -15,7 +15,7 @@
 
 	<style>
 		:root {
-			--main-hue: 130;
+			--main-hue: 60;
 			/* 0 to 360 0=red 120=green 240=blue */
 		}
 
@@ -60,9 +60,78 @@
 
 			<p>Click or touch a surface to view its details. Click &sdotb; icon to display all the surfaces.</p>
 
+			<details id=detFile>
+
+				<summary class="summary-primary gmd-1" title="Open files on your device: ">file menu</summary>
+
+				<div id=FRdivMenuFileReader></div>
+
+				<p>
+					<input type=file id=FRinpFile onchange=FR.readFile(this); accept="*">
+				</p>
+
+				<div id=FOOdivLog>to be reset</div>
+
+				<div id=FOZdivFileOpenZip></div>
+
+				<div id=divLog></div>
+
+			</details>
+
+			<details ontoggle=GFFdivGithubFoldersFiles.innerHTML=GFF.getMenuGithubFoldersFiles()>
+
+				<summary class="summary-primary gmd-1" title="View selected items">sample files gallery</summary>
+
+				<div class=divNavResize>
+
+					<p>Sample files you can load, view and experiment with:</p>
+
+					<div id=GFFdivGithubFoldersFiles></div>
+
+					<div id=GFFdivFileInfo></div>
+
+					<br>
+
+				</div>
+
+			</details>
+
+			<!-- <details class=detNavMenu id=detView ontoggle=JTV.setMessage();>
+
+				<summary class="summary-primary gmd-1" title="View selected model aspects" >view menu</summary>
+
+					<div class=divNavResize >
+
+					<div id=VTdivViewTypes ></div>
+
+					<div id=VTdivAttributes></div>
+
+				</div>
+
+			</details> -->
+
+			<details class=detNavMenu id=detData ontoggle=JTV.setMessage();>
+
+				<summary class="summary-primary gmd-1" title="Browse the data in the file">data menu</summary>
+
+				<div class=divNavResize>
+
+					<div id=JTHdivJsonTreeHelper></div>
+
+					<div id=JTFdivJsonTreeFinder></div>
+
+					<div id=JTEdivJsonTreeEdit></div>
+
+					<div id=JTVdivJsonTreeView></div>
+
+					<hr>
+
+				</div>
+
+			</details>
+
 			<br>
 
-			<hr>
 
 			<center>
 				<a href="javascript:navMenu.scrollTo(0,0);">

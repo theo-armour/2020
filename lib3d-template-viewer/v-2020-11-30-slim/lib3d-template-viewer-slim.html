@@ -3,15 +3,16 @@
 
 <head>
 
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
 	<meta name="description"
 		content="Part of a series of online interactive AEC viewers designed to be forked, hacked and remixed  with real-time interactive 3D graphics in your browser using the WebGL and the Three.js JavaScript library" />
 	<meta name="keywords" content="Three.js,WebGL,JavaScript,GitHub,FOSS,3D,STEM" />
+	<meta name="version" content="2020-11-30">
+	<title>Lib 3D Template Viewer Slim</title>
 
-	<title>Lib Template Viewer</title>
-
-	<link rel="stylesheet" href="../../lib/style/style-2020-08-11.css">
+	<!-- Copyright 2020 Theo Armour. MIT license -->
+	<link rel="stylesheet" href="../../lib/style/style-2020-11-29.css">
 
 	<style>
 		:root {
@@ -35,24 +36,25 @@
 		<summary id=sumNavMenu class="summary-secondary gmd-1">show || hide menu</summary>
 
 		<nav id="navMenu" class="gmd-2">
-
 			<header>
 
 				<h2>
-					<a id=aGithub href="https://github.com/ladybug-tools/spider-2020/tree/master/spider-template-viewer"
+					<a id=aGithub
+						href="https://github.com/ladybug-tools/spider-2020/tree/master/spider-template-viewer"
 						target="_top" title="Source code on GitHub">
 						<img src="https://ladybug.tools/spider-2020/assets/icons/mark-github.svg">
 					</a>
 
 					<a href="" title="Click to reload this page">
-						Lib Template Viewer
+						Lib3D Template Viewer
 						<span id=spnVersion></span>
 					</a>
 					&nbsp;
 					<span class="info">
 						<img class=infoImg src="../../lib/assets/icons/noun_Information_585560.svg">
 						<span id="divDescription" class="infoTooltip gmd-5">
-						</span></span>
+						</span>
+					</span>
 
 				</h2>
 
@@ -61,6 +63,8 @@
 			<p>Click or touch a surface to view its details. Click &sdotb; icon to display all the surfaces.</p>
 
 			<br>
+
+			<div id=divStats ></div>
 
 			<hr>
 
@@ -206,9 +210,9 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/jszip@3.5.0/dist/jszip.min.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/troika-three-utils@0.28.0"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/troika-three-utils@0.28.0"></script>
 	<script src="https://cdn.jsdelivr.net/npm/troika-worker-utils@0.28.0"></script>
-	<script src="https://cdn.jsdelivr.net/npm/troika-3d-text@0.28.0/dist/textmesh-standalone.umd.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/troika-3d-text@0.28.0/dist/textmesh-standalone.umd.min.js"></script> -->
 
 
 	<!-- core -->
@@ -221,12 +225,10 @@
 	<script src="../../lib3d/thru-three-utilities/scc-screen-ccapture-2020-05-23.js"></script>
 
 	<!--
-
 		<script src="../../lib/jtv-json-tree-view/jtv-json-tree-view-2020-07-28.js"></script>
 
 		<script src="../../lib/jtv-json-tree-view/jtf-json-tree-finder-2020-07-13.js"></script>
 		<script src="../../lib/jtv-json-tree-view/jth-json-tree-helper-2020-07-07.js"></script>
-
 	-->
 	<!-- menus -->
 	<script src="../../lib/fo-file-open/foo-file-open-object-2020-07-17.js"></script>
@@ -239,8 +241,10 @@
 	<script src="../../lib3d/vt-view-types/vt-view-types-2020-06-26.js"></script>
 -->
 
+	<script src="../../lib3d/map/v-2020-11-30/map-world.js"></script>
 
-	<script src="spider-template-viewer.js"></script>
+
+	<script src="lib3d-template-viewer-slim.js"></script>
 
 	<script>
 

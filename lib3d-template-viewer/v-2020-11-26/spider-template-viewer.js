@@ -1,7 +1,7 @@
 
 const source = "https://github.com/theo-armour/2020/tree/master/lib-template-viewer/";
 
-const version = "v-2020-11-26 slim";
+const version = "v-2020-11-25";
 
 const description = document.head.querySelector( "[ name=description ]" ).content;
 
@@ -30,10 +30,67 @@ function init () {
 
 	THRR.updateScene();
 
+	// FOO.init();
+
+	// FOO.extension = "json";
+	// FOO.responseType = "json";
+	// //FOO.onLoadFile = PP.onLoadJson;
+
+	// path = "../../assets/json/";
+
+	// FOO.requestFile( path + "lab_building_result.json" );
+
+	// JTV.init();
+
 	HRT.init();
 
 };
 
+
+
+FOO.onLoadFile = function () {
+
+	//console.log( "FOO.string", FOO.string.slice( 0, 50 ) );
+
+	const jsonArr = FOO.string;
+
+	let x = 0;
+	const half = jsonArr.length / 24;
+
+	const dataPoints = jsonArr.map( ( item, index ) => {
+
+		//console.log( "item", item );
+
+		x = ( index % 12 === 0 ) ? ++x : x;
+
+		const geometry = new THREE.BoxBufferGeometry( 1, 1, 1 );
+		const material = new THREE.MeshNormalMaterial();
+		const mesh = new THREE.Mesh( geometry, material );
+		mesh.position.set( ( x - half ) * 3, item.month * 5, item.surface_inside_face_temperature );
+		mesh.scale.z = ( item.surface_outside_face_temperature - item.surface_inside_face_temperature );
+
+		return mesh;
+
+	} );
+
+	THR.group.add( ...dataPoints );
+
+	//console.log( "", dataPoints );
+
+	THR.updateScene();
+
+	THRR.updateScene();
+
+	THR.camera.position.set( -100, -100, 100 );
+
+	if ( window.divPopUp ) {
+
+		divPopUp.hidden = false;
+		//divPopUp.innerText = "FOO.string\n" + FOO.string.slice( 0, 50 );
+
+	}
+
+};
 
 
 
