@@ -3,7 +3,7 @@
 
 <head>
 
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
 	<meta name="description"
 		content="Part of a series of online interactive AEC viewers designed to be forked, hacked and remixed  with real-time interactive 3D graphics in your browser using the WebGL and the Three.js JavaScript library" />
@@ -11,7 +11,8 @@
 
 	<title>US Counties Votes</title>
 
-	<link rel="stylesheet" href="../../../lib/style/style-2020-08-11.css">
+	<!-- Copyright 2020 Theo Armour. MIT license -->
+	<link rel="stylesheet" href="../../../lib/style/style-2020-11-29.css">
 
 	<style>
 		:root {
@@ -52,23 +53,44 @@
 					<span class="info">
 						<img class=infoImg src="../../../lib/assets/icons/noun_Information_585560.svg">
 						<span id="divDescription" class="infoTooltip gmd-5">
-						</span></span>
+						</span>
+					</span>
 
 				</h2>
 
 			</header>
 
+			<p>
+				<select id=selYear oninput=drawVotes(); size=5>
+					<option selected>2018</option>
+					<option>2016</option>
+					<option>2014</option>
+					<option>2012</option>
+					<option>2010</option>
+				</select>
+				<br>
+
+				Use up&down cursor keys
+			</p>
+
 			<p>Click or touch a surface to view its details. Click &sdotb; icon to display all the surfaces.</p>
 
+			<br>
 
+			<div id=divStats></div>
+
+			<p
+				title="View the number of objects that need rendering and the total number of triangles used to create the objects">
+				<button onclick="setStats()">setStats</button>
+			</p>
+
+			<div id="divLog"></div>
 
 			<hr>
 
 
 			<center>
-				<a href="javascript:navMenu.scrollTo(0,0);">
-					<img style=color:teal; title="Your AEC 3D viewer happy place!" height="24" width="24"
-						src="https://ladybug.tools/artwork/icons_bugs/ico/spider.ico">
+				<a href="javascript:navMenu.scrollTo(0,0);" class=aDingbat title="Your AEC 3D viewer happy place!"> ❦
 				</a>
 			</center>
 
@@ -207,9 +229,9 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/jszip@3.5.0/dist/jszip.min.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/troika-three-utils@0.28.0"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/troika-three-utils@0.28.0"></script>
 	<script src="https://cdn.jsdelivr.net/npm/troika-worker-utils@0.28.0"></script>
-	<script src="https://cdn.jsdelivr.net/npm/troika-3d-text@0.28.0/dist/textmesh-standalone.umd.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/troika-3d-text@0.28.0/dist/textmesh-standalone.umd.min.js"></script> -->
 
 
 	<!-- core -->
@@ -222,12 +244,10 @@
 	<script src="../../../lib3d/thru-three-utilities/scc-screen-ccapture-2020-05-23.js"></script>
 
 	<!--
-
 		<script src="../../lib/jtv-json-tree-view/jtv-json-tree-view-2020-07-28.js"></script>
 
 		<script src="../../lib/jtv-json-tree-view/jtf-json-tree-finder-2020-07-13.js"></script>
 		<script src="../../lib/jtv-json-tree-view/jth-json-tree-helper-2020-07-07.js"></script>
-
 	-->
 	<!-- menus
 	<script src="../../lib/fo-file-open/foo-file-open-object-2020-07-17.js"></script>
@@ -240,12 +260,18 @@
 	<script src="../../../lib3d/vt-view-types/vt-view-types-2020-06-26.js"></script>
 -->
 
+	<script src="gjs-geojson-2020-11-25.js"></script>
+	<script src="ufr-usa-fips-remix-2020-11-06.js"></script>
 
-	<script src="spider-template-viewer.js"></script>
+	<script src="../../../lib/thrr-three-raycaster/ray-raycaster-mousemove-2020-06-26.js"></script>
+
+	<script src="us-county-votes.js"></script>
 
 	<script>
 
 		init(); // see script-template-viewer.js
+
+
 
 		if ( window.innerWidth < 640 || window.innerHeight < 500 ) {
 
@@ -254,6 +280,7 @@
 			detNavMenu.open = true
 
 		}
+
 
 
 		// if running on server, keeps address bar pointed to latest dev
