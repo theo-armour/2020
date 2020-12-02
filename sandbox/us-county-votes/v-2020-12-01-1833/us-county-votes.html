@@ -50,10 +50,14 @@
 						US Counties Votes
 						<span id=spnVersion></span>
 					</a>
-					&nbsp;
+
 					<span class="info">
-						<img class=infoImg src="../../../lib/assets/icons/noun_Information_585560.svg">
+						&rarr; <img class=infoImg src="../../../lib/assets/icons/noun_Information_585560.svg">
 						<span id="divDescription" class="infoTooltip gmd-5">
+							Blue = Dems<br>
+							Red = Reps<br>
+							Taller sticks = more votes<br>
+							Wider sticks = greater population
 						</span>
 					</span>
 
@@ -61,7 +65,7 @@
 
 			</header>
 
-			<p>
+			<div>
 				<select id=selYear oninput=drawVotes(); size=5>
 					<option selected>2018</option>
 					<option>2016</option>
@@ -71,12 +75,10 @@
 				</select>
 				<br>
 
-				Use up&down cursor keys
+				Select year: use up & down cursor keys
 			</p>
 
-			<p>Click or touch a surface to view its details. Click &sdotb; icon to display all the surfaces.</p>
-
-			<br>
+			<p>Click or touch a stick to view its details. 1|2|3 fingers to rotate|zoom|pan.</p>
 
 			<div id=divStats></div>
 
@@ -88,7 +90,6 @@
 			<div id="divLog"></div>
 
 			<hr>
-
 
 			<center>
 				<a href="javascript:navMenu.scrollTo(0,0);" class=aDingbat title="Your AEC 3D viewer happy place!"> ❦
@@ -102,8 +103,7 @@
 
 	<!-- Used by RAY -->
 
-	<div id="divPopUp" class="gmd-2">When you touch a surface,<br>the rotation will stop<br>and its details will appear
-		here </div>
+	<div id="divPopUp" class="gmd-2">When you touch a stick,<br>its details will appear here </div>
 
 
 	<!-- standard footer for THR ~ 2020-08-21 -->

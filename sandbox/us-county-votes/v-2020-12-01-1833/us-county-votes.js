@@ -16,7 +16,7 @@ function init () {
 
 	spnVersion.innerHTML = version;
 
-	divDescription.innerHTML = description;
+	//divDescription.innerHTML = description;
 
 
 	THR.init();
@@ -287,7 +287,7 @@ function setStats () {
 
 
 	const render = renderer.info.render;
-	if ( !window.divRendererInfo ) divRendererInfo = navMenu.appendChild( document.createElement( "div" ) );
+	if ( !window.divRendererInfo ) divRendererInfo = divLog.appendChild( document.createElement( "div" ) );
 	divRendererInfo.innerHTML = `
 <div>
 	Renderer Info<br>
