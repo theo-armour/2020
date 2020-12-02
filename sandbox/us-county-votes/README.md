@@ -4,7 +4,7 @@
 value='You are now in a GitHub web page view - Click this button to view this read me file as source code' ></div>
 
 
-# [US County Votes Read Me]( https://theo-armour.github.io/2020/sandbox/us-county-votes/readme.html )
+# [US County Votes Read Me]( https://github.com/theo-armour/2020/tree/master/sandbox/us-county-votes/ )
 
 <!--@@@
 <div style=height:500px;overflow:hidden;width:100%;resize:both; ><iframe src="https://theo-armour.github.io/2020/sandbox/us-county-votes/" height=100% width=100% ></iframe></div>
@@ -27,7 +27,9 @@ Where do we want this to go? and why?
 ## To Do / Wish List
 
 * Add indicators that show which counties have flipped since previous vote
-
+* Add bitmap map underlay
+* Show geoJSON in 3D
+* Better and more authoritative statistics
 
 ## Issues
 
@@ -49,6 +51,24 @@ Where do we want this to go? and why?
 
 
 ## Change Log
+
+### 2020-12-02
+
+* Rijigged the shape of the sticks (process was trickier than I thought )
+* Rejigged pop-up text and menu text
+* Slowed rotate speed
+
+### 2020-12-01
+
+Should load faster and use fewer resources ~ vbut lose variety of colors
+Part way through adding a fuller user interface - should now work better on mobile phones
+Starting to add usage text - see info button
+3D experience needs a lot of work
+
+Click setStats button to see how many frames per second
+- Windows 10 with Nvidia graphics card - 60fps
+- Chromebook ~ 23 fps
+- Google Pixel 4 ~ 44 fps
 
 ### 2020-11-26
 
