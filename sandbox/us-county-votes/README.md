@@ -54,7 +54,17 @@ Where do we want this to go? and why?
 
 ### 2020-12-02
 
-* Rijigged the shape of the sticks (process was trickier than I thought )
+The goal is to create a map that people can look at and - without reading instructions or looking at a legend - in a few seconds mostly "get the picture" know what is going on. It's taking time, but each release gets things a bit better,
+
+The red and blue sticks kind of give the idea that this map is about US politics
+
+The width of the sticks gives the idea that it's an indication of population
+
+The height of the ticks representing party votes is less easy to get - stil a work-in-progress
+
+Today:
+
+* Rejigged the shape of the sticks (process was trickier than I thought )
 * Rejigged pop-up text and menu text
 * Slowed rotate speed
 
