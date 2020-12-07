@@ -13,6 +13,18 @@ _Journal_
 ### Full Screen: [Journal]( https://theo-armour.github.io/2020/journal/ )
 @@@-->
 
+## My observations
+
+The 73 million
+
+* More likely to drive a lot and listen to AM radio talk shows
+* Upper Working class
+* Follow sports closely
+* Tailgate parties
+* NASCAR
+* Community support
+* Unions next
+
 
 ## Concept
 
