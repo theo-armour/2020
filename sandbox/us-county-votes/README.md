@@ -26,10 +26,10 @@ Where do we want this to go? and why?
 
 ## To Do / Wish List
 
+* More comprehensive cursor display
 * Add indicators that show which counties have flipped since previous vote
-* Add bitmap map underlay
 * Show geoJSON in 3D
-* Better and more authoritative statistics
+
 
 ## Issues
 
@@ -48,9 +48,27 @@ Where do we want this to go? and why?
 * https://www.reddit.com/r/bigdata/comments/jvdl6u/in_this_video_you_can_see_which_political_party/
 * https://www.reddit.com/r/Maps/comments/jyb33n/as_a_nonamerican_this_was_pretty_eye_opening/
 
+### Election data
+
+* https://www.loc.gov/rr/program/bib//elections/statistics.html
+* https://libguides.princeton.edu/elections
+* https://electionlab.mit.edu/data
 
 
 ## Change Log
+
+### 2020-12-07
+
+* Add sphere with texture reprsenting the Earth
+* Change data to "County Presidential Election Returns 2000-2016" from MIT Election Data and Science Lab ~ https://electionlab.mit.edu/data
+* Refactor code to display MIT data
+	* Allow for "Democratic", "Republican" and "Other" categories
+* Update display at cursor
+
+Dealt with
+
+* Add bitmap map underlay
+* Better and more authoritative statistics
 
 ### 2020-12-02
 
