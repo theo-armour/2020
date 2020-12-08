@@ -26,6 +26,7 @@ Where do we want this to go? and why?
 
 ## To Do / Wish List
 
+* Stop globe redraws on year change
 * More comprehensive cursor display
 * Add indicators that show which counties have flipped since previous vote
 * Show geoJSON in 3D
