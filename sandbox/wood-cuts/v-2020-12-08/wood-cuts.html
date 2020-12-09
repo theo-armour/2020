@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name=description content="Real-time 3D in your browser with menu sliding">
+	<meta name=keywords content="Ladybug Toools,Three.js,WebGL,JavaScript,GitHub,FOSS,3D,STEM">
+	<meta name="date" content="2018-01-18">
+	<title></title>
+	<style>
+		/* Copyright 2020 Theo Armour. MIT License */
+
+		body {
+			font: 100% monospace;
+			margin: 0;
+			overflow: hidden;
+		}
+
+		nav {
+			position: absolute;
+			left: 1rem;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<nav>
+
+		<h1><a href="" id=aTitle></a></h1>
+
+		<button onclick=cutPlane()>cutPlane</button>
+
+		<button onclick=cutBox()>cutBox</button>
+
+		<button onclick=translatePlane()>translatePlane</button>
+
+		<button onclick=translatePlane2()>translatePlane2</button>
+
+		<button onclick=translatePlane3()>translatePlane3</button>
+
+	</nav>
+
+
+
+	<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r122/build/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r122/examples/js/controls/OrbitControls.js"></script>
+
+	<script>
+
+		var renderer, camera, controls, scene;
+		var geometry, material, mesh, axesHelper;
+
+		init();
+		animate();
+
+		function init() {
+
+			aTitle.innerHTML = document.title = location.href.split( "/" ).pop();
+
+			renderer = new THREE.WebGLRenderer( { alpha: 1, antialias: true } );
+			renderer.setSize( window.innerWidth, window.innerHeight );
+
+			document.body.appendChild( renderer.domElement );
+
+			camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1000 );
+			camera.position.set( -100, -100, 100 );
+			camera.up.set( 0, 0, 1 );
+
+			controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+			scene = new THREE.Scene();
+
+			window.addEventListener( 'resize', onWindowResize, false );
+			window.addEventListener( 'orientationchange', onWindowResize, false );
+			window.addEventListener( 'keyup', function () { controls.autoRotate = false; }, false );
+			renderer.domElement.addEventListener( 'click', function () { controls.autoRotate = false; }, false );
+
+			axesHelper = new THREE.AxesHelper( 50 );
+			scene.add( axesHelper );
+
+			width = 50;
+			height = 50;
+			depth = 50;
+
+			//cutBox();
+
+			translatePlane3();
+
+		}
+
+
+		function cutBox() {
+
+			scene.remove( mesh )
+
+			geometry = new THREE.BoxGeometry( 1, 1, 1, 5, 5, 5 );
+
+			geometry.vertices[ 2 ].set( 0.3, 0.3, 0.1 );
+			geometry.vertices[ 3 ].set( 0.3, 0.3, -0.1 );
+
+			geometry.vertices[ 6 ].set( 0.5, 0.5, 0.5 );
+			geometry.vertices[ 7 ].set( 0.5, 0.5, 0.3 );
+			geometry.vertices[ 8 ].set( 0.3, 0.3, 0.1 );
+			geometry.vertices[ 9 ].set( 0.3, 0.3, -0.1 );
+			geometry.vertices[ 10 ].set( 0.5, 0.5, -0.3 );
+			geometry.vertices[ 11 ].set( 0.5, 0.5, -0.5 );
+
+			geometry.scale( width, depth, height )
+			material = new THREE.MeshNormalMaterial( { wireframe: true } );
+			mesh = new THREE.Mesh( geometry, material );
+			scene.add( mesh );
+
+
+		}
+
+		function cutPlane() {
+
+			scene.remove( mesh )
+
+			geometry = new THREE.PlaneGeometry( 1, 1, 5, 4 );
+			material = new THREE.MeshNormalMaterial( { wireframe: true } );
+			mesh = new THREE.Mesh( geometry, material );
+			scene.add( mesh );
+
+			geometry.vertices[ 2 ].set( -0.1, 0.5, -0.3 );
+			geometry.vertices[ 3 ].set( 0.1, 0.5, -0.3 );
+
+			geometry.vertices[ 6 ].set( -0.5, 0.5, 0 );
+			geometry.vertices[ 7 ].set( -0.3, 0.5, 0 );
+			geometry.vertices[ 8 ].set( -0.1, 0.3, 0 );
+			geometry.vertices[ 9 ].set( 0.1, 0.3, 0 );
+			geometry.vertices[ 10 ].set( 0.3, 0.5, 0 );
+			geometry.vertices[ 11 ].set( 0.5, 0.5, 0 );
+
+			geometry.vertices[ 18 ].set( -0.5, -0.5, 0 );
+			geometry.vertices[ 19 ].set( -0.3, -0.5, 0 );
+			geometry.vertices[ 20 ].set( -0.1, -0.3, 0 );
+			geometry.vertices[ 21 ].set( 0.1, -0.3, 0 );
+			geometry.vertices[ 22 ].set( 0.3, -0.5, 0 );
+			geometry.vertices[ 23 ].set( 0.5, -0.5, 0 );
+
+			geometry.vertices[ 26 ].set( -0.1, -0.5, -0.3 );
+			geometry.vertices[ 27 ].set( 0.1, -0.5, -0.3 );
+
+			geometry.scale( height, depth, depth )
+
+		}
+
+
+		function translatePlane() {
+
+			scene.remove( mesh )
+
+			geometry = new THREE.PlaneGeometry( 1, 1, 13, 5 );
+
+			geometry.vertices[ 0 ].set( -0.5, 0.5, 0.5 );
+			geometry.vertices[ 1 ].set( -0.5, 0.5, 0.5 );
+			geometry.vertices[ 2 ].set( -0.5, 0, 0.5 );
+			geometry.vertices[ 3 ].set( -0.5, -0.5, 0.5 );
+			geometry.vertices[ 4 ].set( -0.5, -0.5, 0.5 );
+
+			geometry.vertices[ 5 ].set( 0, -0.5, 0.5 );
+			geometry.vertices[ 6 ].set( 0.5, -0.5, 0.5 );
+			geometry.vertices[ 7 ].set( 0.5, -0.5, 0.5 );
+
+			geometry.vertices[ 8 ].set( 0.5, 0, 0.5 );
+			geometry.vertices[ 9 ].set( 0.5, 0.5, 0.5 );
+			geometry.vertices[ 10 ].set( 0.5, 0.5, 0.5 );
+
+			geometry.vertices[ 11 ].set( 0, 0.5, 0.5 );
+			geometry.vertices[ 12 ].set( -0.5, 0.5, 0.5 );
+			geometry.vertices[ 13 ].set( -0.5, 0.5, 0.5 );
+
+			a = 13
+
+			geometry.vertices[ a + 1 ].set( -0.5, 0.5, 0.3 );
+			geometry.vertices[ a + 2 ].set( -0.5, 0.5, 0.3 );
+			geometry.vertices[ a + 3 ].set( -0.5, 0, 0.3 );
+			geometry.vertices[ a + 4 ].set( -0.5, -0.5, 0.3 );
+			geometry.vertices[ a + 5 ].set( -0.5, -0.5, 0.3 );
+
+			geometry.vertices[ a + 6 ].set( 0, -0.5, 0.3 );
+			geometry.vertices[ a + 7 ].set( 0.5, -0.5, 0.3 );
+			geometry.vertices[ a + 8 ].set( 0.5, -0.5, 0.3 );
+
+			geometry.vertices[ a + 9 ].set( 0.5, 0, 0.3 );
+			geometry.vertices[ a + 10 ].set( 0.5, 0.5, 0.3 );
+			geometry.vertices[ a + 11 ].set( 0.5, 0.5, 0.3 );
+
+			geometry.vertices[ a + 12 ].set( 0, 0.5, 0.3 );
+			geometry.vertices[ a + 13 ].set( -0.5, 0.5, 0.3 );
+			geometry.vertices[ a + 14 ].set( -0.5, 0.5, 0.3 );
+
+			a = 27
+
+			geometry.vertices[ a + 1 ].set( -0.5, 0.3, 0.1 );
+			geometry.vertices[ a + 2 ].set( -0.5, 0.3, 0.1 );
+			geometry.vertices[ a + 3 ].set( -0.5, 0, 0.1 );
+			geometry.vertices[ a + 4 ].set( -0.5, -0.3, 0.1 );
+
+			geometry.vertices[ a + 5 ].set( -0.3, -0.5, 0.1 );
+
+			geometry.vertices[ a + 6 ].set( 0, -0.5, 0.1 );
+			geometry.vertices[ a + 7 ].set( 0.3, -0.5, 0.1 );
+			geometry.vertices[ a + 8 ].set( 0.5, -0.3, 0.1 );
+
+			geometry.vertices[ a + 9 ].set( 0.5, 0, 0.1 );
+			geometry.vertices[ a + 10 ].set( 0.5, 0.3, 0.1 );
+			geometry.vertices[ a + 11 ].set( 0.3, 0.5, 0.1 );
+
+			geometry.vertices[ a + 12 ].set( 0, 0.5, 0.1 );
+			geometry.vertices[ a + 13 ].set( -0.5, 0.3, 0.1 );
+			geometry.vertices[ a + 14 ].set( -0.3, 0.5, 0.1 );
+
+			a = 41
+
+			geometry.vertices[ a + 1 ].set( -0.5, 0.3, -0.1 );
+
+			geometry.vertices[ a + 2 ].set( -0.5, 0.3, -0.1 );
+			geometry.vertices[ a + 3 ].set( -0.5, 0, -0.1 );
+			geometry.vertices[ a + 4 ].set( -0.5, -0.3, -0.1 );
+
+			geometry.vertices[ a + 5 ].set( -0.3, -0.5, -0.1 );
+
+			geometry.vertices[ a + 6 ].set( 0, -0.5, -0.1 );
+			geometry.vertices[ a + 7 ].set( 0.3, -0.5, -0.1 );
+			geometry.vertices[ a + 8 ].set( 0.5, -0.3, -0.1 );
+
+			geometry.vertices[ a + 9 ].set( 0.5, 0, -0.1 );
+			geometry.vertices[ a + 10 ].set( 0.5, 0.3, -0.1 );
+			geometry.vertices[ a + 11 ].set( 0.3, 0.5, -0.1 );
+
+			geometry.vertices[ a + 12 ].set( 0, 0.5, -0.1 );
+			geometry.vertices[ a + 13 ].set( -0.5, 0.3, -0.1 );
+			geometry.vertices[ a + 14 ].set( -0.3, 0.5, -0.1 );
+
+			a = 55
+			geometry.vertices[ a + 1 ].set( -0.5, 0.5, -0.3 );
+			geometry.vertices[ a + 2 ].set( -0.5, 0.5, -0.3 );
+			geometry.vertices[ a + 3 ].set( -0.5, 0, -0.3 );
+			geometry.vertices[ a + 4 ].set( -0.5, -0.5, -0.3 );
+			geometry.vertices[ a + 5 ].set( -0.5, -0.5, -0.3 );
+
+			geometry.vertices[ a + 6 ].set( 0, -0.5, -0.3 );
+			geometry.vertices[ a + 7 ].set( 0.5, -0.5, -0.3 );
+			geometry.vertices[ a + 8 ].set( 0.5, -0.5, -0.3 );
+
+			geometry.vertices[ a + 9 ].set( 0.5, 0, -0.3 );
+			geometry.vertices[ a + 10 ].set( 0.5, 0.5, -0.3 );
+			geometry.vertices[ a + 11 ].set( 0.5, 0.5, -0.3 );
+
+			geometry.vertices[ a + 12 ].set( 0, 0.5, -0.3 );
+			geometry.vertices[ a + 13 ].set( -0.5, 0.5, -0.3 );
+			geometry.vertices[ a + 14 ].set( -0.5, 0.5, -0.3 );
+
+			a = 69
+
+			geometry.vertices[ a + 1 ].set( -0.5, 0.5, -0.5 );
+			geometry.vertices[ a + 2 ].set( -0.5, 0.5, -0.5 );
+			geometry.vertices[ a + 3 ].set( -0.5, 0, -0.5 );
+			geometry.vertices[ a + 4 ].set( -0.5, -0.5, -0.5 );
+			geometry.vertices[ a + 5 ].set( -0.5, -0.5, -0.5 );
+
+			geometry.vertices[ a + 6 ].set( 0, -0.5, -0.5 );
+			geometry.vertices[ a + 7 ].set( 0.5, -0.5, -0.5 );
+			geometry.vertices[ a + 8 ].set( 0.5, -0.5, -0.5 );
+
+			geometry.vertices[ a + 9 ].set( 0.5, 0, -0.5 );
+			geometry.vertices[ a + 10 ].set( 0.5, 0.5, -0.5 );
+			geometry.vertices[ a + 11 ].set( 0.5, 0.5, -0.5 );
+
+			geometry.vertices[ a + 12 ].set( 0, 0.5, -0.5 );
+			geometry.vertices[ a + 13 ].set( -0.5, 0.5, -0.5 );
+			geometry.vertices[ a + 14 ].set( -0.5, 0.5, -0.5 );
+
+
+
+			geometry.scale( height, depth, depth );
+
+			geometry.verticesNeedUpdate = true;
+			material = new THREE.MeshNormalMaterial( { wireframe: true } );
+
+			mesh = new THREE.Mesh( geometry, material );
+			scene.add( mesh );
+
+		}
+
+
+
+		function translatePlane2() {
+
+			scene.remove( mesh )
+
+			geometry = new THREE.PlaneGeometry( 1, 1, 11, 5 );
+
+			a = 0
+			z = 0.5
+			geometry.vertices[ a + 0 ].set( 0.5, 0.5, z );
+			geometry.vertices[ a + 1 ].set( 0, 0.5, z );
+			geometry.vertices[ a + 2 ].set( -0.5, 0.5, z );
+
+			geometry.vertices[ a + 3 ].set( -0.5, 0.5, z );
+			geometry.vertices[ a + 4 ].set( -0.5, 0, z );
+			geometry.vertices[ a + 5 ].set( -0.5, -0.5, z );
+
+			geometry.vertices[ a + 6 ].set( -0.5, -0.5, z );
+			geometry.vertices[ a + 7 ].set( 0, -0.5, z );
+			geometry.vertices[ a + 8 ].set( 0.5, -0.5, z );
+
+			geometry.vertices[ a + 9 ].set( 0.5, -0.5, z );
+			geometry.vertices[ a + 10 ].set( 0.5, 0, z );
+			geometry.vertices[ a + 11 ].set( 0.5, 0.5, z );
+
+
+			a = 12
+			z = 0.3
+			geometry.vertices[ a + 0 ].set( 0.5, 0.5, z );
+			geometry.vertices[ a + 1 ].set( 0, 0.5, z );
+			geometry.vertices[ a + 2 ].set( -0.5, 0.5, z );
+
+			geometry.vertices[ a + 3 ].set( -0.5, 0.5, z );
+			geometry.vertices[ a + 4 ].set( -0.5, 0, z );
+			geometry.vertices[ a + 5 ].set( -0.5, -0.5, z );
+
+			geometry.vertices[ a + 6 ].set( -0.5, -0.5, z );
+			geometry.vertices[ a + 7 ].set( 0, -0.5, z );
+			geometry.vertices[ a + 8 ].set( 0.5, -0.5, z );
+
+			geometry.vertices[ a + 9 ].set( 0.5, -0.5, z );
+			geometry.vertices[ a + 10 ].set( 0.5, 0, z );
+			geometry.vertices[ a + 11 ].set( 0.5, 0.5, z );
+
+
+			a = 24
+			z = 0.1;
+
+			geometry.vertices[ a + 0 ].set( 0.3, 0.5, z );
+			geometry.vertices[ a + 1 ].set( 0, 0.5, z );
+			geometry.vertices[ a + 2 ].set( -0.3, 0.5, z );
+
+			geometry.vertices[ a + 3 ].set( -0.5, 0.3, z );
+			geometry.vertices[ a + 4 ].set( -0.5, 0, z );
+			geometry.vertices[ a + 5 ].set( -0.5, -0.3, z );
+
+			geometry.vertices[ a + 6 ].set( -0.3, -0.5, z );
+			geometry.vertices[ a + 7 ].set( 0, -0.5, z );
+			geometry.vertices[ a + 8 ].set( 0.3, -0.5, z );
+
+			geometry.vertices[ a + 9 ].set( 0.5, -0.3, z );
+			geometry.vertices[ a + 10 ].set( 0.5, 0, z );
+			geometry.vertices[ a + 11 ].set( 0.5, 0.3, z );
+
+			a = 36
+			z = -0.1
+			geometry.vertices[ a + 0 ].set( 0.3, 0.5, z );
+			geometry.vertices[ a + 1 ].set( 0, 0.5, z );
+			geometry.vertices[ a + 2 ].set( -0.3, 0.5, z );
+
+			geometry.vertices[ a + 3 ].set( -0.5, 0.3, z );
+			geometry.vertices[ a + 4 ].set( -0.5, 0, z );
+			geometry.vertices[ a + 5 ].set( -0.5, -0.3, z );
+
+			geometry.vertices[ a + 6 ].set( -0.3, -0.5, z );
+			geometry.vertices[ a + 7 ].set( 0, -0.5, z );
+			geometry.vertices[ a + 8 ].set( 0.3, -0.5, z );
+
+			geometry.vertices[ a + 9 ].set( 0.5, -0.3, z );
+			geometry.vertices[ a + 10 ].set( 0.5, 0, z );
+			geometry.vertices[ a + 11 ].set( 0.5, 0.3, z );
+
+			a = 48
+			z = -0.3
+			geometry.vertices[ a + 0 ].set( 0.5, 0.5, z );
+			geometry.vertices[ a + 1 ].set( 0, 0.5, z );
+			geometry.vertices[ a + 2 ].set( -0.5, 0.5, z );
+
+			geometry.vertices[ a + 3 ].set( -0.5, 0.5, z );
+			geometry.vertices[ a + 4 ].set( -0.5, -0, z );
+			geometry.vertices[ a + 5 ].set( -0.5, -0.5, z );
+
+			geometry.vertices[ a + 6 ].set( -0.5, -0.5, z );
+			geometry.vertices[ a + 7 ].set( 0, -0.5, z );
+			geometry.vertices[ a + 8 ].set( 0.5, -0.5, z );
+
+			geometry.vertices[ a + 9 ].set( 0.5, -0.5, z );
+			geometry.vertices[ a + 10 ].set( 0.5, 0, z );
+			geometry.vertices[ a + 11 ].set( 0.5, 0.5, z );
+
+			a = 60
+			z = -0.5
+			geometry.vertices[ a + 0 ].set( 0.5, 0.5, z );
+			geometry.vertices[ a + 1 ].set( 0, 0.5, z );
+			geometry.vertices[ a + 2 ].set( -0.5, 0.5, z );
+
+			geometry.vertices[ a + 3 ].set( -0.5, 0.5, z );
+			geometry.vertices[ a + 4 ].set( -0.5, -0, z );
+			geometry.vertices[ a + 5 ].set( -0.5, -0.5, z );
+
+			geometry.vertices[ a + 6 ].set( -0.5, -0.5, z );
+			geometry.vertices[ a + 7 ].set( 0, -0.5, z );
+			geometry.vertices[ a + 8 ].set( 0.5, -0.5, z );
+
+			geometry.vertices[ a + 9 ].set( 0.5, -0.5, z );
+			geometry.vertices[ a + 10 ].set( 0.5, 0, z );
+			geometry.vertices[ a + 11 ].set( 0.5, 0.5, z );
+
+
+			geometry.scale( height, depth, depth );
+
+			geometry.verticesNeedUpdate = true;
+			material = new THREE.MeshNormalMaterial( { wireframe: true } );
+
+			mesh = new THREE.Mesh( geometry, material );
+			scene.add( mesh );
+
+		}
+
+
+
+		function translatePlane3() {
+
+			scene.remove( mesh )
+
+			geometry = new THREE.PlaneGeometry( 1, 1, 7, 7);
+
+
+			getVertices( geometry, 0, 1, 0.5 )
+			getVertices2( geometry, 8 )
+
+			getVertices( geometry, 16, 0.5, 0.5)
+			getVertices( geometry, 24, 0.3 );
+			getVertices( geometry, 32, 0.1, 0.3 );
+			getVertices( geometry, 40, -0.1, 0.3 );
+			getVertices( geometry, 48, -0.3 );
+			getVertices( geometry, 56, -0.5 );
+
+
+			geometry.scale( height, depth, depth );
+
+			geometry.verticesNeedUpdate = true;
+			material = new THREE.MeshNormalMaterial( { wireframe: true } );
+
+			mesh = new THREE.Mesh( geometry, material );
+			scene.add( mesh );
+
+
+		}
+
+		function getVertices( geometry, a = 0, z = 0.5, d = 0.5 ) {
+
+			//console.log( "geo", geometry );
+
+			geometry.vertices[ a + 0 ].set( d, 0.5, z );
+			geometry.vertices[ a + 1 ].set( -d, 0.5, z );
+
+			geometry.vertices[ a + 2 ].set( -0.5, d, z );
+			geometry.vertices[ a + 3 ].set( -0.5, -d, z );
+
+			geometry.vertices[ a + 4 ].set( -d, -0.5, z );
+			geometry.vertices[ a + 5 ].set( d, -0.5, z );
+
+			geometry.vertices[ a + 6 ].set( 0.5, -d, z );
+			geometry.vertices[ a + 7 ].set( 0.5, d, z );
+
+		}
+
+		function getVertices2( geometry, a = 0, z = 0.7 ) {
+
+			//console.log( "geo", geometry );
+
+			geometry.vertices[ a + 0 ].set( 0, 0.5, z );
+			geometry.vertices[ a + 1 ].set( 0, 0.5, z );
+
+			geometry.vertices[ a + 2 ].set( -0.5, 0, z );
+			geometry.vertices[ a + 3 ].set( -0.5, 0, z );
+
+			geometry.vertices[ a + 4 ].set( 0, -0.5, z );
+			geometry.vertices[ a + 5 ].set( 0, -0.5, z );
+
+			geometry.vertices[ a + 6 ].set( 0.5, 0, z );
+			geometry.vertices[ a + 7 ].set( 0.5, 0, z );
+
+		}
+
+
+
+
+
+
+
+		function onWindowResize() {
+
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+
+			renderer.setSize( window.innerWidth, window.innerHeight );
+
+			//console.log( 'onWindowResize  window.innerWidth', window.innerWidth );
+
+		}
+
+
+
+		function animate() {
+
+			requestAnimationFrame( animate );
+			renderer.render( scene, camera );
+			controls.update();
+
+		}
+
+	</script>
+</body>
+
+</html>
