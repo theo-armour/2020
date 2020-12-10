@@ -324,7 +324,7 @@ function setStatsVote () {
 			if ( fipRec ) {
 
 				const vert = GJS.latLonToXYZ( 50, + fipRec[ 8 ], + fipRec[ 9 ] );
-				const geometry = new THREE.BoxGeometry( 0.1, 0.1, 12 );
+				const geometry = new THREE.BoxBufferGeometry( 0.1, 0.1, 12 );
 				const material = new THREE.MeshPhongMaterial( { color: 0xffffff, emissive: 0xffffff } );
 				const mesh = new THREE.Mesh( geometry, material );
 				mesh.lookAt( vert );
