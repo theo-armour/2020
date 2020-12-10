@@ -300,7 +300,6 @@ function setStatsVote () {
 			const repsYF = votesYearFip[ 1 ];
 
 			const v1 = ( + demsYF[ 8 ] ) > ( + repsYF[ 8 ] );
-
 			//console.log( "v1", v1);
 
 			const votesYearPreviousFip = votesYearPrev.filter( vote => vote[ 4 ] === fip );
@@ -309,21 +308,17 @@ function setStatsVote () {
 			const repsYPF = votesYearPreviousFip[ 1 ] || 1;
 
 			const v2 = ( + demsYPF[ 8 ] ) > ( + repsYPF[ 8 ] );
-
 			//console.log( "v2", v2 );
 
 			if ( v1 && !v2 ) { flips.push( fip ); }
 
 		} );
 
-		//console.log( "flips", flips );
-
 		flips = [ ...new Set( flips ) ];
 
 		flips.forEach( fip => {
 
 			const fipRec = UFR.fips.find( fipX => fip === fipX[ 0 ].slice( -5 ) );
-
 			//console.log( "fipRec", fip, fipRec, );
 
 			if ( fipRec ) {
