@@ -26,14 +26,12 @@ Where do we want this to go? and why?
 
 ## To Do / Wish List
 
-* Stop globe redraws on year change
-* More comprehensive cursor display
-* Add indicators that show which counties have flipped since previous vote
+* Source and add authoritative 2020 numbers
+* Tidy the code
 * Show geoJSON in 3D
 
 
 ## Issues
-
 
 * 2020-11-06 ~ The borders of some counties along the oceans are missing
 * 2020-11-06 ~ The software is un-optimized amd may run quite slowly on a non-gaming computer
@@ -57,6 +55,18 @@ Where do we want this to go? and why?
 
 
 ## Change Log
+
+### 2020-12-09
+
+* Add "voting stats" button
+
+Code is getting messy. Needs a good clean-up
+
+Done
+
+* Stop globe redraws on year change
+* More comprehensive cursor display
+* Add indicators that show which counties have flipped since previous vote
 
 ### 2020-12-07
 
