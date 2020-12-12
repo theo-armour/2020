@@ -58,8 +58,48 @@ Where do we want this to go? and why?
 
 ### 2020-12-11
 
+The chart you are looking at is one of the most complex charts you have ever viewed.
+
+This chart is not for the faint-hearted.
+
+In five years time this chart will display twice the data in half the time.
+
+Welcome to the future.
+
+The chart links to 50,000 records
+The chart displays 3,114 individual data points
+Each data point display its area
+Each data point displays its geophysical characteristics
+Each data point may display the data of five different data cohorts
+Each data point displays three tallies scaled by the total numbers
+Separate indicators display two sets of differences with previous cohorts
+
+As you move your pointer over each data point a bunch more data points are displayed next to the cursor
+	* Includes likes to Google search results for the selected data point
+
+In order to enable access to the data points, 1|2|3 finger interaction enables easy access to the data points
+
+This chart is usable on phone, tablet and workstation.
+
+This chart software is free and open-source
+
+Future releases may
+
+* Provide a more intuitive user experience
+* 3D global terrain
+* Display more variables simultaneously, including
+	* Levels of education
+	* Per capita income
+	* Healthiness
+	* Metrics of which I am clueless
+* Load and display faster
+* Expose more sophisticated rendering techniques
+
+
 * Add both Dem and Rep flips
 	* As scaled ellipsoids
+	* Pay attention to scaling and rendering
+* Update legend
 
 
 ### 2020-12-09
