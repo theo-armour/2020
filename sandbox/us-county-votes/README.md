@@ -56,6 +56,12 @@ Where do we want this to go? and why?
 
 ## Change Log
 
+### 2020-12-11
+
+* Add both Dem and Rep flips
+	* As scaled ellipsoids
+
+
 ### 2020-12-09
 
 * Add "voting stats" button

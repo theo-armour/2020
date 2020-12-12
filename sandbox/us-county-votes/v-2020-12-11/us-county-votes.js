@@ -26,13 +26,11 @@ function init () {
 
 	THR.addLights();
 
-	//THR.addGround();
-
 	THR.group = THR.setSceneNew();
 
 	//THRU.addMeshes(100);
 
-	//THRR.updateScene();
+	THRR.updateScene();
 
 	GJS.initGeoJson();
 
@@ -114,7 +112,7 @@ function drawVotes () {
 			const points = [ v2( 0, 0 ), v2( 0.1 * total, vote ), v2( 0, vote - 0.03 ) ];
 			const geometry = new THREE.LatheBufferGeometry( points, 7 );
 			const vert = GJS.latLonToXYZ( 50, + fip[ 8 ], + fip[ 9 ] );
-			geometry.rotateX( 0.49 * Math.PI );
+			geometry.rotateX( 0.5 * Math.PI );
 			geometry.lookAt( vert );
 			geometry.translate( vert.x, vert.y, vert.z );
 
@@ -154,7 +152,7 @@ function drawVotes () {
 	meshRep.name = "republican";
 	//meshRep.receiveShadow = true;
 	//meshRep.castShadow = true;
-	UFR.counties.add( meshRep );
+	mesh.add( meshRep );
 
 	const bufferGeometryOther = THREE.BufferGeometryUtils.mergeBufferGeometries( geometriesOther );
 	const materialOther = new THREE.MeshPhongMaterial( { color: 0x008080 } );
@@ -193,7 +191,7 @@ Other: ${ indexOther.length.toLocaleString() }<br>
 
 	divLog.innerHTML = htm;
 
-	//setStatsVote();
+	setStatsVote();
 
 }
 
@@ -274,15 +272,11 @@ RAY.getHtm = function ( intersected ) {
 
 function setStatsVote () {
 
-	//divPopUp.innerHTML = "calculating";
-	//divPopUp.hidden = false;
-
 	flipSticks = new THREE.Group();
 
-	flipsDem = [];
-	flipsRep = [];
-
-	fipsCounted = [];
+	const flipsDem = [];
+	const flipsRep = [];
+	const fipsCounted = [];
 	const yearPrevious = ( -4 + ( + selYear.value ) );
 
 	if ( yearPrevious > 1996 ) {
@@ -329,8 +323,8 @@ function setStatsVote () {
 		} );
 
 		//console.log( "flipsRep", flipsRep );
-		const geometry = new THREE.BoxBufferGeometry( 0.1, 0.1, 12 );
-		let material = new THREE.MeshPhongMaterial( { color: 0x00aaff, emissive: 0x444444 } );
+		const geometry = new THREE.SphereBufferGeometry( 1 );
+		let material = new THREE.MeshStandardMaterial( { color: 0x00aaff, emissive: 0x444444 } );
 
 		flipsDem.forEach( fip => {
 
@@ -339,10 +333,19 @@ function setStatsVote () {
 
 			if ( fipRec ) {
 
+				const vote = indexDem.find( item => fip === item[ 4 ] )
+				//console.log( "vote", vote[ 9 ] );
+				const total = vote[ 9 ];
+
+				delta = Math.log( 1 + 0.0002 * total ) || 0;
+				scl = 0.05 * Math.log( 1 + 0.0002 * total ) || 0;
+
 				const mesh = new THREE.Mesh( geometry, material );
-				const vert = GJS.latLonToXYZ( 50, + fipRec[ 8 ], + fipRec[ 9 ] );
+				const vert = GJS.latLonToXYZ( 50 + 1 * delta, + fipRec[ 8 ], + fipRec[ 9 ] );
 				mesh.lookAt( vert );
 				mesh.position.copy( vert );
+				mesh.scale.set( scl, scl, 10 * scl);
+
 				flipSticks.add( mesh );
 
 			}
@@ -350,7 +353,7 @@ function setStatsVote () {
 		} );
 
 
-		material = new THREE.MeshPhongMaterial( { color: 0xDE0100, emissive: 0x444444 } );
+		material = new THREE.MeshStandardMaterial( { color: 0xDE0100, emissive: 0x888888 } );
 
 		flipsRep.forEach( fip => {
 
@@ -359,10 +362,18 @@ function setStatsVote () {
 
 			if ( fipRec ) {
 
+				const vote = indexRep.find( item => fip === item[ 4 ] );
+				//console.log( "vote", vote[ 9 ] );
+				const total = vote[ 9 ];
+
+				delta = Math.log( 1 + 0.0002 * total ) || 0;
+				scl = 0.05 * Math.log( 1 + 0.0002 * total ) || 0;
+
 				const mesh = new THREE.Mesh( geometry, material );
-				const vert = GJS.latLonToXYZ( 50, + fipRec[ 8 ], + fipRec[ 9 ] );
+				const vert = GJS.latLonToXYZ( 50 + 1 * delta, + fipRec[ 8 ], + fipRec[ 9 ] );
 				mesh.lookAt( vert );
 				mesh.position.copy( vert );
+				mesh.scale.set( scl, scl, 10 * scl );
 				flipSticks.add( mesh );
 
 			}
@@ -376,8 +387,6 @@ function setStatsVote () {
 
 		alert( "No data for previous year" );
 	}
-
-
 
 	const votes = indexDem.reduce( ( total, num ) => total + ( + num[ 9 ] ), 0 );
 	const dems = indexDem.reduce( ( total, num ) => total + ( + num[ 8 ] ), 0 );

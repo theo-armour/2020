@@ -58,17 +58,18 @@
 				</h2>
 				<span class="info">
 					legend &rarr; <img class=infoImg src="../../../lib/assets/icons/noun_Information_585560.svg">
-					<span id="divDescription" class="infoTooltip gmd-5">
+					<div id="divDescription" class="infoTooltip gmd-5">
 						US Presidential Elections
 						2000-2016
-						Blue = Democrat<br>
-						Red = Republican<br>
-						Teal = Other<br>
+						<div style=background-color:#0015BC;color:white; >Blue = Democrat</div>
+						<div style=background-color:#DE0100;color:white;>Red = Republican</div>
+						<div style=background-color:#008080;color:white;>Teal = Other</div>
 						Taller sticks = more votes<br>
 						Wider sticks = more voters<br>
-						White bars = counties that flipped<br>
+						<div style=background-color:#88eeee;color:white;>Cyan spikes = counties flipped to Democrats</div>
+						<div style=background-color:#eeaaaa;color:white;>Pink spikes = counties flipped to Republicans</div>
 						Vertical data scales are exponential<br>
-					</span>
+					</div>
 				</span>
 			</header>
 
@@ -114,7 +115,18 @@
 
 	<!-- Used by RAY -->
 
-	<div id="divPopUp" class="gmd-2">When you touch a stick,<br>its details will appear here </div>
+	<div id="divPopUp" class="gmd-2">
+		<p>
+			When you touch a stick,<br>its details will appear here
+		</p>
+		<p>
+			Cyan spikes = county flipped Democratic<br>
+			Pink spikes = county flipped Republican
+		</p>
+		<p>
+			1|2|3 fingers to rotate|zoom|pan
+		</p>
+	</div>
 
 
 	<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r123/build/three.min.js"></script>
@@ -167,7 +179,7 @@
 		init(); // see us-county-votes.js
 
 		THR.controls.rotateSpeed = 0.2;
-		THR.controls.addEventListener( 'change', () => THR.renderer.render( THR.scene, THR.camera ) );
+		//THR.controls.addEventListener( 'change', () => THR.renderer.render( THR.scene, THR.camera ) );
 
 		if ( window.innerWidth < 640 || window.innerHeight < 500 ) {
 
