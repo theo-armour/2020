@@ -26,7 +26,12 @@ Where do we want this to go? and why?
 
 ## To Do / Wish List
 
+* Add multi-flip states
+* Add color shading
+* Highlight winner in pop-up
+* Show state boundaries and shade slighlty with winning color
 * Source and add authoritative 2020 numbers
+* Add education, health and wealth characteristics
 * Tidy the code
 * Show geoJSON in 3D
 
@@ -47,8 +52,10 @@ Where do we want this to go? and why?
 * https://www.reddit.com/r/bigdata/comments/jvdl6u/in_this_video_you_can_see_which_political_party/
 * https://www.reddit.com/r/Maps/comments/jyb33n/as_a_nonamerican_this_was_pretty_eye_opening/
 
+
 ### Election data
 
+* https://github.com/tonmcg/US_County_Level_Election_Results_08-20
 * https://www.loc.gov/rr/program/bib//elections/statistics.html
 * https://libguides.princeton.edu/elections
 * https://electionlab.mit.edu/data
@@ -58,7 +65,7 @@ Where do we want this to go? and why?
 
 ### 2020-12-11
 
-The chart you are looking at is one of the most complex charts you have ever viewed.
+The chart you are looking at may be one of the most complex charts you have ever viewed.
 
 This chart is not for the faint-hearted.
 
@@ -70,9 +77,11 @@ The chart links to 50,000 records
 The chart displays 3,114 individual data points
 Each data point display its area
 Each data point displays its geophysical characteristics
-Each data point may display the data of five different data cohorts
+Each data point may display the data of five different date cohorts
 Each data point displays three tallies scaled by the total numbers
 Separate indicators display two sets of differences with previous cohorts
+
+It would take 15,000 pie charts to display thisd data.
 
 As you move your pointer over each data point a bunch more data points are displayed next to the cursor
 	* Includes likes to Google search results for the selected data point
@@ -93,8 +102,10 @@ Future releases may
 	* Healthiness
 	* Metrics of which I am clueless
 * Load and display faster
-* Expose more sophisticated rendering techniques
+* Animate the display of the date data
+* Expose more sophisticated shading rendering techniques
 
+Done
 
 * Add both Dem and Rep flips
 	* As scaled ellipsoids

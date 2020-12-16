@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+	<title></title>
+	<meta charset=utf-8 />
+	<style>
+		body {
+			font: bold 12pt monospace;
+		}
+	</style>
+</head>
+
+<body>
+
+	<p>
+		<a href="">us county votes</a>
+
+		<button onclick=stringify()>onLoadAddZeros</button>
+		<button onclick=requestFile("../countypres_2000-2016-remix.csv",onLoadCreateTemplate);>createTemplate</button>
+		<button onclick=parseCountyPres()>parseCountyPres</button>
+		<button onclick=add2020Data()>add2020Data</button>
+
+		<button onclick=saveFile();>save file</button>
+
+	</p>
+
+	<div id=divContent></div>
+
+	<script>
+
+		init()
+
+		function init() {
+
+			requestFile();
+
+		}
+
+
+
+		function requestFile( url = "../countypres_2000-2016-remix.csv", callback = onLoadCreateTemplate ) {
+
+			xhr = new XMLHttpRequest();
+			xhr.open( "GET", url, true );
+			xhr.responseType = "text";
+			xhr.onerror = ( xhr ) => console.log( "error:", xhr );
+			//xhr.onprogress = ( xhr ) => console.log( "bytes loaded:", xhr.loaded );
+			xhr.onload = ( xhr ) => callback( xhr.target.response );
+			xhr.send( null );
+
+		}
+
+
+		function stringify( url = "../countypres_2000-2016-remix.csv", onLoad = onLoadAddZeros ) {
+
+			requestFile( url, onLoad );
+
+		}
+
+
+		function onLoadAddZeros( response ) {
+
+			linesCountypres = response.split( /\n/g ).map( line => line.split( /,/g ) );
+
+			linesCountypres.forEach( line => line[ 4 ] = ( "0" + line[ 4 ] ).slice( -5 ) );
+
+			divContent.innerText = linesCountypres.join( "\n" );
+
+
+		}
+
+
+		function onLoadCreateTemplate( response ) {
+
+			linesCountypres = response.split( /\n/g ).map( line => line.split( /,/g ) );
+			//year,state,state_po,county,FIPS,office,candidate,party,candidatevotes,totalvotes,version
+			//console.log( "linesCountypres", linesCountypres );
+
+			linesFiltered = linesCountypres.slice( 0, -1 );
+
+			linesFiltered = linesFiltered.filter( ( line, i ) => line[ 4 ] !== linesCountypres[ i + 1 ][ 4 ] && line[ 2 ] !== "NA" );
+			//console.log( "linesFiltered", linesFiltered );
+
+			//linesTemplate = linesFiltered.map( line => [ line[ 0 ], ( "0" + line[ 4 ] ).slice( -5 ), line[ 2 ], line[ 3 ], 0, 0, 0, 0 ] );
+
+			linesTemplate = linesFiltered.map( line => [ line[ 0 ], line[ 4 ], line[ 2 ], line[ 3 ], 0, 0, 0, 0 ] );
+
+
+			linesTemplate[ 0 ] = [ "year", "fip", "state", "county", "democrat", "republican", "other", "total" ];
+
+			divContent.innerText = linesTemplate.join( "\n" );
+
+		}
+
+
+
+		function parseCountyPres() {
+
+			//lines = response.split( /\n/g ).map( line => line.split( /,/g ) );
+			//year,state,state_po,county,FIPS,office,candidate,party,candidatevotes,totalvotes,version
+			//console.log( "lines", lines );
+
+			//linesFiltered = lines.slice( 0, -1 ).filter( ( line, i ) => line[ 4 ] !== lines[ i + 1 ][ 4 ] );
+
+			//linesNew = linesFiltered.map( line => [ line[ 0 ], line[ 4 ], line[ 2 ], line[ 3 ], 0, 0, 0, 0 ] );
+
+			linesCountypres.forEach( lineC => {
+
+				const theLine = linesTemplate.find( lineT => lineC[ 0 ] === lineT[ 0 ] && lineC[ 4 ] === lineT[ 1 ] );
+
+				if ( theLine ) {
+					//console.log( " theLine", theLine );
+
+					if ( lineC[ 7 ] === "democrat" ) {
+
+						theLine[ 4 ] = lineC[ 8 ];
+
+						theLine[ 7 ] = lineC[ 9 ];
+
+					} else if ( lineC[ 7 ] === "republican" ) {
+
+						theLine[ 5 ] = lineC[ 8 ];
+
+						theLine[ 7 ] = lineC[ 9 ];
+
+					} else if ( theLine ) {
+
+						theLine[ 6 ] += +lineC[ 8 ];
+
+					}
+
+					theLine[ 8 ] = +theLine[ 4 ] + +theLine[ 5 ] + +theLine[ 6 ] + "";
+
+				} else {
+
+					console.log( "lineC", lineC );
+
+				}
+
+			} )
+
+			divContent.innerText = linesTemplate.join( "\n" );
+
+		}
+
+
+
+		function add2020Data( response ) {
+
+			requestFile( "../2020_data.csv", parse2020Data )
+
+		}
+
+
+
+		function parse2020Data( response ) {
+
+			// state_name,county_fips,county_name,votes_gop,votes_dem,total_votes,diff,per_gop,per_dem,per_point_diff
+			lines2020 = response.split( /\n/g ).map( line => line.split( /,/g ) );
+
+			lines2020.forEach( line => {
+				//console.log( "", line[ 2 ] );
+				line[ 2 ] = line[ 2 ].replace( " County", "" );
+				line[ 2 ] = line[ 2 ].replace( " Parish", "" );
+
+			} )
+			console.log( "lines2020", lines2020 );
+
+			lines2New = lines2020.map( line2 => {
+
+				aLine = linesTemplate.find( lineN => lineN[ 1 ] === line2[ 1 ] )
+
+				const xx = aLine ? aLine[ 2 ] : "AK";
+
+				console.log( "aLine", xx, line2 );
+
+				return [ "2020", line2[ 1 ], xx, line2[ 2 ], line2[ 4 ], line2[ 3 ], 0, line2[ 5 ] ]
+
+			} );
+
+			lines2New[ 0 ] = [ "year", "fip", "state", "county", "democrat", "republican", "other", "total" ];
+
+			divContent.innerText = divContent.innerText + lines2New.slice( 1 ).join( "\n" );
+
+
+		}
+
+
+
+		function saveFile() {
+
+			const blob = new Blob( [ divContent.innerText ] );
+			let a = document.body.appendChild( document.createElement( 'a' ) );
+			a.href = window.URL.createObjectURL( blob );
+			//a.download = `us-counties-${ new Date().toISOString().slice( 0, 10 ) }.csv`;
+			a.download = `us-county-votes.csv`;
+			a.click();
+			//		delete a;
+			a = null;
+
+		}
+	</script>
+</body>
+
+</html>
