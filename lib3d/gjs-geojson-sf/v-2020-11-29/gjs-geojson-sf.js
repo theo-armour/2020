@@ -60,24 +60,24 @@ GJS.onLoadGeoJson = function ( string ) {
 	//console.log( "neighborhoods", neighborhoods );
 
 	const geometries = tracts.map( tract => tract.geometry );
-	//console.log( "geometries", geometries );
+	console.log( "geometries", geometries );
 
-	// let points = geometries.map( geometry => {
+	let points = geometries.map( geometry => {
 
-	// 	if ( [ "MultiPolygon", "Polygon", "MultiLineString" ].includes( geometry.type ) ) {
+		if ( [ "MultiPolygon", "Polygon", "MultiLineString" ].includes( geometry.type ) ) {
 
-	// 		return geometry.coordinates[ 0 ][ 0 ];
+			return geometry.coordinates[ 0 ][ 0 ];
 
-	// 	} else if ( geometry.type === "LineString" ) {
+		} else if ( geometry.type === "LineString" ) {
 
-	// 		return [ geometry.coordinates ];
+			return [ geometry.coordinates ];
 
-	// 	} else {
+		} else {
 
-	// 		return [];
-	// 	}
+			return [];
+		}
 
-	// } );
+	} );
 
 	let points = geometries.map( geometry => geometry.coordinates[ 0 ][ 0 ] );
 	//console.log( "points", points );
