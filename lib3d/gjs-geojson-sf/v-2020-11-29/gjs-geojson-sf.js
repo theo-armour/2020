@@ -79,7 +79,7 @@ GJS.onLoadGeoJson = function ( string ) {
 
 	} );
 
-	let points = geometries.map( geometry => geometry.coordinates[ 0 ][ 0 ] );
+	//let points = geometries.map( geometry => geometry.coordinates[ 0 ][ 0 ] );
 	//console.log( "points", points );
 
 	//const vertices = points.map( pairs => pairs.flatMap( pair => GJS.latLonToXYZ( 50, pair[ 1 ], pair[ 0 ] ) ) );
