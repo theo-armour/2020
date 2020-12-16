@@ -29,14 +29,21 @@ year, fip, state ab, county, dem, rep, other, total
 
 ## Links of Interest
 
+### geojson
 
+* cb_2019_us_county_20m us census
 ### Election data
 
+* https://www.geoffmcghee.com/projects/tu/legacy/data/us-states-west-metadata.js
 * https://armsp.github.io/talks/pydataglobal-2020/
 * https://github.com/tonmcg/US_County_Level_Election_Results_08-20
 * https://www.loc.gov/rr/program/bib//elections/statistics.html
 * https://libguides.princeton.edu/elections
 * https://electionlab.mit.edu/data
+
+### Covid data
+
+* https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv
 
 ## Change Log
 

@@ -55,6 +55,7 @@ Where do we want this to go? and why?
 
 ### Election data
 
+* https://github.com/tonmcg/us-election-maps/tree/master/maps
 * https://github.com/tonmcg/US_County_Level_Election_Results_08-20
 * https://www.loc.gov/rr/program/bib//elections/statistics.html
 * https://libguides.princeton.edu/elections
