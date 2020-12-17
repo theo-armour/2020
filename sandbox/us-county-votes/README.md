@@ -64,6 +64,11 @@ Where do we want this to go? and why?
 
 ## Change Log
 
+### 2020-12-16
+
+* Add updated geojson utility that works as expected - at last
+* Add data for 2020
+
 ### 2020-12-11
 
 The chart you are looking at may be one of the most complex charts you have ever viewed.

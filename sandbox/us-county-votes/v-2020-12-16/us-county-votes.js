@@ -1,7 +1,7 @@
 
 const source = "https://github.com/theo-armour/2020/tree/master/sandbox/us-county-votes/";
 
-const version = "2020-12-15";
+const version = "2020-12-16";
 
 //const description = document.head.querySelector( "[ name=description ]" ).content;
 
@@ -34,6 +34,10 @@ function init () {
 
 	GJS.initGeoJson();
 
+	const urlGeoJson = "../../../lib/assets/geojson/cb_2019_us_county_20m.geojson";
+
+	GJS.requestFile( urlGeoJson, GJS.onLoadGeoJson );
+
 	requestFile( "../us-county-votes.csv", getVotes );
 
 	THR.camera.position.set( - 20, - 65, 50 );
@@ -62,16 +66,8 @@ function getVotes ( string ) {
 	//const startTime = performance.now();
 
 	votesAll = string.split( /\n/ ).map( line => line.split( /,/ ) ).slice( 0, -1 );
-
-	//votesAll.forEach( vote => vote[ 4 ] = ( "0" + vote[ 4 ] ).slice( - 5 ) ); // fill 4 character fips
-
-	// for ( let i = 0; i < 1145; i++ ) { // Why not work??
-
-	// 	votesAll[ i ][ 4 ] = "0" + votesAll[ i ][ 4 ];
-
-	// }
-
 	//console.log( "votesAll", votesAll );
+
 	//console.log( "ms", performance.now() - startTime );
 
 	if ( votesAll && UFR.fips ) { drawVotes(); }
@@ -97,7 +93,7 @@ function drawVotes () {
 	indexOther = [];
 
 	votesYear = votesAll.filter( vote => vote[ 0 ] === selYear.value );
-	//console.log( "votesYear", votesYear );
+	//console.log( "votesYear", votesAll[ 1 ][ 0 ], selYear.value, votesYear );
 
 	votesYear.forEach( countyVote => {
 
@@ -107,45 +103,79 @@ function drawVotes () {
 			//console.log( "countyVote", countyVote);
 
 			const total = Math.log( 1 + 0.0001 * countyVote[ 7 ] ) || 0;
-			const vote = Math.log( 1 + 0.0002 * countyVote[ 5 ] ) || 0;
 
-			const points = [ v2( 0, 0 ), v2( 0.1 * total, vote ), v2( 0, vote - 0.03 ) ];
-			const geometry = new THREE.LatheBufferGeometry( points, 7 );
-			const vert = GJS.latLonToXYZ( 50, + fip[ 8 ], + fip[ 9 ] );
-			geometry.rotateX( 0.5 * Math.PI );
-			geometry.lookAt( vert );
-			geometry.translate( vert.x, vert.y, vert.z );
+			const voteDem = Math.log( 1 + 0.0002 * countyVote[ 4 ] ) || 0;
 
-			geometriesDem.push( geometry );
+			const pointsDem = [ v2( 0, 0 ), v2( 0.1 * total, voteDem ), v2( 0, voteDem - 0.03 ) ];
+			const geometryDem = new THREE.LatheBufferGeometry( pointsDem, 7 );
+			const vertexDem = GJS.latLonToXYZ( 50, + fip[ 8 ], + fip[ 9 ] );
+			geometryDem.rotateX( 0.5 * Math.PI );
+			geometryDem.lookAt( vertexDem );
+			geometryDem.translate( vertexDem.x, vertexDem.y, vertexDem.z );
+
+			geometriesDem.push( geometryDem );
 			indexDem.push( countyVote );
+
+
+			const voteRep = Math.log( 1 + 0.0002 * countyVote[ 5 ] ) || 0;
+
+			const pointsRep = [ v2( 0, 0 ), v2( 0.1 * total, voteRep ), v2( 0, voteRep - 0.03 ) ];
+			const geometryRep = new THREE.LatheBufferGeometry( pointsRep, 7 );
+			const vertexRep = GJS.latLonToXYZ( 50, + fip[ 8 ], + fip[ 9 ] );
+			geometryRep.rotateX( 0.5 * Math.PI );
+			geometryRep.lookAt( vertexRep );
+			geometryRep.translate( vertexRep.x, vertexRep.y, vertexRep.z );
+
+			geometriesRep.push( geometryRep );
+			indexRep.push( countyVote );
+
+			const voteOther = Math.log( 1 + 0.0002 * countyVote[ 6 ] ) || 0;
+
+			if ( countyVote[ 6 ] > 0 ) {
+
+				const pointsOther = [ v2( 0, 0 ), v2( 0.1 * total, voteOther ), v2( 0, voteOther - 0.03 ) ];
+				const geometryOther = new THREE.LatheBufferGeometry( pointsOther, 7 );
+				const vertexOther = GJS.latLonToXYZ( 50, + fip[ 8 ], + fip[ 9 ] );
+				geometryOther.rotateX( 0.5 * Math.PI );
+				geometryOther.lookAt( vertexOther );
+				geometryOther.translate( vertexOther.x, vertexOther.y, vertexOther.z );
+
+				geometriesOther.push( geometryOther );
+			}
+			indexOther.push( countyVote );
+
 
 		}
 
 	} );
 
-	const bufferGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries( geometriesDem );
-	const material = new THREE.MeshPhongMaterial( { color: 0x0015BC } );
-	const mesh = new THREE.Mesh( bufferGeometry, material );
-	mesh.name = "democrat";
+	const bufferGeometryDem = THREE.BufferGeometryUtils.mergeBufferGeometries( geometriesDem );
+	const materialDem = new THREE.MeshPhongMaterial( { color: 0x0015BC } );
+	const meshDem = new THREE.Mesh( bufferGeometryDem, materialDem );
+	meshDem.name = "democrat";
 	//mesh.receiveShadow = true;
 	//mesh.castShadow = true;
-	UFR.counties.add( mesh );
+	UFR.counties.add( meshDem );
 
-	// const bufferGeometryRep = THREE.BufferGeometryUtils.mergeBufferGeometries( geometriesRep );
-	// const materialRep = new THREE.MeshPhongMaterial( { color: 0xDE0100 } );
-	// const meshRep = new THREE.Mesh( bufferGeometryRep, materialRep );
-	// meshRep.name = "republican";
-	// //meshRep.receiveShadow = true;
-	// //meshRep.castShadow = true;
-	// mesh.add( meshRep );
+	const bufferGeometryRep = THREE.BufferGeometryUtils.mergeBufferGeometries( geometriesRep );
+	const materialRep = new THREE.MeshPhongMaterial( { color: 0xDE0100 } );
+	const meshRep = new THREE.Mesh( bufferGeometryRep, materialRep );
+	meshRep.name = "republican";
+	//meshRep.receiveShadow = true;
+	//meshRep.castShadow = true;
+	UFR.counties.add( meshRep );
 
-	// const bufferGeometryOther = THREE.BufferGeometryUtils.mergeBufferGeometries( geometriesOther );
-	// const materialOther = new THREE.MeshPhongMaterial( { color: 0x008080 } );
-	// const meshOther = new THREE.Mesh( bufferGeometryOther, materialOther );
-	// meshOther.name = "other";
-	// //meshOther.receiveShadow = true;
-	// //meshOther.castShadow = true;
-	//UFR.counties.add( meshOther );
+	if ( geometriesOther.length ) {
+
+		const bufferGeometryOther = THREE.BufferGeometryUtils.mergeBufferGeometries( geometriesOther );
+		const materialOther = new THREE.MeshPhongMaterial( { color: 0x008080 } );
+		const meshOther = new THREE.Mesh( bufferGeometryOther, materialOther );
+		meshOther.name = "other";
+		//meshOther.receiveShadow = true;
+		//meshOther.castShadow = true;
+		UFR.counties.add( meshOther );
+	}
+
 
 
 	RAY.intersectObjects = UFR.counties.children;
@@ -167,16 +197,14 @@ function drawVotes () {
 
 	htm = `
 FIPs: ${ UFR.fips.length.toLocaleString() }<br>
-Votes: ${ votesAll.length.toLocaleString() }<br>
-Year: ${ votesYear.length.toLocaleString() }<br>
-Democrat: ${ indexDem.length.toLocaleString() }<br>
-Republican: ${ indexRep.length.toLocaleString() }<br>
-Other: ${ indexOther.length.toLocaleString() }<br>
+Votes All: ${ votesAll.length.toLocaleString() }<br>
+Votes ${ selYear.value }: ${ votesYear.length.toLocaleString() }<br>
+Displayed: ${ indexDem.length.toLocaleString() }<br>
 `;
 
 	divLog.innerHTML = htm;
 
-	//setStatsVote();
+	setStatsVote();
 
 }
 
@@ -185,23 +213,10 @@ Other: ${ indexOther.length.toLocaleString() }<br>
 RAY.getHtm = function ( intersected ) {
 	//console.log( "intersected", intersected.object.name );
 
-	//if ( !geo ) { geo = new THREE.Geometry().fromBufferGeometry( intersected.object.geometry ); }
-	//console.log( "geo", geo );
-
 	let item;
 	let index = intersected.faceIndex;
-	let type = intersected.object.name;
-	let filtered;
 
-	if ( type === "democrat" ) {
-		filtered = indexDem;
-	} else if ( type === "republican" ) {
-		filtered = indexRep;
-	} else {
-		filtered = indexOther;
-	}
-
-	for ( item = 0; item <= filtered.length; item++ ) {
+	for ( item = 0; item <= indexDem.length; item++ ) {
 
 		const limit = item * 28;
 
@@ -209,25 +224,18 @@ RAY.getHtm = function ( intersected ) {
 
 	}
 
-	const countyVote = filtered[ item - 1 ];
-	console.log( "countyVote", countyVote );
+	const countyVote = indexDem[ item - 1 ];
+	//console.log( "countyVote", countyVote );
 
-	//year = countyVote[ 0 ];
-	const fips = countyVote[ 4 ];
-
-	const votes = votesYear.filter( vote => vote[ 4 ] === fips );
-	//console.log( "votes", votes );
-
-	const yearPrevious = ( -4 + ( + selYear.value ) );
+	yearPrevious = ( -4 + ( + selYear.value ) ) + "";
 
 	if ( yearPrevious ) {
 
-		votesYearPrev = votesAll.filter( vote => ( + vote[ 0 ] ) === yearPrevious && vote[ 4 ] === countyVote[ 4 ] );
-		//console.log( "votesYearPrev", votesYearPrev );
+		votesYearPrev = votesAll.find( vote => vote[ 0 ] === yearPrevious && vote[ 1 ] === countyVote[ 1 ] );
+
+		//console.log( "votesYearPrev", votesYearPrev, yearPrevious );
 
 	}
-
-	//if ( votes[ 0 ][ 8 ] > votes[ 0 ][ 8 ] )
 
 	const htm = `
 <div>
@@ -235,15 +243,15 @@ RAY.getHtm = function ( intersected ) {
 	County: ${ countyVote[ 3 ] } ~ ${ countyVote[ 2 ] }<br>
 	Year: ${ countyVote[ 0 ] } <br>
 	Total: ${ ( + countyVote[ 7 ] ).toLocaleString() }<br>
-	Democrat: ${ ( + votes[ 0 ][ 8 ] ).toLocaleString() } <br>
-	Republican: ${ ( + votes[ 1 ][ 8 ] ).toLocaleString() }<br>
-	Other: ${ ( + votes[ 2 ][ 8 ] ).toLocaleString() }<br>
+	Democrat: ${ ( + countyVote[ 4 ] ).toLocaleString() } <br>
+	Republican: ${ ( + countyVote[ 5 ] ).toLocaleString() }<br>
+	Other: ${ ( + countyVote[ 6 ] ).toLocaleString() }<br>
 	<hr>
 	Year: ${ yearPrevious } <br>
-	Total: ${ ( + votesYearPrev[ 0 ][ 9 ] ).toLocaleString() }<br>
-	Democrat: ${ ( + votesYearPrev[ 0 ][ 8 ] ).toLocaleString() } <br>
-	Republican: ${ ( + votesYearPrev[ 1 ][ 8 ] ).toLocaleString() }<br>
-	Other: ${ ( + votesYearPrev[ 2 ][ 8 ] ).toLocaleString() }<br>
+	Total: ${ ( + votesYearPrev[ 7 ] ).toLocaleString() }<br>
+	Democrat: ${ ( + votesYearPrev[ 4 ] ).toLocaleString() } <br>
+	Republican: ${ ( + votesYearPrev[ 5 ] ).toLocaleString() }<br>
+	Other: ${ ( + votesYearPrev[ 6 ] ).toLocaleString() }<br>
 
 
 
@@ -268,46 +276,53 @@ function setStatsVote () {
 
 		const votesYearPrev = votesAll.filter( vote => ( + vote[ 0 ] ) === yearPrevious );
 
+		//console.log( "votesYearPrev", votesYearPrev );
+
 		votesYear.forEach( voteYear => {
 
-			const fip = voteYear[ 4 ];
+			const fip = voteYear[ 1 ];
 
 			if ( !fipsCounted.includes( fip ) ) {
 
 				fipsCounted.push( fip );
 
-				const votesYearFip = votesYear.filter( vote => vote[ 4 ] === fip );
+				const vote = votesYear.find( vote => vote[ 1 ] === fip );
+				//console.log( "vote", vote );
+				//const demsYF = votesYearFip[ 0 ];
+				//const repsYF = votesYearFip[ 1 ];
 
-				const demsYF = votesYearFip[ 0 ];
-				const repsYF = votesYearFip[ 1 ];
+				const v1 = ( + vote[ 4 ] ) > ( + vote[ 5 ] );
+				//console.log( "v1", v1 );
 
-				const v1 = ( + demsYF[ 8 ] ) > ( + repsYF[ 8 ] );
-				//console.log( "v1", v1);
+				const votePrev = votesYearPrev.find( vote => vote[ 1 ] === fip );
+				//console.log( "votePrev", votePrev, fip );
 
-				const votesYearPreviousFip = votesYearPrev.filter( vote => vote[ 4 ] === fip );
+				if ( votePrev ) {
 
-				const demsYPF = votesYearPreviousFip[ 0 ] || 1;
-				const repsYPF = votesYearPreviousFip[ 1 ] || 1;
+					//const demsYPF = votesYearPreviousFip[ 0 ] || 1;
+					//const repsYPF = votesYearPreviousFip[ 1 ] || 1;
 
-				const v2 = ( + demsYPF[ 8 ] ) > ( + repsYPF[ 8 ] );
-				//console.log( "v2", v2 );
+					const v2 = ( + votePrev[ 4 ] ) > ( + votePrev[ 5 ] );
+					//console.log( "v2", v2 );
 
-				if ( v1 && !v2 ) {
-					//console.log( fip, demsYF[ 8 ], repsYF[ 8 ] );
-					//console.log( "! d>r", demsYPF[ 8 ], repsYPF[ 8 ] );
-					flipsDem.push( fip );
-				}
+					if ( v1 && !v2 ) {
+						//console.log( fip, demsYF[ 8 ], repsYF[ 8 ] );
+						//console.log( "! d>r", demsYPF[ 8 ], repsYPF[ 8 ] );
+						flipsDem.push( fip );
+					}
 
-				if ( !v1 && v2 ) {
-					//console.log( fip, demsYF[ 8 ], repsYF[ 8 ] );
-					//console.log( "! d>r", demsYPF[ 8 ], repsYPF[ 8 ] );
-					flipsRep.push( fip );
+					if ( !v1 && v2 ) {
+						//console.log( fip, demsYF[ 8 ], repsYF[ 8 ] );
+						//console.log( "! d>r", demsYPF[ 8 ], repsYPF[ 8 ] );
+						flipsRep.push( fip );
+					}
+
 				}
 			}
 
 		} );
 
-		//console.log( "flipsRep", flipsRep );
+		//console.log( "flipsDem", flipsDem );
 		const geometry = new THREE.SphereBufferGeometry( 1 );
 		let material = new THREE.MeshStandardMaterial( { color: 0x00aaff, emissive: 0x444444 } );
 
@@ -318,9 +333,9 @@ function setStatsVote () {
 
 			if ( fipRec ) {
 
-				const vote = indexDem.find( item => fip === item[ 4 ] )
+				const vote = indexDem.find( item => fip === item[ 1 ] );
 				//console.log( "vote", vote[ 9 ] );
-				const total = vote[ 9 ];
+				const total = vote[ 7 ];
 
 				delta = Math.log( 1 + 0.0002 * total ) || 0;
 				scl = 0.05 * Math.log( 1 + 0.0002 * total ) || 0;
@@ -329,7 +344,7 @@ function setStatsVote () {
 				const vert = GJS.latLonToXYZ( 50 + 1 * delta, + fipRec[ 8 ], + fipRec[ 9 ] );
 				mesh.lookAt( vert );
 				mesh.position.copy( vert );
-				mesh.scale.set( scl, scl, 10 * scl);
+				mesh.scale.set( scl, scl, 10 * scl );
 
 				flipSticks.add( mesh );
 
@@ -347,9 +362,9 @@ function setStatsVote () {
 
 			if ( fipRec ) {
 
-				const vote = indexRep.find( item => fip === item[ 4 ] );
+				const vote = indexRep.find( item => fip === item[ 1 ] );
 				//console.log( "vote", vote[ 9 ] );
-				const total = vote[ 9 ];
+				const total = vote[ 7 ];
 
 				delta = Math.log( 1 + 0.0002 * total ) || 0;
 				scl = 0.05 * Math.log( 1 + 0.0002 * total ) || 0;
@@ -373,14 +388,14 @@ function setStatsVote () {
 		alert( "No data for previous year" );
 	}
 
-	const votes = indexDem.reduce( ( total, num ) => total + ( + num[ 9 ] ), 0 );
-	const dems = indexDem.reduce( ( total, num ) => total + ( + num[ 8 ] ), 0 );
-	const reps = indexRep.reduce( ( total, num ) => total + ( + num[ 8 ] ), 0 );
-	const other = indexOther.reduce( ( total, num ) => total + ( + num[ 8 ] ), 0 );
+	const votes = indexDem.reduce( ( total, num ) => total + ( + num[ 7 ] ), 0 );
+	const dems = indexDem.reduce( ( total, num ) => total + ( + num[ 4 ] ), 0 );
+	const reps = indexRep.reduce( ( total, num ) => total + ( + num[ 5 ] ), 0 );
+	const other = indexOther.reduce( ( total, num ) => total + ( + num[ 6 ] ), 0 );
 
 
-	const demWin = indexDem.filter( ( vote, index ) => vote[ 8 ] > indexRep[ index ][ 8 ] );
-	const repWin = indexRep.filter( ( vote, index ) => vote[ 8 ] > indexDem[ index ][ 8 ] );
+	const demWin = indexDem.filter( ( vote, index ) => vote[ 4 ] > vote[ 5 ] );
+	const repWin = indexRep.filter( ( vote, index ) => vote[ 5 ] > vote[ 4 ] );
 
 	const htm = `
 FIPs: ${ UFR.fips.length.toLocaleString() }<br>
@@ -396,8 +411,6 @@ FlipReps: ${ flipsRep.length }<br>
 `;
 
 	divLog.innerHTML = htm;
-
-
 }
 
 function setStats () {
