@@ -26,11 +26,13 @@ Where do we want this to go? and why?
 
 ## To Do / Wish List
 
-* Add multi-flip states
+* Streamline the data wrangler
+	* Make it produce a single file to load
+* Add display of multiple-flip states
+* Animate the years
 * Add color shading
 * Highlight winner in pop-up
-* Show state boundaries and shade slighlty with winning color
-* Source and add authoritative 2020 numbers
+* Show state boundaries and shade slightly with winning color
 * Add education, health and wealth characteristics
 * Tidy the code
 * Show geoJSON in 3D
@@ -38,7 +40,7 @@ Where do we want this to go? and why?
 
 ## Issues
 
-* 2020-11-06 ~ The borders of some counties along the oceans are missing
+
 * 2020-11-06 ~ The software is un-optimized amd may run quite slowly on a non-gaming computer
 
 
@@ -55,6 +57,8 @@ Where do we want this to go? and why?
 
 ### Election data
 
+* https://www.geoffmcghee.com/projects/tu/legacy/data/us-states-west-metadata.js
+* https://armsp.github.io/talks/pydataglobal-2020/
 * https://github.com/tonmcg/us-election-maps/tree/master/maps
 * https://github.com/tonmcg/US_County_Level_Election_Results_08-20
 * https://www.loc.gov/rr/program/bib//elections/statistics.html
@@ -67,7 +71,13 @@ Where do we want this to go? and why?
 ### 2020-12-16
 
 * Add updated geojson utility that works as expected - at last
-* Add data for 2020
+* Add election  data for 2020
+* Much refactoring and streamlining
+
+Done
+
+* Source and add authoritative 2020 numbers
+* 2020-11-06 ~ The borders of some counties along the oceans are missing
 
 ### 2020-12-11
 
@@ -79,7 +89,7 @@ In five years time this chart will display twice the data in half the time.
 
 Welcome to the future.
 
-The chart links to 50,000 records
+The chart links to over 50,000 lines of records
 The chart displays 3,114 individual data points
 Each data point display its area
 Each data point displays its geophysical characteristics
@@ -87,9 +97,9 @@ Each data point may display the data of five different date cohorts
 Each data point displays three tallies scaled by the total numbers
 Separate indicators display two sets of differences with previous cohorts
 
-It would take 15,000 pie charts to display thisd data.
+It would take 15,000 pie charts to display this data.
 
-As you move your pointer over each data point a bunch more data points are displayed next to the cursor
+As you move your pointer over each data point a bunch more data points are displayed in a pop-up window next to the cursor
 	* Includes likes to Google search results for the selected data point
 
 In order to enable access to the data points, 1|2|3 finger interaction enables easy access to the data points
@@ -101,7 +111,7 @@ This chart software is free and open-source
 Future releases may
 
 * Provide a more intuitive user experience
-* 3D global terrain
+* Include 3D global terrain
 * Display more variables simultaneously, including
 	* Levels of education
 	* Per capita income

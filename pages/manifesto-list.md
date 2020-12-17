@@ -43,3 +43,7 @@ Wikipedia links are useful because they provide both links to the original text 
 * https://en.wikipedia.org/wiki/Simple_living
 * https://en.wikipedia.org/wiki/Wikipedia:Ten_simple_rules_for_editing_Wikipedia
 * https://en.wikisource.org/wiki/Dada_Manifesto_(1916,_Hugo_Ball)
+
+### Even more
+
+* https://www.fastcompany.com/90563364/10-new-rules-of-design?ref=sidebar

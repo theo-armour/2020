@@ -1,5 +1,7 @@
 # Manifesto for Seniors
 
+* Gerontacracy
+
 ## Three Outcomes
 
 * Fit and performing and capable
@@ -12,7 +14,7 @@
 * productive member of society
 * Source of wisdom
 * Ready to meet the maker
-* Consume just the right amount
+* Sustainable ~ Consume just the right amount
 * Thankful and kind for support
 
 ## Distracted
