@@ -1,0 +1,7 @@
+# Pill Bottle Tip
+
+Do you take pills from time to time? Well, if you are like me, you shake the bottle gently and nothing comes out. Then you shake some more and still no pills come out. Then you shake again and half a dozen pills come out. So then you have to put the bottle down and return the five extra pills back into the bottle. And because your fingers are slightly damp, the pills are sticking to your fingers. And so on and so forth.  There must be a better way, right?
+
+Here is a trick. When you open the pill bottle for the first time, there is a foil seal covering the opening of the bottle. This covering  is to help keep the pills fresh. Most times you unscrew the lid and pry the foil off the bottle and throw it away. Wait! Stop! Don't do that! Instead pick up something like a pair of scissors or something hard and pointed. Punch a hole in the foil. Make the hole just a bit bigger then one of the pills. Now the foil will now be your friendly gate keeper. It will wrangle the pills so they plop into your hand a single pill at a time.
+
+
