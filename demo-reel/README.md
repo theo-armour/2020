@@ -7,24 +7,37 @@ value='You are now in a GitHub web page view - Click this button to view this re
 # [Theo Armour Demo Reel Read Me]( https://theo-armour.github.io/2020/demo-reel/readme.html )
 
 <!--@@@
-<div class=iframe-resize ><iframe src=https://theo-armour.github.io/2020/ demo-reel/ height=100% width=100% ></iframe></div>
-_Theo Armour Demo Reel in a resizable window. One finger to rotate. Two to zoom._
+<div class=iframe-resize ><iframe src=./iframe-carousel-r1.html height=100% width=100% ></iframe></div>
+_Theo Armour demo reel carousel in a resizable window. One finger to rotate. Two to zoom._
 
-### Full Screen: [Theo Armour Demo Reel]( https://theo-armour.github.io/2020/demo-reel/ )
+
 @@@-->
 
 
 ## Concept
 
+View a few of the projects Theo Armour has scripted in the past few years.
+
+* All code is plain-vanilla JavaScript with a single dependency - [Three.js]( https://threejs.org )
+* Easy for beginners to hack
+* Easy for full-stack developers to embed into complex situations
+* All code is free, open source with MIT license and hosted on GiHub
+* In most instances there are Read Me files with background and links of interest
+
 
 ## To Do / Wish List
 
+* Continue modernizing the elderly scripts
 
 ## Issues
+
+* Many older projects still call for http instead https and therefor will not load
+* Many older projects are based on earlier versions but call for the dev version and there for crsh
 
 
 ## Links of Interest
 
+* [Read Me Driven Development](https://news.ycombinator.com/item?id=25222601 )
 
 ## Change Log
 
