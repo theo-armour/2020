@@ -10,7 +10,6 @@ value='You are now in a GitHub web page view - Click this button to view this re
 <div class=iframe-resize ><iframe src=./iframe-carousel-r1.html height=100% width=100% ></iframe></div>
 _Theo Armour demo reel carousel in a resizable window. One finger to rotate. Two to zoom._
 
-
 @@@-->
 
 
@@ -27,7 +26,9 @@ View a few of the projects Theo Armour has scripted in the past few years.
 
 ## To Do / Wish List
 
-* Continue modernizing the elderly scripts
+* Continue modernizing the elderly broken scripts
+* Make more scripts available
+* Add more context and background to the scripts' read me files
 
 ## Issues
 
