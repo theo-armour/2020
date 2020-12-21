@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name=description content="Basic HTML template">
+	<meta name=keywords content="JavaScript,GitHub,FOSS,STEM">
+	<meta name="date" content="2020-12-20">
+	<title></title>
+
+	<!-- Copyright 2020 Theo Armour. MIT license -->
+
+	<link rel="stylesheet" href="../../lib/style/style-2020-11-29.css">
+
+	<!-- https://github.com/showdownjs/showdown -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+
+	<style>
+		:root {
+			--main-hue:88;
+			/* 0 to 360 0=red 120=green 240=blue */
+		}
+
+		h4 {font-size: 0.8rem;
+			font-style: italic;
+			margin: 0.3rem 0 0 0;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id=divMenu></div>
+
+	<div id=divMenuContent hidden>
+
+
+		Select projects to view from this menu
+
+		<h4>Architecture, Engineering Construction (AEC) </h4>
+
+		<a href="#https://www.ladybug.tools/spider-2020/README.md">Spider 2020</a>
+
+		<div><a href="#https://www.ladybug.tools/spider/README.md">Spider</a></div>
+
+
+		<h4>Art</h4>
+
+		<div><a href="#https://konturno.github.io/" >Konturno</a></div>
+
+		<div><a href="#https://spraylatino.github.io/" >Spray Latino remix</a></div>
+
+
+		<h4>Astronomy</h4>
+
+		<div><a href="#https://jaanga.github.io/mars/">Mars Read Me</a></div>
+
+		<div><a href="#https://jaanga.github.io/moon/">Moon Read Me</a></div>
+
+
+		<h4>Cartography</b></h4>
+
+		<div><a href="#https://www.ladybug.tools/spider-covid-19-viz-3d/README.md" >C19 Viz3D Read Me</a></div>
+
+		<div><a href="#https://cynthiaarmour.github.io/oakland-gran-fondo-2016/readme.md" >Oakland <i>Gran Fondo</i> Read Me</a></div>
+
+		<div><a href="#https://theo-armour.github.io/2020/lib/map/README.md" >Map 2020 Read Me</a> w.i.p.</div>
+
+		<h4>Math</b></h4>
+
+		<div><a href="#https://webmath.github.io/algesurf/README.md">Algesurf</a></div>
+
+		<div>
+			<a href="#https://webmath.github.io/algesurf/ray-marching/r3/algesurf-ray-marching-r3.html">Ray Marching</a>
+			~
+			<a href="#https://webmath.github.io/algesurf/ray-marching/readme.md">Read Me</a>
+
+		</div>
+
+		<div><a href="#https://jaanga.github.io/algebraic-surfaces/" >Algebraic Surfaces</a></div>
+
+
+		<h4>Medical Imaging</h4>
+
+		<div><a href="#https://jaanga.github.io/brainofrichard/" >Brain of Richard</a></div>
+
+
+
+		<h4>Parametric Components</h4>
+
+		<div><a href="#https://jaanga.github.io/moving-manuals/" >Moving Manuals</a></div>
+
+		<div><a href="#http://opendesk.github.io/design-playground/opendesk-slim-chair/opendesk-slim-chair-app-r1-2.html" >Open Desk Slim Chair</a></div>
+
+		<h4>Stocks</h4>
+
+		<div><a href="#https://prediqtiv.github.io/README.md" >predIQtiv</a></div>
+
+
+		<br>
+		<details>
+
+			<summary>Even more</summary>
+
+			<p><a href="#https://pendulumlabs.github.io/" >Pendulum Labs Read Me</a></p>
+
+			<p><a href="#https://jaanga.github.io/zeebar/" >ZeeBar</a></p>
+
+			<p><a href="#https://icoloridelbuio.github.io" >i colori del buio </a></p>
+
+		</details>
+	</div>
+
+	<main>
+		<div id=divContentMain class=divContent></div>
+	</main>
+
+	<div id="divPopUp" class="gmd-2" hidden></div>
+
+	<script src="../../lib/mnu-menu/v-2020-12-20/mnu-menu.js"></script>
+
+	<script>
+
+		init();
+
+		function init() {
+
+			divMenu.innerHTML = MNU.navMenuHeader + divMenuContent.innerHTML + MNU.navMenuFooter;
+
+			aGithub.href = "https://github.com/pushme-pullyou/too-too-2020/"
+
+			spnTitle.innerHTML = "Theo Armour Demo Reel";
+
+			spnVersion.innerHTML = document.head.querySelector( "[ name=date ]" ).content;
+
+			spnDescription.innerHTML = document.head.querySelector( "[ name=description ]" ).content;
+
+			aMenuIcon.innerHTML = "❧";
+
+			MNU.init();
+
+
+
+			defaultFile = "../README.md";
+
+			//if ( !location.hash ) { location.hash = defaultFile; }
+
+			window.addEventListener( "hashchange", onHashChange, false );
+
+			onHashChange();
+
+		}
+
+
+
+		function onHashChange() {
+
+			const fileName = location.hash ? location.hash.slice( 1 ) : defaultFile;
+			const title = fileName.split( "/" ).pop();
+			const extension = title.toLowerCase().split( '.' ).pop();
+			const url = fileName
+
+			document.title = title;
+
+			if ( extension === "md" ) {
+
+				showdown.setFlavor( "github" );
+
+				const options = { excludeTrailingPunctuationFromURLs: true, ghMention: true, parseImgDimensions: true, simplifiedAutoLink: true, simpleLineBreaks: true, emoji: true, openLinksInNewWindow: true };
+
+				const xhr = new XMLHttpRequest();
+				xhr.open( "get", url, true );
+				xhr.onload = () => {
+					const txt = xhr.responseText.replace( /\<!--@@@/, "" ).replace( /\@@@-->/, "" );
+					divContentMain.innerHTML = new showdown.Converter( options ).makeHtml( txt );
+					window.scrollTo( 0, 0 );
+				};
+				xhr.send( null );
+
+				return;
+
+			}
+
+			if ( [ "gif", "jpg", "png", "svg" ].includes( extension ) ) {
+
+				divContentMain.innerHTML = `<a href=${ url } title="Open this image in a new window" target="_blank" ><img src="${ url }" style=max-width:100% ></a>`;
+
+				return;
+
+			}
+
+			divContentMain.innerHTML = `<iframe src="${ url }" height=${ window.innerHeight } width=100% ></iframe>`;
+
+		}
+	</script>
+
+</body>
+
+</html>
