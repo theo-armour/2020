@@ -158,7 +158,7 @@ starts p32
 
 P412: COACH: curiosity, openness, affiliations, conscientiousness, and healthy lifestyle.
 
-##### Curiouisity
+##### Curiosity
 
 cientious: Obsessive compulsive disorder
 
@@ -305,7 +305,7 @@ p401
 * Or you could be like Jeanne Calment and smoke until your 117 or like Richard Overton, the oldest surviving World War 2 veteran at the time of his death who live to be 112 a new secret to a long life for cigars 12 hour day, whiskey, and coffee. Fate is capricious.
 
 
-Takeawys
+Takeaways
 
 * Genetics is not a significant determinant of who lives long
 * There are no ways to extent health span with anu certainty
