@@ -15,9 +15,9 @@
 
 	<a href="">alaska districts</a>
 
-	<button onclic=requestFile >load json </button>
+	<button onclic=requestFile>load json </button>
 
-	<div id=divContent ></div>
+	<div id=divContent></div>
 
 	<script>
 
@@ -46,7 +46,7 @@
 
 
 
-			function onLoad( response ) {
+		function onLoad( response ) {
 
 			json = response;
 
@@ -62,12 +62,12 @@
 
 				if ( feature.geometry.type === "Polygon" ) {
 
-					feature.geometry.coordinates.forEach( ( item, iii )=> {
+					feature.geometry.coordinates.forEach( ( item, iii ) => {
 
 
-						lat = item.reduce( ( acc, it ) => acc +  it[ 0 ], 0 ) / item.length;
+						lat = item.reduce( ( acc, it ) => acc + it[ 0 ], 0 ) / item.length;
 						lon = item.reduce( ( acc, it ) => acc + it[ 1 ], 0 ) / item.length;
-						console.log( "latlon", i, lat,  lon );
+						console.log( "latlon", i, lat, lon );
 
 						return [ lat, lon ]
 
@@ -77,7 +77,7 @@
 				}
 
 
-			})
+			} )
 			//coordinates = coordinates.map( coordinate => coordinate.map( item => [ ... item ] ) );
 
 			//console.log( "coordinates", coordinates );
@@ -89,7 +89,7 @@
 
 			properties = features.map( feature => feature.properties );
 
-			counties = properties.map( property => [ property.geoid, property.county_name,"AK",,,"17756" ] );
+			counties = properties.map( property => [ property.geoid, property.county_name, "AK", , , "17756" ] );
 
 			//console.log( "counties", counties );
 
@@ -97,7 +97,7 @@
 
 			divContent.innerText = line0 + counties.join( "\n" );
 
-			}
+		}
 
 	</script>
 
