@@ -5,11 +5,14 @@ const UFR = {
 
 };
 
+
+
 UFR.init = function () {
 
-	UFR.fips = UFR.string.split( /\n/ ).map( line => line.split( "," ) );
+	UFR.fips = UFR.string.split( /\n/ ).map( line => line.split( "," ) ).slice( 1 );
 
 };
+
 
 
 UFR.string = `

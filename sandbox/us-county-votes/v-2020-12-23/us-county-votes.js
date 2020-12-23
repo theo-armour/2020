@@ -1,24 +1,43 @@
 
 const source = "https://github.com/theo-armour/2020/tree/master/sandbox/us-county-votes/";
 
-const version = "2020-12-22";
+const version = "2020-12-23";
 
 //const description = document.head.querySelector( "[ name=description ]" ).content;
 
 let indexDem = [];
 let indexRep = [];
 let indexOther = [];
+
 let votesAll;
 let votesYear;
 let flipSticks;
 
+
+
 function init () {
 
-	aGithub.href = source;
+	MNU.init();
 
-	spnVersion.innerHTML = version;
+	aGithub.href = "https://www.ladybug.tools/spider-2020/sandbox/";
 
-	//divDescription.innerHTML = description;
+	spnTitle.innerHTML = "US County Votes";
+
+	spnVersion.innerHTML = document.head.querySelector( "[ name=date ]" ).content;
+
+	divDescription.innerHTML =`
+	US Presidential Elections
+	2000-2016
+	<div style=background-color:#0015BC;color:white; >Blue = Democrat</div>
+	<div style=background-color:#DE0100;color:white;>Red = Republican</div>
+	<div style=background-color:#008080;color:white;>Teal = Other</div>
+	Taller sticks = more votes<br>
+	Wider sticks = more voters<br>
+	<div style=background-color:#88eeee;color:white;>Cyan spikes = counties flipped to Democrats</div>
+	<div style=background-color:#eeaaaa;color:white;>Pink spikes = counties flipped to Republicans</div>
+	<div>No 2020 3rd party data</div>
+	Vertical data scales are exponential<br>
+	`
 
 	THR.init();
 
@@ -26,11 +45,11 @@ function init () {
 
 	THR.addLights();
 
-	THR.group = THR.setSceneNew();
+	THR.group = THR.getGroupNew();
 
 	//THRU.addMeshes(100);
 
-	THRR.updateScene();
+	RAY.init()
 
 	GJS.initGeoJson();
 
@@ -64,7 +83,7 @@ function requestFile ( url, callback ) {
 function getVotes ( string ) {
 	//const startTime = performance.now();
 
-	votesAll = string.split( /\n/ ).map( line => line.split( /,/ ) ).slice( 0, -1 );
+	votesAll = string.split( /\n/ ).map( line => line.split( /,/ ) ).slice( 1, -1 );
 	//console.log( "votesAll", votesAll );
 
 	//console.log( "ms", performance.now() - startTime );
@@ -104,7 +123,6 @@ function drawVotes () {
 			const total = Math.log( 1 + 0.0001 * countyVote[ 7 ] ) || 0;
 
 			const voteDem = Math.log( 1 + 0.0002 * countyVote[ 4 ] ) || 0;
-
 			const pointsDem = [ v2( 0, 0 ), v2( 0.1 * total, voteDem ), v2( 0, voteDem - 0.03 ) ];
 			const geometryDem = new THREE.LatheBufferGeometry( pointsDem, 7 );
 			const vertexDem = GJS.latLonToXYZ( 50, + fip[ 3 ], + fip[ 4 ] );
@@ -117,7 +135,6 @@ function drawVotes () {
 
 
 			const voteRep = Math.log( 1 + 0.0002 * countyVote[ 5 ] ) || 0;
-
 			const pointsRep = [ v2( 0, 0 ), v2( 0.1 * total, voteRep ), v2( 0, voteRep - 0.03 ) ];
 			const geometryRep = new THREE.LatheBufferGeometry( pointsRep, 7 );
 			const vertexRep = GJS.latLonToXYZ( 50, + fip[ 3 ], + fip[ 4 ] );
@@ -142,7 +159,6 @@ function drawVotes () {
 				geometriesOther.push( geometryOther );
 			}
 			indexOther.push( countyVote );
-
 
 		}
 
@@ -207,6 +223,8 @@ Displayed: ${ indexDem.length.toLocaleString() }<br>
 
 
 
+//////////
+
 RAY.getHtm = function ( intersected ) {
 	//console.log( "intersected", intersected.object.name );
 
@@ -249,9 +267,6 @@ RAY.getHtm = function ( intersected ) {
 	Democrat: ${ ( + votesYearPrev[ 4 ] ).toLocaleString() } <br>
 	Republican: ${ ( + votesYearPrev[ 5 ] ).toLocaleString() }<br>
 	Other: ${ ( + votesYearPrev[ 6 ] ).toLocaleString() }<br>
-
-
-
 </div>`;
 
 	return htm;
@@ -326,7 +341,7 @@ function setStatsVote () {
 		flipsDem.forEach( fip => {
 
 			const fipRec = UFR.fips.find( fipX => fip === fipX[ 0 ] ); //.slice( -5 ) );
-			console.log( "fipRec", fip, fipRec, );
+			//console.log( "fipRec", fip, fipRec, );
 
 			if ( fipRec ) {
 
@@ -338,7 +353,7 @@ function setStatsVote () {
 				scl = 0.05 * Math.log( 1 + 0.0002 * total ) || 0;
 
 				const mesh = new THREE.Mesh( geometry, material );
-				const vert = GJS.latLonToXYZ( 50 + 1 * delta, + fipRec[ 4 ], + fipRec[ 5 ] );
+				const vert = GJS.latLonToXYZ( 50 + 1 * delta, + fipRec[ 3 ], + fipRec[ 4 ] );
 				mesh.lookAt( vert );
 				mesh.position.copy( vert );
 				mesh.scale.set( scl, scl, 10 * scl );
@@ -367,7 +382,7 @@ function setStatsVote () {
 				scl = 0.05 * Math.log( 1 + 0.0002 * total ) || 0;
 
 				const mesh = new THREE.Mesh( geometry, material );
-				const vert = GJS.latLonToXYZ( 50 + 1 * delta, + fipRec[ 8 ], + fipRec[ 9 ] );
+				const vert = GJS.latLonToXYZ( 50 + 1 * delta, + fipRec[ 3 ], + fipRec[ 4 ] );
 				mesh.lookAt( vert );
 				mesh.position.copy( vert );
 				mesh.scale.set( scl, scl, 10 * scl );
@@ -412,89 +427,3 @@ FlipReps: ${ flipsRep.length }<br>
 
 
 
-function setStats () {
-
-	const script = document.head.appendChild( document.createElement( "script" ) );
-	script.onload = () => {
-
-		const stats = new Stats();
-		const sts = document.body.appendChild( stats.dom );
-		sts.style.left = "";
-		sts.style.right = "0px";
-		requestAnimationFrame( function loop () {
-
-			stats.update(); requestAnimationFrame( loop );
-
-		} );
-
-	};
-
-	script.src = "https://raw.githack.com/mrdoob/stats.js/master/build/stats.min.js";
-
-	const render = renderer.info.render;
-	if ( !window.divRendererInfo ) divRendererInfo = divLog.appendChild( document.createElement( "div" ) );
-	divRendererInfo.innerHTML = `
-<div>
-	Renderer Info<br>
-	Calls: ${ render.calls }<br>
-	Lines: ${ render.lines }<br>
-	Triangles: ${ render.triangles.toLocaleString() }<br>
-</div>`;
-
-}
-
-
-const MNU = {};
-
-MNU.toggleDarkMode = function ( button ) {
-
-	if ( butDark.innerHTML === "dark" ) {
-
-		//root.style.backgroundColor = "#1e1f23";
-		document.body.style.color = "#aaa";
-		navMenu.style.backgroundColor = "#555";
-
-		THR.scene.background = new THREE.Color( 0x222222 );
-		THR.scene.fog.far = 999999;
-
-		//const summaries = document.querySelectorAll(".summary-secondary");
-		//console.log( "", summaries );
-
-		Array.from( document.querySelectorAll( "a" ) )
-			.forEach( a => a.style.color = "#ccc" );
-
-		Array.from( document.querySelectorAll( "input,select,option" ) )
-			.forEach( iso => iso.style.backgroundColor = "#bbb" );
-
-		document.documentElement.style.setProperty( "--color-2-background", "#888" );
-		Array.from( document.querySelectorAll( ".summary-primary" ) )
-			.forEach( sum => sum.style.backgroundColor = "#888" );
-
-		document.documentElement.style.setProperty( "--color-3-background", "#bbb" );
-		Array.from( document.querySelectorAll( ".summary-secondary" ) )
-			.forEach( sum => sum.style.backgroundColor = "#bbb" );
-
-
-		divPopUp.style.backgroundColor = "#333";
-
-		butDark.innerHTML = "light";
-
-		return;
-
-	}
-
-	//root.style.backgroundColor = "#1e1f23";
-	document.body.style.color = "teal";
-	navMenu.style.backgroundColor = "#fafffa";
-
-	THR.scene.background = new THREE.Color( 0xcce0ff );
-	THR.scene.fog.far = THR.radius * 8;
-
-	const summaries = document.querySelectorAll( ".summary-primary" );
-	Array.from( summaries ).forEach( sum => sum.style.backgroundColor = "#eee" );
-
-	divPopUp.style.backgroundColor = "#eee";
-
-	butDark.innerHTML = "dark";
-
-};
