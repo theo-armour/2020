@@ -17,6 +17,8 @@ THR.radius = 50;
 
 THR.init = function () {
 
+	THR.timeStart = performance.now();
+
 	camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1000 );
 	camera.position.set( -100, -100, 100 );
 	camera.up.set( 0, 0, 1 );

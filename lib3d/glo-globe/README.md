@@ -1,10 +1,10 @@
-# [ZZZZZ Read Me]( ./readme.html )
+# [GLO Globe Read Me]( ./readme.html )
 
 <!--@@@
 <div class=iframe-resize ><iframe src=https://pushme-pullyou.github.io/tootoo-2020/ height=100% width=100% ></iframe></div>
-_ZZZZZ_
+_GLO Globe_
 
-### Full Screen: [ZZZZZ]( https://pushme-pullyou.github.io/tootoo-2020/ )
+### Full Screen: [GLO Globe]( https://pushme-pullyou.github.io/tootoo-2020/ )
 @@@-->
 
 
@@ -13,6 +13,8 @@ _ZZZZZ_
 
 ## To Do / Wish List
 
+* HTML file to use THR module
+* Add scale to elevation 3D method
 
 ## Issues
 
@@ -22,9 +24,9 @@ _ZZZZZ_
 
 ## Change Log
 
-### XXX
+### 2020-12-24
 
-
-***
+* First commit README.md
+* Fork bitmaps to lib3d
 
 <center><a href=javascript:window.scrollTo(0,0); class=aDingbat title="Scroll to top" > ❦ </a></center>
