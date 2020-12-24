@@ -17,7 +17,7 @@ const RAY = {
 
 RAY.init = function () {
 
-		RAY.intersectObjects = THR.group.children;
+	RAY.intersectObjects = THR.group.children;
 
 	RAY.addMouseMove();
 

@@ -51,6 +51,7 @@ Surveys
 
 USA Census Bureau Data
 
+* https://en.wikipedia.org/wiki/FIPS_county_code
 * https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html
 * https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/gaz-record-layouts.html
 * https://data.census.gov/cedsci/table

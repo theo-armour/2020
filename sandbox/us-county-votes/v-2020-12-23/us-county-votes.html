@@ -23,8 +23,17 @@
 
 			overflow: hidden;
 		}
+
 		#divPopUp {
 			max-height: 40vh;
+		}
+
+		.centered {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			/* bring your own prefixes */
+			transform: translate(-50%, -50%);
 		}
 	</style>
 
@@ -68,33 +77,36 @@
 
 			<div id=GFFdivDetails></div>
 
-			<div>
-				<select id=selYear oninput=drawVotes(); size=5>
+			<select id=selYear oninput=drawVotes(); size=5 style="float:left;margin:0 1rem 0 0;"">
 					<option selected>2020</option>
 					<option>2016</option>
 					<option>2012</option>
 					<option>2008</option>
 					<option>2004</option>
 					<option>2000</option>
-				</select><br>
-				<small>
-					Select year: use up & down cursor keys
+				</select>
+				<div >Select year: use up & down cursor keys</div>
 
-					<p> 1|2|3 fingers to rotate|zoom|pan. Click title to reset view.</p>
+				<p style=clear:both > 1|2|3 fingers to rotate|zoom|pan. </p>
 
-				</small>
+				<p>Click title to reset view.</p>
 
-				<div id=divStats></div>
 
 				<p>
-					<!-- <button onclick="setStatsVote()" title="View the counties that flipped" >voting stats</button> -->
-					<button onclick="THR.setStats();"
-						title="View the number of objects that need rendering and the total number of triangles used to create the objects">render
-						stats</button>
+					<button id=butPopLegend onclick=showPopUp(legendText)>legend</button>
 
-					<button onclick=MNU.toggleDarkMode(this)>dark mode</button>
+					<br>
+
+					<!-- <button onclick=" setStatsVote()" title="View the counties that flipped">voting stats</button> -->
+
+				<button onclick="THR.setStats();"
+					title="View the number of objects that need rendering and the total number of triangles used to create the objects">render
+					stats</button>
+
+				<button onclick=MNU.toggleDarkMode(this)>dark mode</button>
 				</p>
 
+				<div id=divStats></div>
 				<div id="divLog"></div>
 
 				<hr>

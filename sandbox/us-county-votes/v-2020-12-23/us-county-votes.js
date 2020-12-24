@@ -25,19 +25,21 @@ function init () {
 
 	spnVersion.innerHTML = document.head.querySelector( "[ name=date ]" ).content;
 
-	divDescription.innerHTML =`
-	US Presidential Elections
-	2000-2016
-	<div style=background-color:#0015BC;color:white; >Blue = Democrat</div>
-	<div style=background-color:#DE0100;color:white;>Red = Republican</div>
-	<div style=background-color:#008080;color:white;>Teal = Other</div>
-	Taller sticks = more votes<br>
-	Wider sticks = more voters<br>
-	<div style=background-color:#88eeee;color:white;>Cyan spikes = counties flipped to Democrats</div>
-	<div style=background-color:#eeaaaa;color:white;>Pink spikes = counties flipped to Republicans</div>
-	<div>No 2020 3rd party data</div>
-	Vertical data scales are exponential<br>
-	`
+	divDescription.innerHTML = document.head.querySelector( "[ name=description ]" ).content;
+
+	legendText = `
+		US Presidential Elections
+		2000-2016
+		<div style=background-color:#0015BC;color:white;>Blue = Democrat</div>
+		<div style=background-color:#DE0100;color:white;>Red = Republican</div>
+		<div style=background-color:#008080;color:white;>Teal = Other</div>
+		Taller sticks = more votes<br>
+		Wider sticks = more voters<br>
+		<div style=background-color:#88eeee;color:white;>Cyan spikes = counties flipped to Democrats</div>
+		<div style=background-color:#eeaaaa;color:white;>Pink spikes = counties flipped to Republicans</div>
+		<div>No 2020 3rd party data</div>
+		Vertical data scales are exponential<br>
+	`;
 
 	THR.init();
 
@@ -64,6 +66,18 @@ function init () {
 	UFR.init();
 
 };
+
+
+
+function showPopUp ( html = "howdy") {
+
+	divPopUp.hidden = false;
+	divPopUp.style.top = "50%";
+	divPopUp.style.left = "50%";
+	divPopUp.style.transform = "translate(-50%, -50%)";
+	divPopUp.innerHTML = html;
+
+}
 
 
 
@@ -208,14 +222,14 @@ function drawVotes () {
 
 	//console.log( "ms ", performance.now() - timeStart );
 
-	htm = `
-FIPs: ${ UFR.fips.length.toLocaleString() }<br>
-Votes All: ${ votesAll.length.toLocaleString() }<br>
-Votes ${ selYear.value }: ${ votesYear.length.toLocaleString() }<br>
-Displayed: ${ indexDem.length.toLocaleString() }<br>
-`;
+// 	htm = `
+// <span title="Federal Information Processing Standard" >FIPS code</span>: ${ UFR.fips.length.toLocaleString() }<br>
+// Votes All: ${ votesAll.length.toLocaleString() }<br>
+// Votes ${ selYear.value }: ${ votesYear.length.toLocaleString() }<br>
+// Displayed: ${ indexDem.length.toLocaleString() }<br>
+// `;
 
-	divLog.innerHTML = htm;
+// 	divLog.innerHTML = htm;
 
 	setStatsVote();
 
@@ -410,7 +424,7 @@ function setStatsVote () {
 	const repWin = indexRep.filter( ( vote, index ) => vote[ 5 ] > vote[ 4 ] );
 
 	const htm = `
-FIPs: ${ UFR.fips.length.toLocaleString() }<br>
+<span title="Federal Information Processing Standard" >FIPS code</span>: ${ UFR.fips.length.toLocaleString() }<br>
 Counties: ${ indexDem.length.toLocaleString() }<br>
 Votes: ${ votes.toLocaleString() }<br>
 Democrats: ${ dems.toLocaleString() }<br>
