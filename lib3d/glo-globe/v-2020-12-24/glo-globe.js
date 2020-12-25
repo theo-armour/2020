@@ -34,7 +34,7 @@ GLO.initGlobeWithBitmap = function () {
 
 	GLO.timeEnd = performance.now();
 
-	console.log( "msGlo", GLO.timeEnd - GLO.timeStart );
+	//console.log( "msGlo", GLO.timeEnd - GLO.timeStart );
 
 };
 
@@ -76,7 +76,7 @@ GLO.setGlobeElevation3D = function ( value = 50 ) {
 
 	GLO.timeEnd = performance.now();
 
-	console.log( "msGlo", GLO.timeEnd - GLO.timeStart );
+	//console.log( "msGlo", GLO.timeEnd - GLO.timeStart );
 
 	// } else {
 

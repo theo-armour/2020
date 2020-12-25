@@ -8,12 +8,12 @@
 	<meta name="description"
 		content="Part of a series of online interactive global demographic viewers designed to be forked, hacked and remixed with real-time interactive 3D graphics in your browser using the WebGL and the Three.js JavaScript library" />
 	<meta name="keywords" content="Three.js,WebGL,JavaScript,GitHub,FOSS,3D,STEM" />
-	<meta name="date" content="2020-12-23">
+	<meta name="date" content="2020-12-24">
 
-	<title>US Counties Votes</title>
+	<title>US County Votes</title>
 
 	<!-- Copyright 2020 Theo Armour. MIT license -->
-	<link rel="stylesheet" href="../../../lib/style/style-2020-11-29.css">
+	<link rel="stylesheet" href="../../../lib/style/style-2020-12-24.css">
 
 	<style>
 		:root {
@@ -24,7 +24,7 @@
 			overflow: hidden;
 		}
 
-		#divPopUp {
+		#MNUdivPopUp {
 			max-height: 40vh;
 		}
 
@@ -48,12 +48,12 @@
 	<!-- core -->
 	<script src="../../../lib3d/thr-three/thr-threejs-2020-12-23.js"></script>
 	<script src="../../../lib3d/thru-three-utilities/thru-three-utilities-2020-07-13.js"></script>
-	<script src="../../../lib3d/thrr-three-raycaster/ray-raycaster-mousemove-2020-12-23.js"></script>
+	<script src="../../../lib3d/thrr-three-raycaster/ray-raycaster-mousemove-2020-12-24.js"></script>
 	<script src="../../../lib3d/thru-three-utilities/hrt-heart-2020-05-27.js"></script>
-	<script src="../../../lib/mnu-menu/v-2020-12-23/mnu-menu.js"></script>
+	<script src="../../../lib/mnu-menu/v-2020-12-24/mnu-menu.js"></script>
 
 	<!-- geo-->
-	<script src="../../../lib3d/glo-globe/v-2020-12-024/glo-globe.js"></script>
+	<script src="../../../lib3d/glo-globe/v-2020-12-24/glo-globe.js"></script>
 	<script src="../../../lib3d/gjs-geojson/v-2020-12-16/gjs-geojson.js"></script>
 
 	<!-- votes -->
@@ -68,13 +68,11 @@
 
 			<div id=MNUdivHeader></div>
 
-			<div id=divMenuContent></div>
-
 			<div id=FOdivFileMenu></div>
 
 			<div id=GFFdivDetails></div>
 
-			<select id=selYear oninput=drawVotes(); size=5 style="float:left;margin:0 1rem 0 0;"">
+			<select id=selYear oninput=VOT.drawVotes(); size=5 style="float:left;margin:0 1rem 0 0;"">
 					<option selected>2020</option>
 					<option>2016</option>
 					<option>2012</option>
@@ -90,17 +88,15 @@
 				<p>Click title to reset view.</p>
 
 				<p>
-					<button id=butPopLegend onclick=showPopUp(legendText)>legend</button>
+					<button id=butPopLegend onclick=MNU.unhidePopUpCentered(legendText)>legend</button>
 
 					<br>
 
-					<!-- <button onclick=" setStatsVote()" title="View the counties that flipped">voting stats</button> -->
+					<button onclick="THR.setStats();"
+						title="View the number of objects that need rendering and the total number of triangles used to create the objects">render
+						stats</button>
 
-				<button onclick="THR.setStats();"
-					title="View the number of objects that need rendering and the total number of triangles used to create the objects">render
-					stats</button>
-
-				<button onclick=MNU.toggleDarkMode(this)>dark mode</button>
+					<button onclick=MNU.toggleDarkMode(this)>dark mode</button>
 				</p>
 
 				<div id="divStats"></div>
@@ -115,49 +111,27 @@
 	</details>
 
 
-
-	<!--
-	<details id=detNavMenu class="gmd-4">
-
-		<summary id=sumNavMenu class="summary-secondary gmd-1">show || hide menu</summary>
-
-
-		<nav id="navMenu" class="gmd-2">
-
 	<!-- Used by RAY -->
 
-	<div id="divPopUp" class="gmd-2">
-		<p>
-			When you touch a stick,<br>its details will appear here
-		</p>
-		<p>
-			Cyan spikes = county flipped Democratic<br>
-			Pink spikes = county flipped Republican
-		</p>
-		<p>
-			1|2|3 fingers to rotate|zoom|pan
-		</p>
-	</div>
+	<div id="MNUdivPopUp" class="gmd-2"></div>
 
 
 	<script>
 
 		init(); // see us-county-votes.js
 
-		THR.controls.rotateSpeed = 0.2;
 		THR.controls.autoRotate = false;
 
 		// if running on server, keeps address bar pointed to latest dev
-
 		if ( !location.hash && location.protocol === "https:" ) {
 
 			window.history.pushState( "", "", "../" );
 
 		} else {
 
-			THR.controls.autoRotate = false;
-
 		}
+
+		selYear.focus();
 
 	</script>
 

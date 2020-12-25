@@ -1,31 +1,36 @@
 
 const source = "https://github.com/theo-armour/2020/tree/master/sandbox/us-county-votes/";
 
-const version = "2020-12-23";
+const version = document.head.querySelector( "[ name=date ]" ).content;
 
-//const description = document.head.querySelector( "[ name=description ]" ).content;
-
-let indexDem = [];
-let indexRep = [];
-let indexOther = [];
-
-let votesAll;
-let votesYear;
-let flipSticks;
-
+const description = document.head.querySelector( "[ name=description ]" ).content;
 
 
 function init () {
 
 	MNU.init();
 
-	aGithub.href = "https://www.ladybug.tools/spider-2020/sandbox/";
+	MNUdivPopUp.innerHTML = `
+<div>
+	<p>
+		When you touch a stick,<br>its details will appear here
+	</p>
+	<p>
+		Cyan spikes = county flipped Democratic<br>
+		Pink spikes = county flipped Republican
+	</p>
+	<p>
+		1|2|3 fingers to rotate|zoom|pan
+	</p>
+</div>`
+
+	aGithub.href = source;
 
 	spnTitle.innerHTML = "US County Votes";
 
-	spnVersion.innerHTML = document.head.querySelector( "[ name=date ]" ).content;
+	spnVersion.innerHTML = version;
 
-	divDescription.innerHTML = document.head.querySelector( "[ name=description ]" ).content;
+	divDescription.innerHTML = description;
 
 	legendText = `
 <div>
@@ -44,13 +49,15 @@ function init () {
 
 	THR.init();
 
-	THR.animate();
+	THR.camera.position.set( - 20, - 65, 50 );
 
 	THR.addLights();
 
 	THR.group = THR.getGroupNew();
 
-	RAY.init()
+	THR.animate();
+
+	RAY.init();
 
 	GJS.initGeoJson(); // gjs-geojson.js
 
@@ -58,15 +65,11 @@ function init () {
 
 	GJS.requestFile( urlGeoJson, GJS.onLoadGeoJson );
 
-	requestFile( "../us-county-votes.csv", getVotes );
-
-	THR.camera.position.set( - 20, - 65, 50 );
-
-	UFR.init(); // ufr-usa-fips-remix.js
-
-	selYear.focus();
+	VOT.requestFile( "../us-county-votes.csv", VOT.getVotes );
 
 	GLO.initGlobeWithBitmap();
+
+	UFR.init(); // ufr-usa-fips-remix.js
 
 	HRT.init();
 
@@ -75,20 +78,9 @@ function init () {
 };
 
 
+const VOT = {};
 
-function showPopUp ( html = "howdy") {
-
-	divPopUp.hidden = false;
-	divPopUp.style.top = "50%";
-	divPopUp.style.left = "50%";
-	divPopUp.style.transform = "translate(-50%, -50%)";
-	divPopUp.innerHTML = html;
-
-}
-
-
-
-function requestFile ( url, callback ) {
+VOT.requestFile = function( url, callback ) {
 
 	const xhr = new XMLHttpRequest();
 	xhr.open( 'GET', url, true );
@@ -97,29 +89,28 @@ function requestFile ( url, callback ) {
 	xhr.onload = ( xhr ) => callback( xhr.target.response );
 	xhr.send( null );
 
-}
+};
 
 
 
-function getVotes ( string ) {
+VOT.getVotes = function ( string ) {
 	//const startTime = performance.now();
 
-	votesAll = string.split( /\n/ ).map( line => line.split( /,/ ) ).slice( 1, -1 );
+	VOT.votesAll = string.split( /\n/ ).map( line => line.split( /,/ ) ).slice( 1, -1 );
 	//console.log( "votesAll", votesAll );
 
 	//console.log( "ms", performance.now() - startTime );
+	VOT.drawVotes();
 
-	if ( votesAll && UFR.fips ) { drawVotes(); }
-
-}
-
+};
 
 
-function drawVotes () {
+
+VOT.drawVotes = function () {
 
 	const v2 = ( x, y ) => new THREE.Vector2( x, y );
 
-	scene.remove( UFR.counties, flipSticks );
+	scene.remove( UFR.counties, VOT.flipSticks );
 
 	UFR.counties = new THREE.Group;
 
@@ -127,14 +118,14 @@ function drawVotes () {
 	const geometriesRep = [];
 	const geometriesOther = [];
 
-	indexDem = [];
-	indexRep = [];
-	indexOther = [];
+	VOT.indexDem = [];
+	VOT.indexRep = [];
+	VOT.indexOther = [];
 
-	votesYear = votesAll.filter( vote => vote[ 0 ] === selYear.value );
-	//console.log( "votesYear", votesAll[ 1 ][ 0 ], selYear.value, votesYear );
+	VOT.votesYear = VOT.votesAll.filter( vote => vote[ 0 ] === selYear.value );
+	//console.log( "VOT.votesYear", VOT.votesAll[ 1 ][ 0 ], selYear.value, VOT.votesYear );
 
-	votesYear.forEach( countyVote => {
+	VOT.votesYear.forEach( countyVote => {
 
 		const fip = UFR.fips.find( fip => countyVote[ 1 ] === fip[ 0 ].slice( -5 ) );
 
@@ -152,7 +143,7 @@ function drawVotes () {
 			geometryDem.translate( vertexDem.x, vertexDem.y, vertexDem.z );
 
 			geometriesDem.push( geometryDem );
-			indexDem.push( countyVote );
+			VOT.indexDem.push( countyVote );
 
 
 			const voteRep = Math.log( 1 + 0.0002 * countyVote[ 5 ] ) || 0;
@@ -164,7 +155,7 @@ function drawVotes () {
 			geometryRep.translate( vertexRep.x, vertexRep.y, vertexRep.z );
 
 			geometriesRep.push( geometryRep );
-			indexRep.push( countyVote );
+			VOT.indexRep.push( countyVote );
 
 			const voteOther = Math.log( 1 + 0.0002 * countyVote[ 6 ] ) || 0;
 
@@ -179,7 +170,7 @@ function drawVotes () {
 
 				geometriesOther.push( geometryOther );
 			}
-			indexOther.push( countyVote );
+			VOT.indexOther.push( countyVote );
 
 		}
 
@@ -219,13 +210,156 @@ function drawVotes () {
 
 	THR.scene.add( UFR.counties );
 
-	RAY.addMouseMove();
-
-
-
 	console.log( "init2", performance.now() - THR.timeStart );
 
-	setStatsVote();
+	VOT.setStatsVote();
+
+};
+
+
+
+VOT.setStatsVote = function() {
+
+	VOT.flipSticks = new THREE.Group();
+
+	const flipsDem = [];
+	const flipsRep = [];
+	const fipsCounted = [];
+	const yearPrevious = ( -4 + ( + selYear.value ) );
+
+	if ( yearPrevious > 1996 ) {
+
+		const votesYearPrev = VOT.votesAll.filter( vote => ( + vote[ 0 ] ) === yearPrevious );
+		//console.log( "votesYearPrev", votesYearPrev );
+
+		VOT.votesYear.forEach( voteYear => {
+
+			const fip = voteYear[ 1 ];
+
+			if ( !fipsCounted.includes( fip ) ) {
+
+				fipsCounted.push( fip );
+
+				const vote = VOT.votesYear.find( vote => vote[ 1 ] === fip );
+				//console.log( "vote", vote );
+
+				const v1 = ( + vote[ 4 ] ) > ( + vote[ 5 ] );
+				//console.log( "v1", v1 );
+
+				const votePrev = votesYearPrev.find( vote => vote[ 1 ] === fip );
+				//console.log( "votePrev", votePrev, fip );
+
+				if ( votePrev ) {
+
+					const v2 = ( + votePrev[ 4 ] ) > ( + votePrev[ 5 ] );
+					//console.log( "v2", v2 );
+
+					if ( v1 && !v2 ) {
+
+						flipsDem.push( fip );
+					}
+
+					if ( !v1 && v2 ) {
+
+						flipsRep.push( fip );
+					}
+
+				}
+			}
+
+		} );
+
+		//console.log( "flipsDem", flipsDem );
+		const geometry = new THREE.SphereBufferGeometry( 1 );
+		let material = new THREE.MeshStandardMaterial( { color: 0x00aaff, emissive: 0x444444 } );
+
+		flipsDem.forEach( fip => {
+
+			const fipRec = UFR.fips.find( fipX => fip === fipX[ 0 ] ); //.slice( -5 ) );
+			//console.log( "fipRec", fip, fipRec, );
+
+			if ( fipRec ) {
+
+				const vote = VOT.indexDem.find( item => fip === item[ 1 ] );
+				//console.log( "vote", vote[ 9 ] );
+				const total = vote[ 7 ];
+
+				delta = Math.log( 1 + 0.0002 * total ) || 0;
+				scl = 0.05 * Math.log( 1 + 0.0002 * total ) || 0;
+
+				const mesh = new THREE.Mesh( geometry, material );
+				const vert = GJS.latLonToXYZ( 50 + 1 * delta, + fipRec[ 3 ], + fipRec[ 4 ] );
+				mesh.lookAt( vert );
+				mesh.position.copy( vert );
+				mesh.scale.set( scl, scl, 10 * scl );
+
+				VOT.flipSticks.add( mesh );
+
+			}
+
+		} );
+
+
+		material = new THREE.MeshStandardMaterial( { color: 0xDE0100, emissive: 0x888888 } );
+
+		flipsRep.forEach( fip => {
+
+			const fipRec = UFR.fips.find( fipX => fip === fipX[ 0 ] ); //.slice( -5 ) );
+			//console.log( "fipRec", fip, fipRec, );
+
+			if ( fipRec ) {
+
+				const vote = VOT.indexRep.find( item => fip === item[ 1 ] );
+				//console.log( "vote", vote[ 9 ] );
+				const total = vote[ 7 ];
+
+				delta = Math.log( 1 + 0.0002 * total ) || 0;
+				scl = 0.05 * Math.log( 1 + 0.0002 * total ) || 0;
+
+				const mesh = new THREE.Mesh( geometry, material );
+				const vert = GJS.latLonToXYZ( 50 + 1 * delta, + fipRec[ 3 ], + fipRec[ 4 ] );
+				mesh.lookAt( vert );
+				mesh.position.copy( vert );
+				mesh.scale.set( scl, scl, 10 * scl );
+				VOT.flipSticks.add( mesh );
+
+			}
+
+		} );
+
+		scene.add( VOT.flipSticks );
+		//console.log( "flips", flips );
+
+	} else {
+
+		alert( "No data for previous year" );
+	}
+
+	const votes = VOT.indexDem.reduce( ( total, num ) => total + ( + num[ 7 ] ), 0 );
+	const dems = VOT.indexDem.reduce( ( total, num ) => total + ( + num[ 4 ] ), 0 );
+	const reps = VOT.indexRep.reduce( ( total, num ) => total + ( + num[ 5 ] ), 0 );
+	const other = VOT.indexOther.reduce( ( total, num ) => total + ( + num[ 6 ] ), 0 );
+
+
+	const demWin = VOT.indexDem.filter( ( vote, index ) => vote[ 4 ] > vote[ 5 ] );
+	const repWin = VOT.indexRep.filter( ( vote, index ) => vote[ 5 ] > vote[ 4 ] );
+
+	const htm = `
+<span title="Federal Information Processing Standard" >FIPS code</span>: ${ UFR.fips.length.toLocaleString() }<br>
+Counties: ${ VOT.indexDem.length.toLocaleString() }<br>
+Votes: ${ votes.toLocaleString() }<br>
+Democrats: ${ dems.toLocaleString() }<br>
+Dem Win: ${ demWin.length.toLocaleString() }<br>
+Republicans: ${ reps.toLocaleString() }<br>
+Rep Win: ${ repWin.length.toLocaleString() }<br>
+Other: ${ other.toLocaleString() }<br>
+FlipDems: ${ flipsDem.length }<br>
+FlipReps: ${ flipsRep.length }<br>
+`;
+
+	divLog.innerHTML = htm;
+
+	console.log( "setStatsVotes", performance.now() - THR.timeStart );
 
 }
 
@@ -239,7 +373,8 @@ RAY.getHtm = function ( intersected ) {
 	let item;
 	let index = intersected.faceIndex;
 
-	for ( item = 0; item <= indexDem.length; item++ ) {
+	// try using find or something like that??
+	for ( item = 0; item <= VOT.indexDem.length; item++ ) {
 
 		const limit = item * 28;
 
@@ -247,14 +382,14 @@ RAY.getHtm = function ( intersected ) {
 
 	}
 
-	const countyVote = indexDem[ item - 1 ];
+	const countyVote = VOT.indexDem[ item - 1 ];
 	//console.log( "countyVote", countyVote );
 
-	yearPrevious = ( -4 + ( + selYear.value ) ) + "";
+	const yearPrevious = ( -4 + ( + selYear.value ) ) + "";
 
 	if ( yearPrevious ) {
 
-		votesYearPrev = votesAll.find( vote => vote[ 0 ] === yearPrevious && vote[ 1 ] === countyVote[ 1 ] );
+		votesYearPrev = VOT.votesAll.find( vote => vote[ 0 ] === yearPrevious && vote[ 1 ] === countyVote[ 1 ] );
 
 		//console.log( "votesYearPrev", votesYearPrev, yearPrevious );
 
@@ -280,161 +415,3 @@ RAY.getHtm = function ( intersected ) {
 	return htm;
 
 };
-
-
-
-function setStatsVote () {
-
-	flipSticks = new THREE.Group();
-
-	const flipsDem = [];
-	const flipsRep = [];
-	const fipsCounted = [];
-	const yearPrevious = ( -4 + ( + selYear.value ) );
-
-	if ( yearPrevious > 1996 ) {
-
-		const votesYearPrev = votesAll.filter( vote => ( + vote[ 0 ] ) === yearPrevious );
-
-		//console.log( "votesYearPrev", votesYearPrev );
-
-		votesYear.forEach( voteYear => {
-
-			const fip = voteYear[ 1 ];
-
-			if ( !fipsCounted.includes( fip ) ) {
-
-				fipsCounted.push( fip );
-
-				const vote = votesYear.find( vote => vote[ 1 ] === fip );
-				//console.log( "vote", vote );
-				//const demsYF = votesYearFip[ 0 ];
-				//const repsYF = votesYearFip[ 1 ];
-
-				const v1 = ( + vote[ 4 ] ) > ( + vote[ 5 ] );
-				//console.log( "v1", v1 );
-
-				const votePrev = votesYearPrev.find( vote => vote[ 1 ] === fip );
-				//console.log( "votePrev", votePrev, fip );
-
-				if ( votePrev ) {
-
-					//const demsYPF = votesYearPreviousFip[ 0 ] || 1;
-					//const repsYPF = votesYearPreviousFip[ 1 ] || 1;
-
-					const v2 = ( + votePrev[ 4 ] ) > ( + votePrev[ 5 ] );
-					//console.log( "v2", v2 );
-
-					if ( v1 && !v2 ) {
-						//console.log( fip, demsYF[ 8 ], repsYF[ 8 ] );
-						//console.log( "! d>r", demsYPF[ 8 ], repsYPF[ 8 ] );
-						flipsDem.push( fip );
-					}
-
-					if ( !v1 && v2 ) {
-						//console.log( fip, demsYF[ 8 ], repsYF[ 8 ] );
-						//console.log( "! d>r", demsYPF[ 8 ], repsYPF[ 8 ] );
-						flipsRep.push( fip );
-					}
-
-				}
-			}
-
-		} );
-
-		//console.log( "flipsDem", flipsDem );
-		const geometry = new THREE.SphereBufferGeometry( 1 );
-		let material = new THREE.MeshStandardMaterial( { color: 0x00aaff, emissive: 0x444444 } );
-
-		flipsDem.forEach( fip => {
-
-			const fipRec = UFR.fips.find( fipX => fip === fipX[ 0 ] ); //.slice( -5 ) );
-			//console.log( "fipRec", fip, fipRec, );
-
-			if ( fipRec ) {
-
-				const vote = indexDem.find( item => fip === item[ 1 ] );
-				//console.log( "vote", vote[ 9 ] );
-				const total = vote[ 7 ];
-
-				delta = Math.log( 1 + 0.0002 * total ) || 0;
-				scl = 0.05 * Math.log( 1 + 0.0002 * total ) || 0;
-
-				const mesh = new THREE.Mesh( geometry, material );
-				const vert = GJS.latLonToXYZ( 50 + 1 * delta, + fipRec[ 3 ], + fipRec[ 4 ] );
-				mesh.lookAt( vert );
-				mesh.position.copy( vert );
-				mesh.scale.set( scl, scl, 10 * scl );
-
-				flipSticks.add( mesh );
-
-			}
-
-		} );
-
-
-		material = new THREE.MeshStandardMaterial( { color: 0xDE0100, emissive: 0x888888 } );
-
-		flipsRep.forEach( fip => {
-
-			const fipRec = UFR.fips.find( fipX => fip === fipX[ 0 ] ); //.slice( -5 ) );
-			//console.log( "fipRec", fip, fipRec, );
-
-			if ( fipRec ) {
-
-				const vote = indexRep.find( item => fip === item[ 1 ] );
-				//console.log( "vote", vote[ 9 ] );
-				const total = vote[ 7 ];
-
-				delta = Math.log( 1 + 0.0002 * total ) || 0;
-				scl = 0.05 * Math.log( 1 + 0.0002 * total ) || 0;
-
-				const mesh = new THREE.Mesh( geometry, material );
-				const vert = GJS.latLonToXYZ( 50 + 1 * delta, + fipRec[ 3 ], + fipRec[ 4 ] );
-				mesh.lookAt( vert );
-				mesh.position.copy( vert );
-				mesh.scale.set( scl, scl, 10 * scl );
-				flipSticks.add( mesh );
-
-			}
-
-		} );
-
-		scene.add( flipSticks );
-		//console.log( "flips", flips );
-
-	} else {
-
-		alert( "No data for previous year" );
-	}
-
-	const votes = indexDem.reduce( ( total, num ) => total + ( + num[ 7 ] ), 0 );
-	const dems = indexDem.reduce( ( total, num ) => total + ( + num[ 4 ] ), 0 );
-	const reps = indexRep.reduce( ( total, num ) => total + ( + num[ 5 ] ), 0 );
-	const other = indexOther.reduce( ( total, num ) => total + ( + num[ 6 ] ), 0 );
-
-
-	const demWin = indexDem.filter( ( vote, index ) => vote[ 4 ] > vote[ 5 ] );
-	const repWin = indexRep.filter( ( vote, index ) => vote[ 5 ] > vote[ 4 ] );
-
-	const htm = `
-<span title="Federal Information Processing Standard" >FIPS code</span>: ${ UFR.fips.length.toLocaleString() }<br>
-Counties: ${ indexDem.length.toLocaleString() }<br>
-Votes: ${ votes.toLocaleString() }<br>
-Democrats: ${ dems.toLocaleString() }<br>
-Dem Win: ${ demWin.length.toLocaleString() }<br>
-Republicans: ${ reps.toLocaleString() }<br>
-Rep Win: ${ repWin.length.toLocaleString() }<br>
-Other: ${ other.toLocaleString() }<br>
-FlipDems: ${ flipsDem.length }<br>
-FlipReps: ${ flipsRep.length }<br>
-`;
-
-	divLog.innerHTML = htm;
-
-	console.log( "setStatsVotes", performance.now() - THR.timeStart );
-	
-}
-
-
-
